@@ -1,0 +1,94 @@
+.promo-carousel{
+ margin-top: 3.75rem;
+}
+
+.promo-carousel__slide{
+ position: relative;
+ height: 40rem;
+}
+
+.promo-carousel__info{
+ position: relative;
+ z-index: 2;
+ top: 0.75rem;
+ width: 46.25rem;
+ padding: 2.5rem;
+ background: #FFFFFF;
+ box-shadow: 0px 41px 30px -30px rgba(0, 0, 0, 0.2);
+ backdrop-filter: blur(25px);
+ border-radius: var(--brad-regular);
+}
+
+.promo-carousel__category{
+ font-family: 'Oswald';
+ font-size: 1.25rem;
+ text-transform: uppercase;
+ letter-spacing: 0.1em;
+ margin-bottom: 5.44rem;
+}
+
+.promo-carousel__title{
+ font-size: 2.25rem;
+ font-weight: 700;
+ margin-bottom: 5.44rem;
+ line-height: 3.25rem;
+ text-transform: uppercase;
+}
+
+.promo-carousel__bottom{
+ display: flex;
+ justify-content: space-between;
+ align-items: flex-end;
+}
+
+.promo-carousel__link{
+ display: flex;
+ align-items: center;
+ margin-bottom: 0.53rem;
+}
+
+.promo-carousel__link span{
+ font-size: 1rem;
+ font-weight: 700;
+ text-transform: uppercase;
+ margin-right: 0.63rem;
+}
+
+.promo-carousel__link img, svg{
+ width: 1.5rem;
+}
+
+.promo-carousel__date{
+ font-size: 0.88rem;
+ color: var(--c-text-secondary);
+}
+
+.promo-carousel__comments{
+ display: flex;
+ align-items: center;
+}
+
+.promo-carousel__comments img, svg{
+ width: 1.25rem;
+ margin-right: 0.5rem;
+}
+
+.promo-carousel__comments span{
+ font-weight: 500;
+ font-size: 0.88rem;
+}
+
+.promo-carousel__hero{
+ position: absolute;
+ right: 0;
+ top: 0;
+ width: 68.75rem;
+ height: 40rem;
+ border-radius: var(--brad-regular);
+}
+
+.promo-carousel__hero img{
+ border-radius: var(--brad-regular);
+ height: 40rem;
+ object-fit: cover;
+}
