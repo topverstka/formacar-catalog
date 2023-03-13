@@ -63,7 +63,7 @@
                 <div class="swiper-slide promo-carousel__slide">
                   <div class="promo-carousel__info">
                     <div class="promo-carousel__category">
-                      Главные новости недели
+                      Главные новости недели 2
                     </div>
                     <h2 class="promo-carousel__title">
                       Lamborghini Urus примеряет еще один экстремально выглядящий аэродинамический обвес
@@ -74,9 +74,9 @@
                           <span>читать Подробнее</span>
                           <img src="./img/common/arrow-right.svg" alt="">
                         </a>
-                        <div class="promo-carousel__date">
+                        <p class="promo-carousel__date">
                           30 ноября 2022, 11:45
-                        </div>
+                        </p>
                       </div>
                       <div class="promo-carousel__comments">
                         <img src="img/common/comments.svg" alt="">
@@ -98,10 +98,78 @@
                 
               </div>
             </div>
+
+            <div class="promo-carousel__arrows">
+              <img src="./img/common/arrow-left.svg" alt="" class="promo-carousel__arrows-next">
+              <img src="./img/common/arrow-right.svg" alt="" class="promo-carousel__arrows-prev">
+            </div>
           </div>
         </section>
-      </main>
+        
+        <div class="main__container">
+          <div class="main__items">
+            <section class="news">
+              <h2 class="section-title news__title">Новости</h2>
+              <div class="news__gallery">
+  
+                @@include('tpls/cards/news.html',{img: "1.jpg", descr: "Study finds the best autopilot solution, spoiler alert: it’s not Tesla FSD"})
+                @@include('tpls/cards/news.html',{img: "2.jpg", descr: "Video: Lamborghini Urus Performante puts on its rally pants"})
+                @@include('tpls/cards/news.html',{img: "3.jpg", descr: "$155k buys you a tuned Cadillac Escalade or a stock Escalade-V"})
+                @@include('tpls/cards/news.html',{img: "4.jpg", descr: "Rare carbon-bodied Porsche traded for €0.9M+ right now"})
+                @@include('tpls/cards/news.html',{img: "5.jpg", descr: "Jaguar Land Rover becomes profitable again after a few bad years"})
+                @@include('tpls/cards/news.html',{img: "6.jpg", descr: "Toyota GR 86 gets a complete visual makeover courtesy of ADRO"})
+                @@include('tpls/cards/news.html',{img: "7.jpg", descr: "Stellantis sells 48 long-discontinued cars in the U.S. in 2022"})
+                @@include('tpls/cards/news.html',{img: "8.jpg", descr: "Japan gets a semicentennial edition of the BMW 5 Series"})
+  
+  
+                
+              </div>
+            </section>
+    
+            <section class="catalog">
+              <h2 class="section-title catalog__title">Каталог тюнинга</h2>
+              <p class="section-desc">Индустрия дисков</p>
+              <div class="catalog__gallery">
+  
+                @@include('tpls/cards/catalog.html',{img: "wheels/wheels-1.jpg", category: "AIRTEKK", name: "TANKEN"})
+                @@include('tpls/cards/catalog.html',{img: "wheels/wheels-2.jpg", category: "CORSE WERKS", name: "Toro"})
+                @@include('tpls/cards/catalog.html',{img: "wheels/wheels-3.jpg", category: "YIDO PERFORMANCE", name: "YP SERIES YP3"})
+                @@include('tpls/cards/catalog.html',{img: "wheels/wheels-4.jpg", category: "3SDM", name: "CT216"})
+                
+              </div>
+  
+              <p class="section-desc">Аэродинамика</p>
+              <div class="catalog__gallery">
+  
+                @@include('tpls/cards/catalog-no-list.html',{img: "aerodynamics/aerodynamics-1.jpg", category: "Formacar SCL", name: "PORSCHE 911 TURBO S VENOM"})
+                @@include('tpls/cards/catalog-no-list.html',{img: "aerodynamics/aerodynamics-2.jpg", category: "Formacar SCL", name: "NISSAN GT-R GOJIRA 2019"})
+                @@include('tpls/cards/catalog-no-list.html',{img: "aerodynamics/aerodynamics-3.jpg", category: "Formacar SCL", name: "LAMBORGHINI URUS"})
+                @@include('tpls/cards/catalog-no-list.html',{img: "aerodynamics/aerodynamics-4.jpg", category: "Formacar SCL", name: "MERCEDES BENZ E 200 SPORT"})
+                
+              </div>
+            </section>
+          </div>
 
+          <aside class="main-sidebar">
+            <section class="articles">
+              <p class="section-desc">Самые обсуждаемые</p>
+              @@include('tpls/cards/articles-card.html',{text: "Mercedes-Benz rally car underway to auction in France"})
+              @@include('tpls/cards/articles-card.html',{text: "Hyundai updates the Grand i10 and Aura for India"})
+              @@include('tpls/cards/articles-card.html',{text: "Video: This dealership replica looks indistinguishable from the real thing"})
+              @@include('tpls/cards/articles-card.html',{text: "Hennessey Venom F5 racecar debuts on official terms"})
+              @@include('tpls/cards/articles-card.html',{text: "Check out a BMW sports car cut into ute shape"})
+            </section>
+
+            <a class="ads-sidebar">
+              <picture class="ads-sidebar__pic">
+                <img class="ads-sidebar__img" src="img/ads/sidebar.jpg" alt="">
+              </picture>
+            </a>
+          </aside>
+
+        </div>
+        
+      </main>
 
 
       @@include('tpls/footer.html',{})

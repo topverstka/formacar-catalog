@@ -1,0 +1,16 @@
+.catalog{
+ margin-top: 4.38rem;
+ // padding-bottom: 4.38rem;
+}
+
+.catalog__gallery{
+ display: grid;
+ grid-template-columns: repeat(4, 1fr);
+ gap: 1.88rem 2.50rem;
+ width: 100%;
+ margin-bottom: 2.50rem;
+}
+
+.catalog__gallery:last-child{
+ margin-bottom: 0;
+}

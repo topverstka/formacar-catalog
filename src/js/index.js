@@ -4,7 +4,7 @@ import { removeAllClasses, bodyLock } from "./utils/functions.js";
 import DismalModules, { acc } from "./utils/modules.js";
 
 import "./unstable/formich.js";
-import Swiper, { Navigation, Autoplay } from "swiper";
+// import Swiper, { Navigation, Autoplay, Pagination, Thumbs, EffectFade } from "swiper";
 import "./unstable/burger.js";
 
 /**
@@ -15,13 +15,15 @@ import "./poppa.js";
 /**
  * Timer
  */
-import "./b_timer.js";
+// import "./b_timer.js";
 
 /**
  * Lazy Load
  */
 import "./libs/lazyload.min.js";
 let lazyLoadInstance = new LazyLoad();
+window.lazyload = lazyLoadInstance;
+
 
 /**
  * Dropdown Select
@@ -36,6 +38,8 @@ import "./unstable/tabs.js";
  * Smooth anchors
  */
 import "./utils/smooth-anchors.js";
+
+import "./components/carousels.js";
 
 // Аккордеон
 // const accordions = new DismalModules.Accordions()

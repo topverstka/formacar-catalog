@@ -1,0 +1,16 @@
+.main{
+ margin-top: 3.75rem;
+ margin-bottom: 8.75rem;
+}
+
+.main__container{
+ display: grid;
+ grid-template-columns: 74.662162162% auto;
+ column-gap: 6.25rem;
+}
+
+.main__container-news{
+ display: grid;
+ grid-template-columns: auto 74.662162162%;
+ column-gap: 6.25rem;
+}

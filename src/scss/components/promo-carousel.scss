@@ -1,10 +1,10 @@
 .promo-carousel{
  margin-top: 3.75rem;
+ height: 40rem;
 }
 
 .promo-carousel__slide{
  position: relative;
- height: 40rem;
 }
 
 .promo-carousel__info{
@@ -91,4 +91,23 @@
  border-radius: var(--brad-regular);
  height: 40rem;
  object-fit: cover;
+}
+
+.promo-carousel__arrows{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ position: absolute;
+ bottom: 0;
+ left: 0;
+ padding: 0px 1.88rem;
+ gap: 2.50rem;
+ z-index: 2;
+}
+
+.promo-carousel__arrows img, svg{
+ --size: 2.25rem;
+ width: var(--size);
+ height: var(--size);
+ cursor: pointer;
 }

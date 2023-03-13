@@ -1,3 +1,8 @@
+"use strict"
+
+import Swiper, { Navigation, Autoplay, Pagination, Thumbs, EffectFade } from "swiper";
+
+
 if (document.querySelector('.promo-carousel')) {
 
  let promoSlider = new Swiper(".promo-carousel", {
@@ -7,25 +12,38 @@ if (document.querySelector('.promo-carousel')) {
      crossFade: true
    },
    spaceBetween: 10,
-   autoHeight: true,
+   loop: true,
    autoplay: {
      delay: 3000,
    },
-   breakpoints: {
-     769: {
-       spaceBetween: 100,
-     }
-   },
-   on: {
-     init: function () {
-       normalizePaginationOffset(this)
-     },
-     slideChange: function () {
-       normalizePaginationOffset(this)
-     },
-   }
+   navigation: {
+    nextEl: ".promo-carousel__arrows-next",
+    prevEl: ".promo-carousel__arrows-prev",
+  },
+  
+   
  });
- window.addEventListener("resize", (e) => {
-   debounce(normalizePaginationOffset(promoSlider), 200);
- });
+
 }
+
+if (document.querySelector('.offers-carousel')) {
+
+  let offersSlider = new Swiper(".offers-carousel", {
+    modules: [Pagination, Autoplay, EffectFade],
+    effect: 'fade',
+      fadeEffect: {
+      crossFade: true
+    },
+    spaceBetween: 10,
+    autoplay: {
+      delay: 3000,
+    },
+    pagination: {
+      el: ".offers-carousel__pagination",
+      clickable: true,
+    },
+  });
+ 
+}
+
+

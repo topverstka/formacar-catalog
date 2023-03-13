@@ -1,0 +1,23 @@
+.articles-card{
+ margin-bottom: 2.5rem;
+}
+
+.articles-card:last-child{
+ margin-bottom: 0;
+}
+
+.articles-card__text{
+ font-size: 1rem;
+ margin-bottom: 0.63rem;
+ font-weight: 500;
+ overflow: hidden;
+ display: -webkit-box;
+ -webkit-line-clamp: 2;
+ -webkit-box-orient: vertical;
+}
+
+.articles-card__bottom{
+ display: flex;
+ justify-content: space-between;
+ align-items: center; 
+}

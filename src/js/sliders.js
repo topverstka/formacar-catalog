@@ -18,3 +18,4 @@ const mainSwiper = new Swiper("[data-swiper=main]", {
 		clickable: true,
 	},
 });
+

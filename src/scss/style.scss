@@ -64,6 +64,7 @@ body {
   font-weight: 400;
   line-height: 1.2;
   color: $text-primary;
+  background-color: var(--bg-app);
 }
 body._lock {
   overflow: hidden;
@@ -134,6 +135,15 @@ body._lock {
 @import "./sections/main";
 @import "./sections/hero";
 @import "./sections/footer";
+@import "./sections/news";
+@import "./sections/catalog";
+@import "./sections/articles";
+@import "./sections/ads-sidebar";
+@import "./sections/page-heading";
+@import "./sections/offers";
+@import "./sections/events";
+@import "./sections/tuning";
+
 
 // Стили для отдельных страниц
 // @import "./pages/";

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- Отключить автодетект телефонов -->
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- Отключить кэширование. Нужен только при разработке, чтобы все было свежим -->
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="max-age=3600, must-revalidate" />
+  </head>
+  <body>
+    <div class="wrapper">
+      @@include('tpls/header.html',{})
+
+
+      <main class="main">
+        
+        <div class="main__container-news">
+         <aside class="main-sidebar">
+          <section class="articles">
+            <p class="section-desc">Самые обсуждаемые</p>
+            @@include('tpls/cards/articles-card.html',{text: "Mercedes-Benz rally car underway to auction in France"})
+            @@include('tpls/cards/articles-card.html',{text: "Hyundai updates the Grand i10 and Aura for India"})
+            @@include('tpls/cards/articles-card.html',{text: "Video: This dealership replica looks indistinguishable from the real thing"})
+            @@include('tpls/cards/articles-card.html',{text: "Hennessey Venom F5 racecar debuts on official terms"})
+            @@include('tpls/cards/articles-card.html',{text: "Chery reveals its latest SUV during a private conference"})
+            @@include('tpls/cards/articles-card.html',{text: "Reports: Toyota Century SUV coming to the market later this year"})
+            @@include('tpls/cards/articles-card.html',{text: "Survive in a post-apocalyptic world with this crazy off-roader"})
+            @@include('tpls/cards/articles-card.html',{text: "Bugatti closes 2022 with unprecedented sales success"})
+            @@include('tpls/cards/articles-card.html',{text: "Italian hypercar startup aiming to smash through the Nürburgring record"})
+          </section>
+
+         </aside>
+
+          <div class="main__items">
+
+           <div class="page-heading page-heading_center">
+
+            <div class="breadcrumbs">
+             <ul class="breadcrumbs__list">
+               <li class="breadcrumbs__item">
+                <a href="#" class="breadcrumbs__link">Главная</a>
+               </li>
+               <li class="breadcrumbs__item">Новости</li>
+             </ul>
+            </div>
+
+            <h2 class="section-title page__title">Новости</h2>
+
+           </div>
+
+           <nav class="news-navigation">
+            <ul class="news-navigation__list">
+
+             <li class="news-navigation__item">
+              <a href="#" class="news-navigation__link news-navigation__link_active">Все новости</a>
+             </li>
+             <li class="news-navigation__item">
+              <a href="#" class="news-navigation__link">тюнинг автомобиля</a>
+             </li>
+             <li class="news-navigation__item">
+              <a href="#" class="news-navigation__link">Концепт-кар</a>
+             </li>
+             <li class="news-navigation__item">
+              <a href="#" class="news-navigation__link">Обзоры</a>
+             </li>
+             <li class="news-navigation__item">
+              <a href="#" class="news-navigation__link">Технологии</a>
+             </li>
+             <li class="news-navigation__item">
+              <a href="#" class="news-navigation__link">Автошоу</a>
+             </li>
+             <li class="news-navigation__item">
+              <a href="#" class="news-navigation__link news-navigation__link_last">
+               <span>Еще темы</span>
+               <img src="img/common/arrow-down.svg" alt="">
+              </a>
+             </li>
+
+            </ul>
+           </nav>
+           
+            <section class="news">
+              
+              <div class="news__gallery">
+  
+                @@include('tpls/cards/news.html',{img: "9.jpg", descr: "Video: Lamborghini Urus Performante puts on its rally pants", className: "news-card--wide"})
+                @@include('tpls/cards/news.html',{img: "5.jpg", descr: "Jaguar Land Rover becomes profitable again after a few bad years"})
+                @@include('tpls/cards/news.html',{img: "6.jpg", descr: "Toyota GR 86 gets a complete visual makeover courtesy of ADRO"})
+                @@include('tpls/cards/news.html',{img: "1.jpg", descr: "Study finds the best autopilot solution, spoiler alert: it’s not Tesla FSD"})
+                @@include('tpls/cards/news.html',{img: "2.jpg", descr: "Video: Lamborghini Urus Performante puts on its rally pants"})
+                @@include('tpls/cards/news.html',{img: "3.jpg", descr: "$155k buys you a tuned Cadillac Escalade or a stock Escalade-V"})
+                @@include('tpls/cards/news.html',{img: "4.jpg", descr: "Rare carbon-bodied Porsche traded for €0.9M+ right now"})
+  
+  
+                
+              </div>
+            </section>
+
+            <section class="offers">
+             <div class="swiper offers-carousel">
+              <div class="swiper-wrapper">
+
+               <div class="swiper-slide offers-carousel__slide">
+                <picture class="offers-carousel__pic">
+                 <img class="offers-carousel__img" src="img/offers/offers-1.jpg" alt="">
+                </picture>
+               </div>
+
+               <div class="swiper-slide offers-carousel__slide">
+                <picture class="offers-carousel__pic">
+                 <img class="offers-carousel__img" src="img/offers/offers-1.jpg" alt="">
+                </picture>
+               </div>
+
+               <div class="swiper-slide offers-carousel__slide">
+                <picture class="offers-carousel__pic">
+                 <img class="offers-carousel__img" src="img/offers/offers-1.jpg" alt="">
+                </picture>
+               </div>
+
+               <div class="swiper-slide offers-carousel__slide">
+                <picture class="offers-carousel__pic">
+                 <img class="offers-carousel__img" src="img/offers/offers-1.jpg" alt="">
+                </picture>
+               </div>
+
+               <div class="swiper-slide offers-carousel__slide">
+                <picture class="offers-carousel__pic">
+                 <img class="offers-carousel__img" src="img/offers/offers-1.jpg" alt="">
+                </picture>
+               </div>
+
+              </div>
+             </div>
+             <div class="swiper-pagination offers-carousel__pagination">
+
+             </div>
+            </section>
+
+            <section class="news">
+              
+             <div class="news__gallery">
+ 
+               @@include('tpls/cards/news.html',{img: "10.jpg", descr: "Video: This dealership replica looks indistinguishable from the real thing",})
+               @@include('tpls/cards/news.html',{img: "7.jpg", descr: "Stellantis sells 48 long-discontinued cars in the U.S. in 2022"})
+               @@include('tpls/cards/news.html',{img: "11.jpg", descr: "Mercedes-Benz rally car underway to auction in France"})
+               @@include('tpls/cards/news.html',{img: "12.jpg", descr: "Honda Civic Hybrid coming to the USA in sedan and hatchback flavors"})
+               @@include('tpls/cards/news.html',{img: "8.jpg", descr: "Japan gets a semicentennial edition of the BMW 5 Series"})
+               @@include('tpls/cards/news.html',{img: "13.jpg", descr: "Chery reveals its latest SUV during a private conference"})
+               @@include('tpls/cards/news.html',{img: "14.jpg", descr: "Rare Mercedes-Benz SL tuned by AMG heading to auction in Florida", className: "news-card--wide"})
+ 
+ 
+               
+             </div>
+           </section>
+           
+           <div class="container">
+             <button class="button button--primary button--light news__button-load">Загрузить ещё</button>
+           </div>
+    
+          </div>
+
+          
+
+        </div>
+        
+      </main>
+
+
+      @@include('tpls/footer.html',{})
+    </div>
+
+    @@include('tpls/modals.html', {})
+    <script src="./js/bundle.min.js"></script>
+  </body>
+</html>
