@@ -8,9 +8,9 @@ import "./unstable/formich.js";
 import "./unstable/burger.js";
 
 /**
- * Poppa
+ * b_modal
  */
-import "./poppa.js";
+import "./b_modal.js";
 
 /**
  * Timer
