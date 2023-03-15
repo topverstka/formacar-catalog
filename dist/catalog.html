@@ -1,0 +1,2217 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css?_v=20230315123907" />
+
+    <!-- Отключить автодетект телефонов -->
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- Отключить кэширование. Нужен только при разработке, чтобы все было свежим -->
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="max-age=3600, must-revalidate" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+  <div class="container header__container">
+    <div class="header__menu">
+      <a href="#" class="header__logo logo">
+        <img src="./img/common/logo.svg" alt="" class="logo__img" />
+      </a>
+      <form class="header__search search__form">
+        <button class="search__button" type="submit">
+          <svg class="search__button-icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12.4671 14.2732C11.8111 13.6172 12.9491 12.6383 13.591 13.2802L16.8841 16.5733C17.177 16.8662 17.177 17.3411 16.8841 17.634C16.5912 17.9269 16.1163 17.9269 15.8234 17.634L12.4671 14.2732Z" fill="#B4B4BF"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.875 14.25C11.3958 14.25 14.25 11.3958 14.25 7.875C14.25 4.35418 11.3958 1.5 7.875 1.5C4.35418 1.5 1.5 4.35418 1.5 7.875C1.5 11.3958 4.35418 14.25 7.875 14.25ZM7.875 15.75C12.2242 15.75 15.75 12.2242 15.75 7.875C15.75 3.52576 12.2242 0 7.875 0C3.52576 0 0 3.52576 0 7.875C0 12.2242 3.52576 15.75 7.875 15.75Z" fill="#B4B4BF"/>
+          </svg>
+        </button>
+        <input type="search" name="search" placeholder="Что найти?" class="search__input header-search__input" id="header-search__input">
+      </form>
+      <nav class="nav header__nav">
+        <ul class="header__nav-links">
+      
+          <li class="header__nav-item">
+            <a href="" class="header__nav-link">3D-Конфигуратор</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="" class="header__nav-link">Каталог Тюнинга</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="" class="header__nav-link">Новости</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="" class="header__nav-link">События</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="header__buttons">
+      <button class="header__geo" data-snack="lang" type="button">
+        <img class="header__geo-icon" src="./img/common/flag-ru.svg" alt="">
+        <span class="header__picker-text">RU</span>
+      </button>
+      <button class="button button--primary button--dark">
+        объявления
+      </button>
+    </div>
+
+  </div>
+</header>
+
+
+
+      <main class="main">
+        
+       <div class="page-heading page__container">
+
+        <div class="breadcrumbs">
+         <ul class="breadcrumbs__list">
+           <li class="breadcrumbs__item">
+            <a href="#" class="breadcrumbs__link">Главная</a>
+           </li>
+           <li class="breadcrumbs__item">Каталог тюнинга</li>
+         </ul>
+        </div>
+        <h2 class="section-title page__title">Каталог тюнинга</h2>
+
+        <section class="tuning">
+          <div class="tuning__gallery">
+  
+  
+           <a href="#" class="tuning-card tuning-card--tall">
+            <picture class="tuning-card__pic">
+             <img src="img/tuning/1.jpg" alt="" class="tuning-card__img">
+            </picture>
+            <p class="tuning-card__name">Диски</p>
+           </a>
+           <a href="#" class="tuning-card">
+            <picture class="tuning-card__pic">
+             <img src="img/tuning/2.jpg" alt="" class="tuning-card__img">
+            </picture>
+            <p class="tuning-card__name">Аэродинамика</p>
+           </a>
+           <a href="#" class="tuning-card">
+            <picture class="tuning-card__pic">
+             <img src="img/tuning/3.jpg" alt="" class="tuning-card__img">
+            </picture>
+            <p class="tuning-card__name">Выхлопные системы</p>
+           </a>
+           <a href="#" class="tuning-card">
+            <picture class="tuning-card__pic">
+             <img src="img/tuning/4.jpg" alt="" class="tuning-card__img">
+            </picture>
+            <p class="tuning-card__name">подвеска</p>
+           </a>
+           <a href="#" class="tuning-card">
+            <picture class="tuning-card__pic">
+             <img src="img/tuning/5.jpg" alt="" class="tuning-card__img">
+            </picture>
+            <p class="tuning-card__name">Тормозные системы</p>
+           </a>
+           <a href="#" class="tuning-card">
+            <picture class="tuning-card__pic">
+             <img src="img/tuning/6.jpg" alt="" class="tuning-card__img">
+            </picture>
+            <p class="tuning-card__name">тюнинг двигателя</p>
+           </a>
+           <a href="#" class="tuning-card">
+            <picture class="tuning-card__pic">
+             <img src="img/tuning/7.jpg" alt="" class="tuning-card__img">
+            </picture>
+            <p class="tuning-card__name">аксессуары</p>
+           </a>
+           <a href="#" class="tuning-card">
+            <picture class="tuning-card__pic">
+             <img src="img/tuning/8.jpg" alt="" class="tuning-card__img">
+            </picture>
+            <p class="tuning-card__name">интерьер</p>
+           </a>
+           <a href="#" class="tuning-card">
+            <picture class="tuning-card__pic">
+             <img src="img/tuning/9.jpg" alt="" class="tuning-card__img">
+            </picture>
+            <p class="tuning-card__name">винил</p>
+           </a>
+  
+          </div>
+         </section>
+  
+         <section class="brands">
+            <p class="section-desc">Лучшие бренды</p>
+            <div class="brands__gallery">
+              <article class="brands-card">
+                <picture class="bradns-card__pic">
+                  <img class="brands-card__img" src="img/brands/1.jpg"></img>
+                </picture>
+              </article>
+              <article class="brands-card">
+                <picture class="bradns-card__pic">
+                  <img class="brands-card__img" src="img/brands/2.jpg"></img>
+                </picture>
+              </article>
+              <article class="brands-card">
+                <picture class="bradns-card__pic">
+                  <img class="brands-card__img" src="img/brands/3.jpg"></img>
+                </picture>
+              </article>
+              <article class="brands-card">
+                <picture class="bradns-card__pic">
+                  <img class="brands-card__img" src="img/brands/4.jpg"></img>
+                </picture>
+              </article>
+              <article class="brands-card">
+                <picture class="bradns-card__pic">
+                  <img class="brands-card__img" src="img/brands/5.jpg"></img>
+                </picture>
+              </article>
+              <article class="brands-card">
+                <picture class="bradns-card__pic">
+                  <img class="brands-card__img" src="img/brands/6.jpg"></img>
+                </picture>
+              </article>
+              <article class="brands-card">
+                <picture class="bradns-card__pic">
+                  <img class="brands-card__img" src="img/brands/7.jpg"></img>
+                </picture>
+              </article>
+              <article class="brands-card">
+                <picture class="bradns-card__pic">
+                  <img class="brands-card__img" src="img/brands/8.jpg"></img>
+                </picture>
+              </article>
+              <article class="brands-card">
+                <picture class="bradns-card__pic">
+                  <img class="brands-card__img" src="img/brands/9.jpg"></img>
+                </picture>
+              </article>
+              <article class="brands-card">
+                <picture class="bradns-card__pic">
+                  <img class="brands-card__img" src="img/brands/10.jpg"></img>
+                </picture>
+              </article>
+              <article class="brands-card">
+                <picture class="bradns-card__pic">
+                  <img class="brands-card__img" src="img/brands/11.jpg"></img>
+                </picture>
+              </article>
+              <article class="brands-card">
+                <picture class="bradns-card__pic">
+                  <img class="brands-card__img" src="img/brands/12.jpg"></img>
+                </picture>
+              </article>
+            </div>
+         </section>
+  
+         <section class="catalog">
+          <h2 class="section-desc catalog__title">Индустрия дисков</h2>
+          <div class="catalog-slide">
+            <div class="catalog__gallery catalog__gallery_slide" id="catalog__gallery_slide">
+
+              <article class="catalog-card">
+
+ <div class="catalog-card__top">
+  <picture class="catalog-card__pic">
+   <img class="catalog-card__img lazy" src="./placeholder.png" data-src="./img/wheels/wheels-1.jpg">
+  </picture>
+  <div class="catalog-card__model">
+   <img src="./img/common/3d.svg" alt="">
+   <span>3D</span>
+  </div>
+ </div>
+ <div class="catalog-card__info">
+  <p class="catalog-card__category">AIRTEKK</p>
+  <h3 class="catalog-card__name">TANKEN</h3>
+  <ul class="catalog-card__list">
+   <li>
+    <p>Диаметр</p>
+    <p>18 - 22</p>
+   </li>
+   <li>
+    <p>Технология</p>
+    <p>Monoblock </p>
+   </li>
+  </ul>
+  <div class="catalog-card__bottom">
+   <div class="promo-carousel__comments">
+     <img src="img/common/comments.svg" alt="">
+     <span>152</span>
+   </div>
+   <div class="catalog-card__bookmark">
+    <img src="img/common/bookmark.svg" alt=""> 
+   </div>
+  </div>
+ </div>
+ 
+</article>
+              <article class="catalog-card">
+
+ <div class="catalog-card__top">
+  <picture class="catalog-card__pic">
+   <img class="catalog-card__img lazy" src="./placeholder.png" data-src="./img/wheels/wheels-2.jpg">
+  </picture>
+  <div class="catalog-card__model">
+   <img src="./img/common/3d.svg" alt="">
+   <span>3D</span>
+  </div>
+ </div>
+ <div class="catalog-card__info">
+  <p class="catalog-card__category">CORSE WERKS</p>
+  <h3 class="catalog-card__name">Toro</h3>
+  <ul class="catalog-card__list">
+   <li>
+    <p>Диаметр</p>
+    <p>18 - 22</p>
+   </li>
+   <li>
+    <p>Технология</p>
+    <p>Monoblock </p>
+   </li>
+  </ul>
+  <div class="catalog-card__bottom">
+   <div class="promo-carousel__comments">
+     <img src="img/common/comments.svg" alt="">
+     <span>152</span>
+   </div>
+   <div class="catalog-card__bookmark">
+    <img src="img/common/bookmark.svg" alt=""> 
+   </div>
+  </div>
+ </div>
+ 
+</article>
+              <article class="catalog-card">
+
+ <div class="catalog-card__top">
+  <picture class="catalog-card__pic">
+   <img class="catalog-card__img lazy" src="./placeholder.png" data-src="./img/wheels/wheels-3.jpg">
+  </picture>
+  <div class="catalog-card__model">
+   <img src="./img/common/3d.svg" alt="">
+   <span>3D</span>
+  </div>
+ </div>
+ <div class="catalog-card__info">
+  <p class="catalog-card__category">YIDO PERFORMANCE</p>
+  <h3 class="catalog-card__name">YP SERIES YP3</h3>
+  <ul class="catalog-card__list">
+   <li>
+    <p>Диаметр</p>
+    <p>18 - 22</p>
+   </li>
+   <li>
+    <p>Технология</p>
+    <p>Monoblock </p>
+   </li>
+  </ul>
+  <div class="catalog-card__bottom">
+   <div class="promo-carousel__comments">
+     <img src="img/common/comments.svg" alt="">
+     <span>152</span>
+   </div>
+   <div class="catalog-card__bookmark">
+    <img src="img/common/bookmark.svg" alt=""> 
+   </div>
+  </div>
+ </div>
+ 
+</article>
+              <article class="catalog-card">
+
+ <div class="catalog-card__top">
+  <picture class="catalog-card__pic">
+   <img class="catalog-card__img lazy" src="./placeholder.png" data-src="./img/wheels/wheels-4.jpg">
+  </picture>
+  <div class="catalog-card__model">
+   <img src="./img/common/3d.svg" alt="">
+   <span>3D</span>
+  </div>
+ </div>
+ <div class="catalog-card__info">
+  <p class="catalog-card__category">3SDM</p>
+  <h3 class="catalog-card__name">CT216</h3>
+  <ul class="catalog-card__list">
+   <li>
+    <p>Диаметр</p>
+    <p>18 - 22</p>
+   </li>
+   <li>
+    <p>Технология</p>
+    <p>Monoblock </p>
+   </li>
+  </ul>
+  <div class="catalog-card__bottom">
+   <div class="promo-carousel__comments">
+     <img src="img/common/comments.svg" alt="">
+     <span>152</span>
+   </div>
+   <div class="catalog-card__bookmark">
+    <img src="img/common/bookmark.svg" alt=""> 
+   </div>
+  </div>
+ </div>
+ 
+</article>
+              <article class="catalog-card">
+
+ <div class="catalog-card__top">
+  <picture class="catalog-card__pic">
+   <img class="catalog-card__img lazy" src="./placeholder.png" data-src="./img/wheels/wheels-2.jpg">
+  </picture>
+  <div class="catalog-card__model">
+   <img src="./img/common/3d.svg" alt="">
+   <span>3D</span>
+  </div>
+ </div>
+ <div class="catalog-card__info">
+  <p class="catalog-card__category">CORSE WERKS</p>
+  <h3 class="catalog-card__name">Toro</h3>
+  <ul class="catalog-card__list">
+   <li>
+    <p>Диаметр</p>
+    <p>18 - 22</p>
+   </li>
+   <li>
+    <p>Технология</p>
+    <p>Monoblock </p>
+   </li>
+  </ul>
+  <div class="catalog-card__bottom">
+   <div class="promo-carousel__comments">
+     <img src="img/common/comments.svg" alt="">
+     <span>152</span>
+   </div>
+   <div class="catalog-card__bookmark">
+    <img src="img/common/bookmark.svg" alt=""> 
+   </div>
+  </div>
+ </div>
+ 
+</article>
+              <article class="catalog-card">
+
+ <div class="catalog-card__top">
+  <picture class="catalog-card__pic">
+   <img class="catalog-card__img lazy" src="./placeholder.png" data-src="./img/wheels/wheels-1.jpg">
+  </picture>
+  <div class="catalog-card__model">
+   <img src="./img/common/3d.svg" alt="">
+   <span>3D</span>
+  </div>
+ </div>
+ <div class="catalog-card__info">
+  <p class="catalog-card__category">AIRTEKK</p>
+  <h3 class="catalog-card__name">TANKEN</h3>
+  <ul class="catalog-card__list">
+   <li>
+    <p>Диаметр</p>
+    <p>18 - 22</p>
+   </li>
+   <li>
+    <p>Технология</p>
+    <p>Monoblock </p>
+   </li>
+  </ul>
+  <div class="catalog-card__bottom">
+   <div class="promo-carousel__comments">
+     <img src="img/common/comments.svg" alt="">
+     <span>152</span>
+   </div>
+   <div class="catalog-card__bookmark">
+    <img src="img/common/bookmark.svg" alt=""> 
+   </div>
+  </div>
+ </div>
+ 
+</article>
+              <article class="catalog-card">
+
+ <div class="catalog-card__top">
+  <picture class="catalog-card__pic">
+   <img class="catalog-card__img lazy" src="./placeholder.png" data-src="./img/wheels/wheels-2.jpg">
+  </picture>
+  <div class="catalog-card__model">
+   <img src="./img/common/3d.svg" alt="">
+   <span>3D</span>
+  </div>
+ </div>
+ <div class="catalog-card__info">
+  <p class="catalog-card__category">CORSE WERKS</p>
+  <h3 class="catalog-card__name">Toro</h3>
+  <ul class="catalog-card__list">
+   <li>
+    <p>Диаметр</p>
+    <p>18 - 22</p>
+   </li>
+   <li>
+    <p>Технология</p>
+    <p>Monoblock </p>
+   </li>
+  </ul>
+  <div class="catalog-card__bottom">
+   <div class="promo-carousel__comments">
+     <img src="img/common/comments.svg" alt="">
+     <span>152</span>
+   </div>
+   <div class="catalog-card__bookmark">
+    <img src="img/common/bookmark.svg" alt=""> 
+   </div>
+  </div>
+ </div>
+ 
+</article>
+              <article class="catalog-card">
+
+ <div class="catalog-card__top">
+  <picture class="catalog-card__pic">
+   <img class="catalog-card__img lazy" src="./placeholder.png" data-src="./img/wheels/wheels-3.jpg">
+  </picture>
+  <div class="catalog-card__model">
+   <img src="./img/common/3d.svg" alt="">
+   <span>3D</span>
+  </div>
+ </div>
+ <div class="catalog-card__info">
+  <p class="catalog-card__category">YIDO PERFORMANCE</p>
+  <h3 class="catalog-card__name">YP SERIES YP3</h3>
+  <ul class="catalog-card__list">
+   <li>
+    <p>Диаметр</p>
+    <p>18 - 22</p>
+   </li>
+   <li>
+    <p>Технология</p>
+    <p>Monoblock </p>
+   </li>
+  </ul>
+  <div class="catalog-card__bottom">
+   <div class="promo-carousel__comments">
+     <img src="img/common/comments.svg" alt="">
+     <span>152</span>
+   </div>
+   <div class="catalog-card__bookmark">
+    <img src="img/common/bookmark.svg" alt=""> 
+   </div>
+  </div>
+ </div>
+ 
+</article>
+            
+            </div>
+          </div>
+
+          <h2 class="section-desc catalog__title">Индустрия дисков</h2>
+          <div class="catalog-slide">
+            <div class="catalog__gallery catalog__gallery_slide" id="catalog__gallery_slide">
+
+              <article class="catalog-card catalog-card__no-list">
+
+ <div class="catalog-card__top">
+  <picture class="catalog-card__pic">
+   <img class="catalog-card__img lazy" src="./placeholder.png" data-src="./img/aerodynamics/aerodynamics-1.jpg">
+  </picture>
+  <div class="catalog-card__model">
+   <img src="./img/common/3d.svg" alt="">
+   <span>3D</span>
+  </div>
+ </div>
+ <div class="catalog-card__info">
+  <p class="catalog-card__category">Formacar SCL</p>
+  <h3 class="catalog-card__name">PORSCHE 911 TURBO S VENOM</h3>
+  <div class="catalog-card__bottom">
+   <div class="promo-carousel__comments">
+     <img src="img/common/comments.svg" alt="">
+     <span>152</span>
+   </div>
+   <div class="catalog-card__bookmark">
+    <img src="img/common/bookmark.svg" alt=""> 
+   </div>
+  </div>
+ </div>
+ 
+</article>
+              <article class="catalog-card catalog-card__no-list">
+
+ <div class="catalog-card__top">
+  <picture class="catalog-card__pic">
+   <img class="catalog-card__img lazy" src="./placeholder.png" data-src="./img/aerodynamics/aerodynamics-2.jpg">
+  </picture>
+  <div class="catalog-card__model">
+   <img src="./img/common/3d.svg" alt="">
+   <span>3D</span>
+  </div>
+ </div>
+ <div class="catalog-card__info">
+  <p class="catalog-card__category">Formacar SCL</p>
+  <h3 class="catalog-card__name">NISSAN GT-R GOJIRA 2019</h3>
+  <div class="catalog-card__bottom">
+   <div class="promo-carousel__comments">
+     <img src="img/common/comments.svg" alt="">
+     <span>152</span>
+   </div>
+   <div class="catalog-card__bookmark">
+    <img src="img/common/bookmark.svg" alt=""> 
+   </div>
+  </div>
+ </div>
+ 
+</article>
+              <article class="catalog-card catalog-card__no-list">
+
+ <div class="catalog-card__top">
+  <picture class="catalog-card__pic">
+   <img class="catalog-card__img lazy" src="./placeholder.png" data-src="./img/aerodynamics/aerodynamics-3.jpg">
+  </picture>
+  <div class="catalog-card__model">
+   <img src="./img/common/3d.svg" alt="">
+   <span>3D</span>
+  </div>
+ </div>
+ <div class="catalog-card__info">
+  <p class="catalog-card__category">Formacar SCL</p>
+  <h3 class="catalog-card__name">LAMBORGHINI URUS</h3>
+  <div class="catalog-card__bottom">
+   <div class="promo-carousel__comments">
+     <img src="img/common/comments.svg" alt="">
+     <span>152</span>
+   </div>
+   <div class="catalog-card__bookmark">
+    <img src="img/common/bookmark.svg" alt=""> 
+   </div>
+  </div>
+ </div>
+ 
+</article>
+              <article class="catalog-card catalog-card__no-list">
+
+ <div class="catalog-card__top">
+  <picture class="catalog-card__pic">
+   <img class="catalog-card__img lazy" src="./placeholder.png" data-src="./img/aerodynamics/aerodynamics-4.jpg">
+  </picture>
+  <div class="catalog-card__model">
+   <img src="./img/common/3d.svg" alt="">
+   <span>3D</span>
+  </div>
+ </div>
+ <div class="catalog-card__info">
+  <p class="catalog-card__category">Formacar SCL</p>
+  <h3 class="catalog-card__name">MERCEDES BENZ E 200 SPORT</h3>
+  <div class="catalog-card__bottom">
+   <div class="promo-carousel__comments">
+     <img src="img/common/comments.svg" alt="">
+     <span>152</span>
+   </div>
+   <div class="catalog-card__bookmark">
+    <img src="img/common/bookmark.svg" alt=""> 
+   </div>
+  </div>
+ </div>
+ 
+</article>
+              <article class="catalog-card catalog-card__no-list">
+
+ <div class="catalog-card__top">
+  <picture class="catalog-card__pic">
+   <img class="catalog-card__img lazy" src="./placeholder.png" data-src="./img/aerodynamics/aerodynamics-1.jpg">
+  </picture>
+  <div class="catalog-card__model">
+   <img src="./img/common/3d.svg" alt="">
+   <span>3D</span>
+  </div>
+ </div>
+ <div class="catalog-card__info">
+  <p class="catalog-card__category">Formacar SCL</p>
+  <h3 class="catalog-card__name">PORSCHE 911 TURBO S VENOM</h3>
+  <div class="catalog-card__bottom">
+   <div class="promo-carousel__comments">
+     <img src="img/common/comments.svg" alt="">
+     <span>152</span>
+   </div>
+   <div class="catalog-card__bookmark">
+    <img src="img/common/bookmark.svg" alt=""> 
+   </div>
+  </div>
+ </div>
+ 
+</article>
+              <article class="catalog-card catalog-card__no-list">
+
+ <div class="catalog-card__top">
+  <picture class="catalog-card__pic">
+   <img class="catalog-card__img lazy" src="./placeholder.png" data-src="./img/aerodynamics/aerodynamics-2.jpg">
+  </picture>
+  <div class="catalog-card__model">
+   <img src="./img/common/3d.svg" alt="">
+   <span>3D</span>
+  </div>
+ </div>
+ <div class="catalog-card__info">
+  <p class="catalog-card__category">Formacar SCL</p>
+  <h3 class="catalog-card__name">NISSAN GT-R GOJIRA 2019</h3>
+  <div class="catalog-card__bottom">
+   <div class="promo-carousel__comments">
+     <img src="img/common/comments.svg" alt="">
+     <span>152</span>
+   </div>
+   <div class="catalog-card__bookmark">
+    <img src="img/common/bookmark.svg" alt=""> 
+   </div>
+  </div>
+ </div>
+ 
+</article>
+              <article class="catalog-card catalog-card__no-list">
+
+ <div class="catalog-card__top">
+  <picture class="catalog-card__pic">
+   <img class="catalog-card__img lazy" src="./placeholder.png" data-src="./img/aerodynamics/aerodynamics-3.jpg">
+  </picture>
+  <div class="catalog-card__model">
+   <img src="./img/common/3d.svg" alt="">
+   <span>3D</span>
+  </div>
+ </div>
+ <div class="catalog-card__info">
+  <p class="catalog-card__category">Formacar SCL</p>
+  <h3 class="catalog-card__name">LAMBORGHINI URUS</h3>
+  <div class="catalog-card__bottom">
+   <div class="promo-carousel__comments">
+     <img src="img/common/comments.svg" alt="">
+     <span>152</span>
+   </div>
+   <div class="catalog-card__bookmark">
+    <img src="img/common/bookmark.svg" alt=""> 
+   </div>
+  </div>
+ </div>
+ 
+</article>
+              <article class="catalog-card catalog-card__no-list">
+
+ <div class="catalog-card__top">
+  <picture class="catalog-card__pic">
+   <img class="catalog-card__img lazy" src="./placeholder.png" data-src="./img/aerodynamics/aerodynamics-4.jpg">
+  </picture>
+  <div class="catalog-card__model">
+   <img src="./img/common/3d.svg" alt="">
+   <span>3D</span>
+  </div>
+ </div>
+ <div class="catalog-card__info">
+  <p class="catalog-card__category">Formacar SCL</p>
+  <h3 class="catalog-card__name">MERCEDES BENZ E 200 SPORT</h3>
+  <div class="catalog-card__bottom">
+   <div class="promo-carousel__comments">
+     <img src="img/common/comments.svg" alt="">
+     <span>152</span>
+   </div>
+   <div class="catalog-card__bookmark">
+    <img src="img/common/bookmark.svg" alt=""> 
+   </div>
+  </div>
+ </div>
+ 
+</article>
+            
+            </div>
+          </div>
+         </section>
+
+         <section class="advertisement">
+          <div class="swiper advertisement-carousel">
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide advertisement-carousel__slide">
+                <picture class="advertisement-carousel__pic">
+                  <img src="img/advertisement/ads-3.jpg" alt="" class="advertisement-carousel__img">
+                </picture>
+              </div>
+
+              <div class="swiper-slide advertisement-carousel__slide">
+                <picture class="advertisement-carousel__pic">
+                  <img src="img/advertisement/ads-1.jpg" alt="" class="advertisement-carousel__img">
+                </picture>
+              </div>
+
+              <div class="swiper-slide advertisement-carousel__slide">
+                <picture class="advertisement-carousel__pic">
+                  <img src="img/advertisement/ads-2.jpg" alt="" class="advertisement-carousel__img">
+                </picture>
+              </div>
+
+            </div>
+          </div>
+         </section>
+
+         <section class="catalog">
+          <h2 class="section-desc catalog__title">Выхлопные системы</h2>
+          <div class="catalog-slide">
+            <div class="catalog__gallery catalog__gallery_slide" id="catalog__gallery_slide">
+
+              <article class="catalog-card catalog-card__no-list">
+
+ <div class="catalog-card__top">
+  <picture class="catalog-card__pic">
+   <img class="catalog-card__img lazy" src="./placeholder.png" data-src="./img/exhaust-systems/1.jpg">
+  </picture>
+  <div class="catalog-card__model">
+   <img src="./img/common/3d.svg" alt="">
+   <span>3D</span>
+  </div>
+ </div>
+ <div class="catalog-card__info">
+  <p class="catalog-card__category">Formacar SCL</p>
+  <h3 class="catalog-card__name">PORSCHE 911 TURBO S VENOM</h3>
+  <div class="catalog-card__bottom">
+   <div class="promo-carousel__comments">
+     <img src="img/common/comments.svg" alt="">
+     <span>152</span>
+   </div>
+   <div class="catalog-card__bookmark">
+    <img src="img/common/bookmark.svg" alt=""> 
+   </div>
+  </div>
+ </div>
+ 
+</article>
+              <article class="catalog-card catalog-card__no-list">
+
+ <div class="catalog-card__top">
+  <picture class="catalog-card__pic">
+   <img class="catalog-card__img lazy" src="./placeholder.png" data-src="./img/exhaust-systems/2.jpg">
+  </picture>
+  <div class="catalog-card__model">
+   <img src="./img/common/3d.svg" alt="">
+   <span>3D</span>
+  </div>
+ </div>
+ <div class="catalog-card__info">
+  <p class="catalog-card__category">Formacar SCL</p>
+  <h3 class="catalog-card__name">NISSAN GT-R GOJIRA 2019</h3>
+  <div class="catalog-card__bottom">
+   <div class="promo-carousel__comments">
+     <img src="img/common/comments.svg" alt="">
+     <span>152</span>
+   </div>
+   <div class="catalog-card__bookmark">
+    <img src="img/common/bookmark.svg" alt=""> 
+   </div>
+  </div>
+ </div>
+ 
+</article>
+              <article class="catalog-card catalog-card__no-list">
+
+ <div class="catalog-card__top">
+  <picture class="catalog-card__pic">
+   <img class="catalog-card__img lazy" src="./placeholder.png" data-src="./img/exhaust-systems/3.jpg">
+  </picture>
+  <div class="catalog-card__model">
+   <img src="./img/common/3d.svg" alt="">
+   <span>3D</span>
+  </div>
+ </div>
+ <div class="catalog-card__info">
+  <p class="catalog-card__category">Formacar SCL</p>
+  <h3 class="catalog-card__name">LAMBORGHINI URUS</h3>
+  <div class="catalog-card__bottom">
+   <div class="promo-carousel__comments">
+     <img src="img/common/comments.svg" alt="">
+     <span>152</span>
+   </div>
+   <div class="catalog-card__bookmark">
+    <img src="img/common/bookmark.svg" alt=""> 
+   </div>
+  </div>
+ </div>
+ 
+</article>
+              <article class="catalog-card catalog-card__no-list">
+
+ <div class="catalog-card__top">
+  <picture class="catalog-card__pic">
+   <img class="catalog-card__img lazy" src="./placeholder.png" data-src="./img/exhaust-systems/4.jpg">
+  </picture>
+  <div class="catalog-card__model">
+   <img src="./img/common/3d.svg" alt="">
+   <span>3D</span>
+  </div>
+ </div>
+ <div class="catalog-card__info">
+  <p class="catalog-card__category">Formacar SCL</p>
+  <h3 class="catalog-card__name">MERCEDES BENZ E 200 SPORT</h3>
+  <div class="catalog-card__bottom">
+   <div class="promo-carousel__comments">
+     <img src="img/common/comments.svg" alt="">
+     <span>152</span>
+   </div>
+   <div class="catalog-card__bookmark">
+    <img src="img/common/bookmark.svg" alt=""> 
+   </div>
+  </div>
+ </div>
+ 
+</article>
+              <article class="catalog-card catalog-card__no-list">
+
+ <div class="catalog-card__top">
+  <picture class="catalog-card__pic">
+   <img class="catalog-card__img lazy" src="./placeholder.png" data-src="./img/exhaust-systems/5.jpg">
+  </picture>
+  <div class="catalog-card__model">
+   <img src="./img/common/3d.svg" alt="">
+   <span>3D</span>
+  </div>
+ </div>
+ <div class="catalog-card__info">
+  <p class="catalog-card__category">Formacar SCL</p>
+  <h3 class="catalog-card__name">PORSCHE 911 TURBO S VENOM</h3>
+  <div class="catalog-card__bottom">
+   <div class="promo-carousel__comments">
+     <img src="img/common/comments.svg" alt="">
+     <span>152</span>
+   </div>
+   <div class="catalog-card__bookmark">
+    <img src="img/common/bookmark.svg" alt=""> 
+   </div>
+  </div>
+ </div>
+ 
+</article>
+              <article class="catalog-card catalog-card__no-list">
+
+ <div class="catalog-card__top">
+  <picture class="catalog-card__pic">
+   <img class="catalog-card__img lazy" src="./placeholder.png" data-src="./img/exhaust-systems/6.jpg">
+  </picture>
+  <div class="catalog-card__model">
+   <img src="./img/common/3d.svg" alt="">
+   <span>3D</span>
+  </div>
+ </div>
+ <div class="catalog-card__info">
+  <p class="catalog-card__category">Formacar SCL</p>
+  <h3 class="catalog-card__name">NISSAN GT-R GOJIRA 2019</h3>
+  <div class="catalog-card__bottom">
+   <div class="promo-carousel__comments">
+     <img src="img/common/comments.svg" alt="">
+     <span>152</span>
+   </div>
+   <div class="catalog-card__bookmark">
+    <img src="img/common/bookmark.svg" alt=""> 
+   </div>
+  </div>
+ </div>
+ 
+</article>
+            
+            </div>
+          </div>
+
+          <h2 class="section-desc catalog__title">Подвеска</h2>
+          <div class="catalog-slide">
+            <div class="catalog__gallery catalog__gallery_slide" id="catalog__gallery_slide">
+
+              <article class="catalog-card catalog-card__no-list">
+
+ <div class="catalog-card__top">
+  <picture class="catalog-card__pic">
+   <img class="catalog-card__img lazy" src="./placeholder.png" data-src="./img/suspension/1.jpg">
+  </picture>
+  <div class="catalog-card__model">
+   <img src="./img/common/3d.svg" alt="">
+   <span>3D</span>
+  </div>
+ </div>
+ <div class="catalog-card__info">
+  <p class="catalog-card__category">H&R</p>
+  <h3 class="catalog-card__name">STREET PERFORMANCE</h3>
+  <div class="catalog-card__bottom">
+   <div class="promo-carousel__comments">
+     <img src="img/common/comments.svg" alt="">
+     <span>152</span>
+   </div>
+   <div class="catalog-card__bookmark">
+    <img src="img/common/bookmark.svg" alt=""> 
+   </div>
+  </div>
+ </div>
+ 
+</article>
+              <article class="catalog-card catalog-card__no-list">
+
+ <div class="catalog-card__top">
+  <picture class="catalog-card__pic">
+   <img class="catalog-card__img lazy" src="./placeholder.png" data-src="./img/suspension/2.jpg">
+  </picture>
+  <div class="catalog-card__model">
+   <img src="./img/common/3d.svg" alt="">
+   <span>3D</span>
+  </div>
+ </div>
+ <div class="catalog-card__info">
+  <p class="catalog-card__category">KW SUSPENSIONS</p>
+  <h3 class="catalog-card__name">HEIHGT ADJUSTABLE SPRING KIT</h3>
+  <div class="catalog-card__bottom">
+   <div class="promo-carousel__comments">
+     <img src="img/common/comments.svg" alt="">
+     <span>152</span>
+   </div>
+   <div class="catalog-card__bookmark">
+    <img src="img/common/bookmark.svg" alt=""> 
+   </div>
+  </div>
+ </div>
+ 
+</article>
+              <article class="catalog-card catalog-card__no-list">
+
+ <div class="catalog-card__top">
+  <picture class="catalog-card__pic">
+   <img class="catalog-card__img lazy" src="./placeholder.png" data-src="./img/suspension/3.jpg">
+  </picture>
+  <div class="catalog-card__model">
+   <img src="./img/common/3d.svg" alt="">
+   <span>3D</span>
+  </div>
+ </div>
+ <div class="catalog-card__info">
+  <p class="catalog-card__category">DINAN ENGINEERING</p>
+  <h3 class="catalog-card__name">BMW F80 M3 F82 F83 M4 (EDC Only)</h3>
+  <div class="catalog-card__bottom">
+   <div class="promo-carousel__comments">
+     <img src="img/common/comments.svg" alt="">
+     <span>152</span>
+   </div>
+   <div class="catalog-card__bookmark">
+    <img src="img/common/bookmark.svg" alt=""> 
+   </div>
+  </div>
+ </div>
+ 
+</article>
+              <article class="catalog-card catalog-card__no-list">
+
+ <div class="catalog-card__top">
+  <picture class="catalog-card__pic">
+   <img class="catalog-card__img lazy" src="./placeholder.png" data-src="./img/suspension/4.jpg">
+  </picture>
+  <div class="catalog-card__model">
+   <img src="./img/common/3d.svg" alt="">
+   <span>3D</span>
+  </div>
+ </div>
+ <div class="catalog-card__info">
+  <p class="catalog-card__category">JRZ SUSPENSION</p>
+  <h3 class="catalog-card__name">11 SERIES</h3>
+  <div class="catalog-card__bottom">
+   <div class="promo-carousel__comments">
+     <img src="img/common/comments.svg" alt="">
+     <span>152</span>
+   </div>
+   <div class="catalog-card__bookmark">
+    <img src="img/common/bookmark.svg" alt=""> 
+   </div>
+  </div>
+ </div>
+ 
+</article>
+              <article class="catalog-card catalog-card__no-list">
+
+ <div class="catalog-card__top">
+  <picture class="catalog-card__pic">
+   <img class="catalog-card__img lazy" src="./placeholder.png" data-src="./img/suspension/1.jpg">
+  </picture>
+  <div class="catalog-card__model">
+   <img src="./img/common/3d.svg" alt="">
+   <span>3D</span>
+  </div>
+ </div>
+ <div class="catalog-card__info">
+  <p class="catalog-card__category">H&R</p>
+  <h3 class="catalog-card__name">STREET PERFORMANCE</h3>
+  <div class="catalog-card__bottom">
+   <div class="promo-carousel__comments">
+     <img src="img/common/comments.svg" alt="">
+     <span>152</span>
+   </div>
+   <div class="catalog-card__bookmark">
+    <img src="img/common/bookmark.svg" alt=""> 
+   </div>
+  </div>
+ </div>
+ 
+</article>
+              <article class="catalog-card catalog-card__no-list">
+
+ <div class="catalog-card__top">
+  <picture class="catalog-card__pic">
+   <img class="catalog-card__img lazy" src="./placeholder.png" data-src="./img/suspension/2.jpg">
+  </picture>
+  <div class="catalog-card__model">
+   <img src="./img/common/3d.svg" alt="">
+   <span>3D</span>
+  </div>
+ </div>
+ <div class="catalog-card__info">
+  <p class="catalog-card__category">KW SUSPENSIONS</p>
+  <h3 class="catalog-card__name">HEIHGT ADJUSTABLE SPRING KIT</h3>
+  <div class="catalog-card__bottom">
+   <div class="promo-carousel__comments">
+     <img src="img/common/comments.svg" alt="">
+     <span>152</span>
+   </div>
+   <div class="catalog-card__bookmark">
+    <img src="img/common/bookmark.svg" alt=""> 
+   </div>
+  </div>
+ </div>
+ 
+</article>
+              <article class="catalog-card catalog-card__no-list">
+
+ <div class="catalog-card__top">
+  <picture class="catalog-card__pic">
+   <img class="catalog-card__img lazy" src="./placeholder.png" data-src="./img/suspension/3.jpg">
+  </picture>
+  <div class="catalog-card__model">
+   <img src="./img/common/3d.svg" alt="">
+   <span>3D</span>
+  </div>
+ </div>
+ <div class="catalog-card__info">
+  <p class="catalog-card__category">DINAN ENGINEERING</p>
+  <h3 class="catalog-card__name">BMW F80 M3 F82 F83 M4 (EDC Only)</h3>
+  <div class="catalog-card__bottom">
+   <div class="promo-carousel__comments">
+     <img src="img/common/comments.svg" alt="">
+     <span>152</span>
+   </div>
+   <div class="catalog-card__bookmark">
+    <img src="img/common/bookmark.svg" alt=""> 
+   </div>
+  </div>
+ </div>
+ 
+</article>
+              <article class="catalog-card catalog-card__no-list">
+
+ <div class="catalog-card__top">
+  <picture class="catalog-card__pic">
+   <img class="catalog-card__img lazy" src="./placeholder.png" data-src="./img/suspension/4.jpg">
+  </picture>
+  <div class="catalog-card__model">
+   <img src="./img/common/3d.svg" alt="">
+   <span>3D</span>
+  </div>
+ </div>
+ <div class="catalog-card__info">
+  <p class="catalog-card__category">JRZ SUSPENSION</p>
+  <h3 class="catalog-card__name">11 SERIES</h3>
+  <div class="catalog-card__bottom">
+   <div class="promo-carousel__comments">
+     <img src="img/common/comments.svg" alt="">
+     <span>152</span>
+   </div>
+   <div class="catalog-card__bookmark">
+    <img src="img/common/bookmark.svg" alt=""> 
+   </div>
+  </div>
+ </div>
+ 
+</article>
+            
+            </div>
+          </div>
+
+          <h2 class="section-desc catalog__title">Тормозные системы</h2>
+          <div class="catalog-slide">
+            <div class="catalog__gallery catalog__gallery_slide" id="catalog__gallery_slide">
+
+              <article class="catalog-card catalog-card__no-list">
+
+ <div class="catalog-card__top">
+  <picture class="catalog-card__pic">
+   <img class="catalog-card__img lazy" src="./placeholder.png" data-src="./img/brake-systems/1.jpg">
+  </picture>
+  <div class="catalog-card__model">
+   <img src="./img/common/3d.svg" alt="">
+   <span>3D</span>
+  </div>
+ </div>
+ <div class="catalog-card__info">
+  <p class="catalog-card__category">H&R</p>
+  <h3 class="catalog-card__name">STREET PERFORMANCE</h3>
+  <div class="catalog-card__bottom">
+   <div class="promo-carousel__comments">
+     <img src="img/common/comments.svg" alt="">
+     <span>152</span>
+   </div>
+   <div class="catalog-card__bookmark">
+    <img src="img/common/bookmark.svg" alt=""> 
+   </div>
+  </div>
+ </div>
+ 
+</article>
+              <article class="catalog-card catalog-card__no-list">
+
+ <div class="catalog-card__top">
+  <picture class="catalog-card__pic">
+   <img class="catalog-card__img lazy" src="./placeholder.png" data-src="./img/brake-systems/2.jpg">
+  </picture>
+  <div class="catalog-card__model">
+   <img src="./img/common/3d.svg" alt="">
+   <span>3D</span>
+  </div>
+ </div>
+ <div class="catalog-card__info">
+  <p class="catalog-card__category">KW SUSPENSIONS</p>
+  <h3 class="catalog-card__name">HEIHGT ADJUSTABLE SPRING KIT</h3>
+  <div class="catalog-card__bottom">
+   <div class="promo-carousel__comments">
+     <img src="img/common/comments.svg" alt="">
+     <span>152</span>
+   </div>
+   <div class="catalog-card__bookmark">
+    <img src="img/common/bookmark.svg" alt=""> 
+   </div>
+  </div>
+ </div>
+ 
+</article>
+              <article class="catalog-card catalog-card__no-list">
+
+ <div class="catalog-card__top">
+  <picture class="catalog-card__pic">
+   <img class="catalog-card__img lazy" src="./placeholder.png" data-src="./img/brake-systems/3.jpg">
+  </picture>
+  <div class="catalog-card__model">
+   <img src="./img/common/3d.svg" alt="">
+   <span>3D</span>
+  </div>
+ </div>
+ <div class="catalog-card__info">
+  <p class="catalog-card__category">DINAN ENGINEERING</p>
+  <h3 class="catalog-card__name">BMW F80 M3 F82 F83 M4 (EDC Only)</h3>
+  <div class="catalog-card__bottom">
+   <div class="promo-carousel__comments">
+     <img src="img/common/comments.svg" alt="">
+     <span>152</span>
+   </div>
+   <div class="catalog-card__bookmark">
+    <img src="img/common/bookmark.svg" alt=""> 
+   </div>
+  </div>
+ </div>
+ 
+</article>
+              <article class="catalog-card catalog-card__no-list">
+
+ <div class="catalog-card__top">
+  <picture class="catalog-card__pic">
+   <img class="catalog-card__img lazy" src="./placeholder.png" data-src="./img/brake-systems/4.jpg">
+  </picture>
+  <div class="catalog-card__model">
+   <img src="./img/common/3d.svg" alt="">
+   <span>3D</span>
+  </div>
+ </div>
+ <div class="catalog-card__info">
+  <p class="catalog-card__category">JRZ SUSPENSION</p>
+  <h3 class="catalog-card__name">11 SERIES</h3>
+  <div class="catalog-card__bottom">
+   <div class="promo-carousel__comments">
+     <img src="img/common/comments.svg" alt="">
+     <span>152</span>
+   </div>
+   <div class="catalog-card__bookmark">
+    <img src="img/common/bookmark.svg" alt=""> 
+   </div>
+  </div>
+ </div>
+ 
+</article>
+              <article class="catalog-card catalog-card__no-list">
+
+ <div class="catalog-card__top">
+  <picture class="catalog-card__pic">
+   <img class="catalog-card__img lazy" src="./placeholder.png" data-src="./img/brake-systems/1.jpg">
+  </picture>
+  <div class="catalog-card__model">
+   <img src="./img/common/3d.svg" alt="">
+   <span>3D</span>
+  </div>
+ </div>
+ <div class="catalog-card__info">
+  <p class="catalog-card__category">H&R</p>
+  <h3 class="catalog-card__name">STREET PERFORMANCE</h3>
+  <div class="catalog-card__bottom">
+   <div class="promo-carousel__comments">
+     <img src="img/common/comments.svg" alt="">
+     <span>152</span>
+   </div>
+   <div class="catalog-card__bookmark">
+    <img src="img/common/bookmark.svg" alt=""> 
+   </div>
+  </div>
+ </div>
+ 
+</article>
+              <article class="catalog-card catalog-card__no-list">
+
+ <div class="catalog-card__top">
+  <picture class="catalog-card__pic">
+   <img class="catalog-card__img lazy" src="./placeholder.png" data-src="./img/brake-systems/2.jpg">
+  </picture>
+  <div class="catalog-card__model">
+   <img src="./img/common/3d.svg" alt="">
+   <span>3D</span>
+  </div>
+ </div>
+ <div class="catalog-card__info">
+  <p class="catalog-card__category">KW SUSPENSIONS</p>
+  <h3 class="catalog-card__name">HEIHGT ADJUSTABLE SPRING KIT</h3>
+  <div class="catalog-card__bottom">
+   <div class="promo-carousel__comments">
+     <img src="img/common/comments.svg" alt="">
+     <span>152</span>
+   </div>
+   <div class="catalog-card__bookmark">
+    <img src="img/common/bookmark.svg" alt=""> 
+   </div>
+  </div>
+ </div>
+ 
+</article>
+              <article class="catalog-card catalog-card__no-list">
+
+ <div class="catalog-card__top">
+  <picture class="catalog-card__pic">
+   <img class="catalog-card__img lazy" src="./placeholder.png" data-src="./img/brake-systems/3.jpg">
+  </picture>
+  <div class="catalog-card__model">
+   <img src="./img/common/3d.svg" alt="">
+   <span>3D</span>
+  </div>
+ </div>
+ <div class="catalog-card__info">
+  <p class="catalog-card__category">DINAN ENGINEERING</p>
+  <h3 class="catalog-card__name">BMW F80 M3 F82 F83 M4 (EDC Only)</h3>
+  <div class="catalog-card__bottom">
+   <div class="promo-carousel__comments">
+     <img src="img/common/comments.svg" alt="">
+     <span>152</span>
+   </div>
+   <div class="catalog-card__bookmark">
+    <img src="img/common/bookmark.svg" alt=""> 
+   </div>
+  </div>
+ </div>
+ 
+</article>
+              <article class="catalog-card catalog-card__no-list">
+
+ <div class="catalog-card__top">
+  <picture class="catalog-card__pic">
+   <img class="catalog-card__img lazy" src="./placeholder.png" data-src="./img/brake-systems/4.jpg">
+  </picture>
+  <div class="catalog-card__model">
+   <img src="./img/common/3d.svg" alt="">
+   <span>3D</span>
+  </div>
+ </div>
+ <div class="catalog-card__info">
+  <p class="catalog-card__category">JRZ SUSPENSION</p>
+  <h3 class="catalog-card__name">11 SERIES</h3>
+  <div class="catalog-card__bottom">
+   <div class="promo-carousel__comments">
+     <img src="img/common/comments.svg" alt="">
+     <span>152</span>
+   </div>
+   <div class="catalog-card__bookmark">
+    <img src="img/common/bookmark.svg" alt=""> 
+   </div>
+  </div>
+ </div>
+ 
+</article>
+            
+            </div>
+          </div>
+
+          <h2 class="section-desc catalog__title">Тюнинг двигателя</h2>
+          <div class="catalog-slide">
+            <div class="catalog__gallery catalog__gallery_slide" id="catalog__gallery_slide">
+
+              <article class="catalog-card catalog-card__no-list">
+
+ <div class="catalog-card__top">
+  <picture class="catalog-card__pic">
+   <img class="catalog-card__img lazy" src="./placeholder.png" data-src="./img/engine/1.jpg">
+  </picture>
+  <div class="catalog-card__model">
+   <img src="./img/common/3d.svg" alt="">
+   <span>3D</span>
+  </div>
+ </div>
+ <div class="catalog-card__info">
+  <p class="catalog-card__category">LADA</p>
+  <h3 class="catalog-card__name">21126 21126100301100</h3>
+  <div class="catalog-card__bottom">
+   <div class="promo-carousel__comments">
+     <img src="img/common/comments.svg" alt="">
+     <span>152</span>
+   </div>
+   <div class="catalog-card__bookmark">
+    <img src="img/common/bookmark.svg" alt=""> 
+   </div>
+  </div>
+ </div>
+ 
+</article>
+              <article class="catalog-card catalog-card__no-list">
+
+ <div class="catalog-card__top">
+  <picture class="catalog-card__pic">
+   <img class="catalog-card__img lazy" src="./placeholder.png" data-src="./img/engine/2.jpg">
+  </picture>
+  <div class="catalog-card__model">
+   <img src="./img/common/3d.svg" alt="">
+   <span>3D</span>
+  </div>
+ </div>
+ <div class="catalog-card__info">
+  <p class="catalog-card__category">Luzar</p>
+  <h3 class="catalog-card__name">Насос водяной для автомобилей Suzuki Grand Vitara (05-) 2.4i LWP 2424 LUZAR</h3>
+  <div class="catalog-card__bottom">
+   <div class="promo-carousel__comments">
+     <img src="img/common/comments.svg" alt="">
+     <span>152</span>
+   </div>
+   <div class="catalog-card__bookmark">
+    <img src="img/common/bookmark.svg" alt=""> 
+   </div>
+  </div>
+ </div>
+ 
+</article>
+              <article class="catalog-card catalog-card__no-list">
+
+ <div class="catalog-card__top">
+  <picture class="catalog-card__pic">
+   <img class="catalog-card__img lazy" src="./placeholder.png" data-src="./img/engine/3.jpg">
+  </picture>
+  <div class="catalog-card__model">
+   <img src="./img/common/3d.svg" alt="">
+   <span>3D</span>
+  </div>
+ </div>
+ <div class="catalog-card__info">
+  <p class="catalog-card__category">HQ-mech</p>
+  <h3 class="catalog-card__name">Термостат HQ-96139, Chevrolet Lanos, 96143939</h3>
+  <div class="catalog-card__bottom">
+   <div class="promo-carousel__comments">
+     <img src="img/common/comments.svg" alt="">
+     <span>152</span>
+   </div>
+   <div class="catalog-card__bookmark">
+    <img src="img/common/bookmark.svg" alt=""> 
+   </div>
+  </div>
+ </div>
+ 
+</article>
+              <article class="catalog-card catalog-card__no-list">
+
+ <div class="catalog-card__top">
+  <picture class="catalog-card__pic">
+   <img class="catalog-card__img lazy" src="./placeholder.png" data-src="./img/engine/4.jpg">
+  </picture>
+  <div class="catalog-card__model">
+   <img src="./img/common/3d.svg" alt="">
+   <span>3D</span>
+  </div>
+ </div>
+ <div class="catalog-card__info">
+  <p class="catalog-card__category">Elring</p>
+  <h3 class="catalog-card__name">150.162e_прокладка Гбц Audi, Skoda, Vw 1.9tdi 00></h3>
+  <div class="catalog-card__bottom">
+   <div class="promo-carousel__comments">
+     <img src="img/common/comments.svg" alt="">
+     <span>152</span>
+   </div>
+   <div class="catalog-card__bookmark">
+    <img src="img/common/bookmark.svg" alt=""> 
+   </div>
+  </div>
+ </div>
+ 
+</article>
+              <article class="catalog-card catalog-card__no-list">
+
+ <div class="catalog-card__top">
+  <picture class="catalog-card__pic">
+   <img class="catalog-card__img lazy" src="./placeholder.png" data-src="./img/engine/5.jpg">
+  </picture>
+  <div class="catalog-card__model">
+   <img src="./img/common/3d.svg" alt="">
+   <span>3D</span>
+  </div>
+ </div>
+ <div class="catalog-card__info">
+  <p class="catalog-card__category">Luzar</p>
+  <h3 class="catalog-card__name">Радиатор охлаждения Mazda 6 (07-) MT</h3>
+  <div class="catalog-card__bottom">
+   <div class="promo-carousel__comments">
+     <img src="img/common/comments.svg" alt="">
+     <span>152</span>
+   </div>
+   <div class="catalog-card__bookmark">
+    <img src="img/common/bookmark.svg" alt=""> 
+   </div>
+  </div>
+ </div>
+ 
+</article>
+              <article class="catalog-card catalog-card__no-list">
+
+ <div class="catalog-card__top">
+  <picture class="catalog-card__pic">
+   <img class="catalog-card__img lazy" src="./placeholder.png" data-src="./img/engine/6.jpg">
+  </picture>
+  <div class="catalog-card__model">
+   <img src="./img/common/3d.svg" alt="">
+   <span>3D</span>
+  </div>
+ </div>
+ <div class="catalog-card__info">
+  <p class="catalog-card__category">Formacar SCL</p>
+  <h3 class="catalog-card__name">NISSAN GT-R GOJIRA 2019</h3>
+  <div class="catalog-card__bottom">
+   <div class="promo-carousel__comments">
+     <img src="img/common/comments.svg" alt="">
+     <span>152</span>
+   </div>
+   <div class="catalog-card__bookmark">
+    <img src="img/common/bookmark.svg" alt=""> 
+   </div>
+  </div>
+ </div>
+ 
+</article>
+            
+            </div>
+          </div>
+
+          <h2 class="section-desc catalog__title">Аксессуары</h2>
+          <div class="catalog-slide">
+            <div class="catalog__gallery catalog__gallery_slide" id="catalog__gallery_slide">
+
+              <article class="catalog-card catalog-card__no-list">
+
+ <div class="catalog-card__top">
+  <picture class="catalog-card__pic">
+   <img class="catalog-card__img lazy" src="./placeholder.png" data-src="./img/accessories/1.jpg">
+  </picture>
+  <div class="catalog-card__model">
+   <img src="./img/common/3d.svg" alt="">
+   <span>3D</span>
+  </div>
+ </div>
+ <div class="catalog-card__info">
+  <p class="catalog-card__category">SKYWAY</p>
+  <h3 class="catalog-card__name">SKYWAY Racer-1 M</h3>
+  <div class="catalog-card__bottom">
+   <div class="promo-carousel__comments">
+     <img src="img/common/comments.svg" alt="">
+     <span>152</span>
+   </div>
+   <div class="catalog-card__bookmark">
+    <img src="img/common/bookmark.svg" alt=""> 
+   </div>
+  </div>
+ </div>
+ 
+</article>
+              <article class="catalog-card catalog-card__no-list">
+
+ <div class="catalog-card__top">
+  <picture class="catalog-card__pic">
+   <img class="catalog-card__img lazy" src="./placeholder.png" data-src="./img/accessories/2.jpg">
+  </picture>
+  <div class="catalog-card__model">
+   <img src="./img/common/3d.svg" alt="">
+   <span>3D</span>
+  </div>
+ </div>
+ <div class="catalog-card__info">
+  <p class="catalog-card__category">SKYWAY</p>
+  <h3 class="catalog-card__name">Combo-2 S</h3>
+  <div class="catalog-card__bottom">
+   <div class="promo-carousel__comments">
+     <img src="img/common/comments.svg" alt="">
+     <span>152</span>
+   </div>
+   <div class="catalog-card__bookmark">
+    <img src="img/common/bookmark.svg" alt=""> 
+   </div>
+  </div>
+ </div>
+ 
+</article>
+              <article class="catalog-card catalog-card__no-list">
+
+ <div class="catalog-card__top">
+  <picture class="catalog-card__pic">
+   <img class="catalog-card__img lazy" src="./placeholder.png" data-src="./img/accessories/3.jpg">
+  </picture>
+  <div class="catalog-card__model">
+   <img src="./img/common/3d.svg" alt="">
+   <span>3D</span>
+  </div>
+ </div>
+ <div class="catalog-card__info">
+  <p class="catalog-card__category">SKYWAY</p>
+  <h3 class="catalog-card__name">FLEX-10 M</h3>
+  <div class="catalog-card__bottom">
+   <div class="promo-carousel__comments">
+     <img src="img/common/comments.svg" alt="">
+     <span>152</span>
+   </div>
+   <div class="catalog-card__bookmark">
+    <img src="img/common/bookmark.svg" alt=""> 
+   </div>
+  </div>
+ </div>
+ 
+</article>
+              <article class="catalog-card catalog-card__no-list">
+
+ <div class="catalog-card__top">
+  <picture class="catalog-card__pic">
+   <img class="catalog-card__img lazy" src="./placeholder.png" data-src="./img/accessories/4.jpg">
+  </picture>
+  <div class="catalog-card__model">
+   <img src="./img/common/3d.svg" alt="">
+   <span>3D</span>
+  </div>
+ </div>
+ <div class="catalog-card__info">
+  <p class="catalog-card__category">Voin</p>
+  <h3 class="catalog-card__name">SOFT M</h3>
+  <div class="catalog-card__bottom">
+   <div class="promo-carousel__comments">
+     <img src="img/common/comments.svg" alt="">
+     <span>152</span>
+   </div>
+   <div class="catalog-card__bookmark">
+    <img src="img/common/bookmark.svg" alt=""> 
+   </div>
+  </div>
+ </div>
+ 
+</article>
+              <article class="catalog-card catalog-card__no-list">
+
+ <div class="catalog-card__top">
+  <picture class="catalog-card__pic">
+   <img class="catalog-card__img lazy" src="./placeholder.png" data-src="./img/accessories/5.jpg">
+  </picture>
+  <div class="catalog-card__model">
+   <img src="./img/common/3d.svg" alt="">
+   <span>3D</span>
+  </div>
+ </div>
+ <div class="catalog-card__info">
+  <p class="catalog-card__category">SKYWAY</p>
+  <h3 class="catalog-card__name">FLEX-9 M</h3>
+  <div class="catalog-card__bottom">
+   <div class="promo-carousel__comments">
+     <img src="img/common/comments.svg" alt="">
+     <span>152</span>
+   </div>
+   <div class="catalog-card__bookmark">
+    <img src="img/common/bookmark.svg" alt=""> 
+   </div>
+  </div>
+ </div>
+ 
+</article>
+              <article class="catalog-card catalog-card__no-list">
+
+ <div class="catalog-card__top">
+  <picture class="catalog-card__pic">
+   <img class="catalog-card__img lazy" src="./placeholder.png" data-src="./img/accessories/6.jpg">
+  </picture>
+  <div class="catalog-card__model">
+   <img src="./img/common/3d.svg" alt="">
+   <span>3D</span>
+  </div>
+ </div>
+ <div class="catalog-card__info">
+  <p class="catalog-card__category">SKYWAY</p>
+  <h3 class="catalog-card__name">FLEX-10 M</h3>
+  <div class="catalog-card__bottom">
+   <div class="promo-carousel__comments">
+     <img src="img/common/comments.svg" alt="">
+     <span>152</span>
+   </div>
+   <div class="catalog-card__bookmark">
+    <img src="img/common/bookmark.svg" alt=""> 
+   </div>
+  </div>
+ </div>
+ 
+</article>
+            
+            </div>
+          </div>
+
+          <h2 class="section-desc catalog__title">Интерьер</h2>
+          <div class="catalog-slide">
+            <div class="catalog__gallery catalog__gallery_slide" id="catalog__gallery_slide">
+
+              <article class="catalog-card catalog-card__no-list">
+
+ <div class="catalog-card__top">
+  <picture class="catalog-card__pic">
+   <img class="catalog-card__img lazy" src="./placeholder.png" data-src="./img/interior/1.jpg">
+  </picture>
+  <div class="catalog-card__model">
+   <img src="./img/common/3d.svg" alt="">
+   <span>3D</span>
+  </div>
+ </div>
+ <div class="catalog-card__info">
+  <p class="catalog-card__category">MANSORY</p>
+  <h3 class="catalog-card__name">ASTON MARTIN DB9 / VOLANTE</h3>
+  <div class="catalog-card__bottom">
+   <div class="promo-carousel__comments">
+     <img src="img/common/comments.svg" alt="">
+     <span>152</span>
+   </div>
+   <div class="catalog-card__bookmark">
+    <img src="img/common/bookmark.svg" alt=""> 
+   </div>
+  </div>
+ </div>
+ 
+</article>
+              <article class="catalog-card catalog-card__no-list">
+
+ <div class="catalog-card__top">
+  <picture class="catalog-card__pic">
+   <img class="catalog-card__img lazy" src="./placeholder.png" data-src="./img/interior/2.jpg">
+  </picture>
+  <div class="catalog-card__model">
+   <img src="./img/common/3d.svg" alt="">
+   <span>3D</span>
+  </div>
+ </div>
+ <div class="catalog-card__info">
+  <p class="catalog-card__category">MANSORY</p>
+  <h3 class="catalog-card__name">LAMBORHINI AVENTADOR COMPETITION</h3>
+  <div class="catalog-card__bottom">
+   <div class="promo-carousel__comments">
+     <img src="img/common/comments.svg" alt="">
+     <span>152</span>
+   </div>
+   <div class="catalog-card__bookmark">
+    <img src="img/common/bookmark.svg" alt=""> 
+   </div>
+  </div>
+ </div>
+ 
+</article>
+              <article class="catalog-card catalog-card__no-list">
+
+ <div class="catalog-card__top">
+  <picture class="catalog-card__pic">
+   <img class="catalog-card__img lazy" src="./placeholder.png" data-src="./img/interior/3.jpg">
+  </picture>
+  <div class="catalog-card__model">
+   <img src="./img/common/3d.svg" alt="">
+   <span>3D</span>
+  </div>
+ </div>
+ <div class="catalog-card__info">
+  <p class="catalog-card__category">MANSORY</p>
+  <h3 class="catalog-card__name">LAMBORHINI AVENTADOR JS1 EDITION</h3>
+  <div class="catalog-card__bottom">
+   <div class="promo-carousel__comments">
+     <img src="img/common/comments.svg" alt="">
+     <span>152</span>
+   </div>
+   <div class="catalog-card__bookmark">
+    <img src="img/common/bookmark.svg" alt=""> 
+   </div>
+  </div>
+ </div>
+ 
+</article>
+              <article class="catalog-card catalog-card__no-list">
+
+ <div class="catalog-card__top">
+  <picture class="catalog-card__pic">
+   <img class="catalog-card__img lazy" src="./placeholder.png" data-src="./img/interior/4.jpg">
+  </picture>
+  <div class="catalog-card__model">
+   <img src="./img/common/3d.svg" alt="">
+   <span>3D</span>
+  </div>
+ </div>
+ <div class="catalog-card__info">
+  <p class="catalog-card__category">MANSORY</p>
+  <h3 class="catalog-card__name">LAMBORGHINI AVENTADOR CARBONADO</h3>
+  <div class="catalog-card__bottom">
+   <div class="promo-carousel__comments">
+     <img src="img/common/comments.svg" alt="">
+     <span>152</span>
+   </div>
+   <div class="catalog-card__bookmark">
+    <img src="img/common/bookmark.svg" alt=""> 
+   </div>
+  </div>
+ </div>
+ 
+</article>
+              <article class="catalog-card catalog-card__no-list">
+
+ <div class="catalog-card__top">
+  <picture class="catalog-card__pic">
+   <img class="catalog-card__img lazy" src="./placeholder.png" data-src="./img/interior/5.jpg">
+  </picture>
+  <div class="catalog-card__model">
+   <img src="./img/common/3d.svg" alt="">
+   <span>3D</span>
+  </div>
+ </div>
+ <div class="catalog-card__info">
+  <p class="catalog-card__category">MANSORY</p>
+  <h3 class="catalog-card__name">LAMBORGHINI HURACAN</h3>
+  <div class="catalog-card__bottom">
+   <div class="promo-carousel__comments">
+     <img src="img/common/comments.svg" alt="">
+     <span>152</span>
+   </div>
+   <div class="catalog-card__bookmark">
+    <img src="img/common/bookmark.svg" alt=""> 
+   </div>
+  </div>
+ </div>
+ 
+</article>
+              <article class="catalog-card catalog-card__no-list">
+
+ <div class="catalog-card__top">
+  <picture class="catalog-card__pic">
+   <img class="catalog-card__img lazy" src="./placeholder.png" data-src="./img/interior/6.jpg">
+  </picture>
+  <div class="catalog-card__model">
+   <img src="./img/common/3d.svg" alt="">
+   <span>3D</span>
+  </div>
+ </div>
+ <div class="catalog-card__info">
+  <p class="catalog-card__category">MANSORY</p>
+  <h3 class="catalog-card__name">LAMBORGHINI AVENTADOR CARBONADO APERTOS</h3>
+  <div class="catalog-card__bottom">
+   <div class="promo-carousel__comments">
+     <img src="img/common/comments.svg" alt="">
+     <span>152</span>
+   </div>
+   <div class="catalog-card__bookmark">
+    <img src="img/common/bookmark.svg" alt=""> 
+   </div>
+  </div>
+ </div>
+ 
+</article>
+            
+            </div>
+          </div>
+
+          <h2 class="section-desc catalog__title">Винилы</h2>
+          <div class="catalog-slide">
+            <div class="catalog__gallery catalog__gallery_slide" id="catalog__gallery_slide">
+
+              <article class="catalog-card catalog-card__no-list">
+
+ <div class="catalog-card__top">
+  <picture class="catalog-card__pic">
+   <img class="catalog-card__img lazy" src="./placeholder.png" data-src="./img/vinyls/1.jpg">
+  </picture>
+  <div class="catalog-card__model">
+   <img src="./img/common/3d.svg" alt="">
+   <span>3D</span>
+  </div>
+ </div>
+ <div class="catalog-card__info">
+  <p class="catalog-card__category">Formacar SCL</p>
+  <h3 class="catalog-card__name">Metallic 000000</h3>
+  <div class="catalog-card__bottom">
+   <div class="promo-carousel__comments">
+     <img src="img/common/comments.svg" alt="">
+     <span>152</span>
+   </div>
+   <div class="catalog-card__bookmark">
+    <img src="img/common/bookmark.svg" alt=""> 
+   </div>
+  </div>
+ </div>
+ 
+</article>
+              <article class="catalog-card catalog-card__no-list">
+
+ <div class="catalog-card__top">
+  <picture class="catalog-card__pic">
+   <img class="catalog-card__img lazy" src="./placeholder.png" data-src="./img/vinyls/2.jpg">
+  </picture>
+  <div class="catalog-card__model">
+   <img src="./img/common/3d.svg" alt="">
+   <span>3D</span>
+  </div>
+ </div>
+ <div class="catalog-card__info">
+  <p class="catalog-card__category">Formacar SCL</p>
+  <h3 class="catalog-card__name">Metallic 000001</h3>
+  <div class="catalog-card__bottom">
+   <div class="promo-carousel__comments">
+     <img src="img/common/comments.svg" alt="">
+     <span>152</span>
+   </div>
+   <div class="catalog-card__bookmark">
+    <img src="img/common/bookmark.svg" alt=""> 
+   </div>
+  </div>
+ </div>
+ 
+</article>
+              <article class="catalog-card catalog-card__no-list">
+
+ <div class="catalog-card__top">
+  <picture class="catalog-card__pic">
+   <img class="catalog-card__img lazy" src="./placeholder.png" data-src="./img/vinyls/3.jpg">
+  </picture>
+  <div class="catalog-card__model">
+   <img src="./img/common/3d.svg" alt="">
+   <span>3D</span>
+  </div>
+ </div>
+ <div class="catalog-card__info">
+  <p class="catalog-card__category">Formacar SCL</p>
+  <h3 class="catalog-card__name">Metallic 000002</h3>
+  <div class="catalog-card__bottom">
+   <div class="promo-carousel__comments">
+     <img src="img/common/comments.svg" alt="">
+     <span>152</span>
+   </div>
+   <div class="catalog-card__bookmark">
+    <img src="img/common/bookmark.svg" alt=""> 
+   </div>
+  </div>
+ </div>
+ 
+</article>
+              <article class="catalog-card catalog-card__no-list">
+
+ <div class="catalog-card__top">
+  <picture class="catalog-card__pic">
+   <img class="catalog-card__img lazy" src="./placeholder.png" data-src="./img/vinyls/4.jpg">
+  </picture>
+  <div class="catalog-card__model">
+   <img src="./img/common/3d.svg" alt="">
+   <span>3D</span>
+  </div>
+ </div>
+ <div class="catalog-card__info">
+  <p class="catalog-card__category">Formacar SCL</p>
+  <h3 class="catalog-card__name">Metallic 000003</h3>
+  <div class="catalog-card__bottom">
+   <div class="promo-carousel__comments">
+     <img src="img/common/comments.svg" alt="">
+     <span>152</span>
+   </div>
+   <div class="catalog-card__bookmark">
+    <img src="img/common/bookmark.svg" alt=""> 
+   </div>
+  </div>
+ </div>
+ 
+</article>
+              <article class="catalog-card catalog-card__no-list">
+
+ <div class="catalog-card__top">
+  <picture class="catalog-card__pic">
+   <img class="catalog-card__img lazy" src="./placeholder.png" data-src="./img/vinyls/5.jpg">
+  </picture>
+  <div class="catalog-card__model">
+   <img src="./img/common/3d.svg" alt="">
+   <span>3D</span>
+  </div>
+ </div>
+ <div class="catalog-card__info">
+  <p class="catalog-card__category">Formacar SCL</p>
+  <h3 class="catalog-card__name">Metallic 000004</h3>
+  <div class="catalog-card__bottom">
+   <div class="promo-carousel__comments">
+     <img src="img/common/comments.svg" alt="">
+     <span>152</span>
+   </div>
+   <div class="catalog-card__bookmark">
+    <img src="img/common/bookmark.svg" alt=""> 
+   </div>
+  </div>
+ </div>
+ 
+</article>
+              <article class="catalog-card catalog-card__no-list">
+
+ <div class="catalog-card__top">
+  <picture class="catalog-card__pic">
+   <img class="catalog-card__img lazy" src="./placeholder.png" data-src="./img/vinyls/6.jpg">
+  </picture>
+  <div class="catalog-card__model">
+   <img src="./img/common/3d.svg" alt="">
+   <span>3D</span>
+  </div>
+ </div>
+ <div class="catalog-card__info">
+  <p class="catalog-card__category">Formacar SCL</p>
+  <h3 class="catalog-card__name">Metallic 000005</h3>
+  <div class="catalog-card__bottom">
+   <div class="promo-carousel__comments">
+     <img src="img/common/comments.svg" alt="">
+     <span>152</span>
+   </div>
+   <div class="catalog-card__bookmark">
+    <img src="img/common/bookmark.svg" alt=""> 
+   </div>
+  </div>
+ </div>
+ 
+</article>
+            
+            </div>
+          </div>
+         </section>
+
+       </div>
+        
+      </main>
+
+
+      <footer class="footer">
+  <div class="container footer__container">
+    <nav class="nav footer__nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="#" class="nav_link">О проекте</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav_link">Редакция новостей</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav_link">Разместить рекламу</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav_link">Обратная связь</a>
+        </li>
+      </ul>
+    
+      <button class="footer__lang">
+        <img src="./img/common/footer-lang.svg" alt="" class="footer__lang-icon">
+        <span class="footer__lang-text">Русский</span>
+        <img src="./img/common/arrow-right.svg" alt="" class="footer__lang-arrow">
+      </button>
+    </nav>
+
+    <hr class="footer__separator">
+
+    <div class="footer__bottom">
+      <div class="footer__info">
+        <a href="#" class="footer__logo logo">
+          <img src="./img/common/logo.svg" alt="" class="logo__img">
+        </a>
+        <p class="footer__desc">
+          Formacar — это автомобильный информационный портал с собственным 3D Конфигуратором, социальной сетью, новостным разделом, каталогом производителей и официальных дилеров автомобильных деталей и элементов тюнинга по всему миру.
+        </p>
+        <div class="footer__credits">
+          <ul class="footer__credits-socials">
+            <li class="footer__credits-item">
+              <a href="#" class="footer__credits-link footer__credits-link_facebook">
+                <img src="./img/common/facebook.svg" alt="">
+              </a>
+            </li>
+            <li class="footer__credits-item">
+              <a href="#" class="footer__credits-link footer__credits-link_twitter">
+                <img src="./img/common/twitter.svg" alt="">
+              </a>
+            </li>
+            <li class="footer__credits-item">
+              <a href="#" class="footer__credits-link footer__credits-link_vk">
+                <img src="./img/common/vk.svg" alt="">
+              </a>
+            </li>
+            <li class="footer__credits-item">
+              <a href="#" class="footer__credits-link footer__credits-link_youtube">
+                <img src="./img/common/youtube.svg" alt="">
+              </a>
+            </li>
+            <li class="footer__credits-item">
+              <a href="#" class="footer__credits-link footer__credits-link_instagram">
+                <img src="./img/common/instagram.svg" alt="">
+              </a>
+            </li>
+          </ul>
+          <div class="footer__credits-text">
+            <p>© 2018-2023 FormaCar. Все права защищены. 18+</p>
+            <p>Пользовательское соглашение</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer__download">
+        <p class="footer__download-text">используйте приложение Formacar</p>
+        <div class="footer__download-shops">
+
+          <a href="#" class="footer__download-block">
+            <img src="./img/common/app-store.svg" alt="" class="footer__download-img">
+            <div class="footer__download-name">
+              <p>Доступно в</p>
+              <p>App Store</p>
+            </div>
+          </a>
+
+          <a href="#" class="footer__download-block">
+            <img src="./img/common/play-market.svg" alt="" class="footer__download-img">
+            <div class="footer__download-name">
+              <p>Доступно в</p>
+              <p>Google Play</p>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+
+    <div id="callback-table" class="poppa">
+  <h3 class="poppa__title">
+    Laissez vos coordonnées <br />
+    ou appeler au numéro <br />
+    <a class="link poppa__title-link" href="tel:0558709154">05 58 70 91 54</a>
+  </h3>
+  <form action="table" id="form-table" class="form form--table">
+    <div class="form__hidden">
+      <input type="text" name="page" hidden />
+      <input type="text" name="formname" hidden />
+      <input type="text" name="additional" hidden />
+    </div>
+    <div class="form__inner">
+      <label class="input input--name">
+  <input
+    class="input__field"
+    name="user_name"
+    type="text"
+    placeholder="Nom"
+    data-value-missing="Заполните имя"
+    data-value-invalid="Что-то не так с введенным именем"
+    autocomplete="name"
+  />
+  <svg class="input__icon">
+    <use xlink:href="./img/icons/form-user.svg#user"></use>
+  </svg>
+  <span class="input__message">Ошибка</span>
+</label>
+ <label class="input input--tel">
+  <input
+    class="input__field"
+    required
+    name="user_tel"
+    type="tel"
+    placeholder="Objet"
+    maxlength="25"
+    minlength="10"
+    data-value-missing="Напишите телефон"
+    data-value-invalid="Проверьте корректность телефона"
+    autocomplete="tel"
+  />
+  <svg class="input__icon">
+    <use xlink:href="./img/icons/form-tel.svg#tel"></use>
+  </svg>
+  <span class="input__message">Ошибка</span>
+</label>
+
+      <button type="submit" class="button button--primary poppa__button" data-success="Message envoyé">
+        <span class="button__text">Envoyer le message</span>
+      </button>
+    </div>
+  </form>
+</div>
+ <div id="callback-ball" class="poppa">
+  <h3 class="poppa__title">
+    Laissez vos coordonnées <br />
+    ou appeler au numéro <br />
+    <a class="link poppa__title-link" href="tel:0558709154">05 58 70 91 54</a>
+  </h3>
+  <form action="table" id="form-ball" class="form form--ball">
+    <div class="form__hidden">
+      <input type="text" name="page" hidden />
+      <input type="text" name="formname" hidden />
+      <input type="text" name="additional" hidden />
+    </div>
+    <div class="form__inner">
+      <label class="input input--name">
+  <input
+    class="input__field"
+    name="user_name"
+    type="text"
+    placeholder="Nom"
+    data-value-missing="Заполните имя"
+    data-value-invalid="Что-то не так с введенным именем"
+    autocomplete="name"
+  />
+  <svg class="input__icon">
+    <use xlink:href="./img/icons/form-user.svg#user"></use>
+  </svg>
+  <span class="input__message">Ошибка</span>
+</label>
+ <label class="input input--tel">
+  <input
+    class="input__field"
+    required
+    name="user_tel"
+    type="tel"
+    placeholder="Objet"
+    maxlength="25"
+    minlength="10"
+    data-value-missing="Напишите телефон"
+    data-value-invalid="Проверьте корректность телефона"
+    autocomplete="tel"
+  />
+  <svg class="input__icon">
+    <use xlink:href="./img/icons/form-tel.svg#tel"></use>
+  </svg>
+  <span class="input__message">Ошибка</span>
+</label>
+
+      <button type="submit" class="button button--primary poppa__button" data-success="Message envoyé">
+        <span class="button__text">Envoyer le message</span>
+      </button>
+    </div>
+  </form>
+</div>
+
+
+
+    <script src="./js/bundle.min.js?_v=20230315123907"></script>
+  </body>
+</html>

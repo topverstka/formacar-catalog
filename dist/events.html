@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css?_v=20230315123907" />
+
+    <!-- Отключить автодетект телефонов -->
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- Отключить кэширование. Нужен только при разработке, чтобы все было свежим -->
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="max-age=3600, must-revalidate" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+  <div class="container header__container">
+    <div class="header__menu">
+      <a href="#" class="header__logo logo">
+        <img src="./img/common/logo.svg" alt="" class="logo__img" />
+      </a>
+      <form class="header__search search__form">
+        <button class="search__button" type="submit">
+          <svg class="search__button-icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12.4671 14.2732C11.8111 13.6172 12.9491 12.6383 13.591 13.2802L16.8841 16.5733C17.177 16.8662 17.177 17.3411 16.8841 17.634C16.5912 17.9269 16.1163 17.9269 15.8234 17.634L12.4671 14.2732Z" fill="#B4B4BF"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.875 14.25C11.3958 14.25 14.25 11.3958 14.25 7.875C14.25 4.35418 11.3958 1.5 7.875 1.5C4.35418 1.5 1.5 4.35418 1.5 7.875C1.5 11.3958 4.35418 14.25 7.875 14.25ZM7.875 15.75C12.2242 15.75 15.75 12.2242 15.75 7.875C15.75 3.52576 12.2242 0 7.875 0C3.52576 0 0 3.52576 0 7.875C0 12.2242 3.52576 15.75 7.875 15.75Z" fill="#B4B4BF"/>
+          </svg>
+        </button>
+        <input type="search" name="search" placeholder="Что найти?" class="search__input header-search__input" id="header-search__input">
+      </form>
+      <nav class="nav header__nav">
+        <ul class="header__nav-links">
+      
+          <li class="header__nav-item">
+            <a href="" class="header__nav-link">3D-Конфигуратор</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="" class="header__nav-link">Каталог Тюнинга</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="" class="header__nav-link">Новости</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="" class="header__nav-link">События</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="header__buttons">
+      <button class="header__geo" data-snack="lang" type="button">
+        <img class="header__geo-icon" src="./img/common/flag-ru.svg" alt="">
+        <span class="header__picker-text">RU</span>
+      </button>
+      <button class="button button--primary button--dark">
+        объявления
+      </button>
+    </div>
+
+  </div>
+</header>
+
+
+
+      <main class="main">
+
+       <div class="page-heading page__container">
+
+        <div class="breadcrumbs">
+         <ul class="breadcrumbs__list">
+           <li class="breadcrumbs__item">
+            <a href="#" class="breadcrumbs__link">Главная</a>
+           </li>
+           <li class="breadcrumbs__item">События</li>
+         </ul>
+        </div>
+        <h2 class="section-title page__title">События</h2>
+
+       </div>
+
+       <section class="events">
+              
+        <div class="events__container">
+         <div class="events__gallery">
+           <article class="events-card events-card_ads">
+
+ <div class="events-card__top">
+  <div class="events-card__wrap">
+   <div class="events-card__info">
+    <picture class="events-card__profile">
+     <img src="img/events/ads-profile.jpg" alt="">
+    </picture>
+    <div class="events-card__text">
+     <p class="events-card__name">Formacar</p>
+     <p class="events-card__date">Реклама </p>
+    </div>
+   </div>
+   <div class="events-card__menu">
+    <span></span>
+    <span></span>
+    <span></span>
+   </div>
+  </div>
+  <p class="events-card__descr">
+   Is there an easy way to profitably sell your old car and quickly find a replacement without extra expenses? There sure is – just place an ad in our app, free of charge.  To find the vehicle you need, you can filter ads by such parameters as country, brand, MFY, mileage, body style etc. to immediately get the results relevant to you.  The Ads section also contains a vast assortment of tires, wheels, exhaust systems, brakes, tuning parts and other car products and services from all around the world. All ads are classified for your convenience. Posted your ad for free? Don’t forget to tell your friends about us!
+  </p>
+ </div>
+ <picture class="events-card__pic">
+  <img src="img/events/ads-img.jpg" alt="" class="events-card__img">
+ </picture>
+ <div class="events-card__follow">
+  <p class="events-card__follow-text">Перейти</p>
+  <img src="img/common/arrow-right.svg" alt="">
+ </div>
+ 
+</article>
+           <article class="events-card">
+
+ <div class="events-card__top">
+  <div class="events-card__wrap">
+   <div class="events-card__info">
+    <picture class="events-card__profile">
+     <img src="img/events/profile-1.jpg" alt="">
+    </picture>
+    <div class="events-card__text">
+     <p class="events-card__name">SayonaraBoy</p>
+     <p class="events-card__date">15 Сентября 2022, 17:45 </p>
+    </div>
+   </div>
+   <div class="events-card__menu">
+    <span></span>
+    <span></span>
+    <span></span>
+   </div>
+  </div>
+  <p class="events-card__descr">
+   Study finds the best autopilot solution, spoiler alert: it’s not Tesla FSD.
+  </p>
+ </div>
+ <picture class="events-card__pic">
+  <img src="img/events/events-1.jpg" alt="" class="events-card__img">
+ </picture>
+ <div class="events-card__bottom">
+  <div class="promo-carousel__comments">
+   <img src="img/common/like.svg" alt="">
+   <span>5</span>
+  </div>
+  <div class="promo-carousel__comments">
+   <img src="img/common/comments.svg" alt="">
+   <span>10</span>
+  </div>
+  <div class="promo-carousel__comments events-card__view">
+   <img src="img/common/view.svg" alt="">
+   <span>13</span>
+  </div>
+ </div>
+ 
+</article>
+           <article class="events-card">
+
+ <div class="events-card__top">
+  <div class="events-card__wrap">
+   <div class="events-card__info">
+    <picture class="events-card__profile">
+     <img src="img/events/profile-2.jpg" alt="">
+    </picture>
+    <div class="events-card__text">
+     <p class="events-card__name">Евгений Романов</p>
+     <p class="events-card__date">15 Сентября 2022, 17:45 </p>
+    </div>
+   </div>
+   <div class="events-card__menu">
+    <span></span>
+    <span></span>
+    <span></span>
+   </div>
+  </div>
+  <p class="events-card__descr">
+   В следующем году эта тачка будет моей!
+  </p>
+ </div>
+ <picture class="events-card__pic">
+  <img src="img/events/events-2.jpg" alt="" class="events-card__img">
+ </picture>
+ <div class="events-card__bottom">
+  <div class="promo-carousel__comments">
+   <img src="img/common/like.svg" alt="">
+   <span>5</span>
+  </div>
+  <div class="promo-carousel__comments">
+   <img src="img/common/comments.svg" alt="">
+   <span>10</span>
+  </div>
+  <div class="promo-carousel__comments events-card__view">
+   <img src="img/common/view.svg" alt="">
+   <span>13</span>
+  </div>
+ </div>
+ 
+</article>
+           <article class="events-card">
+
+ <div class="events-card__top">
+  <div class="events-card__wrap">
+   <div class="events-card__info">
+    <picture class="events-card__profile">
+     <img src="img/events/profile-3.jpg" alt="">
+    </picture>
+    <div class="events-card__text">
+     <p class="events-card__name">Luxsor 007</p>
+     <p class="events-card__date">15123 Сентября 2022, 17:45 </p>
+    </div>
+   </div>
+   <div class="events-card__menu">
+    <span></span>
+    <span></span>
+    <span></span>
+   </div>
+  </div>
+  <p class="events-card__descr">
+   Hello, guys! Have a great Friday everyone.
+  </p>
+ </div>
+ <picture class="events-card__pic">
+  <img src="img/events/events-3.jpg" alt="" class="events-card__img">
+ </picture>
+ <div class="events-card__bottom">
+  <div class="promo-carousel__comments">
+   <img src="img/common/like.svg" alt="">
+   <span>5</span>
+  </div>
+  <div class="promo-carousel__comments">
+   <img src="img/common/comments.svg" alt="">
+   <span>10</span>
+  </div>
+  <div class="promo-carousel__comments events-card__view">
+   <img src="img/common/view.svg" alt="">
+   <span>13</span>
+  </div>
+ </div>
+ 
+</article>
+           <article class="events-card">
+
+ <div class="events-card__top">
+  <div class="events-card__wrap">
+   <div class="events-card__info">
+    <picture class="events-card__profile">
+     <img src="img/events/profile-4.jpg" alt="">
+    </picture>
+    <div class="events-card__text">
+     <p class="events-card__name">Anna</p>
+     <p class="events-card__date">15 Сентября 2022, 17:45 </p>
+    </div>
+   </div>
+   <div class="events-card__menu">
+    <span></span>
+    <span></span>
+    <span></span>
+   </div>
+  </div>
+  <p class="events-card__descr">
+   @@descr
+  </p>
+ </div>
+ <picture class="events-card__pic">
+  <img src="img/events/events-4.jpg" alt="" class="events-card__img">
+ </picture>
+ <div class="events-card__bottom">
+  <div class="promo-carousel__comments">
+   <img src="img/common/like.svg" alt="">
+   <span>5</span>
+  </div>
+  <div class="promo-carousel__comments">
+   <img src="img/common/comments.svg" alt="">
+   <span>10</span>
+  </div>
+  <div class="promo-carousel__comments events-card__view">
+   <img src="img/common/view.svg" alt="">
+   <span>13</span>
+  </div>
+ </div>
+ 
+</article>
+           <article class="events-card">
+
+ <div class="events-card__top">
+  <div class="events-card__wrap">
+   <div class="events-card__info">
+    <picture class="events-card__profile">
+     <img src="img/events/profile-5.jpg" alt="">
+    </picture>
+    <div class="events-card__text">
+     <p class="events-card__name">cucumber</p>
+     <p class="events-card__date">15 Сентября 2022, 17:45 </p>
+    </div>
+   </div>
+   <div class="events-card__menu">
+    <span></span>
+    <span></span>
+    <span></span>
+   </div>
+  </div>
+  <p class="events-card__descr">
+   I was made for lovin' u, baby 💗 mmh, yeah-ha #jdm
+  </p>
+ </div>
+ <picture class="events-card__pic">
+  <img src="img/events/events-5.jpg" alt="" class="events-card__img">
+ </picture>
+ <div class="events-card__bottom">
+  <div class="promo-carousel__comments">
+   <img src="img/common/like.svg" alt="">
+   <span>5</span>
+  </div>
+  <div class="promo-carousel__comments">
+   <img src="img/common/comments.svg" alt="">
+   <span>10</span>
+  </div>
+  <div class="promo-carousel__comments events-card__view">
+   <img src="img/common/view.svg" alt="">
+   <span>13</span>
+  </div>
+ </div>
+ 
+</article>
+           <article class="events-card">
+
+ <div class="events-card__top">
+  <div class="events-card__wrap">
+   <div class="events-card__info">
+    <picture class="events-card__profile">
+     <img src="img/events/profile-6.jpg" alt="">
+    </picture>
+    <div class="events-card__text">
+     <p class="events-card__name">DJtheOne</p>
+     <p class="events-card__date">15 Сентября 2022, 17:45 </p>
+    </div>
+   </div>
+   <div class="events-card__menu">
+    <span></span>
+    <span></span>
+    <span></span>
+   </div>
+  </div>
+  <p class="events-card__descr">
+   purple demon😈🤞🏾🔮
+  </p>
+ </div>
+ <picture class="events-card__pic">
+  <img src="img/events/events-6.jpg" alt="" class="events-card__img">
+ </picture>
+ <div class="events-card__bottom">
+  <div class="promo-carousel__comments">
+   <img src="img/common/like.svg" alt="">
+   <span>5</span>
+  </div>
+  <div class="promo-carousel__comments">
+   <img src="img/common/comments.svg" alt="">
+   <span>10</span>
+  </div>
+  <div class="promo-carousel__comments events-card__view">
+   <img src="img/common/view.svg" alt="">
+   <span>13</span>
+  </div>
+ </div>
+ 
+</article>
+           <article class="events-card">
+
+ <div class="events-card__top">
+  <div class="events-card__wrap">
+   <div class="events-card__info">
+    <picture class="events-card__profile">
+     <img src="img/events/profile-2.jpg" alt="">
+    </picture>
+    <div class="events-card__text">
+     <p class="events-card__name">DJtheOne</p>
+     <p class="events-card__date">15 Сентября 2022, 17:45 </p>
+    </div>
+   </div>
+   <div class="events-card__menu">
+    <span></span>
+    <span></span>
+    <span></span>
+   </div>
+  </div>
+  <p class="events-card__descr">
+   @@descr
+  </p>
+ </div>
+ <picture class="events-card__pic">
+  <img src="img/events/events-7.jpg" alt="" class="events-card__img">
+ </picture>
+ <div class="events-card__bottom">
+  <div class="promo-carousel__comments">
+   <img src="img/common/like.svg" alt="">
+   <span>5</span>
+  </div>
+  <div class="promo-carousel__comments">
+   <img src="img/common/comments.svg" alt="">
+   <span>10</span>
+  </div>
+  <div class="promo-carousel__comments events-card__view">
+   <img src="img/common/view.svg" alt="">
+   <span>13</span>
+  </div>
+ </div>
+ 
+</article>
+         </div>
+        </div>
+
+       </section>
+
+       
+        
+        
+      </main>
+
+
+      <footer class="footer">
+  <div class="container footer__container">
+    <nav class="nav footer__nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="#" class="nav_link">О проекте</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav_link">Редакция новостей</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav_link">Разместить рекламу</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav_link">Обратная связь</a>
+        </li>
+      </ul>
+    
+      <button class="footer__lang">
+        <img src="./img/common/footer-lang.svg" alt="" class="footer__lang-icon">
+        <span class="footer__lang-text">Русский</span>
+        <img src="./img/common/arrow-right.svg" alt="" class="footer__lang-arrow">
+      </button>
+    </nav>
+
+    <hr class="footer__separator">
+
+    <div class="footer__bottom">
+      <div class="footer__info">
+        <a href="#" class="footer__logo logo">
+          <img src="./img/common/logo.svg" alt="" class="logo__img">
+        </a>
+        <p class="footer__desc">
+          Formacar — это автомобильный информационный портал с собственным 3D Конфигуратором, социальной сетью, новостным разделом, каталогом производителей и официальных дилеров автомобильных деталей и элементов тюнинга по всему миру.
+        </p>
+        <div class="footer__credits">
+          <ul class="footer__credits-socials">
+            <li class="footer__credits-item">
+              <a href="#" class="footer__credits-link footer__credits-link_facebook">
+                <img src="./img/common/facebook.svg" alt="">
+              </a>
+            </li>
+            <li class="footer__credits-item">
+              <a href="#" class="footer__credits-link footer__credits-link_twitter">
+                <img src="./img/common/twitter.svg" alt="">
+              </a>
+            </li>
+            <li class="footer__credits-item">
+              <a href="#" class="footer__credits-link footer__credits-link_vk">
+                <img src="./img/common/vk.svg" alt="">
+              </a>
+            </li>
+            <li class="footer__credits-item">
+              <a href="#" class="footer__credits-link footer__credits-link_youtube">
+                <img src="./img/common/youtube.svg" alt="">
+              </a>
+            </li>
+            <li class="footer__credits-item">
+              <a href="#" class="footer__credits-link footer__credits-link_instagram">
+                <img src="./img/common/instagram.svg" alt="">
+              </a>
+            </li>
+          </ul>
+          <div class="footer__credits-text">
+            <p>© 2018-2023 FormaCar. Все права защищены. 18+</p>
+            <p>Пользовательское соглашение</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer__download">
+        <p class="footer__download-text">используйте приложение Formacar</p>
+        <div class="footer__download-shops">
+
+          <a href="#" class="footer__download-block">
+            <img src="./img/common/app-store.svg" alt="" class="footer__download-img">
+            <div class="footer__download-name">
+              <p>Доступно в</p>
+              <p>App Store</p>
+            </div>
+          </a>
+
+          <a href="#" class="footer__download-block">
+            <img src="./img/common/play-market.svg" alt="" class="footer__download-img">
+            <div class="footer__download-name">
+              <p>Доступно в</p>
+              <p>Google Play</p>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+
+    <div id="callback-table" class="poppa">
+  <h3 class="poppa__title">
+    Laissez vos coordonnées <br />
+    ou appeler au numéro <br />
+    <a class="link poppa__title-link" href="tel:0558709154">05 58 70 91 54</a>
+  </h3>
+  <form action="table" id="form-table" class="form form--table">
+    <div class="form__hidden">
+      <input type="text" name="page" hidden />
+      <input type="text" name="formname" hidden />
+      <input type="text" name="additional" hidden />
+    </div>
+    <div class="form__inner">
+      <label class="input input--name">
+  <input
+    class="input__field"
+    name="user_name"
+    type="text"
+    placeholder="Nom"
+    data-value-missing="Заполните имя"
+    data-value-invalid="Что-то не так с введенным именем"
+    autocomplete="name"
+  />
+  <svg class="input__icon">
+    <use xlink:href="./img/icons/form-user.svg#user"></use>
+  </svg>
+  <span class="input__message">Ошибка</span>
+</label>
+ <label class="input input--tel">
+  <input
+    class="input__field"
+    required
+    name="user_tel"
+    type="tel"
+    placeholder="Objet"
+    maxlength="25"
+    minlength="10"
+    data-value-missing="Напишите телефон"
+    data-value-invalid="Проверьте корректность телефона"
+    autocomplete="tel"
+  />
+  <svg class="input__icon">
+    <use xlink:href="./img/icons/form-tel.svg#tel"></use>
+  </svg>
+  <span class="input__message">Ошибка</span>
+</label>
+
+      <button type="submit" class="button button--primary poppa__button" data-success="Message envoyé">
+        <span class="button__text">Envoyer le message</span>
+      </button>
+    </div>
+  </form>
+</div>
+ <div id="callback-ball" class="poppa">
+  <h3 class="poppa__title">
+    Laissez vos coordonnées <br />
+    ou appeler au numéro <br />
+    <a class="link poppa__title-link" href="tel:0558709154">05 58 70 91 54</a>
+  </h3>
+  <form action="table" id="form-ball" class="form form--ball">
+    <div class="form__hidden">
+      <input type="text" name="page" hidden />
+      <input type="text" name="formname" hidden />
+      <input type="text" name="additional" hidden />
+    </div>
+    <div class="form__inner">
+      <label class="input input--name">
+  <input
+    class="input__field"
+    name="user_name"
+    type="text"
+    placeholder="Nom"
+    data-value-missing="Заполните имя"
+    data-value-invalid="Что-то не так с введенным именем"
+    autocomplete="name"
+  />
+  <svg class="input__icon">
+    <use xlink:href="./img/icons/form-user.svg#user"></use>
+  </svg>
+  <span class="input__message">Ошибка</span>
+</label>
+ <label class="input input--tel">
+  <input
+    class="input__field"
+    required
+    name="user_tel"
+    type="tel"
+    placeholder="Objet"
+    maxlength="25"
+    minlength="10"
+    data-value-missing="Напишите телефон"
+    data-value-invalid="Проверьте корректность телефона"
+    autocomplete="tel"
+  />
+  <svg class="input__icon">
+    <use xlink:href="./img/icons/form-tel.svg#tel"></use>
+  </svg>
+  <span class="input__message">Ошибка</span>
+</label>
+
+      <button type="submit" class="button button--primary poppa__button" data-success="Message envoyé">
+        <span class="button__text">Envoyer le message</span>
+      </button>
+    </div>
+  </form>
+</div>
+
+
+
+    <script src="./js/bundle.min.js?_v=20230315123907"></script>
+  </body>
+</html>
+
