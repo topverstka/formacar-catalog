@@ -14,3 +14,34 @@
 .catalog__gallery:last-child{
  margin-bottom: 0;
 }
+
+.catalog-slide{
+ overflow-x: scroll;
+ margin-bottom: 6.25rem;
+}
+
+.catalog__gallery_slide{
+ display: flex;
+}
+
+.catalog__gallery_slide .catalog-card{
+ width: 18.88rem;
+ min-width: 18.88rem;
+}
+
+.catalog-slide::-webkit-scrollbar {
+ height: 0;
+}
+
+.catalog-slide::-webkit-scrollbar-track {
+ background: transparent;
+}
+
+.catalog-slide::-webkit-scrollbar-thumb {
+ background: transparent;
+ transition: 0.4s;
+}
+
+.catalog-slide::-webkit-scrollbar-thumb:hover {
+ background: transparent;
+}

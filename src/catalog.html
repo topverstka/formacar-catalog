@@ -33,70 +33,299 @@
         </div>
         <h2 class="section-title page__title">Каталог тюнинга</h2>
 
+        <section class="tuning">
+          <div class="tuning__gallery">
+  
+  
+           <a href="#" class="tuning-card tuning-card--tall">
+            <picture class="tuning-card__pic">
+             <img src="img/tuning/1.jpg" alt="" class="tuning-card__img">
+            </picture>
+            <p class="tuning-card__name">Диски</p>
+           </a>
+           <a href="#" class="tuning-card">
+            <picture class="tuning-card__pic">
+             <img src="img/tuning/2.jpg" alt="" class="tuning-card__img">
+            </picture>
+            <p class="tuning-card__name">Аэродинамика</p>
+           </a>
+           <a href="#" class="tuning-card">
+            <picture class="tuning-card__pic">
+             <img src="img/tuning/3.jpg" alt="" class="tuning-card__img">
+            </picture>
+            <p class="tuning-card__name">Выхлопные системы</p>
+           </a>
+           <a href="#" class="tuning-card">
+            <picture class="tuning-card__pic">
+             <img src="img/tuning/4.jpg" alt="" class="tuning-card__img">
+            </picture>
+            <p class="tuning-card__name">подвеска</p>
+           </a>
+           <a href="#" class="tuning-card">
+            <picture class="tuning-card__pic">
+             <img src="img/tuning/5.jpg" alt="" class="tuning-card__img">
+            </picture>
+            <p class="tuning-card__name">Тормозные системы</p>
+           </a>
+           <a href="#" class="tuning-card">
+            <picture class="tuning-card__pic">
+             <img src="img/tuning/6.jpg" alt="" class="tuning-card__img">
+            </picture>
+            <p class="tuning-card__name">тюнинг двигателя</p>
+           </a>
+           <a href="#" class="tuning-card">
+            <picture class="tuning-card__pic">
+             <img src="img/tuning/7.jpg" alt="" class="tuning-card__img">
+            </picture>
+            <p class="tuning-card__name">аксессуары</p>
+           </a>
+           <a href="#" class="tuning-card">
+            <picture class="tuning-card__pic">
+             <img src="img/tuning/8.jpg" alt="" class="tuning-card__img">
+            </picture>
+            <p class="tuning-card__name">интерьер</p>
+           </a>
+           <a href="#" class="tuning-card">
+            <picture class="tuning-card__pic">
+             <img src="img/tuning/9.jpg" alt="" class="tuning-card__img">
+            </picture>
+            <p class="tuning-card__name">винил</p>
+           </a>
+  
+          </div>
+         </section>
+  
+         <section class="brands">
+            <p class="section-desc">Лучшие бренды</p>
+            <div class="brands__gallery">
+              <article class="brands-card">
+                <picture class="bradns-card__pic">
+                  <img class="brands-card__img" src="img/brands/1.jpg"></img>
+                </picture>
+              </article>
+              <article class="brands-card">
+                <picture class="bradns-card__pic">
+                  <img class="brands-card__img" src="img/brands/2.jpg"></img>
+                </picture>
+              </article>
+              <article class="brands-card">
+                <picture class="bradns-card__pic">
+                  <img class="brands-card__img" src="img/brands/3.jpg"></img>
+                </picture>
+              </article>
+              <article class="brands-card">
+                <picture class="bradns-card__pic">
+                  <img class="brands-card__img" src="img/brands/4.jpg"></img>
+                </picture>
+              </article>
+              <article class="brands-card">
+                <picture class="bradns-card__pic">
+                  <img class="brands-card__img" src="img/brands/5.jpg"></img>
+                </picture>
+              </article>
+              <article class="brands-card">
+                <picture class="bradns-card__pic">
+                  <img class="brands-card__img" src="img/brands/6.jpg"></img>
+                </picture>
+              </article>
+              <article class="brands-card">
+                <picture class="bradns-card__pic">
+                  <img class="brands-card__img" src="img/brands/7.jpg"></img>
+                </picture>
+              </article>
+              <article class="brands-card">
+                <picture class="bradns-card__pic">
+                  <img class="brands-card__img" src="img/brands/8.jpg"></img>
+                </picture>
+              </article>
+              <article class="brands-card">
+                <picture class="bradns-card__pic">
+                  <img class="brands-card__img" src="img/brands/9.jpg"></img>
+                </picture>
+              </article>
+              <article class="brands-card">
+                <picture class="bradns-card__pic">
+                  <img class="brands-card__img" src="img/brands/10.jpg"></img>
+                </picture>
+              </article>
+              <article class="brands-card">
+                <picture class="bradns-card__pic">
+                  <img class="brands-card__img" src="img/brands/11.jpg"></img>
+                </picture>
+              </article>
+              <article class="brands-card">
+                <picture class="bradns-card__pic">
+                  <img class="brands-card__img" src="img/brands/12.jpg"></img>
+                </picture>
+              </article>
+            </div>
+         </section>
+  
+         <section class="catalog">
+          <h2 class="section-desc catalog__title">Индустрия дисков</h2>
+          <div class="catalog-slide">
+            <div class="catalog__gallery catalog__gallery_slide" id="catalog__gallery_slide">
+
+              @@include('tpls/cards/catalog.html',{img: "wheels/wheels-1.jpg", category: "AIRTEKK", name: "TANKEN"})
+              @@include('tpls/cards/catalog.html',{img: "wheels/wheels-2.jpg", category: "CORSE WERKS", name: "Toro"})
+              @@include('tpls/cards/catalog.html',{img: "wheels/wheels-3.jpg", category: "YIDO PERFORMANCE", name: "YP SERIES YP3"})
+              @@include('tpls/cards/catalog.html',{img: "wheels/wheels-4.jpg", category: "3SDM", name: "CT216"})
+              @@include('tpls/cards/catalog.html',{img: "wheels/wheels-2.jpg", category: "CORSE WERKS", name: "Toro"})
+              @@include('tpls/cards/catalog.html',{img: "wheels/wheels-1.jpg", category: "AIRTEKK", name: "TANKEN"})
+              @@include('tpls/cards/catalog.html',{img: "wheels/wheels-2.jpg", category: "CORSE WERKS", name: "Toro"})
+              @@include('tpls/cards/catalog.html',{img: "wheels/wheels-3.jpg", category: "YIDO PERFORMANCE", name: "YP SERIES YP3"})
+            
+            </div>
+          </div>
+
+          <h2 class="section-desc catalog__title">Индустрия дисков</h2>
+          <div class="catalog-slide">
+            <div class="catalog__gallery catalog__gallery_slide" id="catalog__gallery_slide">
+
+              @@include('tpls/cards/catalog-no-list.html',{img: "aerodynamics/aerodynamics-1.jpg", category: "Formacar SCL", name: "PORSCHE 911 TURBO S VENOM"})
+              @@include('tpls/cards/catalog-no-list.html',{img: "aerodynamics/aerodynamics-2.jpg", category: "Formacar SCL", name: "NISSAN GT-R GOJIRA 2019"})
+              @@include('tpls/cards/catalog-no-list.html',{img: "aerodynamics/aerodynamics-3.jpg", category: "Formacar SCL", name: "LAMBORGHINI URUS"})
+              @@include('tpls/cards/catalog-no-list.html',{img: "aerodynamics/aerodynamics-4.jpg", category: "Formacar SCL", name: "MERCEDES BENZ E 200 SPORT"})
+              @@include('tpls/cards/catalog-no-list.html',{img: "aerodynamics/aerodynamics-1.jpg", category: "Formacar SCL", name: "PORSCHE 911 TURBO S VENOM"})
+              @@include('tpls/cards/catalog-no-list.html',{img: "aerodynamics/aerodynamics-2.jpg", category: "Formacar SCL", name: "NISSAN GT-R GOJIRA 2019"})
+              @@include('tpls/cards/catalog-no-list.html',{img: "aerodynamics/aerodynamics-3.jpg", category: "Formacar SCL", name: "LAMBORGHINI URUS"})
+              @@include('tpls/cards/catalog-no-list.html',{img: "aerodynamics/aerodynamics-4.jpg", category: "Formacar SCL", name: "MERCEDES BENZ E 200 SPORT"})
+            
+            </div>
+          </div>
+         </section>
+
+         <section class="advertisement">
+          <div class="swiper advertisement-carousel">
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide advertisement-carousel__slide">
+                <picture class="advertisement-carousel__pic">
+                  <img src="img/advertisement/ads-3.jpg" alt="" class="advertisement-carousel__img">
+                </picture>
+              </div>
+
+              <div class="swiper-slide advertisement-carousel__slide">
+                <picture class="advertisement-carousel__pic">
+                  <img src="img/advertisement/ads-1.jpg" alt="" class="advertisement-carousel__img">
+                </picture>
+              </div>
+
+              <div class="swiper-slide advertisement-carousel__slide">
+                <picture class="advertisement-carousel__pic">
+                  <img src="img/advertisement/ads-2.jpg" alt="" class="advertisement-carousel__img">
+                </picture>
+              </div>
+
+            </div>
+          </div>
+         </section>
+
+         <section class="catalog">
+          <h2 class="section-desc catalog__title">Выхлопные системы</h2>
+          <div class="catalog-slide">
+            <div class="catalog__gallery catalog__gallery_slide" id="catalog__gallery_slide">
+
+              @@include('tpls/cards/catalog-no-list.html',{img: "exhaust-systems/1.jpg", category: "Formacar SCL", name: "PORSCHE 911 TURBO S VENOM"})
+              @@include('tpls/cards/catalog-no-list.html',{img: "exhaust-systems/2.jpg", category: "Formacar SCL", name: "NISSAN GT-R GOJIRA 2019"})
+              @@include('tpls/cards/catalog-no-list.html',{img: "exhaust-systems/3.jpg", category: "Formacar SCL", name: "LAMBORGHINI URUS"})
+              @@include('tpls/cards/catalog-no-list.html',{img: "exhaust-systems/4.jpg", category: "Formacar SCL", name: "MERCEDES BENZ E 200 SPORT"})
+              @@include('tpls/cards/catalog-no-list.html',{img: "exhaust-systems/5.jpg", category: "Formacar SCL", name: "PORSCHE 911 TURBO S VENOM"})
+              @@include('tpls/cards/catalog-no-list.html',{img: "exhaust-systems/6.jpg", category: "Formacar SCL", name: "NISSAN GT-R GOJIRA 2019"})
+            
+            </div>
+          </div>
+
+          <h2 class="section-desc catalog__title">Подвеска</h2>
+          <div class="catalog-slide">
+            <div class="catalog__gallery catalog__gallery_slide" id="catalog__gallery_slide">
+
+              @@include('tpls/cards/catalog-no-list.html',{img: "suspension/1.jpg", category: "H&R", name: "STREET PERFORMANCE"})
+              @@include('tpls/cards/catalog-no-list.html',{img: "suspension/2.jpg", category: "KW SUSPENSIONS", name: "HEIHGT ADJUSTABLE SPRING KIT"})
+              @@include('tpls/cards/catalog-no-list.html',{img: "suspension/3.jpg", category: "DINAN ENGINEERING", name: "BMW F80 M3 F82 F83 M4 (EDC Only)"})
+              @@include('tpls/cards/catalog-no-list.html',{img: "suspension/4.jpg", category: "JRZ SUSPENSION", name: "11 SERIES"})
+              @@include('tpls/cards/catalog-no-list.html',{img: "suspension/1.jpg", category: "H&R", name: "STREET PERFORMANCE"})
+              @@include('tpls/cards/catalog-no-list.html',{img: "suspension/2.jpg", category: "KW SUSPENSIONS", name: "HEIHGT ADJUSTABLE SPRING KIT"})
+              @@include('tpls/cards/catalog-no-list.html',{img: "suspension/3.jpg", category: "DINAN ENGINEERING", name: "BMW F80 M3 F82 F83 M4 (EDC Only)"})
+              @@include('tpls/cards/catalog-no-list.html',{img: "suspension/4.jpg", category: "JRZ SUSPENSION", name: "11 SERIES"})
+            
+            </div>
+          </div>
+
+          <h2 class="section-desc catalog__title">Тормозные системы</h2>
+          <div class="catalog-slide">
+            <div class="catalog__gallery catalog__gallery_slide" id="catalog__gallery_slide">
+
+              @@include('tpls/cards/catalog-no-list.html',{img: "brake-systems/1.jpg", category: "H&R", name: "STREET PERFORMANCE"})
+              @@include('tpls/cards/catalog-no-list.html',{img: "brake-systems/2.jpg", category: "KW SUSPENSIONS", name: "HEIHGT ADJUSTABLE SPRING KIT"})
+              @@include('tpls/cards/catalog-no-list.html',{img: "brake-systems/3.jpg", category: "DINAN ENGINEERING", name: "BMW F80 M3 F82 F83 M4 (EDC Only)"})
+              @@include('tpls/cards/catalog-no-list.html',{img: "brake-systems/4.jpg", category: "JRZ SUSPENSION", name: "11 SERIES"})
+              @@include('tpls/cards/catalog-no-list.html',{img: "brake-systems/1.jpg", category: "H&R", name: "STREET PERFORMANCE"})
+              @@include('tpls/cards/catalog-no-list.html',{img: "brake-systems/2.jpg", category: "KW SUSPENSIONS", name: "HEIHGT ADJUSTABLE SPRING KIT"})
+              @@include('tpls/cards/catalog-no-list.html',{img: "brake-systems/3.jpg", category: "DINAN ENGINEERING", name: "BMW F80 M3 F82 F83 M4 (EDC Only)"})
+              @@include('tpls/cards/catalog-no-list.html',{img: "brake-systems/4.jpg", category: "JRZ SUSPENSION", name: "11 SERIES"})
+            
+            </div>
+          </div>
+
+          <h2 class="section-desc catalog__title">Тюнинг двигателя</h2>
+          <div class="catalog-slide">
+            <div class="catalog__gallery catalog__gallery_slide" id="catalog__gallery_slide">
+
+              @@include('tpls/cards/catalog-no-list.html',{img: "engine/1.jpg", category: "LADA", name: "21126 21126100301100"})
+              @@include('tpls/cards/catalog-no-list.html',{img: "engine/2.jpg", category: "Luzar", name: "Насос водяной для автомобилей Suzuki Grand Vitara (05-) 2.4i LWP 2424 LUZAR"})
+              @@include('tpls/cards/catalog-no-list.html',{img: "engine/3.jpg", category: "HQ-mech", name: "Термостат HQ-96139, Chevrolet Lanos, 96143939"})
+              @@include('tpls/cards/catalog-no-list.html',{img: "engine/4.jpg", category: "Elring", name: "150.162e_прокладка Гбц Audi, Skoda, Vw 1.9tdi 00>"})
+              @@include('tpls/cards/catalog-no-list.html',{img: "engine/5.jpg", category: "Luzar", name: "Радиатор охлаждения Mazda 6 (07-) MT"})
+              @@include('tpls/cards/catalog-no-list.html',{img: "engine/6.jpg", category: "Formacar SCL", name: "NISSAN GT-R GOJIRA 2019"})
+            
+            </div>
+          </div>
+
+          <h2 class="section-desc catalog__title">Аксессуары</h2>
+          <div class="catalog-slide">
+            <div class="catalog__gallery catalog__gallery_slide" id="catalog__gallery_slide">
+
+              @@include('tpls/cards/catalog-no-list.html',{img: "accessories/1.jpg", category: "SKYWAY", name: "SKYWAY Racer-1 M"})
+              @@include('tpls/cards/catalog-no-list.html',{img: "accessories/2.jpg", category: "SKYWAY", name: "Combo-2 S"})
+              @@include('tpls/cards/catalog-no-list.html',{img: "accessories/3.jpg", category: "SKYWAY", name: "FLEX-10 M"})
+              @@include('tpls/cards/catalog-no-list.html',{img: "accessories/4.jpg", category: "Voin", name: "SOFT M"})
+              @@include('tpls/cards/catalog-no-list.html',{img: "accessories/5.jpg", category: "SKYWAY", name: "FLEX-9 M"})
+              @@include('tpls/cards/catalog-no-list.html',{img: "accessories/6.jpg", category: "SKYWAY", name: "FLEX-10 M"})
+            
+            </div>
+          </div>
+
+          <h2 class="section-desc catalog__title">Интерьер</h2>
+          <div class="catalog-slide">
+            <div class="catalog__gallery catalog__gallery_slide" id="catalog__gallery_slide">
+
+              @@include('tpls/cards/catalog-no-list.html',{img: "interior/1.jpg", category: "MANSORY", name: "ASTON MARTIN DB9 / VOLANTE"})
+              @@include('tpls/cards/catalog-no-list.html',{img: "interior/2.jpg", category: "MANSORY", name: "LAMBORHINI AVENTADOR COMPETITION"})
+              @@include('tpls/cards/catalog-no-list.html',{img: "interior/3.jpg", category: "MANSORY", name: "LAMBORHINI AVENTADOR JS1 EDITION"})
+              @@include('tpls/cards/catalog-no-list.html',{img: "interior/4.jpg", category: "MANSORY", name: "LAMBORGHINI AVENTADOR CARBONADO"})
+              @@include('tpls/cards/catalog-no-list.html',{img: "interior/5.jpg", category: "MANSORY", name: "LAMBORGHINI HURACAN"})
+              @@include('tpls/cards/catalog-no-list.html',{img: "interior/6.jpg", category: "MANSORY", name: "LAMBORGHINI AVENTADOR CARBONADO APERTOS"})
+            
+            </div>
+          </div>
+
+          <h2 class="section-desc catalog__title">Винилы</h2>
+          <div class="catalog-slide">
+            <div class="catalog__gallery catalog__gallery_slide" id="catalog__gallery_slide">
+
+              @@include('tpls/cards/catalog-no-list.html',{img: "vinyls/1.jpg", category: "Formacar SCL", name: "Metallic 000000"})
+              @@include('tpls/cards/catalog-no-list.html',{img: "vinyls/2.jpg", category: "Formacar SCL", name: "Metallic 000001"})
+              @@include('tpls/cards/catalog-no-list.html',{img: "vinyls/3.jpg", category: "Formacar SCL", name: "Metallic 000002"})
+              @@include('tpls/cards/catalog-no-list.html',{img: "vinyls/4.jpg", category: "Formacar SCL", name: "Metallic 000003"})
+              @@include('tpls/cards/catalog-no-list.html',{img: "vinyls/5.jpg", category: "Formacar SCL", name: "Metallic 000004"})
+              @@include('tpls/cards/catalog-no-list.html',{img: "vinyls/6.jpg", category: "Formacar SCL", name: "Metallic 000005"})
+            
+            </div>
+          </div>
+         </section>
+
        </div>
-        
-       <section class="tuning">
-        <div class="tuning__container">
-
-
-         <article class="tuning-card tuning-card--tall">
-          <picture class="tuning-card__pic">
-           <img src="img/tuning/1.jpg" alt="" class="tuning-card__img">
-          </picture>
-          <p class="tuning-card__name">Диски</p>
-         </article>
-         <article class="tuning-card">
-          <picture class="tuning-card__pic">
-           <img src="img/tuning/2.jpg" alt="" class="tuning-card__img">
-          </picture>
-          <p class="tuning-card__name">Аэродинамика</p>
-         </article>
-         <article class="tuning-card">
-          <picture class="tuning-card__pic">
-           <img src="img/tuning/3.jpg" alt="" class="tuning-card__img">
-          </picture>
-          <p class="tuning-card__name">Выхлопные системы</p>
-         </article>
-         <article class="tuning-card">
-          <picture class="tuning-card__pic">
-           <img src="img/tuning/4.jpg" alt="" class="tuning-card__img">
-          </picture>
-          <p class="tuning-card__name">подвеска</p>
-         </article>
-         <article class="tuning-card">
-          <picture class="tuning-card__pic">
-           <img src="img/tuning/5.jpg" alt="" class="tuning-card__img">
-          </picture>
-          <p class="tuning-card__name">Тормозные системы</p>
-         </article>
-         <article class="tuning-card">
-          <picture class="tuning-card__pic">
-           <img src="img/tuning/6.jpg" alt="" class="tuning-card__img">
-          </picture>
-          <p class="tuning-card__name">тюнинг двигателя</p>
-         </article>
-         <article class="tuning-card">
-          <picture class="tuning-card__pic">
-           <img src="img/tuning/7.jpg" alt="" class="tuning-card__img">
-          </picture>
-          <p class="tuning-card__name">аксессуары</p>
-         </article>
-         <article class="tuning-card">
-          <picture class="tuning-card__pic">
-           <img src="img/tuning/8.jpg" alt="" class="tuning-card__img">
-          </picture>
-          <p class="tuning-card__name">интерьер</p>
-         </article>
-         <article class="tuning-card">
-          <picture class="tuning-card__pic">
-           <img src="img/tuning/9.jpg" alt="" class="tuning-card__img">
-          </picture>
-          <p class="tuning-card__name">винил</p>
-         </article>
-
-        </div>
-       </section>
-       
         
       </main>
 

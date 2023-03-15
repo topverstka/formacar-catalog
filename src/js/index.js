@@ -92,3 +92,38 @@ function s() {
   };
 }
 s();
+
+
+
+// (function() {
+//   function scrollHorizontally(e) {
+//       e = window.event || e;
+//       var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
+//       console.log(delta)
+//       document.querySelector('.catalog__gallery_slide').scrollLeft -= (delta * 40); // Multiplied by 40
+//       e.preventDefault();
+//   }
+//   if (document.querySelector('.catalog__gallery_slide').addEventListener) {
+//       // IE9, Chrome, Safari, Opera
+//       document.querySelector('.catalog__gallery_slide').addEventListener('mousewheel', scrollHorizontally, false);
+//       // Firefox
+//       document.querySelector('.catalog__gallery_slide').addEventListener('DOMMouseScroll', scrollHorizontally, false);
+//   } else {
+//       // IE 6/7/8
+//       document.querySelector('.catalog__gallery_slide').attachEvent('onmousewheel', scrollHorizontally);
+//   }
+// })();
+
+const element = document.querySelectorAll(".catalog-slide");
+
+for (let i = 0; i < element.length; i++) {
+  element[i].addEventListener('wheel', (event) => {
+    event.preventDefault();
+    console.log(event.deltaY)
+    
+    element[i].scrollBy({
+      left: event.deltaY < 0 ? -30 : 30,
+    });
+  });
+}
+

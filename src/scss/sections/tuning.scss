@@ -1,19 +1,25 @@
-.tuning__container{
+.tuning{
+ margin-bottom: 6.25rem;
+}
+
+.tuning__gallery{
  display: grid;
- grid-template-columns: repeat(5, 1fr);
+ grid-template-columns: 18.88rem repeat(4, 1fr);
  gap: 1.25rem;
  width: 100%;
 }
 
 .tuning-card{
- height: 10rem;
+ min-height: 10rem;
  border-radius: var(--brad-regular);
  overflow: hidden;
  position: relative;
 }
 
 .tuning-card--tall{
- grid-row: 1 / 3;
+ grid-row-start: 1;
+ grid-row-end: 3;
+ grid-column-start: 1;
 }
 
 .tuning-card__pic{

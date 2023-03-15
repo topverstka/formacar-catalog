@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- Отключить автодетект телефонов -->
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- Отключить кэширование. Нужен только при разработке, чтобы все было свежим -->
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="max-age=3600, must-revalidate" />
+  </head>
+  <body>
+    <div class="wrapper">
+      @@include('tpls/header.html',{})
+
+
+      <main class="main">
+        
+        <div class="main__container-news">
+         <aside class="main-sidebar">
+          <section class="articles">
+            <p class="section-desc">Вам может быть интересно</p>
+            @@include('tpls/cards/articles-card.html',{text: "Mercedes-Benz rally car underway to auction in France"})
+            @@include('tpls/cards/articles-card.html',{text: "Hyundai updates the Grand i10 and Aura for India"})
+            @@include('tpls/cards/articles-card.html',{text: "Video: This dealership replica looks indistinguishable from the real thing"})
+            @@include('tpls/cards/articles-card.html',{text: "Hennessey Venom F5 racecar debuts on official terms"})
+            @@include('tpls/cards/articles-card.html',{text: "Chery reveals its latest SUV during a private conference"})
+            @@include('tpls/cards/articles-card.html',{text: "Reports: Toyota Century SUV coming to the market later this year"})
+            @@include('tpls/cards/articles-card.html',{text: "Survive in a post-apocalyptic world with this crazy off-roader"})
+            @@include('tpls/cards/articles-card.html',{text: "Bugatti closes 2022 with unprecedented sales success"})
+            @@include('tpls/cards/articles-card.html',{text: "Italian hypercar startup aiming to smash through the Nürburgring record"})
+          </section>
+
+         </aside>
+
+          <div class="main__items news-single">
+           <div class="news-single__artcile">
+            <div class="page-heading ">
+
+             <div class="breadcrumbs">
+              <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                 <a href="#" class="breadcrumbs__link">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                 <a href="#" class="breadcrumbs__link">Новости</a>
+                </li>
+                <li class="breadcrumbs__item">Все новости</li>
+              </ul>
+             </div>
+
+             <p class="section-desc page__desc">Все новости</p>
+             <h2 class="section-title page__title">Lamborghini Urus примеряет еще один экстремально выглядящий аэродинамический обвес</h2>
+
+            </div>
+
+            <div class="news-carousel">
+             <div class="swiper news-carousel--big">
+              <div class="swiper-wrapper">
+               <div class="swiper-slide news-carousel__slide">
+                <picture class="news-carousel__pic">
+                 <img src="img/news-carousel/1.jpg" alt="" class="news-carousel__img">
+                </picture>
+               </div>
+               <div class="swiper-slide news-carousel__slide">
+                <picture class="news-carousel__pic">
+                 <img src="img/news-carousel/2.jpg" alt="" class="news-carousel__img">
+                </picture>
+               </div>
+               <div class="swiper-slide news-carousel__slide">
+                <picture class="news-carousel__pic">
+                 <img src="img/news-carousel/3.jpg" alt="" class="news-carousel__img">
+                </picture>
+               </div>
+               <div class="swiper-slide news-carousel__slide">
+                <picture class="news-carousel__pic">
+                 <img src="img/news-carousel/4.jpg" alt="" class="news-carousel__img">
+                </picture>
+               </div>
+               <div class="swiper-slide news-carousel__slide">
+                <picture class="news-carousel__pic">
+                 <img src="img/news-carousel/5.jpg" alt="" class="news-carousel__img">
+                </picture>
+               </div>
+               <div class="swiper-slide news-carousel__slide">
+                <picture class="news-carousel__pic">
+                 <img src="img/news-carousel/6.jpg" alt="" class="news-carousel__img">
+                </picture>
+               </div>
+               <div class="swiper-slide news-carousel__slide">
+                <picture class="news-carousel__pic">
+                 <img src="img/news-carousel/7.jpg" alt="" class="news-carousel__img">
+                </picture>
+               </div>
+               <div class="swiper-slide news-carousel__slide">
+                <picture class="news-carousel__pic">
+                 <img src="img/news-carousel/8.jpg" alt="" class="news-carousel__img">
+                </picture>
+               </div>
+               <div class="swiper-slide news-carousel__slide">
+                <picture class="news-carousel__pic">
+                 <img src="img/news-carousel/9.jpg" alt="" class="news-carousel__img">
+                </picture>
+               </div>
+             
+              </div>
+             </div>
+             <div class="swiper news-carousel--small">
+              <div class="swiper-wrapper">
+               <div class="swiper-slide news-carousel__slide">
+                <picture class="news-carousel__pic">
+                 <img src="img/news-carousel/1.jpg" alt="" class="news-carousel__img">
+                </picture>
+               </div>
+               <div class="swiper-slide news-carousel__slide">
+                <picture class="news-carousel__pic">
+                 <img src="img/news-carousel/2.jpg" alt="" class="news-carousel__img">
+                </picture>
+               </div>
+               <div class="swiper-slide news-carousel__slide">
+                <picture class="news-carousel__pic">
+                 <img src="img/news-carousel/3.jpg" alt="" class="news-carousel__img">
+                </picture>
+               </div>
+               <div class="swiper-slide news-carousel__slide">
+                <picture class="news-carousel__pic">
+                 <img src="img/news-carousel/4.jpg" alt="" class="news-carousel__img">
+                </picture>
+               </div>
+               <div class="swiper-slide news-carousel__slide">
+                <picture class="news-carousel__pic">
+                 <img src="img/news-carousel/5.jpg" alt="" class="news-carousel__img">
+                </picture>
+               </div>
+               <div class="swiper-slide news-carousel__slide">
+                <picture class="news-carousel__pic">
+                 <img src="img/news-carousel/6.jpg" alt="" class="news-carousel__img">
+                </picture>
+               </div>
+               <div class="swiper-slide news-carousel__slide">
+                <picture class="news-carousel__pic">
+                 <img src="img/news-carousel/7.jpg" alt="" class="news-carousel__img">
+                </picture>
+               </div>
+               <div class="swiper-slide news-carousel__slide">
+                <picture class="news-carousel__pic">
+                 <img src="img/news-carousel/8.jpg" alt="" class="news-carousel__img">
+                </picture>
+               </div>
+               <div class="swiper-slide news-carousel__slide">
+                <picture class="news-carousel__pic">
+                 <img src="img/news-carousel/9.jpg" alt="" class="news-carousel__img">
+                </picture>
+               </div>
+             
+              </div>
+             </div>
+            </div>
+
+            <div class="news-content"></div>
+
+
+           </div>
+    
+          </div>
+
+          
+
+        </div>
+        
+      </main>
+
+
+      @@include('tpls/footer.html',{})
+    </div>
+
+    @@include('tpls/modals.html', {})
+    <script src="./js/bundle.min.js"></script>
+  </body>
+</html>

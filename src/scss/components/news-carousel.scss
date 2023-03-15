@@ -1,0 +1,32 @@
+.news-carousel{
+ margin-bottom: 2.50rem;
+}
+
+.news-carousel--big{
+ margin-bottom: 0.19rem;
+ height: 28rem;
+}
+
+.news-carousel--small{
+ height: 7.88rem;
+}
+
+.news-carousel--small .news-carousel__img{
+ object-fit: cover;
+}
+
+.news-carousel--small .news-carousel__slide::after{
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ content: '';
+ background: #000;
+ opacity: 0;
+ transition: 0.4s;
+}
+
+.news-carousel--small .news-carousel__slide.swiper-slide-active::after{
+ opacity: 0.5;
+}
