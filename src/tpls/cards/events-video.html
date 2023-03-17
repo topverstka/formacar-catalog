@@ -1,0 +1,34 @@
+<article class="events-card" >
+
+ <div class="events-card__top">
+  <div class="events-card__wrap">
+   <div class="events-card__info">
+    <picture class="events-card__profile">
+     <img src="img/events/profile-@@profile" alt="">
+    </picture>
+    <div class="events-card__text">
+     <p class="events-card__name">@@name</p>
+     <p class="events-card__date">15 Сентября 2022, 17:45 </p>
+    </div>
+   </div>
+   @@include('../sections/events-menu.html')
+  </div>
+  <p class="events-card__descr">
+   @@descr
+  </p>
+ </div>
+ <div class="events-card__video">
+  <picture class="events-card__pic" data-poppa-open="events-pop-video">
+   <img src="img/events/events-@@img" alt="" class="events-card__img">
+  </picture>
+  <p class="events-card__video-time">1:03</p>
+ </div>
+ 
+ <div class="events-card__bottom">
+  @@include('../sections/bottom-button.html',{type: 'like', number: '5'})
+  @@include('../sections/bottom-button.html',{type: 'comments', number: '10'})
+  @@include('../sections/bottom-button.html',{type: 'view', number: '10'})
+
+ </div>
+ 
+</article>

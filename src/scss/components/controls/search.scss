@@ -7,7 +7,7 @@
     justify-content: space-between;
     width: 100%;
     padding: 0.69rem 0;
-    background-color: transparent;
+    background-color: #fff;
     border-radius: 8px;
     border: 1px solid #B4B4BF;
 }
@@ -31,11 +31,8 @@
     font-size: var(--fz-body--small);
     line-height: 1.03;
     border-radius: 8px;
-    color: (--c-text-secondary);
+    color: var(--c-text-secondary);
     padding-left: 0.63rem;
-    @media (max-width: 1100px) {
-        line-height: 1.215;
-    }
 }
 
 .search__input::placeholder{
@@ -47,66 +44,10 @@
     margin-left: 19px;
 }
 
-.search__input-field {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-left: 42px;
-    color: var(--c-text-disabled);
-    border: none;
-}
-.search__input-field::placeholder {
-    color: var(--c-text-disabled);
+.search__form:hover .search__input{
+    color: var(--c-text-regular);
 }
 
-.page-content__search {
-    @media (max-width: 1100px) {
-        display: none;
-    }
-}
-
-.search-results {
-    // @media (max-width: 991px) and (min-width: 575px) {
-    //     margin-left: 4px;
-    // }
-}
-.search-results__link {
-    display: block;
-    margin-bottom: 19px;
-    font-size: var(--fz-body);
-    line-height: var(--lh-body);
-    transition: all 0.3s ease;
-    @media (max-width: 575px) {
-        margin-bottom: 20px;
-    }
-}
-.search-results__link:hover {
-    color: var(--c-accent-dark);
-}
-.search-results__link:active {
-    opacity: 0.6;
-}
-.search-results__link:last-child {
-    margin-bottom: 0;
-}
-
-.partners__search {
-    display: flex;
-}
-// .partners__search .search__form {
-//     @media (max-width: 1100px) and (min-width: 768px) {
-//         margin-bottom: 38px;
-//     }
-//     @media (max-width: 575px) {
-//         margin-bottom: 17px;
-//     }
-// }
-
-.section__search .section__title {
-    @media (max-width: 1100px) {
-        margin-bottom: 20px;
-        font-size: var(--fz-h2);
-    }
-    @media (max-width: 575px) {
-        margin-bottom: 16px;
-    }
+.search__form:hover .search__input::placeholder{
+    color: var(--c-text-regular);
 }

@@ -9,6 +9,7 @@
  width: 100%;
  height: 12.50rem;
  position: relative;
+ transition: 0.4s;
 }
 
 .catalog-card__pic{
@@ -33,7 +34,8 @@
  filter: drop-shadow(2px 2px 5px rgba(210, 217, 220, 0.2));
 }
 
-.catalog-card__model img,svg{
+.catalog-card__model img,
+.catalog-card__model svg{
  max-width: 1.19rem;
  margin-right: 0.5rem;
 }
@@ -83,6 +85,7 @@
  display: flex;
  align-items: center;
  justify-content: space-between;
+ transition: 0.4s;
 }
 
 .catalog-card__bookmark{
@@ -91,4 +94,12 @@
 
 .catalog-card__no-list .catalog-card__name{
  min-height: 2.75rem;
+}
+
+.catalog-card:hover .catalog-card__top{
+ padding: 0.625rem;
+}
+
+.catalog-card:hover .catalog-card__bottom{
+ opacity: 0.7;
 }

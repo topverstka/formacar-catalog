@@ -46,14 +46,13 @@
 }
 
 .poppa {
-  max-width: 900px;
-  padding: 1em;
   margin-right: auto;
   margin-left: auto;
   background-color: #fff;
   border-radius: 2em;
   transition: all 0.3s ease;
   transform: scale(0.86);
+  position: relative;
 }
 ._show .poppa {
   transform: scale(1);
@@ -61,11 +60,11 @@
 
 .poppa__closer {
   position: absolute;
-  top: 1em;
-  right: 1em;
+  top: 0;
+  right: -2.12rem;
   display: block;
-  width: 2.5em;
-  height: 2.5em;
+  width: 1.56rem;
+  height: 1.56rem;
   font-size: 0;
   background-color: transparent;
   transition: all 0.3s ease;
@@ -125,31 +124,15 @@
 
 .poppa {
   width: 100%;
-  max-width: 300px;
-  padding-top: 24px;
-  padding-right: 18px;
-  padding-bottom: 37px;
-  padding-left: 18px;
-  color: var(--c-text-on);
-  background: var(--bg-poppa);
-  border-radius: var(--radius-poppa);
-  @media (min-width: 1100px) {
-    max-width: 500px;
-  }
+  background: #fff;
+  border-radius: var(--brad-regular);
 }
 .poppa--overlay {
   background: var(--bg-poppa-overlay);
 }
 
 .poppa__closer {
-  --closer-color: #707070;
-  font-size: 20px;
   color: transparent;
-  background-color: var(--bg-poppa);
-  border-radius: var(--radius-poppa);
-  @media (max-width: 768px) {
-    font-size: 12px;
-  }
 }
 
 .poppa__title {
@@ -183,12 +166,8 @@
 .poppa__closer::after {
   top: 44%;
   right: 0;
-  width: 80%;
-  height: 8%;
+  width: 100%;
+  height: 0.19rem;
   margin-right: auto;
   margin-left: auto;
-  @media (max-width: 768px) {
-    top: 46%;
-    width: 70%;
-  }
 }

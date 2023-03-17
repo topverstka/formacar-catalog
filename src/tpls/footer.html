@@ -92,3 +92,292 @@
     </div>
   </div>
 </footer>
+
+<section class="poppa modal-events" id="events-pop">
+  <div class="modal-events__inner">
+
+    
+    <div class="modal-events__left">
+      <picture class="modal-events__pic">
+        <img src="img/events/events-3.jpg" alt="" class="modal-events__img">
+      </picture>
+
+    </div>
+
+    
+
+    <div class="modal-events__info">
+      <div class="events-card__top modal-events__top"">
+        <div class="events-card__wrap">
+         <div class="events-card__info">
+          
+          <picture class="events-card__profile">
+           <img src="img/events/profile-3.jpg" alt="">
+          </picture>
+          <div class="events-card__text">
+           <p class="events-card__name">Luxsor 007</p>
+           <p class="events-card__date">1 Февраля 2023, 13:09 </p>
+          </div>
+         </div>
+         @@include('sections/events-menu.html')
+        </div>
+        <p class="events-card__descr">
+          Hello, guys! <br>
+          Have a great Friday everyone.
+        </p>
+       </div>
+       <hr class="modal-events__divider">
+       <div class="modal-events__comments">
+        @@include('cards/comment.html',{profile: "3.jpg", name: "Михаил", text: "Это очень интересная новость! Я в восторге!", date: "30 ноября 2021, 11:45"})
+        @@include('cards/comment.html',{profile: "1.jpg", name: "Александр", text: "а я радуюсь наконец выпавшему снегу и холоду, <br> зима должна быть зимой", date: "Час назад"})
+        @@include('cards/comment.html',{profile: "3.jpg", name: "Михаил", text: "Это очень интересная новость! Я в восторге!", date: "30 ноября 2021, 11:45"})
+        @@include('cards/comment.html',{profile: "1.jpg", name: "Александр", text: "а я радуюсь наконец выпавшему снегу и холоду, <br> зима должна быть зимой", date: "Час назад"})
+        @@include('cards/comment.html',{profile: "3.jpg", name: "Михаил", text: "Это очень интересная новость! Я в восторге!", date: "30 ноября 2021, 11:45"})
+        @@include('cards/comment.html',{profile: "1.jpg", name: "Александр", text: "а я радуюсь наконец выпавшему снегу и холоду, <br> зима должна быть зимой", date: "Час назад"})
+
+       </div>
+       <div class="events-card__bottom modal-events__bottom">
+        @@include('sections/bottom-button.html',{type: 'like', number: '87'})
+        @@include('sections/bottom-button.html',{type: 'comments', number: '130'})
+        @@include('sections/bottom-button.html',{type: 'view', number: '265'})
+       </div>
+    </div>
+    
+  </div>
+</section>
+
+<section class="poppa modal-events" id="events-pop-multi">
+  <div class="modal-events__inner">
+
+    
+    <div class="modal-events__left">
+      <div class="swiper modal-events__carousel">
+        <div class="swiper-wrapper">
+      
+          <div class="swiper-slide modal-events__slide" data-poppa-open="events-pop-multi">
+          <picture class="modal-events__pic">
+            <img src="img/events/events-3.jpg" alt="" class="modal-events__img">
+          </picture>
+          </div>
+      
+          <div class="swiper-slide modal-events__slide" data-poppa-open="events-pop-multi">
+          <picture class="modal-events__pic">
+            <img src="img/events/events-3.jpg" alt="" class="modal-events__img">
+          </picture>
+          </div>
+      
+          <div class="swiper-slide modal-events__slide" data-poppa-open="events-pop-multi">
+          <picture class="modal-events__pic">
+            <img src="img/events/events-3.jpg" alt="" class="modal-events__img">
+          </picture>
+          </div>
+      
+        </div>
+        <div class="swiper-pagination modal-events__pagination"> </div>
+      
+        <div class="events-card__arrows">
+          <div class="events-card__arrow modal-events__arrow-prev">
+          <img src="./img/common/swiper-arrow-left.svg" alt="">
+          </div>
+          
+          <div class="events-card__arrow modal-events__arrow-next">
+          <img src="./img/common/swiper-arrow-right.svg" alt="">
+          </div>
+        </div>
+      
+        </div>
+
+    </div>
+
+    
+
+    <div class="modal-events__info">
+      <div class="events-card__top modal-events__top"">
+        <div class="events-card__wrap">
+         <div class="events-card__info">
+          
+          <picture class="events-card__profile">
+           <img src="img/events/profile-3.jpg" alt="">
+          </picture>
+          <div class="events-card__text">
+           <p class="events-card__name">Luxsor 007</p>
+           <p class="events-card__date">1 Февраля 2023, 13:09 </p>
+          </div>
+         </div>
+         @@include('sections/events-menu.html')
+        </div>
+        <p class="events-card__descr">
+          Hello, guys! <br>
+          Have a great Friday everyone.
+        </p>
+       </div>
+       <hr class="modal-events__divider">
+       <div class="modal-events__comments">
+        @@include('cards/comment.html',{profile: "3.jpg", name: "Михаил", text: "Это очень интересная новость! Я в восторге!", date: "30 ноября 2021, 11:45"})
+        @@include('cards/comment.html',{profile: "1.jpg", name: "Александр", text: "а я радуюсь наконец выпавшему снегу и холоду, <br> зима должна быть зимой", date: "Час назад"})
+        @@include('cards/comment.html',{profile: "3.jpg", name: "Михаил", text: "Это очень интересная новость! Я в восторге!", date: "30 ноября 2021, 11:45"})
+        @@include('cards/comment.html',{profile: "1.jpg", name: "Александр", text: "а я радуюсь наконец выпавшему снегу и холоду, <br> зима должна быть зимой", date: "Час назад"})
+        @@include('cards/comment.html',{profile: "3.jpg", name: "Михаил", text: "Это очень интересная новость! Я в восторге!", date: "30 ноября 2021, 11:45"})
+        @@include('cards/comment.html',{profile: "1.jpg", name: "Александр", text: "а я радуюсь наконец выпавшему снегу и холоду, <br> зима должна быть зимой", date: "Час назад"})
+
+       </div>
+       <div class="events-card__bottom modal-events__bottom">
+        @@include('sections/bottom-button.html',{type: 'like', number: '87'})
+        @@include('sections/bottom-button.html',{type: 'comments', number: '130'})
+        @@include('sections/bottom-button.html',{type: 'view', number: '265'})
+       </div>
+    </div>
+    
+  </div>
+</section>
+
+<section class="poppa modal-events" id="events-pop-ads">
+  <div class="modal-events__inner">
+
+    <div class="modal-events__left">
+
+      <picture class="modal-events__pic">
+        <img src="img/events/ads-img.jpg" alt="" class="modal-events__img">
+      </picture>
+
+    </div>
+
+    <div class="modal-events__info">
+      <div class="events-card__top modal-events__top"">
+        <div class="events-card__wrap">
+         <div class="events-card__info events-card_ads">
+          
+          <picture class="events-card__profile">
+           <img src="img/events/ads-profile.jpg" alt="">
+          </picture>
+          <div class="events-card__text">
+           <p class="events-card__name">Formacar</p>
+           <p class="events-card__date">Реклама</p>
+          </div>
+         </div>
+         @@include('sections/events-menu.html')
+        </div>
+        <p class="events-card__descr">
+          Is there an easy way to profitably sell your old car and quickly find a replacement without extra expenses? There sure is – just place an ad in our app, free of charge.  <br>
+          To find the vehicle you need, you can filter ads by such parameters as country, brand, MFY, mileage, body style etc. to immediately get the results relevant to you.  <br>
+          The Ads section also contains a vast assortment of tires, wheels, exhaust systems, brakes, tuning parts and other car products and services from all around the world. All ads are classified for your convenience.  <br>
+          Posted your ad for free? Don’t forget to tell your friends about us!
+        </p>
+        <a href="#" class="events-card__link">
+          <button class="button button--primary button--light events-card__follow">
+           <p class="events-card__follow-text">Перейти</p>
+           <img src="img/common/arrow-right.svg" alt="">
+          </button>
+         </a>
+       </div>
+       
+    </div>
+    
+  </div>
+</section>
+
+<section class="poppa modal-events" id="events-pop-video">
+  <div class="modal-events__inner">
+
+    <div class="modal-events__left">
+
+      <div class="events-card__video">
+        @@include('sections/play-button.html')
+        <picture class="events-card__pic" data-poppa-open="events-pop-video">
+         <img src="img/events/events-4.jpg" alt="" class="events-card__img">
+        </picture>
+        <p class="events-card__video-time">1:03</p>
+       </div>
+
+    </div>
+
+    <div class="modal-events__info">
+      <div class="events-card__top modal-events__top"">
+        <div class="events-card__wrap">
+         <div class="events-card__info">
+          
+          <picture class="events-card__profile">
+           <img src="img/events/profile-4.jpg" alt="">
+          </picture>
+          <div class="events-card__text">
+           <p class="events-card__name">Anna</p>
+           <p class="events-card__date">30 Ноября 2021, 11:45 </p>
+          </div>
+         </div>
+         @@include('sections/events-menu.html')
+        </div>
+        <p class="events-card__descr"></p>
+       </div>
+       <hr class="modal-events__divider">
+       <div class="modal-events__comments">
+        <p class="comments-empty">Комментариев пока нет.</p>
+       </div>
+       <div class="events-card__bottom modal-events__bottom">
+        @@include('sections/bottom-button.html',{type: 'like', number: '87'})
+        @@include('sections/bottom-button.html',{type: 'comments', number: '130'})
+        @@include('sections/bottom-button.html',{type: 'view', number: '265'})
+       </div>
+    </div>
+    
+  </div>
+</section>
+
+<section class="poppa modal modal-alert" id="modal-alert-complaint">
+  <div class="modal__inner">
+    <picture class="modal-alert__pic modal-alert__pic-complaint">
+      <img src="img/modal-alert/complaint.svg" alt="" class="modal-alert__img">
+    </picture>
+    <h3 class="modal__title">Пожаловаться</h3>
+    <p class="modal__text">Отправить жалобу для модерации?
+      <Комментарий> пользователя будет заблокирован. </p>
+    <div class="modal-alert__buttons">
+      <button class="button button--primary button--light modal-alert__button" data-poppa-close="modal-alert-complaint">Отмена</button>
+      <button class="button button--primary button--dark modal-alert__button" data-poppa-close="modal-alert-complaint" data-poppa-open="modal-alert-complaint-send">Отправить жалобу</button>
+    </div>
+  </div>
+</section>
+
+<section class="poppa modal modal-alert" id="modal-alert-complaint-send">
+  <div class="modal__inner">
+    <picture class="modal-alert__pic modal-alert__pic-send">
+      <img src="img/modal-alert/complaint-send.svg" alt="" class="modal-alert__img">
+    </picture>
+    <h3 class="modal__title">Жалоба отправлена</h3>
+    <p class="modal__text">Мы получили вашу жалобу. Администратор рассмотрит обращение и вынесет решение как можно скорее.</p>
+    <div class="modal-alert__buttons">
+      <button class="button button--primary button--dark modal-alert__button-send" data-poppa-close="modal-alert-complaint-send">ок</button>
+    </div>
+    
+  </div>
+</section>
+
+<section class="poppa modal modal-share" id="modal-share">
+  <div class="modal__inner">
+    <h3 class="modal__title">Поделиться</h3>
+    <div class="modal-share__social">
+      <a class="modal-share__social-facebook" href="">
+        <picture class="modal-share__social_pic">
+          <img src="img/common/facebook.svg" alt="" class="modal-share__social__img">
+        </picture>
+      </a>
+      <a class="modal-share__social-twitter" href="">
+        <picture class="modal-share__social_pic">
+          <img src="img/common/twitter.svg" alt="" class="modal-share__social__img">
+        </picture>
+      </a>
+      <a  class="modal-share__social-vk"href="">
+        <picture class="modal-share__social_pic">
+          <img src="img/common/vk.svg" alt="" class="modal-share__social__img">
+        </picture>
+      </a>
+    </div>
+    <p class="modal-share__link-text">
+      Прямая ссылка
+    </p>
+    <input disabled type="text" class="modal-share__input" value="https://formacar.com/en/news/view/51537.html">
+    <div class="modal-alert__buttons">
+      <button class="button button--primary button--dark modal-share__button" data-poppa-close="modal-share">Копировать ссылку</button>
+    </div>
+    
+  </div>
+</section>

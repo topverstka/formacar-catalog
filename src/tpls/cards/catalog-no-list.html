@@ -1,26 +1,25 @@
 <article class="catalog-card catalog-card__no-list">
 
- <div class="catalog-card__top">
-  <picture class="catalog-card__pic">
-   <img class="catalog-card__img lazy" src="./placeholder.png" data-src="./img/@@img">
-  </picture>
-  <div class="catalog-card__model">
-   <img src="./img/common/3d.svg" alt="">
-   <span>3D</span>
-  </div>
- </div>
- <div class="catalog-card__info">
-  <p class="catalog-card__category">@@category</p>
-  <h3 class="catalog-card__name">@@name</h3>
-  <div class="catalog-card__bottom">
-   <div class="promo-carousel__comments">
-     <img src="img/common/comments.svg" alt="">
-     <span>152</span>
+ <a href="#">
+   <div class="catalog-card__top">
+    <picture class="catalog-card__pic">
+     <img class="catalog-card__img lazy" src="./placeholder.png" data-src="./img/@@img">
+    </picture>
+    <div class="catalog-card__model">
+     <img src="./img/common/3d.svg" alt="">
+     <span>3D</span>
+    </div>
    </div>
-   <div class="catalog-card__bookmark">
-    <img src="img/common/bookmark.svg" alt=""> 
+   <div class="catalog-card__info">
+    <p class="catalog-card__category">@@category</p>
+    <h3 class="catalog-card__name">@@name</h3>
+    <div class="catalog-card__bottom">
+      @@include('../sections/bottom-button.html',{type: 'comments', number: '79'})
+     <div class="catalog-card__bookmark">
+      <img src="img/common/bookmark.svg" alt="">
+     </div>
+    </div>
    </div>
-  </div>
- </div>
+ </a>
  
 </article>

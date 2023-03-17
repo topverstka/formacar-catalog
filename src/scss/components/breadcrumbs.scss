@@ -16,6 +16,7 @@
  display: flex;
  justify-content: flex-start;
  align-items: center;
+ transition: 0.4s;
 }
 .breadcrumbs__item::after {
  margin-left: 0.31rem;
@@ -31,4 +32,10 @@
 }
 .breadcrumbs__item:last-of-type::after {
  content: none;
+}
+
+
+
+.breadcrumbs__item:hover {
+ color: var(--c-accent);
 }

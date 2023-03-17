@@ -1,4 +1,4 @@
-<article class="events-card events-card_ads">
+<article class="events-card events-card_ads" >
 
  <div class="events-card__top">
   <div class="events-card__wrap">
@@ -11,22 +11,20 @@
      <p class="events-card__date">Реклама </p>
     </div>
    </div>
-   <div class="events-card__menu">
-    <span></span>
-    <span></span>
-    <span></span>
-   </div>
+   @@include('../sections/events-menu.html')
   </div>
   <p class="events-card__descr">
    @@descr
   </p>
  </div>
- <picture class="events-card__pic">
+ <picture class="events-card__pic" data-poppa-open="events-pop-ads">
   <img src="img/events/@@img" alt="" class="events-card__img">
  </picture>
- <div class="events-card__follow">
-  <p class="events-card__follow-text">Перейти</p>
-  <img src="img/common/arrow-right.svg" alt="">
- </div>
+ <a href="#">
+  <button class="button button--primary button--light events-card__follow">
+   <p class="events-card__follow-text">Перейти</p>
+   <img src="img/common/arrow-right.svg" alt="">
+  </button>
+ </a>
  
 </article>

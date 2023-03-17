@@ -1,7 +1,14 @@
+header{
+ background: #fff;
+ position: relative;
+}
+
 .header__container{
  display: flex;
  align-items: center;
  justify-content: space-between;
+ max-width: 1816px;
+ padding-right: 1rem;
 }
 
 .header__menu{
@@ -26,6 +33,7 @@
  font-size: var(--fz-menu-items);
  font-weight: 700;
  line-height: var(--lh-menu-items);
+ transition: 0.4s;
 } 
 
 .header__nav-link {
@@ -33,11 +41,22 @@
  padding-right: 2.5rem;
  margin-top: 1.34rem;
  margin-bottom: 1.34rem;
+ transition: 0.4s;
+}
+
+.header__nav-link:hover{
+ opacity: 0.7;
+}
+
+.header__nav-link:focus{
+ opacity: 1;
+ color: var(--c-accent);
 }
 
 .header__buttons{
  display: flex;
  align-items: center;
+ margin-right: 1.1875rem;
 }
 
 .header__geo{
@@ -55,4 +74,51 @@
  border-radius: 50%;
  margin-right: 0.63rem;
  display: block;
+}
+
+.header__geo-text{
+ font-weight: 700;
+ text-transform: uppercase;
+ transition: 0.4s;
+}
+
+.header__geo:hover .header__geo-text{
+ opacity: 0.7;
+}
+
+.header-button{
+ font-weight: 700;
+ text-transform: uppercase;
+}
+
+
+.header__nav-item-dropdown {
+ position: absolute;
+ top: 100%;
+ left: 0;
+ z-index: 2;
+ width: 100%;
+ min-height: 3.13rem;
+ background: #fff;
+ border-top: 1px solid #ECECEC;
+ opacity: 0;
+ transition: 0.4s;
+ pointer-events: none;
+ cursor: default;
+}
+
+.header__nav-item-dropdown-content {
+ height: 100%;
+ padding-top: 1.03rem;
+ padding-bottom: 1.03rem;
+ padding-left: 2.7rem;
+ border-top: 1px solid rgba(108, 121, 130, 0.3);
+ display: flex;
+ align-items: center;
+}
+
+.header__nav-item-dropdown:hover, .header__nav-item:hover .header__nav-item-dropdown {
+ opacity: 1;
+ transition: 0.4s;
+ pointer-events: all;
 }

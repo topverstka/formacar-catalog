@@ -1,5 +1,4 @@
 .promo-carousel{
- margin-top: 3.75rem;
  height: 40rem;
 }
 
@@ -45,6 +44,11 @@
  display: flex;
  align-items: center;
  margin-bottom: 0.53rem;
+ transition: 0.4s;
+}
+
+.promo-carousel__link:hover{
+ opacity: 0.7;
 }
 
 .promo-carousel__link span{
@@ -54,28 +58,14 @@
  margin-right: 0.63rem;
 }
 
-.promo-carousel__link img, svg{
+.promo-carousel__link img, 
+.promo-carousel__link svg{
  width: 1.5rem;
 }
 
 .promo-carousel__date{
  font-size: 0.88rem;
  color: var(--c-text-secondary);
-}
-
-.promo-carousel__comments{
- display: flex;
- align-items: center;
-}
-
-.promo-carousel__comments img, svg{
- width: 1.25rem;
- margin-right: 0.5rem;
-}
-
-.promo-carousel__comments span{
- font-weight: 500;
- font-size: 0.88rem;
 }
 
 .promo-carousel__hero{
@@ -105,9 +95,16 @@
  z-index: 2;
 }
 
-.promo-carousel__arrows img, svg{
+.promo-carousel__arrows img, 
+.promo-carousel__arrows svg{
  --size: 2.25rem;
  width: var(--size);
  height: var(--size);
  cursor: pointer;
+ transition: 0.4s;
+}
+
+.promo-carousel__arrows img:hover, 
+.promo-carousel__arrows svg:hover{
+ opacity: 0.7;
 }

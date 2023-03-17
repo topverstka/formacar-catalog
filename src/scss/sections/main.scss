@@ -7,10 +7,16 @@
  display: grid;
  grid-template-columns: 74.662162162% auto;
  column-gap: 6.25rem;
+ @media (max-width: 1440px) {
+  column-gap: 4rem;
+ }
 }
 
 .main__container-news{
  display: grid;
  grid-template-columns: auto 74.662162162%;
  column-gap: 6.25rem;
+ @media (max-width: 1440px) {
+  column-gap: 4rem;
+ }
 }

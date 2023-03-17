@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css?_v=20230315123907" />
+    <link rel="stylesheet" href="./css/style.css?_v=20230318012809" />
 
     <!-- Отключить автодетект телефонов -->
     <meta name="format-detection" content="telephone=no" />
@@ -39,6 +39,41 @@
           </li>
           <li class="header__nav-item">
             <a href="" class="header__nav-link">Каталог Тюнинга</a>
+            <div class="header__nav-item-dropdown">
+              <div class="header__nav-item-dropdown-content header__nav-item-dropdown-content--nav">
+                <div class="nav header__nav-catalog">
+                  <ul class="nav__list">
+                    <li class="nav__item">
+                      <a href="#" class="nav__link">Диски</a>
+                    </li>
+                    <li class="nav__item">
+                      <a href="#" class="nav__link">Аэродинамика</a>
+                    </li>
+                    <li class="nav__item">
+                      <a href="#" class="nav__link">Выхлопные системы</a>
+                    </li>
+                    <li class="nav__item">
+                      <a href="#" class="nav__link">Подвеска</a>
+                    </li>
+                    <li class="nav__item">
+                      <a href="#" class="nav__link">Тормозные системы</a>
+                    </li>
+                    <li class="nav__item">
+                      <a href="#" class="nav__link">Тюнинг двигателя</a>
+                    </li>
+                    <li class="nav__item">
+                      <a href="#" class="nav__link">Аксессуары</a>
+                    </li>
+                    <li class="nav__item">
+                      <a href="#" class="nav__link">Интерьер</a>
+                    </li>
+                    <li class="nav__item">
+                      <a href="#" class="nav__link">Винил</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </li>
           <li class="header__nav-item">
             <a href="" class="header__nav-link">Новости</a>
@@ -53,9 +88,9 @@
     <div class="header__buttons">
       <button class="header__geo" data-snack="lang" type="button">
         <img class="header__geo-icon" src="./img/common/flag-ru.svg" alt="">
-        <span class="header__picker-text">RU</span>
+        <span class="header__geo-text">RU</span>
       </button>
-      <button class="button button--primary button--dark">
+      <button class="button button--primary button--dark header-button">
         объявления
       </button>
     </div>
@@ -85,7 +120,9 @@
               
         <div class="events__container">
          <div class="events__gallery">
-           <article class="events-card events-card_ads">
+          
+           <div class="events__gallery-row">
+             <article class="events-card events-card_ads" >
 
  <div class="events-card__top">
   <div class="events-card__wrap">
@@ -99,151 +136,32 @@
     </div>
    </div>
    <div class="events-card__menu">
-    <span></span>
-    <span></span>
-    <span></span>
-   </div>
+ <span></span>
+ <span></span>
+ <span></span>
+ <ul class="events-card__menu-block">
+  <li class="events-card__menu-block__item" data-poppa-open="modal-alert-complaint">Пожаловаться</li>
+  <li class="events-card__menu-block__item">Копировать ссылку</li>
+  <li class="events-card__menu-block__item" data-poppa-open="modal-share">Поделиться</li>
+ </ul>
+</div>
   </div>
   <p class="events-card__descr">
-   Is there an easy way to profitably sell your old car and quickly find a replacement without extra expenses? There sure is – just place an ad in our app, free of charge.  To find the vehicle you need, you can filter ads by such parameters as country, brand, MFY, mileage, body style etc. to immediately get the results relevant to you.  The Ads section also contains a vast assortment of tires, wheels, exhaust systems, brakes, tuning parts and other car products and services from all around the world. All ads are classified for your convenience. Posted your ad for free? Don’t forget to tell your friends about us!
+   Is there an easy way to profitably sell your old car and quickly find a replacement without extra expenses? There sure is – just place an ad in our app, free of charge. To find the vehicle you need, you can filter ads by such parameters as country, brand, MFY, mileage, body style etc. to immediately get the results relevant to you. The Ads section also contains a vast assortment of tires, wheels, exhaust systems, brakes, tuning parts and other car products and services from all around the world. All ads are classified for your convenience. Posted your ad for free? Don’t forget to tell your friends about us!
   </p>
  </div>
- <picture class="events-card__pic">
+ <picture class="events-card__pic" data-poppa-open="events-pop-ads">
   <img src="img/events/ads-img.jpg" alt="" class="events-card__img">
  </picture>
- <div class="events-card__follow">
-  <p class="events-card__follow-text">Перейти</p>
-  <img src="img/common/arrow-right.svg" alt="">
- </div>
+ <a href="#">
+  <button class="button button--primary button--light events-card__follow">
+   <p class="events-card__follow-text">Перейти</p>
+   <img src="img/common/arrow-right.svg" alt="">
+  </button>
+ </a>
  
 </article>
-           <article class="events-card">
-
- <div class="events-card__top">
-  <div class="events-card__wrap">
-   <div class="events-card__info">
-    <picture class="events-card__profile">
-     <img src="img/events/profile-1.jpg" alt="">
-    </picture>
-    <div class="events-card__text">
-     <p class="events-card__name">SayonaraBoy</p>
-     <p class="events-card__date">15 Сентября 2022, 17:45 </p>
-    </div>
-   </div>
-   <div class="events-card__menu">
-    <span></span>
-    <span></span>
-    <span></span>
-   </div>
-  </div>
-  <p class="events-card__descr">
-   Study finds the best autopilot solution, spoiler alert: it’s not Tesla FSD.
-  </p>
- </div>
- <picture class="events-card__pic">
-  <img src="img/events/events-1.jpg" alt="" class="events-card__img">
- </picture>
- <div class="events-card__bottom">
-  <div class="promo-carousel__comments">
-   <img src="img/common/like.svg" alt="">
-   <span>5</span>
-  </div>
-  <div class="promo-carousel__comments">
-   <img src="img/common/comments.svg" alt="">
-   <span>10</span>
-  </div>
-  <div class="promo-carousel__comments events-card__view">
-   <img src="img/common/view.svg" alt="">
-   <span>13</span>
-  </div>
- </div>
- 
-</article>
-           <article class="events-card">
-
- <div class="events-card__top">
-  <div class="events-card__wrap">
-   <div class="events-card__info">
-    <picture class="events-card__profile">
-     <img src="img/events/profile-2.jpg" alt="">
-    </picture>
-    <div class="events-card__text">
-     <p class="events-card__name">Евгений Романов</p>
-     <p class="events-card__date">15 Сентября 2022, 17:45 </p>
-    </div>
-   </div>
-   <div class="events-card__menu">
-    <span></span>
-    <span></span>
-    <span></span>
-   </div>
-  </div>
-  <p class="events-card__descr">
-   В следующем году эта тачка будет моей!
-  </p>
- </div>
- <picture class="events-card__pic">
-  <img src="img/events/events-2.jpg" alt="" class="events-card__img">
- </picture>
- <div class="events-card__bottom">
-  <div class="promo-carousel__comments">
-   <img src="img/common/like.svg" alt="">
-   <span>5</span>
-  </div>
-  <div class="promo-carousel__comments">
-   <img src="img/common/comments.svg" alt="">
-   <span>10</span>
-  </div>
-  <div class="promo-carousel__comments events-card__view">
-   <img src="img/common/view.svg" alt="">
-   <span>13</span>
-  </div>
- </div>
- 
-</article>
-           <article class="events-card">
-
- <div class="events-card__top">
-  <div class="events-card__wrap">
-   <div class="events-card__info">
-    <picture class="events-card__profile">
-     <img src="img/events/profile-3.jpg" alt="">
-    </picture>
-    <div class="events-card__text">
-     <p class="events-card__name">Luxsor 007</p>
-     <p class="events-card__date">15123 Сентября 2022, 17:45 </p>
-    </div>
-   </div>
-   <div class="events-card__menu">
-    <span></span>
-    <span></span>
-    <span></span>
-   </div>
-  </div>
-  <p class="events-card__descr">
-   Hello, guys! Have a great Friday everyone.
-  </p>
- </div>
- <picture class="events-card__pic">
-  <img src="img/events/events-3.jpg" alt="" class="events-card__img">
- </picture>
- <div class="events-card__bottom">
-  <div class="promo-carousel__comments">
-   <img src="img/common/like.svg" alt="">
-   <span>5</span>
-  </div>
-  <div class="promo-carousel__comments">
-   <img src="img/common/comments.svg" alt="">
-   <span>10</span>
-  </div>
-  <div class="promo-carousel__comments events-card__view">
-   <img src="img/common/view.svg" alt="">
-   <span>13</span>
-  </div>
- </div>
- 
-</article>
-           <article class="events-card">
+             <article class="events-card" >
 
  <div class="events-card__top">
   <div class="events-card__wrap">
@@ -257,35 +175,96 @@
     </div>
    </div>
    <div class="events-card__menu">
-    <span></span>
-    <span></span>
-    <span></span>
-   </div>
+ <span></span>
+ <span></span>
+ <span></span>
+ <ul class="events-card__menu-block">
+  <li class="events-card__menu-block__item" data-poppa-open="modal-alert-complaint">Пожаловаться</li>
+  <li class="events-card__menu-block__item">Копировать ссылку</li>
+  <li class="events-card__menu-block__item" data-poppa-open="modal-share">Поделиться</li>
+ </ul>
+</div>
   </div>
   <p class="events-card__descr">
-   @@descr
+   
   </p>
  </div>
- <picture class="events-card__pic">
-  <img src="img/events/events-4.jpg" alt="" class="events-card__img">
- </picture>
+ <div class="events-card__video">
+  <picture class="events-card__pic" data-poppa-open="events-pop-video">
+   <img src="img/events/events-4.jpg" alt="" class="events-card__img">
+  </picture>
+  <p class="events-card__video-time">1:03</p>
+ </div>
+ 
  <div class="events-card__bottom">
-  <div class="promo-carousel__comments">
-   <img src="img/common/like.svg" alt="">
-   <span>5</span>
-  </div>
-  <div class="promo-carousel__comments">
-   <img src="img/common/comments.svg" alt="">
-   <span>10</span>
-  </div>
-  <div class="promo-carousel__comments events-card__view">
-   <img src="img/common/view.svg" alt="">
-   <span>13</span>
-  </div>
+  <div class="bottom-button">
+ <img src="img/common/like.svg" alt="">
+ <span>5</span>
+</div>
+  <div class="bottom-button">
+ <img src="img/common/comments.svg" alt="">
+ <span>10</span>
+</div>
+  <div class="bottom-button">
+ <img src="img/common/view.svg" alt="">
+ <span>10</span>
+</div>
+
  </div>
  
 </article>
-           <article class="events-card">
+           </div>
+
+           <div class="events__gallery-row">
+             <article class="events-card" >
+
+ <div class="events-card__top">
+  <div class="events-card__wrap">
+   <div class="events-card__info">
+    <picture class="events-card__profile">
+     <img src="img/events/profile-1.jpg" alt="">
+    </picture>
+    <div class="events-card__text">
+     <p class="events-card__name">SayonaraBoy</p>
+     <p class="events-card__date">15 Сентября 2022, 17:45 </p>
+    </div>
+   </div>
+   <div class="events-card__menu">
+ <span></span>
+ <span></span>
+ <span></span>
+ <ul class="events-card__menu-block">
+  <li class="events-card__menu-block__item" data-poppa-open="modal-alert-complaint">Пожаловаться</li>
+  <li class="events-card__menu-block__item">Копировать ссылку</li>
+  <li class="events-card__menu-block__item" data-poppa-open="modal-share">Поделиться</li>
+ </ul>
+</div>
+  </div>
+  <p class="events-card__descr">
+   Study finds the best autopilot solution, spoiler alert: it’s not Tesla FSD.
+  </p>
+ </div>
+ <picture class="events-card__pic" data-poppa-open="events-pop">
+  <img src="img/events/events-1.jpg" alt="" class="events-card__img">
+ </picture>
+ <div class="events-card__bottom">
+  <div class="bottom-button">
+ <img src="img/common/like.svg" alt="">
+ <span>5</span>
+</div>
+  <div class="bottom-button">
+ <img src="img/common/comments.svg" alt="">
+ <span>10</span>
+</div>
+  <div class="bottom-button">
+ <img src="img/common/view.svg" alt="">
+ <span>10</span>
+</div>
+
+ </div>
+ 
+</article>
+             <article class="events-card" >
 
  <div class="events-card__top">
   <div class="events-card__wrap">
@@ -299,35 +278,92 @@
     </div>
    </div>
    <div class="events-card__menu">
-    <span></span>
-    <span></span>
-    <span></span>
-   </div>
+ <span></span>
+ <span></span>
+ <span></span>
+ <ul class="events-card__menu-block">
+  <li class="events-card__menu-block__item" data-poppa-open="modal-alert-complaint">Пожаловаться</li>
+  <li class="events-card__menu-block__item">Копировать ссылку</li>
+  <li class="events-card__menu-block__item" data-poppa-open="modal-share">Поделиться</li>
+ </ul>
+</div>
   </div>
   <p class="events-card__descr">
    I was made for lovin' u, baby 💗 mmh, yeah-ha #jdm
   </p>
  </div>
- <picture class="events-card__pic">
+ <picture class="events-card__pic" data-poppa-open="events-pop">
   <img src="img/events/events-5.jpg" alt="" class="events-card__img">
  </picture>
  <div class="events-card__bottom">
-  <div class="promo-carousel__comments">
-   <img src="img/common/like.svg" alt="">
-   <span>5</span>
-  </div>
-  <div class="promo-carousel__comments">
-   <img src="img/common/comments.svg" alt="">
-   <span>10</span>
-  </div>
-  <div class="promo-carousel__comments events-card__view">
-   <img src="img/common/view.svg" alt="">
-   <span>13</span>
-  </div>
+  <div class="bottom-button">
+ <img src="img/common/like.svg" alt="">
+ <span>5</span>
+</div>
+  <div class="bottom-button">
+ <img src="img/common/comments.svg" alt="">
+ <span>10</span>
+</div>
+  <div class="bottom-button">
+ <img src="img/common/view.svg" alt="">
+ <span>10</span>
+</div>
+
  </div>
  
 </article>
-           <article class="events-card">
+           </div>
+
+           <div class="events__gallery-row">
+             <article class="events-card" >
+
+ <div class="events-card__top">
+  <div class="events-card__wrap">
+   <div class="events-card__info">
+    <picture class="events-card__profile">
+     <img src="img/events/profile-2.jpg" alt="">
+    </picture>
+    <div class="events-card__text">
+     <p class="events-card__name">Евгений Романов</p>
+     <p class="events-card__date">15 Сентября 2022, 17:45 </p>
+    </div>
+   </div>
+   <div class="events-card__menu">
+ <span></span>
+ <span></span>
+ <span></span>
+ <ul class="events-card__menu-block">
+  <li class="events-card__menu-block__item" data-poppa-open="modal-alert-complaint">Пожаловаться</li>
+  <li class="events-card__menu-block__item">Копировать ссылку</li>
+  <li class="events-card__menu-block__item" data-poppa-open="modal-share">Поделиться</li>
+ </ul>
+</div>
+  </div>
+  <p class="events-card__descr">
+   В следующем году эта тачка будет моей!
+  </p>
+ </div>
+ <picture class="events-card__pic" data-poppa-open="events-pop">
+  <img src="img/events/events-2.jpg" alt="" class="events-card__img">
+ </picture>
+ <div class="events-card__bottom">
+  <div class="bottom-button">
+ <img src="img/common/like.svg" alt="">
+ <span>5</span>
+</div>
+  <div class="bottom-button">
+ <img src="img/common/comments.svg" alt="">
+ <span>10</span>
+</div>
+  <div class="bottom-button">
+ <img src="img/common/view.svg" alt="">
+ <span>10</span>
+</div>
+
+ </div>
+ 
+</article>
+             <article class="events-card" >
 
  <div class="events-card__top">
   <div class="events-card__wrap">
@@ -341,39 +377,129 @@
     </div>
    </div>
    <div class="events-card__menu">
-    <span></span>
-    <span></span>
-    <span></span>
-   </div>
+ <span></span>
+ <span></span>
+ <span></span>
+ <ul class="events-card__menu-block">
+  <li class="events-card__menu-block__item" data-poppa-open="modal-alert-complaint">Пожаловаться</li>
+  <li class="events-card__menu-block__item">Копировать ссылку</li>
+  <li class="events-card__menu-block__item" data-poppa-open="modal-share">Поделиться</li>
+ </ul>
+</div>
   </div>
   <p class="events-card__descr">
    purple demon😈🤞🏾🔮
   </p>
  </div>
- <picture class="events-card__pic">
+ <picture class="events-card__pic" data-poppa-open="events-pop">
   <img src="img/events/events-6.jpg" alt="" class="events-card__img">
  </picture>
  <div class="events-card__bottom">
-  <div class="promo-carousel__comments">
-   <img src="img/common/like.svg" alt="">
-   <span>5</span>
-  </div>
-  <div class="promo-carousel__comments">
-   <img src="img/common/comments.svg" alt="">
-   <span>10</span>
-  </div>
-  <div class="promo-carousel__comments events-card__view">
-   <img src="img/common/view.svg" alt="">
-   <span>13</span>
-  </div>
+  <div class="bottom-button">
+ <img src="img/common/like.svg" alt="">
+ <span>5</span>
+</div>
+  <div class="bottom-button">
+ <img src="img/common/comments.svg" alt="">
+ <span>10</span>
+</div>
+  <div class="bottom-button">
+ <img src="img/common/view.svg" alt="">
+ <span>10</span>
+</div>
+
  </div>
  
 </article>
-           <article class="events-card">
+           </div>
+
+           <div class="events__gallery-row">
+             <article class="events-card" >
 
  <div class="events-card__top">
   <div class="events-card__wrap">
    <div class="events-card__info">
+    
+    <picture class="events-card__profile">
+     <img src="img/events/profile-3.jpg" alt="">
+    </picture>
+    <div class="events-card__text">
+     <p class="events-card__name">Luxsor 007</p>
+     <p class="events-card__date">15 Сентября 2022, 17:45 </p>
+    </div>
+   </div>
+   <div class="events-card__menu">
+ <span></span>
+ <span></span>
+ <span></span>
+ <ul class="events-card__menu-block">
+  <li class="events-card__menu-block__item" data-poppa-open="modal-alert-complaint">Пожаловаться</li>
+  <li class="events-card__menu-block__item">Копировать ссылку</li>
+  <li class="events-card__menu-block__item" data-poppa-open="modal-share">Поделиться</li>
+ </ul>
+</div>
+  </div>
+  <p class="events-card__descr">
+   Hello, guys! Have a great Friday everyone.
+  </p>
+ </div>
+ <div class="swiper events-card__carousel" >
+  <div class="swiper-wrapper">
+
+   <div class="swiper-slide events-card__slide" >
+    <picture class="events-card__pic">
+     <img src="img/events/events-3.jpg" alt="" class="events-card__img" data-poppa-open="events-pop-multi">
+    </picture>
+   </div>
+
+   <div class="swiper-slide events-card__slide">
+    <picture class="events-card__pic">
+     <img src="img/events/events-3.jpg" alt="" class="events-card__img" data-poppa-open="events-pop-multi">
+    </picture>
+   </div>
+
+   <div class="swiper-slide events-card__slide" >
+    <picture class="events-card__pic">
+     <img src="img/events/events-3.jpg" alt="" class="events-card__img" data-poppa-open="events-pop-multi">
+    </picture>
+   </div>
+
+  </div>
+  <div class="swiper-pagination events-card__pagination"> </div>
+
+  <div class="events-card__arrows">
+   <div class="events-card__arrow events-card__arrow-prev">
+    <img src="./img/common/swiper-arrow-left.svg" alt="">
+   </div>
+   
+   <div class="events-card__arrow events-card__arrow-next">
+    <img src="./img/common/swiper-arrow-right.svg" alt="">
+   </div>
+  </div>
+
+ </div>
+ <div class="events-card__bottom">
+  <div class="bottom-button">
+ <img src="img/common/like.svg" alt="">
+ <span>5</span>
+</div>
+  <div class="bottom-button">
+ <img src="img/common/comments.svg" alt="">
+ <span>10</span>
+</div>
+  <div class="bottom-button">
+ <img src="img/common/view.svg" alt="">
+ <span>10</span>
+</div>
+ </div>
+ 
+</article>
+             <article class="events-card" >
+
+ <div class="events-card__top">
+  <div class="events-card__wrap">
+   <div class="events-card__info">
+    
     <picture class="events-card__profile">
      <img src="img/events/profile-2.jpg" alt="">
     </picture>
@@ -383,34 +509,72 @@
     </div>
    </div>
    <div class="events-card__menu">
-    <span></span>
-    <span></span>
-    <span></span>
-   </div>
+ <span></span>
+ <span></span>
+ <span></span>
+ <ul class="events-card__menu-block">
+  <li class="events-card__menu-block__item" data-poppa-open="modal-alert-complaint">Пожаловаться</li>
+  <li class="events-card__menu-block__item">Копировать ссылку</li>
+  <li class="events-card__menu-block__item" data-poppa-open="modal-share">Поделиться</li>
+ </ul>
+</div>
   </div>
   <p class="events-card__descr">
-   @@descr
+   
   </p>
  </div>
- <picture class="events-card__pic">
-  <img src="img/events/events-7.jpg" alt="" class="events-card__img">
- </picture>
+ <div class="swiper events-card__carousel" >
+  <div class="swiper-wrapper">
+
+   <div class="swiper-slide events-card__slide" >
+    <picture class="events-card__pic">
+     <img src="img/events/events-7.jpg" alt="" class="events-card__img" data-poppa-open="events-pop-multi">
+    </picture>
+   </div>
+
+   <div class="swiper-slide events-card__slide">
+    <picture class="events-card__pic">
+     <img src="img/events/events-7.jpg" alt="" class="events-card__img" data-poppa-open="events-pop-multi">
+    </picture>
+   </div>
+
+   <div class="swiper-slide events-card__slide" >
+    <picture class="events-card__pic">
+     <img src="img/events/events-7.jpg" alt="" class="events-card__img" data-poppa-open="events-pop-multi">
+    </picture>
+   </div>
+
+  </div>
+  <div class="swiper-pagination events-card__pagination"> </div>
+
+  <div class="events-card__arrows">
+   <div class="events-card__arrow events-card__arrow-prev">
+    <img src="./img/common/swiper-arrow-left.svg" alt="">
+   </div>
+   
+   <div class="events-card__arrow events-card__arrow-next">
+    <img src="./img/common/swiper-arrow-right.svg" alt="">
+   </div>
+  </div>
+
+ </div>
  <div class="events-card__bottom">
-  <div class="promo-carousel__comments">
-   <img src="img/common/like.svg" alt="">
-   <span>5</span>
-  </div>
-  <div class="promo-carousel__comments">
-   <img src="img/common/comments.svg" alt="">
-   <span>10</span>
-  </div>
-  <div class="promo-carousel__comments events-card__view">
-   <img src="img/common/view.svg" alt="">
-   <span>13</span>
-  </div>
+  <div class="bottom-button">
+ <img src="img/common/like.svg" alt="">
+ <span>5</span>
+</div>
+  <div class="bottom-button">
+ <img src="img/common/comments.svg" alt="">
+ <span>10</span>
+</div>
+  <div class="bottom-button">
+ <img src="img/common/view.svg" alt="">
+ <span>10</span>
+</div>
  </div>
  
 </article>
+           </div>
          </div>
         </div>
 
@@ -517,6 +681,467 @@
   </div>
 </footer>
 
+<section class="poppa modal-events" id="events-pop">
+  <div class="modal-events__inner">
+
+    
+    <div class="modal-events__left">
+      <picture class="modal-events__pic">
+        <img src="img/events/events-3.jpg" alt="" class="modal-events__img">
+      </picture>
+
+    </div>
+
+    
+
+    <div class="modal-events__info">
+      <div class="events-card__top modal-events__top"">
+        <div class="events-card__wrap">
+         <div class="events-card__info">
+          
+          <picture class="events-card__profile">
+           <img src="img/events/profile-3.jpg" alt="">
+          </picture>
+          <div class="events-card__text">
+           <p class="events-card__name">Luxsor 007</p>
+           <p class="events-card__date">1 Февраля 2023, 13:09 </p>
+          </div>
+         </div>
+         <div class="events-card__menu">
+ <span></span>
+ <span></span>
+ <span></span>
+ <ul class="events-card__menu-block">
+  <li class="events-card__menu-block__item" data-poppa-open="modal-alert-complaint">Пожаловаться</li>
+  <li class="events-card__menu-block__item">Копировать ссылку</li>
+  <li class="events-card__menu-block__item" data-poppa-open="modal-share">Поделиться</li>
+ </ul>
+</div>
+        </div>
+        <p class="events-card__descr">
+          Hello, guys! <br>
+          Have a great Friday everyone.
+        </p>
+       </div>
+       <hr class="modal-events__divider">
+       <div class="modal-events__comments">
+        <div class="comment">
+ <picture class="comment__pic">
+  <img src="img/events/profile-3.jpg" alt="" class="comment__img">
+ </picture>
+ <div class="comment-info">
+  <p class="comment__name">Михаил</p>
+  <p class="comment__text">Это очень интересная новость! Я в восторге!</p>
+  <p class="comment__date">30 ноября 2021, 11:45</p>
+ </div>
+</div>
+        <div class="comment">
+ <picture class="comment__pic">
+  <img src="img/events/profile-1.jpg" alt="" class="comment__img">
+ </picture>
+ <div class="comment-info">
+  <p class="comment__name">Александр</p>
+  <p class="comment__text">а я радуюсь наконец выпавшему снегу и холоду, <br> зима должна быть зимой</p>
+  <p class="comment__date">Час назад</p>
+ </div>
+</div>
+        <div class="comment">
+ <picture class="comment__pic">
+  <img src="img/events/profile-3.jpg" alt="" class="comment__img">
+ </picture>
+ <div class="comment-info">
+  <p class="comment__name">Михаил</p>
+  <p class="comment__text">Это очень интересная новость! Я в восторге!</p>
+  <p class="comment__date">30 ноября 2021, 11:45</p>
+ </div>
+</div>
+        <div class="comment">
+ <picture class="comment__pic">
+  <img src="img/events/profile-1.jpg" alt="" class="comment__img">
+ </picture>
+ <div class="comment-info">
+  <p class="comment__name">Александр</p>
+  <p class="comment__text">а я радуюсь наконец выпавшему снегу и холоду, <br> зима должна быть зимой</p>
+  <p class="comment__date">Час назад</p>
+ </div>
+</div>
+        <div class="comment">
+ <picture class="comment__pic">
+  <img src="img/events/profile-3.jpg" alt="" class="comment__img">
+ </picture>
+ <div class="comment-info">
+  <p class="comment__name">Михаил</p>
+  <p class="comment__text">Это очень интересная новость! Я в восторге!</p>
+  <p class="comment__date">30 ноября 2021, 11:45</p>
+ </div>
+</div>
+        <div class="comment">
+ <picture class="comment__pic">
+  <img src="img/events/profile-1.jpg" alt="" class="comment__img">
+ </picture>
+ <div class="comment-info">
+  <p class="comment__name">Александр</p>
+  <p class="comment__text">а я радуюсь наконец выпавшему снегу и холоду, <br> зима должна быть зимой</p>
+  <p class="comment__date">Час назад</p>
+ </div>
+</div>
+
+       </div>
+       <div class="events-card__bottom modal-events__bottom">
+        <div class="bottom-button">
+ <img src="img/common/like.svg" alt="">
+ <span>87</span>
+</div>
+        <div class="bottom-button">
+ <img src="img/common/comments.svg" alt="">
+ <span>130</span>
+</div>
+        <div class="bottom-button">
+ <img src="img/common/view.svg" alt="">
+ <span>265</span>
+</div>
+       </div>
+    </div>
+    
+  </div>
+</section>
+
+<section class="poppa modal-events" id="events-pop-multi">
+  <div class="modal-events__inner">
+
+    
+    <div class="modal-events__left">
+      <div class="swiper modal-events__carousel">
+        <div class="swiper-wrapper">
+      
+          <div class="swiper-slide modal-events__slide" data-poppa-open="events-pop-multi">
+          <picture class="modal-events__pic">
+            <img src="img/events/events-3.jpg" alt="" class="modal-events__img">
+          </picture>
+          </div>
+      
+          <div class="swiper-slide modal-events__slide" data-poppa-open="events-pop-multi">
+          <picture class="modal-events__pic">
+            <img src="img/events/events-3.jpg" alt="" class="modal-events__img">
+          </picture>
+          </div>
+      
+          <div class="swiper-slide modal-events__slide" data-poppa-open="events-pop-multi">
+          <picture class="modal-events__pic">
+            <img src="img/events/events-3.jpg" alt="" class="modal-events__img">
+          </picture>
+          </div>
+      
+        </div>
+        <div class="swiper-pagination modal-events__pagination"> </div>
+      
+        <div class="events-card__arrows">
+          <div class="events-card__arrow modal-events__arrow-prev">
+          <img src="./img/common/swiper-arrow-left.svg" alt="">
+          </div>
+          
+          <div class="events-card__arrow modal-events__arrow-next">
+          <img src="./img/common/swiper-arrow-right.svg" alt="">
+          </div>
+        </div>
+      
+        </div>
+
+    </div>
+
+    
+
+    <div class="modal-events__info">
+      <div class="events-card__top modal-events__top"">
+        <div class="events-card__wrap">
+         <div class="events-card__info">
+          
+          <picture class="events-card__profile">
+           <img src="img/events/profile-3.jpg" alt="">
+          </picture>
+          <div class="events-card__text">
+           <p class="events-card__name">Luxsor 007</p>
+           <p class="events-card__date">1 Февраля 2023, 13:09 </p>
+          </div>
+         </div>
+         <div class="events-card__menu">
+ <span></span>
+ <span></span>
+ <span></span>
+ <ul class="events-card__menu-block">
+  <li class="events-card__menu-block__item" data-poppa-open="modal-alert-complaint">Пожаловаться</li>
+  <li class="events-card__menu-block__item">Копировать ссылку</li>
+  <li class="events-card__menu-block__item" data-poppa-open="modal-share">Поделиться</li>
+ </ul>
+</div>
+        </div>
+        <p class="events-card__descr">
+          Hello, guys! <br>
+          Have a great Friday everyone.
+        </p>
+       </div>
+       <hr class="modal-events__divider">
+       <div class="modal-events__comments">
+        <div class="comment">
+ <picture class="comment__pic">
+  <img src="img/events/profile-3.jpg" alt="" class="comment__img">
+ </picture>
+ <div class="comment-info">
+  <p class="comment__name">Михаил</p>
+  <p class="comment__text">Это очень интересная новость! Я в восторге!</p>
+  <p class="comment__date">30 ноября 2021, 11:45</p>
+ </div>
+</div>
+        <div class="comment">
+ <picture class="comment__pic">
+  <img src="img/events/profile-1.jpg" alt="" class="comment__img">
+ </picture>
+ <div class="comment-info">
+  <p class="comment__name">Александр</p>
+  <p class="comment__text">а я радуюсь наконец выпавшему снегу и холоду, <br> зима должна быть зимой</p>
+  <p class="comment__date">Час назад</p>
+ </div>
+</div>
+        <div class="comment">
+ <picture class="comment__pic">
+  <img src="img/events/profile-3.jpg" alt="" class="comment__img">
+ </picture>
+ <div class="comment-info">
+  <p class="comment__name">Михаил</p>
+  <p class="comment__text">Это очень интересная новость! Я в восторге!</p>
+  <p class="comment__date">30 ноября 2021, 11:45</p>
+ </div>
+</div>
+        <div class="comment">
+ <picture class="comment__pic">
+  <img src="img/events/profile-1.jpg" alt="" class="comment__img">
+ </picture>
+ <div class="comment-info">
+  <p class="comment__name">Александр</p>
+  <p class="comment__text">а я радуюсь наконец выпавшему снегу и холоду, <br> зима должна быть зимой</p>
+  <p class="comment__date">Час назад</p>
+ </div>
+</div>
+        <div class="comment">
+ <picture class="comment__pic">
+  <img src="img/events/profile-3.jpg" alt="" class="comment__img">
+ </picture>
+ <div class="comment-info">
+  <p class="comment__name">Михаил</p>
+  <p class="comment__text">Это очень интересная новость! Я в восторге!</p>
+  <p class="comment__date">30 ноября 2021, 11:45</p>
+ </div>
+</div>
+        <div class="comment">
+ <picture class="comment__pic">
+  <img src="img/events/profile-1.jpg" alt="" class="comment__img">
+ </picture>
+ <div class="comment-info">
+  <p class="comment__name">Александр</p>
+  <p class="comment__text">а я радуюсь наконец выпавшему снегу и холоду, <br> зима должна быть зимой</p>
+  <p class="comment__date">Час назад</p>
+ </div>
+</div>
+
+       </div>
+       <div class="events-card__bottom modal-events__bottom">
+        <div class="bottom-button">
+ <img src="img/common/like.svg" alt="">
+ <span>87</span>
+</div>
+        <div class="bottom-button">
+ <img src="img/common/comments.svg" alt="">
+ <span>130</span>
+</div>
+        <div class="bottom-button">
+ <img src="img/common/view.svg" alt="">
+ <span>265</span>
+</div>
+       </div>
+    </div>
+    
+  </div>
+</section>
+
+<section class="poppa modal-events" id="events-pop-ads">
+  <div class="modal-events__inner">
+
+    <div class="modal-events__left">
+
+      <picture class="modal-events__pic">
+        <img src="img/events/ads-img.jpg" alt="" class="modal-events__img">
+      </picture>
+
+    </div>
+
+    <div class="modal-events__info">
+      <div class="events-card__top modal-events__top"">
+        <div class="events-card__wrap">
+         <div class="events-card__info events-card_ads">
+          
+          <picture class="events-card__profile">
+           <img src="img/events/ads-profile.jpg" alt="">
+          </picture>
+          <div class="events-card__text">
+           <p class="events-card__name">Formacar</p>
+           <p class="events-card__date">Реклама</p>
+          </div>
+         </div>
+         <div class="events-card__menu">
+ <span></span>
+ <span></span>
+ <span></span>
+ <ul class="events-card__menu-block">
+  <li class="events-card__menu-block__item" data-poppa-open="modal-alert-complaint">Пожаловаться</li>
+  <li class="events-card__menu-block__item">Копировать ссылку</li>
+  <li class="events-card__menu-block__item" data-poppa-open="modal-share">Поделиться</li>
+ </ul>
+</div>
+        </div>
+        <p class="events-card__descr">
+          Is there an easy way to profitably sell your old car and quickly find a replacement without extra expenses? There sure is – just place an ad in our app, free of charge.  <br>
+          To find the vehicle you need, you can filter ads by such parameters as country, brand, MFY, mileage, body style etc. to immediately get the results relevant to you.  <br>
+          The Ads section also contains a vast assortment of tires, wheels, exhaust systems, brakes, tuning parts and other car products and services from all around the world. All ads are classified for your convenience.  <br>
+          Posted your ad for free? Don’t forget to tell your friends about us!
+        </p>
+        <a href="#" class="events-card__link">
+          <button class="button button--primary button--light events-card__follow">
+           <p class="events-card__follow-text">Перейти</p>
+           <img src="img/common/arrow-right.svg" alt="">
+          </button>
+         </a>
+       </div>
+       
+    </div>
+    
+  </div>
+</section>
+
+<section class="poppa modal-events" id="events-pop-video">
+  <div class="modal-events__inner">
+
+    <div class="modal-events__left">
+
+      <div class="events-card__video">
+        <div class="play-button">
+ <img src="img/common/play-button.svg" alt="" class="play-button__img">
+</div>
+        <picture class="events-card__pic" data-poppa-open="events-pop-video">
+         <img src="img/events/events-4.jpg" alt="" class="events-card__img">
+        </picture>
+        <p class="events-card__video-time">1:03</p>
+       </div>
+
+    </div>
+
+    <div class="modal-events__info">
+      <div class="events-card__top modal-events__top"">
+        <div class="events-card__wrap">
+         <div class="events-card__info">
+          
+          <picture class="events-card__profile">
+           <img src="img/events/profile-4.jpg" alt="">
+          </picture>
+          <div class="events-card__text">
+           <p class="events-card__name">Anna</p>
+           <p class="events-card__date">30 Ноября 2021, 11:45 </p>
+          </div>
+         </div>
+         <div class="events-card__menu">
+ <span></span>
+ <span></span>
+ <span></span>
+ <ul class="events-card__menu-block">
+  <li class="events-card__menu-block__item" data-poppa-open="modal-alert-complaint">Пожаловаться</li>
+  <li class="events-card__menu-block__item">Копировать ссылку</li>
+  <li class="events-card__menu-block__item" data-poppa-open="modal-share">Поделиться</li>
+ </ul>
+</div>
+        </div>
+        <p class="events-card__descr"></p>
+       </div>
+       <hr class="modal-events__divider">
+       <div class="modal-events__comments">
+        <p class="comments-empty">Комментариев пока нет.</p>
+       </div>
+       <div class="events-card__bottom modal-events__bottom">
+        <div class="bottom-button">
+ <img src="img/common/like.svg" alt="">
+ <span>87</span>
+</div>
+        <div class="bottom-button">
+ <img src="img/common/comments.svg" alt="">
+ <span>130</span>
+</div>
+        <div class="bottom-button">
+ <img src="img/common/view.svg" alt="">
+ <span>265</span>
+</div>
+       </div>
+    </div>
+    
+  </div>
+</section>
+
+<section class="poppa modal modal-alert" id="modal-alert-complaint">
+  <div class="modal__inner">
+    <picture class="modal-alert__pic modal-alert__pic-complaint">
+      <img src="img/modal-alert/complaint.svg" alt="" class="modal-alert__img">
+    </picture>
+    <h3 class="modal__title">Пожаловаться</h3>
+    <p class="modal__text">Отправить жалобу для модерации?
+      <Комментарий> пользователя будет заблокирован. </p>
+    <div class="modal-alert__buttons">
+      <button class="button button--primary button--light modal-alert__button" data-poppa-close="modal-alert-complaint">Отмена</button>
+      <button class="button button--primary button--dark modal-alert__button" data-poppa-close="modal-alert-complaint" data-poppa-open="modal-alert-complaint-send">Отправить жалобу</button>
+    </div>
+  </div>
+</section>
+
+<section class="poppa modal modal-alert" id="modal-alert-complaint-send">
+  <div class="modal__inner">
+    <picture class="modal-alert__pic modal-alert__pic-send">
+      <img src="img/modal-alert/complaint-send.svg" alt="" class="modal-alert__img">
+    </picture>
+    <h3 class="modal__title">Жалоба отправлена</h3>
+    <p class="modal__text">Мы получили вашу жалобу. Администратор рассмотрит обращение и вынесет решение как можно скорее.</p>
+    <div class="modal-alert__buttons">
+      <button class="button button--primary button--dark modal-alert__button-send" data-poppa-close="modal-alert-complaint-send">ок</button>
+    </div>
+    
+  </div>
+</section>
+
+<section class="poppa modal modal-share" id="modal-share">
+  <div class="modal__inner">
+    <h3 class="modal__title">Поделиться</h3>
+    <div class="modal-share__social">
+      <a class="modal-share__social-facebook" href="">
+        <picture class="modal-share__social_pic">
+          <img src="img/common/facebook.svg" alt="" class="modal-share__social__img">
+        </picture>
+      </a>
+      <a class="modal-share__social-twitter" href="">
+        <picture class="modal-share__social_pic">
+          <img src="img/common/twitter.svg" alt="" class="modal-share__social__img">
+        </picture>
+      </a>
+      <a  class="modal-share__social-vk"href="">
+        <picture class="modal-share__social_pic">
+          <img src="img/common/vk.svg" alt="" class="modal-share__social__img">
+        </picture>
+      </a>
+    </div>
+    <p class="modal-share__link-text">
+      Прямая ссылка
+    </p>
+    <input disabled type="text" class="modal-share__input" value="https://formacar.com/en/news/view/51537.html">
+    <div class="modal-alert__buttons">
+      <button class="button button--primary button--dark modal-share__button" data-poppa-close="modal-share">Копировать ссылку</button>
+    </div>
+    
+  </div>
+</section>
     </div>
 
     <div id="callback-table" class="poppa">
@@ -628,7 +1253,7 @@
 
 
 
-    <script src="./js/bundle.min.js?_v=20230315123907"></script>
+    <script src="./js/bundle.min.js?_v=20230318012809"></script>
   </body>
 </html>
 

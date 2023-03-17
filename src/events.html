@@ -39,14 +39,26 @@
               
         <div class="events__container">
          <div class="events__gallery">
-           @@include('tpls/cards/events-ads.html',{img: "ads-img.jpg",  descr: "Is there an easy way to profitably sell your old car and quickly find a replacement without extra expenses? There sure is – just place an ad in our app, free of charge.  To find the vehicle you need, you can filter ads by such parameters as country, brand, MFY, mileage, body style etc. to immediately get the results relevant to you.  The Ads section also contains a vast assortment of tires, wheels, exhaust systems, brakes, tuning parts and other car products and services from all around the world. All ads are classified for your convenience. Posted your ad for free? Don’t forget to tell your friends about us!"})
-           @@include('tpls/cards/events.html',{profile: "1.jpg", img: "1.jpg", name: "SayonaraBoy", descr: "Study finds the best autopilot solution, spoiler alert: it’s not Tesla FSD."})
-           @@include('tpls/cards/events.html',{profile: "2.jpg", img: "2.jpg", name: "Евгений Романов", descr: "В следующем году эта тачка будет моей!"})
-           @@include('tpls/cards/events-slider.html',{profile: "3.jpg", img: "3.jpg", name: "Luxsor 007", descr: "Hello, guys! Have a great Friday everyone."})
-           @@include('tpls/cards/events.html',{profile: "4.jpg", img: "4.jpg", name: "Anna"})
-           @@include('tpls/cards/events.html',{profile: "5.jpg", img: "5.jpg", name: "cucumber", descr: "I was made for lovin' u, baby 💗 mmh, yeah-ha #jdm"})
-           @@include('tpls/cards/events.html',{profile: "6.jpg", img: "6.jpg", name: "DJtheOne", descr: "purple demon😈🤞🏾🔮"})
-           @@include('tpls/cards/events.html',{profile: "2.jpg", img: "7.jpg", name: "DJtheOne"})
+          
+           <div class="events__gallery-row">
+             @@include('tpls/cards/events-ads.html',{img: "ads-img.jpg",  descr: "Is there an easy way to profitably sell your old car and quickly find a replacement without extra expenses? There sure is – just place an ad in our app, free of charge. To find the vehicle you need, you can filter ads by such parameters as country, brand, MFY, mileage, body style etc. to immediately get the results relevant to you. The Ads section also contains a vast assortment of tires, wheels, exhaust systems, brakes, tuning parts and other car products and services from all around the world. All ads are classified for your convenience. Posted your ad for free? Don’t forget to tell your friends about us!"})
+             @@include('tpls/cards/events-video.html',{profile: "4.jpg", img: "4.jpg", name: "Anna",  descr: ''})
+           </div>
+
+           <div class="events__gallery-row">
+             @@include('tpls/cards/events.html',{profile: "1.jpg", img: "1.jpg", name: "SayonaraBoy", descr: "Study finds the best autopilot solution, spoiler alert: it’s not Tesla FSD."})
+             @@include('tpls/cards/events.html',{profile: "5.jpg", img: "5.jpg", name: "cucumber", descr: "I was made for lovin' u, baby 💗 mmh, yeah-ha #jdm"})
+           </div>
+
+           <div class="events__gallery-row">
+             @@include('tpls/cards/events.html',{profile: "2.jpg", img: "2.jpg", name: "Евгений Романов", descr: "В следующем году эта тачка будет моей!"})
+             @@include('tpls/cards/events.html',{profile: "6.jpg", img: "6.jpg", name: "DJtheOne", descr: "purple demon😈🤞🏾🔮"})
+           </div>
+
+           <div class="events__gallery-row">
+             @@include('tpls/cards/events-slider.html',{profile: "3.jpg", img: "3.jpg", name: "Luxsor 007", descr: "Hello, guys! Have a great Friday everyone."})
+             @@include('tpls/cards/events-slider.html',{profile: "2.jpg", img: "7.jpg", name: "DJtheOne", descr: ''})
+           </div>
          </div>
         </div>
 

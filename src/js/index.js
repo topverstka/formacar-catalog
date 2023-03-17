@@ -40,6 +40,7 @@ import "./unstable/tabs.js";
 import "./utils/smooth-anchors.js";
 
 import "./components/carousels.js";
+import { doc } from "prettier";
 
 // Аккордеон
 // const accordions = new DismalModules.Accordions()
@@ -114,16 +115,21 @@ s();
 //   }
 // })();
 
-const element = document.querySelectorAll(".catalog-slide");
+const catalogSlide = document.querySelectorAll(".catalog-slide, .news-slide");
 
-for (let i = 0; i < element.length; i++) {
-  element[i].addEventListener('wheel', (event) => {
+for (let i = 0; i < catalogSlide.length; i++) {
+  catalogSlide[i].addEventListener('wheel', (event) => {
     event.preventDefault();
     console.log(event.deltaY)
     
-    element[i].scrollBy({
+    catalogSlide[i].scrollBy({
       left: event.deltaY < 0 ? -30 : 30,
     });
   });
 }
 
+let modalShareButton = document.querySelector('.modal-share__button')
+modalShareButton.addEventListener("click", function() {
+  let link = document.querySelector('.modal-share__input').value
+  navigator.clipboard.writeText(link);
+})

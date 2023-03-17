@@ -92,7 +92,53 @@ if (document.querySelector('.news-carousel--big') && document.querySelector('.ne
   newsCarouselBig.controller.control = newsCarouselSmall;
   newsCarouselSmall.controller.control = newsCarouselBig;
 
+}
 
+
+if (document.querySelector('.events-card__carousel')) {
+
+  let eventsCarousel = new Swiper(".events-card__carousel", {
+    modules: [Pagination, Autoplay, Navigation],
+
+    spaceBetween: 1,
+    loop: true,
+    slidesPerView: 1,
+    autoplay: {
+      delay: 3000,
+    },
+    pagination: {
+      el: ".events-card__pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".events-card__arrow-next",
+      prevEl: ".events-card__arrow-prev",
+    }
+  });
+ 
+}
+
+if (document.querySelector('.modal-events__carousel')) {
+
+  let eventsCarousel = new Swiper(".modal-events__carousel", {
+    modules: [Pagination, Autoplay, Navigation],
+
+    spaceBetween: 1,
+    loop: true,
+    slidesPerView: 1,
+    autoplay: {
+      delay: 3000,
+    },
+    pagination: {
+      el: ".modal-events__pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".modal-events__arrow-next",
+      prevEl: ".modal-events__arrow-prev",
+    }
+  });
+ 
 }
 
 

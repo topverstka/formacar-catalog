@@ -49,7 +49,7 @@ $error: var(--c-error);
   --c-input-placeholder: brig-color(#000, 0.3);
 
   --c-accent: #467EF3;
-  --c-accent-light: #cc886a;
+  --c-accent-dark: #3865C2;
   --c-error: #ff3b30;
 
   --bg-element: #fff;
@@ -81,7 +81,7 @@ $error: var(--c-error);
   --ff-regular: "Montserrat", sans-serif;
   --ff-title: "Montserrat", sans-serif;
 
-  --fz-button: 14px;
+  --fz-button: 0.875rem;
   --lh-button: 126.5%;
   @media (max-width: 768px) {
     --fz-button: 15px;

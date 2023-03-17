@@ -144,7 +144,7 @@ class Poppa {
     document.querySelector(".poppa__storage").append(overlay);
     aligner.append(poppa);
     overlay.append(aligner);
-    overlay.append(closer);
+    poppa.append(closer);
 
     this.instances.push(overlay);
   }

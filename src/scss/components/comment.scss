@@ -1,0 +1,49 @@
+.comment{
+ display: flex;
+ align-items: flex-start;
+ padding: 0.63rem;
+ margin-bottom: 0.63rem;
+ border-radius: var(--brad-regular);
+ transition: 0.4s;
+}
+
+.comment__pic{
+ --size: 3.50rem;
+ width: var(--size);
+ height: var(--size);
+ min-width: var(--size);
+ display: block;
+ border-radius: 50%;
+ margin-right: 1.25rem;
+}
+
+.comment__img{
+ width: 100%;
+ height: 100%;
+ border-radius: 50%;
+}
+
+.comment__name{
+ font-weight: 600;
+ font-size: 1rem;
+ margin-bottom: 0.25rem;
+}
+
+.comment__text{
+ margin-bottom: 0.25rem
+}
+
+.comment__date{
+ color: #888888;
+}
+
+.comment:hover{
+ background: #FAFAFA;
+}
+
+.comments-empty{
+ padding: 1.25rem 0;
+ width: 100%;
+ text-align: center;
+ font-size: 1rem;
+}
