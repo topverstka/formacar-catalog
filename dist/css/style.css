@@ -15,9 +15,9 @@
   --bg-app-light: #212425;
   --bg-dropdown: #384043;
   --bg-dropdown-list: #4e5557;
-  --bg-poppa: #171b1f;
-  --radius-poppa: 10px;
-  --overlay-poppa: rgba(0, 0, 0, 0.8);
+  --bg-b_modal: #171b1f;
+  --radius-b_modal: 10px;
+  --overlay-b_modal: rgba(0, 0, 0, 0.8);
   --c-border: #cecece;
   --radius-s: 4px;
   --radius-l: 30px;
@@ -171,17 +171,17 @@
 }
 
 :root {
-  --bg-poppa-overlay: rgba(0, 0, 0, 0.8);
-  --c-poppa-closer-hover: #ff3b30;
-  --z-poppa: 1234567890;
+  --bg-b_modal-overlay: rgba(0, 0, 0, 0.8);
+  --c-b_modal-closer-hover: #ff3b30;
+  --z-b_modal: 1234567890;
 }
 
-.poppa__storage {
+.b_modal__storage {
   position: relative;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: var(--z-poppa);
+  z-index: var(--z-b_modal);
   display: block;
   width: 100%;
   height: 100vh;
@@ -189,7 +189,7 @@
   pointer-events: none;
 }
 
-.poppa__overlay {
+.b_modal__overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -197,17 +197,17 @@
   height: 100vh;
   max-height: 1000px;
   pointer-events: none;
-  background-color: var(--bg-poppa-overlay);
+  background-color: var(--bg-b_modal-overlay);
   opacity: 0;
   transition: all 0.3s ease;
 }
 
-.poppa__overlay._show {
+.b_modal__overlay._show {
   pointer-events: initial;
   opacity: 1;
 }
 
-.poppa__aligner {
+.b_modal__aligner {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -216,7 +216,7 @@
   padding: 1em;
 }
 
-.poppa {
+.b_modal {
   margin-right: auto;
   margin-left: auto;
   background-color: #fff;
@@ -226,11 +226,11 @@
   position: relative;
 }
 
-._show .poppa {
+._show .b_modal {
   transform: scale(1);
 }
 
-.poppa__closer {
+.b_modal__closer {
   position: absolute;
   top: 0;
   right: -2.12rem;
@@ -243,8 +243,8 @@
   --closer-color: #fff;
 }
 
-.poppa__closer::before,
-.poppa__closer::after {
+.b_modal__closer::before,
+.b_modal__closer::after {
   position: absolute;
   top: 48%;
   left: 0;
@@ -257,17 +257,17 @@
   transition: all 0.3s ease;
 }
 
-.poppa__closer::before {
+.b_modal__closer::before {
   transform: rotate(45deg);
 }
 
-.poppa__closer::after {
+.b_modal__closer::after {
   transform: rotate(-45deg);
 }
 
-.poppa__closer:hover::before,
-.poppa__closer:hover::after {
-  background-color: var(--c-poppa-closer-hover);
+.b_modal__closer:hover::before,
+.b_modal__closer:hover::after {
+  background-color: var(--c-b_modal-closer-hover);
 }
 
 /*
@@ -284,25 +284,25 @@
 */
 /*
 
-  poppa theme
+  b_modal theme
 
 
 */
-.poppa {
+.b_modal {
   width: 100%;
   background: #fff;
   border-radius: var(--brad-regular);
 }
 
-.poppa--overlay {
-  background: var(--bg-poppa-overlay);
+.b_modal--overlay {
+  background: var(--bg-b_modal-overlay);
 }
 
-.poppa__closer {
+.b_modal__closer {
   color: transparent;
 }
 
-.poppa__title {
+.b_modal__title {
   margin-bottom: 20px;
   font-family: var(--ff-title);
   font-size: 18px;
@@ -312,29 +312,29 @@
   letter-spacing: 0.03em;
 }
 
-.poppa__title-link {
+.b_modal__title-link {
   color: inherit;
 }
 
 @media (min-width: 1100px) {
-  .poppa__title-link:hover {
+  .b_modal__title-link:hover {
     color: var(--c-accent);
   }
 }
 
-.poppa__button {
+.b_modal__button {
   display: block;
   width: 100%;
 }
 @media (max-width: 768px) {
-  .poppa__button {
+  .b_modal__button {
     padding-top: 15px;
     padding-bottom: 16px;
   }
 }
 
-.poppa__closer::before,
-.poppa__closer::after {
+.b_modal__closer::before,
+.b_modal__closer::after {
   top: 44%;
   right: 0;
   width: 100%;
