@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- Отключить автодетект телефонов -->
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- Отключить кэширование. Нужен только при разработке, чтобы все было свежим -->
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="max-age=3600, must-revalidate" />
+  </head>
+  <body>
+    <div class="wrapper">
+      @@include('tpls/header.html',{})
+
+
+      <main class="main">
+        
+       <div class="main__container-catalog">
+
+        <aside class="main-sidebar">
+         <section class="filters">
+           <div class="filters-title">
+            <img src="img/common/filter-title.svg" alt="">
+            <p>Фильтр</p>
+           </div>
+           
+           <div class="filters-block">
+             <div class="filters-block__top">
+              <div class="filters-block__title">Диаметр диска</div>
+              <div class="filters-block__reset">Сбросить</div>
+             </div>
+             <div class="filters-block__main">
+              
+              @@include('tpls/sections/filters-label.html',{text : "10”"})
+              @@include('tpls/sections/filters-label.html',{text : "11”"})
+              @@include('tpls/sections/filters-label.html',{text : "12”"})
+              @@include('tpls/sections/filters-label.html',{text : "13”"})
+              @@include('tpls/sections/filters-label.html',{text : "14”"})
+              @@include('tpls/sections/filters-label.html',{text : "15”"})
+              @@include('tpls/sections/filters-label.html',{text : "16”"})
+              @@include('tpls/sections/filters-label.html',{text : "17”"})
+
+             </div>
+           </div>
+
+           <div class="filters-block">
+            <div class="filters-block__top">
+             <div class="filters-block__title">Тип</div>
+             <div class="filters-block__reset">Сбросить</div>
+            </div>
+            <div class="filters-block__main">
+             
+             @@include('tpls/sections/filters-label.html',{text : "Monoblock"})
+             @@include('tpls/sections/filters-label.html',{text : "Duoblock"})
+             @@include('tpls/sections/filters-label.html',{text : "Reverse Duoblock"})
+             @@include('tpls/sections/filters-label.html',{text : "Flow forming"})
+             @@include('tpls/sections/filters-label.html',{text : "2 PCS"})
+             @@include('tpls/sections/filters-label.html',{text : "3 PCS"})
+             @@include('tpls/sections/filters-label.html',{text : "4 PCS"})
+             @@include('tpls/sections/filters-label.html',{text : "5 PCS"})
+
+            </div>
+          </div>
+
+          <div class="filters-block">
+           <div class="filters-block__top">
+            <div class="filters-block__title">Диаметр диска</div>
+            <div class="filters-block__reset">Сбросить</div>
+           </div>
+           <form class="filters__search search__form">
+            <button class="search__button" type="submit">
+              <svg class="search__button-icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.4671 14.2732C11.8111 13.6172 12.9491 12.6383 13.591 13.2802L16.8841 16.5733C17.177 16.8662 17.177 17.3411 16.8841 17.634C16.5912 17.9269 16.1163 17.9269 15.8234 17.634L12.4671 14.2732Z" fill="#B4B4BF"></path>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.875 14.25C11.3958 14.25 14.25 11.3958 14.25 7.875C14.25 4.35418 11.3958 1.5 7.875 1.5C4.35418 1.5 1.5 4.35418 1.5 7.875C1.5 11.3958 4.35418 14.25 7.875 14.25ZM7.875 15.75C12.2242 15.75 15.75 12.2242 15.75 7.875C15.75 3.52576 12.2242 0 7.875 0C3.52576 0 0 3.52576 0 7.875C0 12.2242 3.52576 15.75 7.875 15.75Z" fill="#B4B4BF"></path>
+              </svg>
+            </button>
+            <input type="search" name="search" placeholder="Что найти?" class="search__input header-search__input" id="header-search__input">
+          </form>
+           <div class="filters-block__main">
+            
+            @@include('tpls/sections/filters-label.html',{text : "Monoblock"})
+            @@include('tpls/sections/filters-label.html',{text : "Duoblock"})
+            @@include('tpls/sections/filters-label.html',{text : "Reverse Duoblock"})
+            @@include('tpls/sections/filters-label.html',{text : "Flow forming"})
+            @@include('tpls/sections/filters-label.html',{text : "2 PCS"})
+            @@include('tpls/sections/filters-label.html',{text : "3 PCS"})
+            @@include('tpls/sections/filters-label.html',{text : "4 PCS"})
+            @@include('tpls/sections/filters-label.html',{text : "5 PCS"})
+
+           </div>
+         </div>
+
+         <p class="filters-result">Найдено 135 соответствий</p>
+         <div class="filters__buttons">
+          <button class="button button--primary button--light filters__button">Сбросить</button>
+          <button class="button button--primary button--dark filters__button">Показать</button>
+         </div>
+         
+           
+         </section>
+
+        </aside>
+
+        <div class="main__items">
+         <div class="page-heading">
+          <div class="breadcrumbs">
+           <ul class="breadcrumbs__list">
+             <li class="breadcrumbs__item">
+              <a href="#" class="breadcrumbs__link">Главная</a>
+             </li>
+             <li class="breadcrumbs__item">
+              <a href="#" class="breadcrumbs__link">Каталог тюнинга</a>
+             </li>
+             <li class="breadcrumbs__item">Диски</li>
+           </ul>
+          </div>
+          <h2 class="section-title page__title">Диски</h2>
+
+
+          <section class="catalog">
+
+           <div class="catalog__gallery">
+
+             @@include('tpls/cards/catalog.html',{img: "wheels/wheels-1.jpg", category: "AIRTEKK", name: "TANKEN"})
+             @@include('tpls/cards/catalog.html',{img: "wheels/wheels-2.jpg", category: "CORSE WERKS", name: "Toro"})
+             @@include('tpls/cards/catalog.html',{img: "wheels/wheels-3.jpg", category: "YIDO PERFORMANCE", name: "YP SERIES YP3"})
+             @@include('tpls/cards/catalog.html',{img: "wheels/wheels-4.jpg", category: "3SDM", name: "CT216"})
+           
+           </div>
+
+           <div class="catalog__gallery">
+
+            @@include('tpls/cards/catalog.html',{img: "wheels/wheels-5.jpg", category: "AL13", name: "AL13 R-Series R20"})
+            @@include('tpls/cards/catalog.html',{img: "wheels/wheels-6.jpg", category: "AL13", name: "R-SERIES R30-R"})
+            @@include('tpls/cards/catalog.html',{img: "wheels/wheels-7.jpg", category: "AL13", name: "R-SERIES R110"})
+            @@include('tpls/cards/catalog.html',{img: "wheels/wheels-8.jpg", category: "AL13", name: "LUX-SERIES LUX 02"})
+          
+          </div>
+           
+          </section>
+
+
+          <section class="offers">
+           <div class="swiper offers-carousel">
+            <div class="swiper-wrapper">
+
+             <div class="swiper-slide offers-carousel__slide">
+              <picture class="offers-carousel__pic">
+               <img class="offers-carousel__img" src="img/offers/offers-1.jpg" alt="">
+              </picture>
+             </div>
+
+             <div class="swiper-slide offers-carousel__slide">
+              <picture class="offers-carousel__pic">
+               <img class="offers-carousel__img" src="img/offers/offers-1.jpg" alt="">
+              </picture>
+             </div>
+
+             <div class="swiper-slide offers-carousel__slide">
+              <picture class="offers-carousel__pic">
+               <img class="offers-carousel__img" src="img/offers/offers-1.jpg" alt="">
+              </picture>
+             </div>
+
+             <div class="swiper-slide offers-carousel__slide">
+              <picture class="offers-carousel__pic">
+               <img class="offers-carousel__img" src="img/offers/offers-1.jpg" alt="">
+              </picture>
+             </div>
+
+             <div class="swiper-slide offers-carousel__slide">
+              <picture class="offers-carousel__pic">
+               <img class="offers-carousel__img" src="img/offers/offers-1.jpg" alt="">
+              </picture>
+             </div>
+
+            </div>
+           </div>
+           <div class="swiper-pagination offers-carousel__pagination">
+
+           </div>
+          </section>
+
+           <section class="catalog">
+
+            <div class="catalog__gallery">
+ 
+              @@include('tpls/cards/catalog.html',{img: "wheels/wheels-9.jpg", category: "AL13", name: "R-SERIES R60"})
+              @@include('tpls/cards/catalog.html',{img: "wheels/wheels-10.jpg", category: "CEC", name: "C112"})
+              @@include('tpls/cards/catalog.html',{img: "wheels/wheels-11.jpg", category: "CEC", name: "C113"})
+              @@include('tpls/cards/catalog.html',{img: "wheels/wheels-12.jpg", category: "CINEL", name: "LIGHT STREET CF301"})
+            
+            </div>
+            
+           </section>
+
+           <button class="button button--primary button--light news__button-load">Загрузить ещё</button>
+           
+
+
+
+         </div>
+        </div>
+       </div>
+        
+      </main>
+
+
+      @@include('tpls/footer.html',{})
+    </div>
+
+    @@include('tpls/modals.html', {})
+    <script src="./js/bundle.min.js"></script>
+  </body>
+</html>

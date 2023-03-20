@@ -19,6 +19,13 @@
  display: block;
 }
 
+.catalog-card__img{
+ width: 100%;
+ height: 100%;
+ border-radius: 0.38rem;
+ display: block;
+}
+
 .catalog-card__model{
  position: absolute;
  top: 0.94rem;
@@ -38,6 +45,10 @@
 .catalog-card__model svg{
  max-width: 1.19rem;
  margin-right: 0.5rem;
+}
+
+.catalog-card__no-model .catalog-card__model{
+ display: none;
 }
 
 .catalog-card__info{

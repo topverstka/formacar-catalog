@@ -14,4 +14,9 @@
  border-radius: var(--brad-regular);
  padding: 0.63rem 1.88rem;
  height: 5rem;
+ transition: 0.4s;
+}
+
+.brands-card:hover{
+ opacity: 0.7; 
 }

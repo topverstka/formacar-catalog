@@ -1,0 +1,91 @@
+.brand{
+ background: #FFFFFF;
+ border-radius: var(--brad-regular);
+}
+
+.brand-top{
+ padding: 1.88rem;
+}
+
+.brand-top__text{
+ font-weight: 600;
+ text-transform: uppercase;
+ color: #888888;
+}
+
+.brand-top__title{
+ font-size: 1.25rem;
+ font-weight: 600;
+}
+
+.brand-divider{
+ margin: 0 1.88rem;
+ width: auto;
+ background: #ECECEC;
+ height: 1px; 
+ margin-bottom: 1.88rem;
+}
+
+.brand-block{
+ margin-bottom: 1.88rem;
+}
+
+.brand-block__top{
+ display: flex;
+ align-items: center;
+ padding: 0 1.88rem;
+ margin-bottom: 0.63rem;
+}
+
+.brand-block__name{
+ margin: 0;
+ margin-right: 1.25rem;
+}
+
+.brand-block__count{
+ padding: 0.38rem 0.63rem;
+ font-weight: 600;
+ font-size: 1rem;
+ text-transform: uppercase;
+ background: #F6F6F6;
+ border-radius: 150px;
+}
+
+.brand .catalog-card{
+ padding: 0 0.94rem;
+ margin-bottom: 0.63rem;
+}
+
+.brand .catalog-card a{
+ display: flex;
+}
+
+.brand .catalog-card__top{
+ --size: 10.00rem;
+ min-width: var(--size);
+ width: var(--size);
+ height: var(--size);
+ padding: 0.94rem;
+}
+
+.brand .catalog-card__list{
+ display: none;
+}
+
+.brand .catalog-card__info{
+ padding: 1rem;
+ width: 100%;
+ position: relative;
+}
+
+.brand .catalog-card__name{
+ font-size: 1rem;
+}
+
+.brand .catalog-card__bottom{
+ position: absolute;
+ width: 100%;
+ bottom: 0;
+ left: 0;
+ padding: 1rem;
+}

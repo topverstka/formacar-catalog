@@ -32,6 +32,11 @@
  margin-bottom: 5.44rem;
  line-height: 3.25rem;
  text-transform: uppercase;
+ transition: 0.4s;
+}
+
+.promo-carousel__title:hover{
+ opacity: 0.7;
 }
 
 .promo-carousel__bottom{

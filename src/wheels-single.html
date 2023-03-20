@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- Отключить автодетект телефонов -->
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- Отключить кэширование. Нужен только при разработке, чтобы все было свежим -->
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="max-age=3600, must-revalidate" />
+  </head>
+  <body>
+    <div class="wrapper">
+      @@include('tpls/header.html',{})
+
+
+      <main class="main">
+        
+       <div class="main__container-catalog">
+
+        <aside class="main-sidebar">
+         
+         <section class="brand">
+          <div class="brand-top">
+           <p class="brand-top__text">Бренд</p>
+           <h2 class="brand-top__title">Formacar SCL</h2>
+          </div>
+          <hr class="brand-divider">
+          <div class="brand-block">
+           <div class="brand-block__top">
+            <p class="section-desc brand-block__name">Диски</p>
+            <p class="brand-block__count">15</p>
+           </div> 
+           @@include('tpls/cards/catalog.html',{img: "wheels/wheels-square-1.jpg", category: "Formacar SCL", name: "TITAN"})
+           @@include('tpls/cards/catalog.html',{img: "wheels/wheels-square-2.jpg", category: "Formacar SCL", name: "GOJIRA"})
+           @@include('tpls/cards/catalog.html',{img: "wheels/wheels-square-3.jpg", category: "Formacar SCL", name: "LAMBORGHINI URUS"})
+          </div>
+          <div class="brand-block">
+           <div class="brand-block__top">
+            <p class="section-desc brand-block__name">Аэродинамика</p>
+            <p class="brand-block__count">15</p>
+           </div>  
+           @@include('tpls/cards/catalog.html',{class: "catalog-card__no-model", img: "aerodynamics/aerodynamics-square-1.jpg", category: "Formacar SCL", name: "PORSCHE 911 TURBO S VENOM"})
+           @@include('tpls/cards/catalog.html',{class: "catalog-card__no-model", img: "aerodynamics/aerodynamics-square-2.jpg", category: "Formacar SCL", name: "LAMBORGHINI URUS"})
+           @@include('tpls/cards/catalog.html',{class: "catalog-card__no-model", img: "aerodynamics/aerodynamics-square-3.jpg", category: "Formacar SCL", name: "NISSAN GT-R GOJIRA 2019"})
+          </div>
+         </section>
+
+        </aside>
+
+        <div class="main__items">
+         <div class="page-heading">
+          <div class="breadcrumbs">
+           <ul class="breadcrumbs__list">
+             <li class="breadcrumbs__item">
+              <a href="#" class="breadcrumbs__link">Главная</a>
+             </li>
+             <li class="breadcrumbs__item">
+              <a href="#" class="breadcrumbs__link">Каталог тюнинга</a>
+             </li>
+             <li class="breadcrumbs__item">Диски</li>
+           </ul>
+          </div>
+          <h2 class="section-title page__title">Диски</h2>
+
+
+          <section class="catalog">
+
+           <div class="catalog__gallery">
+
+             @@include('tpls/cards/catalog.html',{img: "wheels/wheels-1.jpg", category: "AIRTEKK", name: "TANKEN"})
+             @@include('tpls/cards/catalog.html',{img: "wheels/wheels-2.jpg", category: "CORSE WERKS", name: "Toro"})
+             @@include('tpls/cards/catalog.html',{img: "wheels/wheels-3.jpg", category: "YIDO PERFORMANCE", name: "YP SERIES YP3"})
+             @@include('tpls/cards/catalog.html',{img: "wheels/wheels-4.jpg", category: "3SDM", name: "CT216"})
+           
+           </div>
+
+           <div class="catalog__gallery">
+
+            @@include('tpls/cards/catalog.html',{img: "wheels/wheels-5.jpg", category: "AL13", name: "AL13 R-Series R20"})
+            @@include('tpls/cards/catalog.html',{img: "wheels/wheels-6.jpg", category: "AL13", name: "R-SERIES R30-R"})
+            @@include('tpls/cards/catalog.html',{img: "wheels/wheels-7.jpg", category: "AL13", name: "R-SERIES R110"})
+            @@include('tpls/cards/catalog.html',{img: "wheels/wheels-8.jpg", category: "AL13", name: "LUX-SERIES LUX 02"})
+          
+          </div>
+           
+          </section>
+
+
+          <section class="offers">
+           <div class="swiper offers-carousel">
+            <div class="swiper-wrapper">
+
+             <div class="swiper-slide offers-carousel__slide">
+              <picture class="offers-carousel__pic">
+               <img class="offers-carousel__img" src="img/offers/offers-1.jpg" alt="">
+              </picture>
+             </div>
+
+             <div class="swiper-slide offers-carousel__slide">
+              <picture class="offers-carousel__pic">
+               <img class="offers-carousel__img" src="img/offers/offers-1.jpg" alt="">
+              </picture>
+             </div>
+
+             <div class="swiper-slide offers-carousel__slide">
+              <picture class="offers-carousel__pic">
+               <img class="offers-carousel__img" src="img/offers/offers-1.jpg" alt="">
+              </picture>
+             </div>
+
+             <div class="swiper-slide offers-carousel__slide">
+              <picture class="offers-carousel__pic">
+               <img class="offers-carousel__img" src="img/offers/offers-1.jpg" alt="">
+              </picture>
+             </div>
+
+             <div class="swiper-slide offers-carousel__slide">
+              <picture class="offers-carousel__pic">
+               <img class="offers-carousel__img" src="img/offers/offers-1.jpg" alt="">
+              </picture>
+             </div>
+
+            </div>
+           </div>
+           <div class="swiper-pagination offers-carousel__pagination">
+
+           </div>
+          </section>
+
+           <section class="catalog">
+
+            <div class="catalog__gallery">
+ 
+              @@include('tpls/cards/catalog.html',{img: "wheels/wheels-9.jpg", category: "AL13", name: "R-SERIES R60"})
+              @@include('tpls/cards/catalog.html',{img: "wheels/wheels-10.jpg", category: "CEC", name: "C112"})
+              @@include('tpls/cards/catalog.html',{img: "wheels/wheels-11.jpg", category: "CEC", name: "C113"})
+              @@include('tpls/cards/catalog.html',{img: "wheels/wheels-12.jpg", category: "CINEL", name: "LIGHT STREET CF301"})
+            
+            </div>
+            
+           </section>
+
+           <button class="button button--primary button--light news__button-load">Загрузить ещё</button>
+           
+
+
+
+         </div>
+        </div>
+       </div>
+        
+      </main>
+
+
+      @@include('tpls/footer.html',{})
+    </div>
+
+    @@include('tpls/modals.html', {})
+    <script src="./js/bundle.min.js"></script>
+  </body>
+</html>
