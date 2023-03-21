@@ -141,4 +141,40 @@ if (document.querySelector('.modal-events__carousel')) {
  
 }
 
+if (document.querySelector('.card-carousel--big') && document.querySelector('.card-carousel--small')) {
 
+  let cardCarouselBig = new Swiper(".card-carousel--big", {
+    modules: [Autoplay, EffectFade, Controller],
+
+    spaceBetween: 3,
+    slidesPerView: 1.199224,
+
+  });
+ 
+  let cardCarouselSmall = new Swiper(".card-carousel--small", {
+    modules: [Autoplay, EffectFade, Controller],
+
+    spaceBetween: 3,
+    watchSlidesProgress: true,
+    slidesPerView: 7.2992,
+
+  });
+  cardCarouselBig.controller.control = cardCarouselSmall;
+  cardCarouselSmall.controller.control = cardCarouselBig;
+
+}
+
+if (document.querySelector('.card-video')) {
+
+  let cardVideo = new Swiper(".card-video", {
+    modules: [Autoplay],
+
+    spaceBetween: 20,
+    loop: true,
+    slidesPerView: 2.3024,
+    autoplay: {
+      delay: 3000,
+    },
+  });
+ 
+}

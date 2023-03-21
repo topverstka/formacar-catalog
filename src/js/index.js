@@ -106,3 +106,16 @@ modalShareButton.addEventListener("click", function() {
   let link = document.querySelector('.modal-share__input').value
   navigator.clipboard.writeText(link);
 })
+
+let expandBtn = document.querySelector('.card-expand')
+
+expandBtn.addEventListener("click", function() {
+  document.querySelector('.card-list').classList.toggle('hidden');
+  expandBtn.classList.toggle('hide');
+  let expandBtnText = expandBtn.querySelector('p');
+  if (expandBtnText.innerHTML === "Развернуть") {
+    expandBtnText.innerHTML = "Свернуть";
+  } else {
+    expandBtnText.innerHTML = "Развернуть";
+  }
+});

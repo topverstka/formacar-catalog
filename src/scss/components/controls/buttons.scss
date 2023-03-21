@@ -201,3 +201,17 @@
   background: var(--c-accent-dark);
   color: #fff;
 } 
+
+.button--purple{
+  background: #9578FA;
+  color: #fff;
+}
+
+.button--purple:hover{
+  opacity: 0.8;
+}
+
+.button--purple:active{
+  opacity: 1;
+  background: var(--c-accent-dark);
+} 

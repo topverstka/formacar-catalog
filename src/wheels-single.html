@@ -53,107 +53,206 @@
 
         </aside>
 
-        <div class="main__items">
-         <div class="page-heading">
-          <div class="breadcrumbs">
-           <ul class="breadcrumbs__list">
-             <li class="breadcrumbs__item">
-              <a href="#" class="breadcrumbs__link">Главная</a>
-             </li>
-             <li class="breadcrumbs__item">
-              <a href="#" class="breadcrumbs__link">Каталог тюнинга</a>
-             </li>
-             <li class="breadcrumbs__item">Диски</li>
-           </ul>
-          </div>
-          <h2 class="section-title page__title">Диски</h2>
+        <div class="card__items">
 
 
-          <section class="catalog">
-
-           <div class="catalog__gallery">
-
-             @@include('tpls/cards/catalog.html',{img: "wheels/wheels-1.jpg", category: "AIRTEKK", name: "TANKEN"})
-             @@include('tpls/cards/catalog.html',{img: "wheels/wheels-2.jpg", category: "CORSE WERKS", name: "Toro"})
-             @@include('tpls/cards/catalog.html',{img: "wheels/wheels-3.jpg", category: "YIDO PERFORMANCE", name: "YP SERIES YP3"})
-             @@include('tpls/cards/catalog.html',{img: "wheels/wheels-4.jpg", category: "3SDM", name: "CT216"})
-           
+         <section class="card">
+           <div class="card-block">
+             <div class="breadcrumbs">
+              <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                 <a href="#" class="breadcrumbs__link">Каталог тюнига</a>
+                </li>
+                <li class="breadcrumbs__item">
+                 <a href="#" class="breadcrumbs__link">Диски</a>
+                </li>
+                <li class="breadcrumbs__item">Formacar SCL – VENOM</li>
+              </ul>
+             </div>
+             <h3 class="card-category">Formacar SCL</h3>
+             <h2 class="card-title">VENOM</h2>
+             <ul class="card-list hidden">
+              <li class="card-list__item">
+                <p>Диаметр</p>
+                <hr>
+                <p>16-28</p>
+              </li>
+              <li class="card-list__item">
+                <p>Тип</p>
+                <hr>
+                <p>Monoblock</p>
+              </li>
+              <li class="card-list__item">
+                <p>Ширина диска</p>
+                <hr>
+                <p>10.0”</p>
+              </li>
+              <li class="card-list__item">
+                <p>Вылет (ET)</p>
+                <hr>
+                <p>23 мм</p>
+              </li>
+              <li class="card-list__item">
+                <p>Сверловка (PCD)</p>
+                <hr>
+                <p>130.00x5</p>
+              </li>
+              <li class="card-list__item">
+                <p>Диаметр ЦО (DIA)</p>
+                <hr>
+                <p>-</p>
+              </li>
+             </ul>
+             <div class="card-expand">
+              <p>Развернуть</p>
+              <img src="img/common/arrow-down.svg" alt="">
+             </div>
+             <div class="card-bottom">
+              <div class="card-bottom__bookmark">
+                <img src="img/common/bookmark.svg" alt="">
+              </div>
+              <button class="button button--primary card-bottom__button">
+                <img src="img/common/pin.svg" alt="">
+                <p>Где купить</p>
+              </button>
+              <button class="button button--purple card-bottom__button">
+                <img src="img/common/3d.svg" alt="">
+                <p>Открыть 3D</p>
+              </button>
+             </div>
            </div>
+           <picture class="card__pic">
+            <img src="img/card/wheels.png" alt="" class="card__img">
+          </picture>
+         </section>
 
-           <div class="catalog__gallery">
+         <section class="card-info">
+          <h2 class="section-desc catalog__title">галерея</h2>
+          <div class="card-carousel">
+            <div class="swiper card-carousel--big">
+             <div class="swiper-wrapper">
+              <div class="swiper-slide news-carousel__slide">
+               <picture class="card-carousel__pic">
+                <img src="img/card/carousel-1.jpg" alt="" class="card-carousel__img">
+               </picture>
+              </div>
+              <div class="swiper-slide news-carousel__slide">
+                <picture class="card-carousel__pic">
+                 <img src="img/card/carousel-2.jpg" alt="" class="card-carousel__img">
+                </picture>
+               </div>
+               <div class="swiper-slide news-carousel__slide">
+                <picture class="card-carousel__pic">
+                 <img src="img/card/carousel-3.jpg" alt="" class="card-carousel__img">
+                </picture>
+               </div>
+               <div class="swiper-slide news-carousel__slide">
+                <picture class="card-carousel__pic">
+                 <img src="img/card/carousel-4.jpg" alt="" class="card-carousel__img">
+                </picture>
+               </div>
 
+             </div>
+            </div>
+            <div class="swiper card-carousel--small">
+             <div class="swiper-wrapper">
+
+              <div class="swiper-slide card-carousel__slide">
+               <picture class="card-carousel__pic">
+                <img src="img/card/carousel-1.jpg" alt="" class="card-carousel__img">
+               </picture>
+              </div>
+              <div class="swiper-slide card-carousel__slide">
+                <picture class="card-carousel__pic">
+                 <img src="img/card/carousel-2.jpg" alt="" class="card-carousel__img">
+                </picture>
+               </div>
+               <div class="swiper-slide card-carousel__slide">
+                <picture class="card-carousel__pic">
+                 <img src="img/card/carousel-3.jpg" alt="" class="card-carousel__img">
+                </picture>
+               </div>
+               <div class="swiper-slide card-carousel__slide">
+                <picture class="card-carousel__pic">
+                 <img src="img/card/carousel-4.jpg" alt="" class="card-carousel__img">
+                </picture>
+               </div>
+
+             </div>
+            </div>
+          </div>
+          <h2 class="section-desc catalog__title">Видео</h2>
+          <div class="swiper card-video">
+            <div class="swiper-wrapper">
+
+              <a href="" class="swiper-slide card-video__block">
+                @@include('tpls/sections/play-button.html')
+                <picture class="card-video__pic">
+                  <img src="img/card/video-1.jpg" alt="" class="card-video__img">
+                </picture>
+                <p class="card-video__time">1:03</p>
+              </a>
+              <a href="" class="swiper-slide card-video__block">
+                @@include('tpls/sections/play-button.html')
+                <picture class="card-video__pic">
+                  <img src="img/card/video-2.jpg" alt="" class="card-video__img">
+                </picture>
+                <p class="card-video__time">1:03</p>
+              </a>
+              <a href="" class="swiper-slide card-video__block">
+                @@include('tpls/sections/play-button.html')
+                <picture class="card-video__pic">
+                  <img src="img/card/video-3.jpg" alt="" class="card-video__img">
+                </picture>
+                <p class="card-video__time">1:03</p>
+              </a>
+
+
+            </div>
+            
+          </div>
+          <div class="news-bottom">
+            <div class="news-bottom__left">
+              @@include('tpls/sections/bottom-button.html',{type: 'comments', number: '234'})
+              @@include('tpls/sections/bottom-button.html',{type: 'like', number: '633'})
+            </div>
+            <div class="news-bottom__right">
+              <div class="news-bottom-share" data-b_modal-open="modal-share">
+                <img src="img/common/share.svg" alt="">
+              </div>
+            </div>
+           </div>
+           
+           <hr class="card-divider">
+
+           <div class="card-comments">
+            @@include('tpls/cards/comment.html',{profile: "3.jpg", name: "Михаил", text: "Это очень интересная новость! Я в восторге!", date: "30 ноября 2021, 11:45"})
+            @@include('tpls/cards/comment.html',{profile: "1.jpg", name: "Александр", text: "а я радуюсь наконец выпавшему снегу и холоду, <br> зима должна быть зимой", date: "Час назад"})
+           </div>
+           
+         </section>
+         
+
+        </div>
+       </div>
+
+       <section class="news-recently news-recently__container ">
+        <h2 class="section-desc catalog__title">Вы недавно смотрели</h2>
+        <div class="catalog-slide catalog-slide-no-mb">
+          <div class="catalog__gallery catalog__gallery_slide">
+            
+            @@include('tpls/cards/catalog.html',{img: "wheels/wheels-1.jpg", category: "AIRTEKK", name: "TANKEN"})
+            @@include('tpls/cards/catalog.html',{img: "wheels/wheels-2.jpg", category: "CORSE WERKS", name: "Toro"})
+            @@include('tpls/cards/catalog.html',{img: "wheels/wheels-3.jpg", category: "YIDO PERFORMANCE", name: "YP SERIES YP3"})
+            @@include('tpls/cards/catalog.html',{img: "wheels/wheels-4.jpg", category: "3SDM", name: "CT216"})
             @@include('tpls/cards/catalog.html',{img: "wheels/wheels-5.jpg", category: "AL13", name: "AL13 R-Series R20"})
             @@include('tpls/cards/catalog.html',{img: "wheels/wheels-6.jpg", category: "AL13", name: "R-SERIES R30-R"})
             @@include('tpls/cards/catalog.html',{img: "wheels/wheels-7.jpg", category: "AL13", name: "R-SERIES R110"})
             @@include('tpls/cards/catalog.html',{img: "wheels/wheels-8.jpg", category: "AL13", name: "LUX-SERIES LUX 02"})
-          
+
           </div>
-           
-          </section>
-
-
-          <section class="offers">
-           <div class="swiper offers-carousel">
-            <div class="swiper-wrapper">
-
-             <div class="swiper-slide offers-carousel__slide">
-              <picture class="offers-carousel__pic">
-               <img class="offers-carousel__img" src="img/offers/offers-1.jpg" alt="">
-              </picture>
-             </div>
-
-             <div class="swiper-slide offers-carousel__slide">
-              <picture class="offers-carousel__pic">
-               <img class="offers-carousel__img" src="img/offers/offers-1.jpg" alt="">
-              </picture>
-             </div>
-
-             <div class="swiper-slide offers-carousel__slide">
-              <picture class="offers-carousel__pic">
-               <img class="offers-carousel__img" src="img/offers/offers-1.jpg" alt="">
-              </picture>
-             </div>
-
-             <div class="swiper-slide offers-carousel__slide">
-              <picture class="offers-carousel__pic">
-               <img class="offers-carousel__img" src="img/offers/offers-1.jpg" alt="">
-              </picture>
-             </div>
-
-             <div class="swiper-slide offers-carousel__slide">
-              <picture class="offers-carousel__pic">
-               <img class="offers-carousel__img" src="img/offers/offers-1.jpg" alt="">
-              </picture>
-             </div>
-
-            </div>
-           </div>
-           <div class="swiper-pagination offers-carousel__pagination">
-
-           </div>
-          </section>
-
-           <section class="catalog">
-
-            <div class="catalog__gallery">
- 
-              @@include('tpls/cards/catalog.html',{img: "wheels/wheels-9.jpg", category: "AL13", name: "R-SERIES R60"})
-              @@include('tpls/cards/catalog.html',{img: "wheels/wheels-10.jpg", category: "CEC", name: "C112"})
-              @@include('tpls/cards/catalog.html',{img: "wheels/wheels-11.jpg", category: "CEC", name: "C113"})
-              @@include('tpls/cards/catalog.html',{img: "wheels/wheels-12.jpg", category: "CINEL", name: "LIGHT STREET CF301"})
-            
-            </div>
-            
-           </section>
-
-           <button class="button button--primary button--light news__button-load">Загрузить ещё</button>
-           
-
-
-
-         </div>
         </div>
-       </div>
+      </section>
         
       </main>
 
