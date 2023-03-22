@@ -958,7 +958,8 @@
 }
 
 .catalog-card__no-list .catalog-card__name {
-  min-height: 2.75rem;
+  min-height: auto;
+  display: block;
 }
 
 .catalog-card:hover .catalog-card__top {
@@ -1650,6 +1651,19 @@
   margin-bottom: 4.88rem;
 }
 
+.card-block--full {
+  width: 100%;
+}
+
+.card-block .breadcrumbs__item:last-child {
+  max-width: 15.25rem;
+  overflow: hidden;
+  white-space: pre-wrap;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
 .card-category {
   font-weight: 600;
   font-size: 1.25rem;
@@ -1862,6 +1876,11 @@
   width: 100%;
   height: 1px;
   margin-bottom: 2.5rem;
+}
+
+.card-comments .comments-empty {
+  text-align: left;
+  padding-left: 5.125rem;
 }
 
 @font-face {
@@ -3764,6 +3783,7 @@ header {
 
 .brand .catalog-card__name {
   font-size: 1rem;
+  display: block;
 }
 
 .brand .catalog-card__bottom {

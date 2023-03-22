@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- Отключить автодетект телефонов -->
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- Отключить кэширование. Нужен только при разработке, чтобы все было свежим -->
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="max-age=3600, must-revalidate" />
+  </head>
+  <body>
+    <div class="wrapper">
+      @@include('tpls/header.html',{})
+
+
+      <main class="main">
+        
+       <div class="main__container-catalog">
+
+        <aside class="main-sidebar">
+         
+         <section class="brand">
+          <div class="brand-top">
+           <p class="brand-top__text">Бренд</p>
+           <h2 class="brand-top__title">Formacar SCL</h2>
+          </div>
+          <hr class="brand-divider">
+
+          <div class="brand-block">
+           <div class="brand-block__top">
+            <p class="section-desc brand-block__name">Аэродинамика</p>
+            <p class="brand-block__count">15</p>
+           </div>  
+           @@include('tpls/cards/catalog.html',{class: "catalog-card__no-model", img: "aerodynamics/aerodynamics-square-1.jpg", category: "Formacar SCL", name: "PORSCHE 911 TURBO S VENOM"})
+           @@include('tpls/cards/catalog.html',{class: "catalog-card__no-model", img: "aerodynamics/aerodynamics-square-2.jpg", category: "Formacar SCL", name: "LAMBORGHINI URUS"})
+           @@include('tpls/cards/catalog.html',{class: "catalog-card__no-model", img: "aerodynamics/aerodynamics-square-3.jpg", category: "Formacar SCL", name: "NISSAN GT-R GOJIRA 2019"})
+          </div>
+
+          <div class="brand-block">
+           <div class="brand-block__top">
+            <p class="section-desc brand-block__name">Диски</p>
+            <p class="brand-block__count">15</p>
+           </div> 
+           @@include('tpls/cards/catalog.html',{img: "wheels/wheels-square-1.jpg", category: "Formacar SCL", name: "TITAN"})
+           @@include('tpls/cards/catalog.html',{img: "wheels/wheels-square-2.jpg", category: "Formacar SCL", name: "GOJIRA"})
+           @@include('tpls/cards/catalog.html',{img: "wheels/wheels-square-3.jpg", category: "Formacar SCL", name: "LAMBORGHINI URUS"})
+          </div>
+          
+         </section>
+
+        </aside>
+
+        <div class="card__items">
+
+
+         <section class="card">
+           <div class="card-block card-block--full">
+             <div class="breadcrumbs">
+              <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                 <a href="#" class="breadcrumbs__link">Каталог тюнига</a>
+                </li>
+                <li class="breadcrumbs__item">
+                 <a href="#" class="breadcrumbs__link"><Категория тюнига></a>
+                </li>
+                <li class="breadcrumbs__item">AKRAPOVIC EXHAUST SYSTEM – Audi RS 5 Coupé (B8) 2015</li>
+              </ul>
+             </div>
+             <h3 class="card-category">AKRAPOVIC EXHAUST SYSTEM</h3>
+             <h2 class="card-title">Audi RS 5 Coupé (B8) 2015</h2>
+
+             <div class="card-bottom">
+              <div class="card-bottom__bookmark">
+                <img src="img/common/bookmark.svg" alt="">
+              </div>
+              <button class="button button--primary card-bottom__button">
+                <img src="img/common/pin.svg" alt="">
+                <p>Где купить</p>
+              </button>
+              <button class="button button--purple card-bottom__button">
+                <img src="img/common/3d.svg" alt="">
+                <p>Открыть 3D</p>
+              </button>
+             </div>
+           </div>
+         </section>
+
+         <section class="card-info">
+
+          <h2 class="section-desc catalog__title">галерея</h2>
+          <div class="card-carousel">
+            <div class="swiper card-carousel--big">
+             <div class="swiper-wrapper">
+              <div class="swiper-slide news-carousel__slide">
+               <picture class="card-carousel__pic">
+                <img src="img/card/sample-1.jpg" alt="" class="card-carousel__img">
+               </picture>
+              </div>
+              <div class="swiper-slide news-carousel__slide">
+                <picture class="card-carousel__pic">
+                 <img src="img/card/sample-2.jpg" alt="" class="card-carousel__img">
+                </picture>
+               </div>
+               <div class="swiper-slide news-carousel__slide">
+                <picture class="card-carousel__pic">
+                 <img src="img/card/sample-3.jpg" alt="" class="card-carousel__img">
+                </picture>
+               </div>
+               <div class="swiper-slide news-carousel__slide">
+                <picture class="card-carousel__pic">
+                 <img src="img/card/sample-4.jpg" alt="" class="card-carousel__img">
+                </picture>
+               </div>
+               <div class="swiper-slide news-carousel__slide">
+                <picture class="card-carousel__pic">
+                 <img src="img/card/sample-5.jpg" alt="" class="card-carousel__img">
+                </picture>
+               </div>
+               <div class="swiper-slide news-carousel__slide">
+                <picture class="card-carousel__pic">
+                 <img src="img/card/sample-6.jpg" alt="" class="card-carousel__img">
+                </picture>
+               </div>
+
+             </div>
+            </div>
+            <div class="swiper card-carousel--small">
+             <div class="swiper-wrapper">
+
+              <div class="swiper-slide card-carousel__slide">
+               <picture class="card-carousel__pic">
+                <img src="img/card/sample-1.jpg" alt="" class="card-carousel__img">
+               </picture>
+              </div>
+              <div class="swiper-slide card-carousel__slide">
+                <picture class="card-carousel__pic">
+                 <img src="img/card/sample-2.jpg" alt="" class="card-carousel__img">
+                </picture>
+               </div>
+               <div class="swiper-slide card-carousel__slide">
+                <picture class="card-carousel__pic">
+                 <img src="img/card/sample-3.jpg" alt="" class="card-carousel__img">
+                </picture>
+               </div>
+               <div class="swiper-slide card-carousel__slide">
+                <picture class="card-carousel__pic">
+                 <img src="img/card/sample-4.jpg" alt="" class="card-carousel__img">
+                </picture>
+               </div>
+               <div class="swiper-slide news-carousel__slide">
+                <picture class="card-carousel__pic">
+                 <img src="img/card/sample-5.jpg" alt="" class="card-carousel__img">
+                </picture>
+               </div>
+               <div class="swiper-slide news-carousel__slide">
+                <picture class="card-carousel__pic">
+                 <img src="img/card/sample-6.jpg" alt="" class="card-carousel__img">
+                </picture>
+               </div>
+
+             </div>
+            </div>
+          </div>
+
+          <div class="news-bottom">
+            <div class="news-bottom__left">
+              @@include('tpls/sections/bottom-button.html',{type: 'comments', number: '234'})
+              @@include('tpls/sections/bottom-button.html',{type: 'like', number: '633'})
+            </div>
+            <div class="news-bottom__right">
+              <div class="news-bottom-share" data-b_modal-open="modal-share">
+                <img src="img/common/share.svg" alt="">
+              </div>
+            </div>
+           </div>
+           
+           <hr class="card-divider">
+
+           <div class="card-comments">
+            <p class="comments-empty">Комментариев пока нет.</p>
+           </div>
+           
+         </section>
+         
+
+        </div>
+       </div>
+
+       <section class="news-recently news-recently__container ">
+        <h2 class="section-desc catalog__title">Вы недавно смотрели</h2>
+        <div class="catalog-slide catalog-slide-no-mb">
+          <div class="catalog__gallery catalog__gallery_slide">
+            
+           @@include('tpls/cards/catalog-no-list.html',{img: "aerodynamics/aerodynamics-1.jpg", category: "Formacar SCL", name: "PORSCHE 911 TURBO S VENOM"})
+           @@include('tpls/cards/catalog-no-list.html',{img: "aerodynamics/aerodynamics-1.jpg", category: "Formacar SCL", name: "PORSCHE 911 TURBO S VENOM"})
+           @@include('tpls/cards/catalog-no-list.html',{img: "aerodynamics/aerodynamics-1.jpg", category: "Formacar SCL", name: "PORSCHE 911 TURBO S VENOM"})
+
+          </div>
+        </div>
+      </section>
+        
+      </main>
+
+
+      @@include('tpls/footer.html',{})
+    </div>
+
+    @@include('tpls/modals.html', {})
+    <script src="./js/bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- Отключить автодетект телефонов -->
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- Отключить кэширование. Нужен только при разработке, чтобы все было свежим -->
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="max-age=3600, must-revalidate" />
+  </head>
+  <body>
+    <div class="wrapper">
+      @@include('tpls/header.html',{})
+
+
+      <main class="main">
+        
+       <div class="main__container-catalog">
+
+        <aside class="main-sidebar">
+         <section class="filters">
+           <div class="filters-title">
+            <img src="img/common/filter-title.svg" alt="">
+            <p>Фильтр</p>
+           </div>
+           
+           <div class="filters-block">
+             <div class="filters-block__top">
+              <div class="filters-block__title">Марка автомобиля</div>
+              <div class="filters-block__reset">Сбросить</div>
+             </div>
+             <div class="filters-block__main">
+              
+              @@include('tpls/sections/filters-label.html',{text : "Abarth"})
+              @@include('tpls/sections/filters-label.html',{text : "Ac"})
+              @@include('tpls/sections/filters-label.html',{text : "AC CARS"})
+              @@include('tpls/sections/filters-label.html',{text : "Acura"})
+              @@include('tpls/sections/filters-label.html',{text : "Adler"})
+              @@include('tpls/sections/filters-label.html',{text : "Alfa Romeo"})
+              @@include('tpls/sections/filters-label.html',{text : "Abarth"})
+              @@include('tpls/sections/filters-label.html',{text : "Ac"})
+
+             </div>
+           </div>
+
+           <div class="filters-block">
+            <div class="filters-block__top">
+             <div class="filters-block__title">Модель</div>
+             <div class="filters-block__reset">Сбросить</div>
+            </div>
+            <div class="filters-block__main">
+             
+             @@include('tpls/sections/filters-label.html',{text : "Model"})
+             @@include('tpls/sections/filters-label.html',{text : "Model"})
+             @@include('tpls/sections/filters-label.html',{text : "Model"})
+             @@include('tpls/sections/filters-label.html',{text : "Model"})
+             @@include('tpls/sections/filters-label.html',{text : "Model"})
+             @@include('tpls/sections/filters-label.html',{text : "Model"})
+             @@include('tpls/sections/filters-label.html',{text : "Model"})
+             @@include('tpls/sections/filters-label.html',{text : "Model"})
+             @@include('tpls/sections/filters-label.html',{text : "Model"})
+
+
+            </div>
+          </div>
+
+          <div class="filters-block">
+           <div class="filters-block__top">
+            <div class="filters-block__title">Бренд</div>
+            <div class="filters-block__reset">Сбросить</div>
+           </div>
+           <form class="filters__search search__form">
+            <button class="search__button" type="submit">
+              <svg class="search__button-icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.4671 14.2732C11.8111 13.6172 12.9491 12.6383 13.591 13.2802L16.8841 16.5733C17.177 16.8662 17.177 17.3411 16.8841 17.634C16.5912 17.9269 16.1163 17.9269 15.8234 17.634L12.4671 14.2732Z" fill="#B4B4BF"></path>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.875 14.25C11.3958 14.25 14.25 11.3958 14.25 7.875C14.25 4.35418 11.3958 1.5 7.875 1.5C4.35418 1.5 1.5 4.35418 1.5 7.875C1.5 11.3958 4.35418 14.25 7.875 14.25ZM7.875 15.75C12.2242 15.75 15.75 12.2242 15.75 7.875C15.75 3.52576 12.2242 0 7.875 0C3.52576 0 0 3.52576 0 7.875C0 12.2242 3.52576 15.75 7.875 15.75Z" fill="#B4B4BF"></path>
+              </svg>
+            </button>
+            <input type="search" name="search" placeholder="Что найти?" class="search__input header-search__input" id="header-search__input">
+          </form>
+           <div class="filters-block__main">
+            
+            @@include('tpls/sections/filters-label.html',{text : "1000 Miglia"})
+            @@include('tpls/sections/filters-label.html',{text : "1221 Wheels"})
+            @@include('tpls/sections/filters-label.html',{text : "3SDM"})
+            @@include('tpls/sections/filters-label.html',{text : "6Sixty design"})
+            @@include('tpls/sections/filters-label.html',{text : "7TWENTY"})
+            @@include('tpls/sections/filters-label.html',{text : "ABT Sportsline"})
+            @@include('tpls/sections/filters-label.html',{text : "1000 Miglia"})
+            @@include('tpls/sections/filters-label.html',{text : "1221 Wheels"})
+
+           </div>
+         </div>         
+           
+         </section>
+
+        </aside>
+
+        <div class="main__items">
+         <div class="page-heading">
+          <div class="breadcrumbs">
+           <ul class="breadcrumbs__list">
+             <li class="breadcrumbs__item">
+              <a href="#" class="breadcrumbs__link">Главная</a>
+             </li>
+             <li class="breadcrumbs__item">
+              <a href="#" class="breadcrumbs__link">Каталог тюнинга</a>
+             </li>
+             <li class="breadcrumbs__item"><Категория тюнинга></li>
+           </ul>
+          </div>
+          <h2 class="section-title page__title"><Категория тюнинга></h2>
+
+
+          <section class="catalog">
+
+           <div class="catalog__gallery">
+
+             @@include('tpls/cards/catalog-no-list.html',{img: "exhaust-systems/1.jpg", category: "AKRAPOVIC EXHAUST SYSTEM", name: "Abarth 500/595 2017"})
+             @@include('tpls/cards/catalog-no-list.html',{img: "interior/7.jpg", category: "BRABUS", name: "BRABUS VALVE-CONTRILLED EXHAUST SYSTEM FOR A CLASS"})
+             @@include('tpls/cards/catalog-no-list.html',{img: "exhaust-systems/2.jpg", category: "AKRAPOVIC EXHAUST SYSTEM", name: "Audi RS 5 Coupé (B8) 2015"})
+             @@include('tpls/cards/catalog-no-list.html',{img: "exhaust-systems/3.jpg", category: "DINAN ENGINEERING", name: "BMW F10 M5"}) 
+             
+           
+           </div>
+
+           <div class="catalog__gallery">
+
+            @@include('tpls/cards/catalog-no-list.html',{img: "suspension/1.jpg", category: "H&R", name: "STREET PERFORMANCE"})
+            @@include('tpls/cards/catalog-no-list.html',{img: "suspension/2.jpg", category: "KW SUSPENSIONS", name: "HEIHGT ADJUSTABLE SPRING KIT"})
+            @@include('tpls/cards/catalog-no-list.html',{img: "suspension/3.jpg", category: "DINAN ENGINEERING", name: "BMW F80 M3 F82 F83 M4 (EDC Only)"})
+            @@include('tpls/cards/catalog-no-list.html',{img: "suspension/4.jpg", category: "JRZ SUSPENSION", name: "11 SERIES"})
+          
+          </div>
+           
+          </section>
+
+
+          <section class="offers">
+           <div class="swiper offers-carousel">
+            <div class="swiper-wrapper">
+
+             <div class="swiper-slide offers-carousel__slide">
+              <picture class="offers-carousel__pic">
+               <img class="offers-carousel__img" src="img/offers/offers-1.jpg" alt="">
+              </picture>
+             </div>
+
+             <div class="swiper-slide offers-carousel__slide">
+              <picture class="offers-carousel__pic">
+               <img class="offers-carousel__img" src="img/offers/offers-1.jpg" alt="">
+              </picture>
+             </div>
+
+             <div class="swiper-slide offers-carousel__slide">
+              <picture class="offers-carousel__pic">
+               <img class="offers-carousel__img" src="img/offers/offers-1.jpg" alt="">
+              </picture>
+             </div>
+
+             <div class="swiper-slide offers-carousel__slide">
+              <picture class="offers-carousel__pic">
+               <img class="offers-carousel__img" src="img/offers/offers-1.jpg" alt="">
+              </picture>
+             </div>
+
+             <div class="swiper-slide offers-carousel__slide">
+              <picture class="offers-carousel__pic">
+               <img class="offers-carousel__img" src="img/offers/offers-1.jpg" alt="">
+              </picture>
+             </div>
+
+            </div>
+           </div>
+           <div class="swiper-pagination offers-carousel__pagination">
+
+           </div>
+          </section>
+
+           <section class="catalog">
+
+            <div class="catalog__gallery">
+ 
+             @@include('tpls/cards/catalog-no-list.html',{img: "brake-systems/1.jpg", category: "SPARTA EVOLUTION", name: "S-GROOVE (PEGASUS R)"})
+             @@include('tpls/cards/catalog-no-list.html',{img: "brake-systems/2.jpg", category: "AUTOTECKNIC", name: "SCION FRS | SUBARU BRZ"})
+             @@include('tpls/cards/catalog-no-list.html',{img: "brake-systems/3.jpg", category: "BREMBO", name: "CADILLAC CTS"})
+             @@include('tpls/cards/catalog-no-list.html',{img: "brake-systems/4.jpg", category: "COBB", name: "SUBARU STI 2005-2014"})
+            
+            </div>
+
+            <div class="catalog__gallery">
+ 
+             @@include('tpls/cards/catalog-no-list.html',{img: "vinyls/1.jpg", category: "Formacar SCL", name: "Metallic 000000"})
+             @@include('tpls/cards/catalog-no-list.html',{img: "vinyls/2.jpg", category: "Formacar SCL", name: "Metallic 000001"})
+             @@include('tpls/cards/catalog-no-list.html',{img: "vinyls/3.jpg", category: "Formacar SCL", name: "Metallic 000002"})
+             @@include('tpls/cards/catalog-no-list.html',{img: "vinyls/4.jpg", category: "Formacar SCL", name: "Metallic 000003"})
+            
+            </div>
+            
+           </section>
+
+           <button class="button button--primary button--light news__button-load">Загрузить ещё</button>
+           
+
+
+
+         </div>
+        </div>
+       </div>
+        
+      </main>
+
+
+      @@include('tpls/footer.html',{})
+    </div>
+
+    @@include('tpls/modals.html', {})
+    <script src="./js/bundle.min.js"></script>
+  </body>
+</html>

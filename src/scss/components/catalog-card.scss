@@ -104,7 +104,8 @@
 }
 
 .catalog-card__no-list .catalog-card__name{
- min-height: 2.75rem;
+ min-height: auto;
+ display: block;
 }
 
 .catalog-card:hover .catalog-card__top{
