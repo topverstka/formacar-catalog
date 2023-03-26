@@ -39,6 +39,7 @@ $input-placeholder: var(--c-input-placeholder);
 
 // Уведомления
 $error: var(--c-error);
+
 // ================ Colors End ================
 :root {
   --c-text-regular: #383838;
@@ -70,19 +71,23 @@ $error: var(--c-error);
   --tr: 0.3s;
   --tr-regular: all var(--tr) ease;
 
-  --brad-regular: 0.63rem;
+  --brad-regular: 10px;
 
   // --container-padding: #{math.div($container-padding, 2) + "px"};
   --container-padding: 15px;
+
   @media (max-width: 1100px) {
     --container-padding: 10px;
   }
 
-  --ff-regular: "Montserrat", sans-serif;
-  --ff-title: "Montserrat", sans-serif;
+  --ff-regular: "Montserrat",
+  sans-serif;
+  --ff-title: "Montserrat",
+  sans-serif;
 
   --fz-button: 0.875rem;
   --lh-button: 126.5%;
+
   @media (max-width: 768px) {
     --fz-button: 15px;
     --lh-button: 126%;

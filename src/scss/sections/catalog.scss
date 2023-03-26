@@ -6,9 +6,9 @@
 .catalog__gallery{
  display: grid;
  grid-template-columns: repeat(4, 1fr);
- gap: 1.88rem 2.50rem;
+ gap: 3rem 4rem;
  width: 100%;
- margin-bottom: 2.50rem;
+ margin-bottom: 4rem;
 }
 
 .catalog__gallery:last-child{

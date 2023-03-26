@@ -1,183 +1,196 @@
-.footer{
- padding: 1.88rem 4.50rem;
+.footer {
+  padding: 6rem 0rem;
 }
 
-.footer__container{
- padding: 0;
+.footer__container {
+  padding: 0;
 }
 
-.footer__separator{
- margin: 1.88rem 0;
- height: 1px;
- background: #ECECEC;
+.footer__separator {
+  margin: 3rem 0;
+  height: 1px;
+  background: #ECECEC;
 }
 
-.footer__lang{
- display: flex;
- align-items: center;
- padding: 0.50rem 0.63rem 0.50rem 0.94rem;
- border: 1px solid #383838;
- border-radius: var(--brad-regular);
- width: 12.50rem;
- margin-left: auto;
- transition: 0.4s;
+.footer__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.footer__lang:hover{
- opacity: 0.7;
+.footer__nav-item {
+  display: inline-block;
+  padding-right: 5rem;
 }
 
-.footer__lang-icon{
- --size: 1.50rem;
- height: var(--size);
- width: var(--size);
- min-width: var(--size);
- margin-right: 0.63rem;
+.footer__nav-link {
+  font-size: 1.4rem;
+  font-weight: 500;
 }
 
-.footer__lang-text{
- font-weight: 500;
- font-size: 0.88rem;
+.footer__lang {
+  display: flex;
+  align-items: center;
+  padding: .6rem 1rem .6rem 1.4rem;
+  border: 1px solid #383838;
+  border-radius: var(--brad-regular);
+  margin-left: auto;
+  transition: 0.4s;
 }
 
-.footer__lang-arrow{
- --size: 1.50rem;
- height: var(--size);
- width: var(--size);
- min-width: var(--size);
- margin-left: auto;
+.footer__lang:hover {
+  opacity: 0.7;
 }
 
-.footer__bottom{
- display: flex;
- justify-content: space-between;
- align-items: center;
+.footer__lang-icon {
+  height: 2.2rem;
+  width: 2.2rem;
+  margin-right: 0.63rem;
 }
 
-.footer__logo{
- margin-bottom: 1.56rem;
+.footer__lang-text {
+  font-weight: 500;
+  font-size: 1.4rem;
+  padding-right: 5.5rem;
 }
 
-.footer__desc{
- max-width: 44.13rem;
- font-size: 0.88rem;
- font-weight: 500;
- line-height: 1.50rem;
- margin-bottom: 2.81rem;
+.footer__lang-arrow {
+  height: 2.4rem;
+  width: 2.4rem;
+  margin-left: auto;
 }
 
-.footer__credits{
- display: flex;
- align-items: center;
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.footer__credits-socials{
- display: flex;
- align-items: center;
- gap: 0.94rem;
- margin-right: 2.19rem;
+.footer__logo {
+  margin-bottom: 2.5rem;
 }
 
-.footer__credits-item{
- --size: 1.88rem;
- width: var(--size);
- height: var(--size);
- border-radius: 0.31rem;
+.footer__desc {
+  max-width: 70rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 2.4rem;
+  margin-bottom: 4.5rem;
 }
 
-.footer__credits-link{
- display: flex;
- align-items: center;
- justify-content: center;
- width: 100%;
- height: 100%;
- border-radius: 0.31rem;
- transition: 0.4s;
+.footer__credits {
+  display: flex;
+  align-items: center;
 }
 
-.footer__credits-link:hover{
- opacity: 0.7;
+.footer__credits-socials {
+  display: flex;
+  align-items: center;
+  gap: 0.94rem;
+  margin-right: 4rem;
 }
 
-.footer__credits-link_facebook{
- background: #446294;
+.footer__credits-item {
+  --size: 3.3rem;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 0.5rem;
 }
 
-.footer__credits-link_twitter{
- background: #40ABE2;
+.footer__credits-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.31rem;
+  transition: 0.4s;
 }
 
-.footer__credits-link_vk{
- background: #0077FF;
+.footer__credits-link:hover {
+  opacity: 0.7;
 }
 
-.footer__credits-link_youtube{
- background: #FF0000;
+.footer__credits-link_facebook {
+  background: #446294;
 }
 
-.footer__credits-link_instagram{
- background: #B93088;
+.footer__credits-link_twitter {
+  background: #40ABE2;
 }
 
-.footer__credits-link img, 
-.footer__credits-link svg{
- --size: 1.25rem;
- width: var(--size);
- height: var(--size);
+.footer__credits-link_vk {
+  background: #0077FF;
 }
 
-.footer__credits-text p{
- font-weight: 500;
- font-size: 0.88rem;
+.footer__credits-link_youtube {
+  background: #FF0000;
 }
 
-.footer__credits-text p:first-child{
- margin-bottom: 0.31rem;
+.footer__credits-link_instagram {
+  background: #B93088;
 }
 
-.footer__download{
- border: 1px solid #B4B4BF;
- filter: drop-shadow(0px 15px 25px rgba(204, 214, 240, 0.5));
- border-radius: var(--brad-regular);
- overflow: hidden;
- width: 26.13rem;
+.footer__credits-link img,
+.footer__credits-link svg {
+  --size: 2rem;
+  width: var(--size);
+  height: var(--size);
 }
 
-.footer__download-text{
- font-weight: 700;
- font-size: 1.25rem;
- background: #EEF1F9;
- padding: 1.56rem;
- text-transform: uppercase;
+.footer__credits-text p {
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
 }
 
-.footer__download-shops{
- background: #FFFFFF;
- display: flex;
- align-items: center;
- justify-content: space-between;
- padding: 1.56rem 0.97rem;
+.footer__credits-text p:first-child {
+  margin-bottom: 0.31rem;
 }
 
-.footer__download-block{
- display: flex;
- align-items: center;
+.footer__download {
+  border: 1px solid #B4B4BF;
+  filter: drop-shadow(0px 15px 25px rgba(204, 214, 240, 0.5));
+  border-radius: var(--brad-regular);
+  overflow: hidden;
+  width: 41.8rem;
+  position: relative;
+  margin-top: 3rem;
 }
 
-.footer__download-img{
- --size: 2.25rem;
- width: var(--size);
- height: var(--size);
- min-width: var(--size);
- margin-right: 0.63rem;
+.footer__download-text {
+  font-weight: 700;
+  font-size: 2rem;
+  background: #EEF1F9;
+  padding: 2.8rem;
+  text-transform: uppercase;
 }
 
-.footer__download-name p:nth-child(1){
- font-weight: 500;
- font-size: 0.88rem;
+.footer__download-shops {
+  background: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.2rem 2.8rem;
 }
 
-.footer__download-name p:nth-child(2){
- font-weight: 600;
- font-size: 1.13rem;
+.footer__download-block {
+  display: flex;
+  align-items: center;
+}
+
+.footer__download-img {
+  width: 3rem;
+  height: auto;
+  margin-right: 1.4rem;
+}
+
+.footer__download-name p:nth-child(1) {
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+
+.footer__download-name p:nth-child(2) {
+  font-weight: 600;
+  font-size: 1.8rem;
 }

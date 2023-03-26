@@ -1,22 +1,24 @@
-.bottom-button{
- display: flex;
- align-items: center;
- transition: 0.4s;
- cursor: pointer;
- transition: 0.4s;
+.bottom-button {
+  display: flex;
+  align-items: center;
+  transition: 0.4s;
+  cursor: pointer;
+  transition: 0.4s;
 }
 
-.bottom-button img, 
-.bottom-button svg{
- width: 1.25rem;
- margin-right: 0.5rem;
+.bottom-button img,
+.bottom-button svg {
+  width: 2.2rem;
+  margin-right: 1rem;
 }
 
-.bottom-button span{
- font-weight: 500;
- font-size: 0.88rem;
+.bottom-button span {
+  font-weight: 500;
+  font-size: 1.4rem;
+  position: relative;
+  top: -1.5px;
 }
 
-.bottom-button:hover{
- opacity: 0.7;
+.bottom-button:hover {
+  opacity: 0.7;
 }

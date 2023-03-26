@@ -1,6 +1,6 @@
 .breadcrumbs {
  font-weight: 400;
- font-size: 0.88rem;
+ font-size: 1.4rem;
  color: #888888;
  margin-bottom: 1.25rem;//20px;
  flex: 0 1 auto;
@@ -19,12 +19,12 @@
  transition: 0.4s;
 }
 .breadcrumbs__item::after {
- margin-left: 0.31rem;
- margin-right: 0.31rem;
+ margin-left: 0.5rem;
+ margin-right: 0.5rem;
  content: "";
  display: block;
- width: 1rem;
- height: 1rem;
+ width: 1.6rem;
+ height: 1.6rem;
  background-image: url("../img/common/breadcrumbs-arrow.svg");
  // background-size: 0.5625rem;//9px;
  background-repeat: no-repeat;

@@ -6,50 +6,43 @@
 @import "./components";
 
 // Шрифты
-@include font(
-  "Oswald",
+@include font("Oswald",
   normal,
   400,
   "../resources/fonts/oswald-regular"
 );
 
-@include font(
-  "Montserrat",
+@include font("Montserrat",
   normal,
   400,
   "../resources/fonts/Montserrat-Regular"
 );
 
-@include font(
-  "Montserrat",
+@include font("Montserrat",
   normal,
   500,
   "../resources/fonts/Montserrat-Medium"
 );
 
-@include font(
-  "Montserrat",
+@include font("Montserrat",
   normal,
   600,
   "../resources/fonts/Montserrat-SemiBold"
 );
 
-@include font(
-  "Montserrat",
+@include font("Montserrat",
   normal,
   700,
   "../resources/fonts/Montserrat-Bold"
 );
 
-@include font(
-  "Montserrat",
+@include font("Montserrat",
   normal,
   800,
   "../resources/fonts/Montserrat-ExtraBold"
 );
 
-@include font(
-  "Montserrat",
+@include font("Montserrat",
   normal,
   900,
   "../resources/fonts/Montserrat-Black"
@@ -59,18 +52,18 @@
 @import "./reset";
 
 html {
-  font-size: 0.8333333333vw;
-
+  font-size: 10px;
 }
 
 body {
   font-family: $ff-main;
-  font-size: 0.875rem;
+  font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.2;
   color: $text-primary;
   background-color: var(--bg-app);
 }
+
 body._lock {
   overflow: hidden;
   touch-action: none;
@@ -84,7 +77,8 @@ body._lock {
   min-height: 100%;
   overflow: hidden;
 }
-.wrapper > .content {
+
+.wrapper>.content {
   position: relative;
   z-index: 1;
   flex: 1 0 auto;
@@ -101,6 +95,7 @@ body._lock {
     max-width: $max-width-container;
     margin: 0 auto;
   }
+
   @if ($container-padding > 0) {
     padding: 0 var(--container-padding);
   }

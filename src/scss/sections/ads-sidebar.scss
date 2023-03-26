@@ -1,20 +1,22 @@
-.ads-sidebar{
- display: block;
- width: 100%;
- padding: 0.63rem;
- height: 40.63rem;
- background: #fff;
- border-radius: var(--brad-regular);
+.rek-sidebar {
+  display: block !important;
+  width: 100%;
+  padding: 0.63rem;
+  height: auto;
+  background: #fff;
+  border-radius: var(--brad-regular);
 }
 
-.ads-sidebar__pic{
- width: 100%;
- height: 100%;
- border-radius: 0.31rem;
-} 
+.rek-sidebar__pic {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.31rem;
+  overflow: hidden;
+}
 
-.ads-sidebar__img{
- width: 100%;
- height: 100%;
- border-radius: 0.31rem;
+.rek-sidebar__img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
 }
