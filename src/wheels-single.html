@@ -129,7 +129,7 @@
          <section class="card-info">
           <h2 class="section-desc catalog__title">галерея</h2>
           <div class="card-carousel">
-            <div class="swiper card-carousel--big">
+            <div thumbsSlider="" class="swiper news-carousel--big">
              <div class="swiper-wrapper">
               <div class="swiper-slide news-carousel__slide">
                <picture class="card-carousel__pic">
@@ -154,25 +154,25 @@
 
              </div>
             </div>
-            <div class="swiper card-carousel--small">
+            <div class="swiper news-carousel--small">
              <div class="swiper-wrapper">
 
-              <div class="swiper-slide card-carousel__slide">
+              <div class="swiper-slide news-carousel__slide">
                <picture class="card-carousel__pic">
                 <img src="img/card/carousel-1.jpg" alt="" class="card-carousel__img">
                </picture>
               </div>
-              <div class="swiper-slide card-carousel__slide">
+              <div class="swiper-slide news-carousel__slide">
                 <picture class="card-carousel__pic">
                  <img src="img/card/carousel-2.jpg" alt="" class="card-carousel__img">
                 </picture>
                </div>
-               <div class="swiper-slide card-carousel__slide">
+               <div class="swiper-slide news-carousel__slide">
                 <picture class="card-carousel__pic">
                  <img src="img/card/carousel-3.jpg" alt="" class="card-carousel__img">
                 </picture>
                </div>
-               <div class="swiper-slide card-carousel__slide">
+               <div class="swiper-slide news-carousel__slide">
                 <picture class="card-carousel__pic">
                  <img src="img/card/carousel-4.jpg" alt="" class="card-carousel__img">
                 </picture>
@@ -239,17 +239,34 @@
        <section class="news-recently news-recently__container ">
         <h2 class="section-desc catalog__title">Вы недавно смотрели</h2>
         <div class="catalog-slide catalog-slide-no-mb">
-          <div class="catalog__gallery catalog__gallery_slide">
+          <div class="news__gallery news__swiper swiper ">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                @@include('tpls/cards/catalog.html',{img: "wheels/wheels-1.jpg", category: "AIRTEKK", name: "TANKEN"})
+              </div>
+              <div class="swiper-slide">
+                @@include('tpls/cards/catalog.html',{img: "wheels/wheels-2.jpg", category: "CORSE WERKS", name: "Toro"})
+              </div>
+              <div class="swiper-slide">
+                @@include('tpls/cards/catalog.html',{img: "wheels/wheels-3.jpg", category: "YIDO PERFORMANCE", name: "YP SERIES YP3"})
+              </div>
+              <div class="swiper-slide">
+                @@include('tpls/cards/catalog.html',{img: "wheels/wheels-4.jpg", category: "3SDM", name: "CT216"})
+              </div>
+              <div class="swiper-slide">
+                @@include('tpls/cards/catalog.html',{img: "wheels/wheels-5.jpg", category: "AL13", name: "AL13 R-Series R20"})
+              </div>
+              <div class="swiper-slide">
+                @@include('tpls/cards/catalog.html',{img: "wheels/wheels-6.jpg", category: "AL13", name: "R-SERIES R30-R"})
+              </div>
+              <div class="swiper-slide">
+                @@include('tpls/cards/catalog.html',{img: "wheels/wheels-7.jpg", category: "AL13", name: "R-SERIES R110"})
+              </div>
+              <div class="swiper-slide">
+                @@include('tpls/cards/catalog.html',{img: "wheels/wheels-8.jpg", category: "AL13", name: "LUX-SERIES LUX 02"})
+              </div>
             
-            @@include('tpls/cards/catalog.html',{img: "wheels/wheels-1.jpg", category: "AIRTEKK", name: "TANKEN"})
-            @@include('tpls/cards/catalog.html',{img: "wheels/wheels-2.jpg", category: "CORSE WERKS", name: "Toro"})
-            @@include('tpls/cards/catalog.html',{img: "wheels/wheels-3.jpg", category: "YIDO PERFORMANCE", name: "YP SERIES YP3"})
-            @@include('tpls/cards/catalog.html',{img: "wheels/wheels-4.jpg", category: "3SDM", name: "CT216"})
-            @@include('tpls/cards/catalog.html',{img: "wheels/wheels-5.jpg", category: "AL13", name: "AL13 R-Series R20"})
-            @@include('tpls/cards/catalog.html',{img: "wheels/wheels-6.jpg", category: "AL13", name: "R-SERIES R30-R"})
-            @@include('tpls/cards/catalog.html',{img: "wheels/wheels-7.jpg", category: "AL13", name: "R-SERIES R110"})
-            @@include('tpls/cards/catalog.html',{img: "wheels/wheels-8.jpg", category: "AL13", name: "LUX-SERIES LUX 02"})
-
+            </div>
           </div>
         </div>
       </section>

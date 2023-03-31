@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css?_v=20230324160930" />
+    <link rel="stylesheet" href="./css/style.css?_v=20230331144853" />
 
     <!-- Отключить автодетект телефонов -->
     <meta name="format-detection" content="telephone=no" />
@@ -105,7 +105,6 @@
 
   </div>
 </header>
-
 
       <main class="main">
         
@@ -405,9 +404,9 @@
 
           <h2 class="section-desc catalog__title">галерея</h2>
           <div class="card-carousel">
-            <div class="swiper card-carousel--big">
+            <div thumbsSlider="" class="swiper news-carousel--big">
              <div class="swiper-wrapper">
-              <div class="swiper-slide news-carousel__slide">
+              <div class="swiper-slide">
                <picture class="card-carousel__pic">
                 <img src="img/card/sample-1.jpg" alt="" class="card-carousel__img">
                </picture>
@@ -440,25 +439,25 @@
 
              </div>
             </div>
-            <div class="swiper card-carousel--small">
+            <div class="swiper news-carousel--small">
              <div class="swiper-wrapper">
 
-              <div class="swiper-slide card-carousel__slide">
+              <div class="swiper-slide news-carousel__slide">
                <picture class="card-carousel__pic">
                 <img src="img/card/sample-1.jpg" alt="" class="card-carousel__img">
                </picture>
               </div>
-              <div class="swiper-slide card-carousel__slide">
+              <div class="swiper-slide news-carousel__slide">
                 <picture class="card-carousel__pic">
                  <img src="img/card/sample-2.jpg" alt="" class="card-carousel__img">
                 </picture>
                </div>
-               <div class="swiper-slide card-carousel__slide">
+               <div class="swiper-slide news-carousel__slide">
                 <picture class="card-carousel__pic">
                  <img src="img/card/sample-3.jpg" alt="" class="card-carousel__img">
                 </picture>
                </div>
-               <div class="swiper-slide card-carousel__slide">
+               <div class="swiper-slide news-carousel__slide">
                 <picture class="card-carousel__pic">
                  <img src="img/card/sample-4.jpg" alt="" class="card-carousel__img">
                 </picture>
@@ -645,42 +644,43 @@
         <div class="footer__credits">
           <ul class="footer__credits-socials">
             <li class="footer__credits-item">
-              <a href="#" class="footer__credits-link footer__credits-link_facebook">
+              <a href="https://www.facebook.com/Formacarofficial" target="_blank" class="footer__credits-link footer__credits-link_facebook">
                 <img src="./img/common/facebook.svg" alt="">
               </a>
             </li>
             <li class="footer__credits-item">
-              <a href="#" class="footer__credits-link footer__credits-link_twitter">
+              <a href="https://twitter.com/formacar" target="_blank" class="footer__credits-link footer__credits-link_twitter">
                 <img src="./img/common/twitter.svg" alt="">
               </a>
             </li>
             <li class="footer__credits-item">
-              <a href="#" class="footer__credits-link footer__credits-link_vk">
+              <a href="https://vk.com/formacar" target="_blank" class="footer__credits-link footer__credits-link_vk">
                 <img src="./img/common/vk.svg" alt="">
               </a>
             </li>
             <li class="footer__credits-item">
-              <a href="#" class="footer__credits-link footer__credits-link_youtube">
+              <a href="https://www.youtube.com/@formacarchannel5533" target="_blank" class="footer__credits-link footer__credits-link_youtube">
                 <img src="./img/common/youtube.svg" alt="">
               </a>
             </li>
             <li class="footer__credits-item">
-              <a href="#" class="footer__credits-link footer__credits-link_instagram">
+              <a href="https://www.instagram.com/formacar_official/" target="_blank" class="footer__credits-link footer__credits-link_instagram">
                 <img src="./img/common/instagram.svg" alt="">
               </a>
             </li>
           </ul>
           <div class="footer__credits-text">
             <p>© 2018-2023 FormaCar. Все права защищены. 18+</p>
-            <p>Пользовательское соглашение</p>
+            <a href="" target="_blank">Пользовательское соглашение</a>
           </div>
         </div>
       </div>
+      
       <div class="footer__download">
         <p class="footer__download-text">используйте приложение Formacar</p>
         <div class="footer__download-shops">
 
-          <a href="#" class="footer__download-block">
+          <a href="https://apps.apple.com/us/app/formacar/id1180117334" target="_blank" class="footer__download-block">
             <img src="./img/common/app-store.svg" alt="" class="footer__download-img">
             <div class="footer__download-name">
               <p>Доступно в</p>
@@ -688,7 +688,7 @@
             </div>
           </a>
 
-          <a href="#" class="footer__download-block">
+          <a href="https://play.google.com/store/apps/details?id=com.formacar.android" target="_blank" class="footer__download-block">
             <img src="./img/common/play-market.svg" alt="" class="footer__download-img">
             <div class="footer__download-name">
               <p>Доступно в</p>
@@ -710,7 +710,9 @@
       <picture class="modal-events__pic">
         <img src="img/events/events-3.jpg" alt="" class="modal-events__img">
       </picture>
-
+      <div class="modal-events__fullscreen">
+        <img class="modal-events__fullscreen-img" src="img/common/fullscreen.svg" alt="">
+      </div>
     </div>
 
 
@@ -833,6 +835,9 @@
 
 
     <div class="modal-events__left">
+      <div class="modal-events__fullscreen">
+        <img class="modal-events__fullscreen-img" src="img/common/fullscreen.svg" alt="">
+      </div>
       <div class="swiper modal-events__carousel">
         <div class="swiper-wrapper">
 
@@ -1022,12 +1027,23 @@
 </div>
 
         </div>
-        <p class="events-card__descr">
-          Is there an easy way to profitably sell your old car and quickly find a replacement without extra expenses? There sure is – just place an ad in our app, free of charge.  <br>
-          To find the vehicle you need, you can filter ads by such parameters as country, brand, MFY, mileage, body style etc. to immediately get the results relevant to you.  <br>
-          The Ads section also contains a vast assortment of tires, wheels, exhaust systems, brakes, tuning parts and other car products and services from all around the world. All ads are classified for your convenience.  <br>
-          Posted your ad for free? Don’t forget to tell your friends about us!
-        </p>
+        <div class="events-card__descr">
+          <p>
+            Is there an easy way to profitably sell your old car and quickly find a replacement without extra expenses? There sure
+            is – just place an ad in our app, free of charge.
+          </p>
+          <p>
+            To find the vehicle you need, you can filter ads by such parameters as country, brand, MFY, mileage, body style etc. to
+            immediately get the results relevant to you.
+          </p>
+          <p>
+            The Ads section also contains a vast assortment of tires, wheels, exhaust systems, brakes, tuning parts and other car
+            products and services from all around the world. All ads are classified for your convenience.
+          </p>
+          <p>
+            Posted your ad for free? Don’t forget to tell your friends about us!
+          </p>
+        </div>
         <a href="#" class="events-card__link">
           <button class="button button--primary button--light events-card__follow">
            <p class="events-card__follow-text">Перейти</p>
@@ -1160,7 +1176,7 @@
     <p class="modal-share__link-text">
       Прямая ссылка
     </p>
-    <input disabled type="text" class="modal-share__input" value="https://formacar.com/en/news/view/51537.html">
+    <input type="text" class="modal-share__input" value="https://formacar.com/en/news/view/51537.html">
     <div class="modal-alert__buttons">
       <button class="button button--primary button--dark modal-share__button" data-b_modal-close="modal-share">Копировать ссылку</button>
     </div>
@@ -1279,6 +1295,6 @@
 
 
 
-    <script src="./js/bundle.min.js?_v=20230324160930"></script>
+    <script src="./js/bundle.min.js?_v=20230331144853"></script>
   </body>
 </html>

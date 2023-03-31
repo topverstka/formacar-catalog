@@ -54,6 +54,7 @@
 
 .catalog-card__info {
   padding: 0 1.5rem 2.5rem;
+  transition: all .3s ease-in-out;
 }
 
 .catalog-card__category {
@@ -65,7 +66,7 @@
 .catalog-card__name {
   font-weight: 600;
   font-size: 1.8rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   overflow: hidden;
   text-transform: uppercase;
   display: -webkit-box;
@@ -108,9 +109,17 @@
   min-height: 4.5rem;
   overflow: hidden;
   display: block;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 
 .catalog-card:hover .catalog-card__img {
   transform: scale(1.1);
+  transition: all .3s ease-in-out;
+}
+
+.catalog-card:hover .catalog-card__info{
+  opacity: .7;
   transition: all .3s ease-in-out;
 }

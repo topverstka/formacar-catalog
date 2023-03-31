@@ -5,24 +5,24 @@ import Swiper, { Navigation, Autoplay, Pagination, Thumbs, EffectFade, Controlle
 
 if (document.querySelector('.promo-carousel')) {
 
- let promoSlider = new Swiper(".promo-carousel", {
-   modules: [Navigation, Autoplay, EffectFade],
-   effect: 'fade',
-     fadeEffect: {
-     crossFade: true
-   },
-   spaceBetween: 10,
-   loop: true,
-   autoplay: {
-     delay: 3000,
-   },
-   navigation: {
-    nextEl: ".promo-carousel__arrows-next",
-    prevEl: ".promo-carousel__arrows-prev",
-  },
-  
-   
- });
+  let promoSlider = new Swiper(".promo-carousel", {
+    modules: [Navigation, Autoplay, EffectFade],
+    effect: 'fade',
+    fadeEffect: {
+      crossFade: true
+    },
+    spaceBetween: 10,
+    loop: true,
+    autoplay: {
+      delay: 3000,
+    },
+    navigation: {
+      nextEl: ".promo-carousel__arrows-next",
+      prevEl: ".promo-carousel__arrows-prev",
+    },
+
+
+  });
 
 }
 
@@ -30,10 +30,6 @@ if (document.querySelector('.offers-carousel')) {
 
   let offersSlider = new Swiper(".offers-carousel", {
     modules: [Pagination, Autoplay, EffectFade],
-    effect: 'fade',
-      fadeEffect: {
-      crossFade: true
-    },
     spaceBetween: 10,
     loop: true,
     autoplay: {
@@ -44,7 +40,7 @@ if (document.querySelector('.offers-carousel')) {
       clickable: true,
     },
   });
- 
+
 }
 
 if (document.querySelector('.advertisement-carousel')) {
@@ -64,36 +60,8 @@ if (document.querySelector('.advertisement-carousel')) {
       clickable: true,
     },
   });
- 
-}
-
-if (document.querySelector('.news-carousel--big') && document.querySelector('.news-carousel--small')) {
-
-  let newsCarouselBig = new Swiper(".news-carousel--big", {
-    modules: [Autoplay, EffectFade, Controller],
-
-    spaceBetween: 3,
-    slidesPerView: 1.199224,
-    // autoplay: {
-    //   delay: 3000,
-    // },
-  });
- 
-  let newsCarouselSmall = new Swiper(".news-carousel--small", {
-    modules: [Autoplay, EffectFade, Controller],
-
-    spaceBetween: 3,
-    watchSlidesProgress: true,
-    slidesPerView: 7.2992,
-    // autoplay: {
-    //   delay: 3000,
-    // },
-  });
-  newsCarouselBig.controller.control = newsCarouselSmall;
-  newsCarouselSmall.controller.control = newsCarouselBig;
 
 }
-
 
 if (document.querySelector('.events-card__carousel')) {
 
@@ -115,7 +83,7 @@ if (document.querySelector('.events-card__carousel')) {
       prevEl: ".events-card__arrow-prev",
     }
   });
- 
+
 }
 
 if (document.querySelector('.modal-events__carousel')) {
@@ -138,44 +106,54 @@ if (document.querySelector('.modal-events__carousel')) {
       prevEl: ".modal-events__arrow-prev",
     }
   });
- 
+
 }
-if (document.querySelector('.card-carousel--big')) {
-  let cardCarouselBig = new Swiper(".card-carousel--big", {
-    modules: [Autoplay, EffectFade, Controller],
-    spaceBetween: 3,
-    slidesPerView: 1.199224,
+/////////////////////
 
-  });
- 
-}
 
-if (document.querySelector('.card-carousel--small')) {
-  let cardCarouselSmall = new Swiper(".card-carousel--small", {
-    modules: [Autoplay, EffectFade, Controller],
-    spaceBetween: 3,
-    watchSlidesProgress: true,
-    slidesPerView: 7.2992,
+const swiper3 = new Swiper(".news-carousel--small", {
+  spaceBetween: 5,
+  slidesPerView: 7.2,
+  freeMode: true,
+  watchSlidesProgress: true,
+});
 
-  });
-}
+const swiper2 = new Swiper(".news-carousel--big", {
+  modules: [Navigation, Thumbs],
+  spaceBetween: 5,
+  slidesPerView: 1.2,
+  thumbs: {
+    swiper: swiper3,
+  },
+});
 
-// if (document.querySelector('.card-carousel--big') && document.querySelector('.card-carousel--small')) {
-//   cardCarouselBig.controller.control = cardCarouselSmall;
-//   cardCarouselSmall.controller.control = cardCarouselBig;
-// }
 
-if (document.querySelector('.card-video')) {
+const cardVideo = new Swiper(".card-video", {
+  spaceBetween: 20,
+  slidesPerView: 2.3024,
+});
 
-  let cardVideo = new Swiper(".card-video", {
-    modules: [Autoplay],
+const swiper = new Swiper('.news__swiper', {
+  modules: [Navigation],
+  speed: 400,
+  spaceBetween: 40,
+  slidesPerView: 'auto',
+});
 
-    spaceBetween: 20,
-    loop: true,
-    slidesPerView: 2.3024,
-    autoplay: {
-      delay: 3000,
+const swiperGallery = document.querySelectorAll('.swiper-gallery');
+
+for (let i = 1; i < swiperGallery.length + 1; i++) {
+  const swiper = new Swiper('.swiper-gallery-' + i, {
+    modules: [Navigation],
+    speed: 400,
+    spaceBetween: 40,
+    slidesPerView: 'auto',
+    navigation: {
+      nextEl: '.swiper-gallery-next-' + i,
+      prevEl: '.swiper-gallery-prev-' + i,
     },
   });
- 
+
 }
+
+

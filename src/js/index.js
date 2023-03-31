@@ -88,30 +88,17 @@ import { doc } from "prettier";
 //   }
 // })();
 
-const catalogSlide = document.querySelectorAll(".catalog-slide, .news-slide");
-
-for (let i = 0; i < catalogSlide.length; i++) {
-  catalogSlide[i].addEventListener('wheel', (event) => {
-    event.preventDefault();
-    console.log(event.deltaY)
-
-    catalogSlide[i].scrollBy({
-      left: event.deltaY < 0 ? -30 : 30,
-    });
-  });
-}
 
 let modalShareButton = document.querySelector('.modal-share__button')
-modalShareButton.addEventListener("click", function() {
+modalShareButton.addEventListener("click", function () {
   let link = document.querySelector('.modal-share__input').value
   navigator.clipboard.writeText(link);
 })
 
-
-if(document.querySelector('.card-expand')){
+if (document.querySelector('.card-expand')) {
 
   let expandBtn = document.querySelector('.card-expand')
-  expandBtn.addEventListener("click", function() {
+  expandBtn.addEventListener("click", function () {
     document.querySelector('.card-list').classList.toggle('hidden');
     expandBtn.classList.toggle('hide');
     let expandBtnText = expandBtn.querySelector('p');

@@ -1,129 +1,146 @@
-.modal-events{
- width: 81.25rem; 
+.modal-events {
+  width: 130rem;
 }
 
-.modal-events__inner{
- display: flex;
- height: 50rem;
- width: 81.25rem;
+.modal-events__inner {
+  display: flex;
+  height: 80rem;
+  width: 130rem;
 }
 
-.modal-events__left{
- width: 50rem;
- min-width: 50rem;
- height: 100%;
- background: #383838;
- border-radius: var(--brad-regular) 0px 0px var(--brad-regular);
- position: relative;
- display: flex;
- align-items: center;
- justify-content: center;
+.modal-events__left {
+  width: 60%;
+  height: 100%;
+  background: #383838;
+  border-radius: var(--brad-regular) 0px 0px var(--brad-regular);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.modal-events__left .events-card__video{
- width: 100%;
+.modal-events__left .events-card__video {
+  width: 100%;
 }
 
 .modal-events__left .events-card__video .events-card__img,
-.modal-events__left .events-card__video .events-card__pic{
- border-radius: 0;
+.modal-events__left .events-card__video .events-card__pic {
+  border-radius: 0;
 }
 
-.modal-events__carousel{
- width: 100%;
- height: 100%;
- border-radius: var(--brad-regular) 0px 0px var(--brad-regular);
+.modal-events__carousel {
+  width: 100%;
+  height: 100%;
+  border-radius: var(--brad-regular) 0px 0px var(--brad-regular);
 }
 
-.modal-events__pic{
- width: 100%;
- height: 100%;
- object-fit: contain;
- border-radius: var(--brad-regular) 0px 0px var(--brad-regular);
+.modal-events__fullscreen {
+  cursor: pointer;
+  position: absolute;
+  top: .5rem;
+  left: .5rem;
 }
 
-.modal-events__img{
- border-radius: var(--brad-regular) 0px 0px var(--brad-regular);
+.modal-events__pic {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: var(--brad-regular) 0px 0px var(--brad-regular);
+}
+
+.modal-events__comments .comment:nth-last-child(1) {
+  margin-bottom: 0;
+}
+
+.modal-events__img {
+  border-radius: var(--brad-regular) 0px 0px var(--brad-regular);
 }
 
 
-.modal-events__info{
- width: 100%;
- padding: 1.88rem;
- position: relative;
+.modal-events__info {
+  width: 40%;
+  padding: 1.88rem;
+  position: relative;
 }
 
-.modal-events__top{
- padding: 0;
+.modal-events__top {
+  padding: 0;
 }
 
-.modal-events__info .events-card__descr{
- margin-bottom: 0.94rem;
- overflow: visible;
- display: block;
- line-height: 1.25rem;
+.modal-events__top .events-card__name {
+  margin-bottom: 0;
 }
 
-.modal-events__info .events-card__descr br{
- content: "";
- margin: 0.625rem;
- display: block;
+.modal-events__info .events-card__descr {
+  overflow: visible;
+  display: block;
+  line-height: 1.9rem;
 }
 
-.modal-events__divider{
- background: #ECECEC;
- width: 100%;
- height: 1px;
- margin-bottom: 0.94rem;
+.modal-events__info .events-card__descr p {
+  padding-bottom: 1rem;
 }
 
-.modal-events__comments{
- overflow-y: scroll;
- margin-bottom: 1.88rem; 
- max-height: 32.13rem;
- cursor: ns-resize	
+.modal-events__info .events-card__descr br {
+  content: "";
+  margin: 0.625rem;
+  display: block;
+}
+
+.modal-events__divider {
+  background: #ECECEC;
+  width: 100%;
+  height: 1px;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.modal-events__comments {
+  overflow-y: scroll;
+  max-height: 55rem;
+  cursor: ns-resize
 }
 
 .modal-events__comments::-webkit-scrollbar {
- width: 5px;
+  width: 5px;
 }
 
 .modal-events__comments::-webkit-scrollbar-track {
- background: transparent
+  background: transparent
 }
 
 .modal-events__comments::-webkit-scrollbar-thumb {
- background: #ECECEC
+  background: #ECECEC
 }
 
-.modal-events__bottom{
- gap: 0 1.25rem;
- padding: 0;
- position: absolute;
- bottom: 0;
- left: 0;
- padding: 1.88rem;
- width: 100%;
+.modal-events__bottom {
+  gap: 0 2rem;
+  padding: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 3rem;
+  width: 100%;
 }
 
-.modal-events__bottom .bottom-button{
- background: #EEF1F9;
- border-radius: 500px;
- padding: 0.63rem 1.00rem;
+.modal-events__bottom .bottom-button {
+  background: #EEF1F9;
+  border-radius: 500px;
+  padding: .8rem 1.5rem;
 }
 
-.modal-events__bottom .bottom-button:last-child{
- background: transparent;
- padding: 0.63rem 1.00rem;
+.modal-events__bottom .bottom-button:last-child {
+  background: transparent;
+  padding: 0.63rem 1.00rem;
 }
 
-.events-card__link{
- position: absolute;
- bottom: 0;
- left: 0;
- width: 100%;
+.events-card__link {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 
-.events-card__link .events-card__follow{
- border-radius: 0 0 var(--brad-regular) 0; 
+.events-card__link .events-card__follow {
+  border-radius: 0 0 var(--brad-regular) 0;
 }

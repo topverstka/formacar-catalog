@@ -1,50 +1,38 @@
-.catalog{
- margin-top: 4.38rem;
- margin-bottom: 4.38rem;
+.catalog {
+  margin-top: 4.38rem;
+  margin-bottom: 4.38rem;
 }
 
-.catalog__gallery{
- display: grid;
- grid-template-columns: repeat(4, 1fr);
- gap: 3rem 4rem;
- width: 100%;
- margin-bottom: 4rem;
+.catalog-slide {
+  margin-bottom: 10rem;
+  position: relative;
 }
 
-.catalog__gallery:last-child{
- margin-bottom: 0;
+.catalog__gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem 4rem;
+  width: 100%;
+  margin-bottom: 4rem;
 }
 
-.catalog-slide{
- overflow-x: scroll;
- margin-bottom: 6.25rem;
+.catalog__gallery .swiper-slide {
+  width: 30rem;
 }
 
-.catalog-slide-no-mb{
- margin-bottom: 0;
+.catalog__gallery:last-child {
+  margin-bottom: 0;
 }
 
-.catalog__gallery_slide{
- display: flex;
+.catalog-slide-no-mb {
+  margin-bottom: 0;
 }
 
-.catalog__gallery_slide .catalog-card{
- width: 18.88rem;
- min-width: 18.88rem;
+.catalog__gallery_slide {
+  display: flex;
 }
 
-.catalog-slide::-webkit-scrollbar {
- height: 0;
-}
-
-.catalog-slide::-webkit-scrollbar-track {
- background: transparent;
-}
-
-.catalog-slide::-webkit-scrollbar-thumb {
- background: transparent;
-}
-
-.catalog-slide::-webkit-scrollbar-thumb:hover {
- background: transparent;
+.catalog__gallery_slide .catalog-card {
+  width: 30rem;
+  display: inline-block;
 }

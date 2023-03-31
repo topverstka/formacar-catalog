@@ -57,6 +57,7 @@
  justify-content: space-between;
 }
 
-.news-card:hover .news-card__descr{
+.news-card:hover .news-card__descr, .news-card:hover .news-card__bottom{
  opacity: 0.7;
+ transition: .3s ease-in-out;
 }

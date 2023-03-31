@@ -15,7 +15,7 @@
 .main__container-news{
  display: grid;
  grid-template-columns: auto 74.662162162%;
- column-gap: 6.25rem;
+ column-gap: 10rem;
  @media (max-width: 1440px) {
   column-gap: 4rem;
  }
@@ -24,7 +24,7 @@
 .main__container-catalog{
  display: grid;
  grid-template-columns: auto 74.662162162%;
- column-gap: 6.25rem;
+ column-gap: 10rem;
  @media (max-width: 1440px) {
   column-gap: 4rem;
  }

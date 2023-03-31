@@ -6,6 +6,11 @@
   transition: 0.4s;
 }
 
+.bottom-button:hover {
+  opacity: .7;
+  transition: .3s ease-in-out;
+}
+
 .bottom-button img,
 .bottom-button svg {
   width: 2.2rem;
@@ -15,10 +20,4 @@
 .bottom-button span {
   font-weight: 500;
   font-size: 1.4rem;
-  position: relative;
-  top: -1.5px;
-}
-
-.bottom-button:hover {
-  opacity: 0.7;
 }

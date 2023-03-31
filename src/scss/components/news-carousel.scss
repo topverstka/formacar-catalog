@@ -1,18 +1,26 @@
 .news-carousel{
- margin-bottom: 2.50rem;
+ margin-bottom: 4rem;
 }
 
 .news-carousel--big{
- margin-bottom: 0.19rem;
- height: 28rem;
+ margin-bottom: 0.5rem;
+ height: 45rem;
 }
 
 .news-carousel--small{
- height: 7.88rem;
+ height: 12.6rem;
 }
 
 .news-carousel--small .news-carousel__img{
  object-fit: cover;
+}
+
+.news-carousel--tuning .news-carousel__slide {
+     background-color: #FAFAFA;
+}
+
+.news-carousel__slide {
+     cursor: pointer;
 }
 
 .news-carousel--small .news-carousel__slide::after{
@@ -27,6 +35,6 @@
  transition: 0.4s;
 }
 
-.news-carousel--small .news-carousel__slide.swiper-slide-active::after{
+.news-carousel--small .news-carousel__slide.swiper-slide-thumb-active::after{
  opacity: 0.5;
 }

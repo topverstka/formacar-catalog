@@ -55,12 +55,12 @@
              </div>
 
              <p class="section-desc page__desc">Все новости</p>
-             <h2 class="section-title page__title">Lamborghini Urus примеряет еще один экстремально выглядящий аэродинамический обвес</h2>
+             <h1 class="section-title page__title">Lamborghini Urus примеряет еще один экстремально выглядящий аэродинамический обвес</h1>
 
             </div>
 
             <div class="news-carousel">
-             <div class="swiper news-carousel--big">
+             <div thumbsSlider="" class="swiper news-carousel--big">
               <div class="swiper-wrapper">
                <div class="swiper-slide news-carousel__slide">
                 <picture class="news-carousel__pic">
@@ -165,15 +165,19 @@
             <div class="news-content">
               <p>Японский магазин настройки Liberty Walk придает довольно агрессивно переработавшему Lamborghini Urus недавно завершившемуся шоу SEMA. Предварительные заказы для набора для тела бегут. </p>
               <p>Прежде чем мы начнем, стоит указать, что команда работала со старой моделью Urus. WEA было невозможно найти информацию о ваших более поздних моделях S или Perfermante также поддерживается.</p>
-              <div class="news-content__video align-left">
-                <picture class="news-content__video-pic">
-                  <img src="img/events/events-4.jpg" alt="" class="news-content__video-img">
-                </picture>
-                @@include('tpls/sections/play-button.html')
-                <p class="news-content__video-time">1:03</p>
+              <div class="news-content__wr">
+                <div class="news-content__video">
+                  <picture class="news-content__video-pic">
+                    <img src="img/events/events-4.jpg" alt="" class="news-content__video-img">
+                  </picture>
+                  @@include('tpls/sections/play-button.html')
+                  <p class="news-content__video-time">1:03</p>
+                </div>
+                <div class="news-content__p">
+                  <p>В любом случае, комплект включает в себя все, что вы ожидаете найти в Fenders Fenders Projects, громоздких и сложных боковых сторонах и нового капюшона, трехдушного округления, округливших внешний вид,-это черные кованые колеса и защелкнутая подвеска.</p>
+                  <p>LW также упоминает о гонках на невесте в салоне и выхлопной технике Armytrix. Двигатель, вероятно, остается в запасе.</p>
+                </div>
               </div>
-              <p>В любом случае, комплект включает в себя все, что вы ожидаете найти в Fenders Fenders Projects, громоздких и сложных боковых сторонах и нового капюшона, трехдушного округления, округливших внешний вид,-это черные кованые колеса и защелкнутая подвеска.</p>
-              <p>LW также упоминает о гонках на невесте в салоне и выхлопной технике Armytrix. Двигатель, вероятно, остается в запасе.</p>
             </div>
 
            <p class="news-editor">Редактор статьи: Andrew Raspopov </p>
@@ -199,30 +203,40 @@
             @@include('tpls/cards/comment.html',{profile: "1.jpg", name: "Александр", text: "а я радуюсь наконец выпавшему снегу и холоду, <br> зима должна быть зимой", date: "Час назад"})
            </div>
 
-
            </div>
-
           </div>
-
-
-
         </div>
 
         <section class="news-recently news-recently__container ">
           <h2 class="section-desc catalog__title">Вы недавно смотрели</h2>
-          <div class="news-slide">
-            <div class="news__gallery news__gallery_slide">
-              @@include('tpls/cards/news.html',{img: "1.jpg", descr: "Study finds the best autopilot solution, spoiler alert: it’s not Tesla FSD"})
-              @@include('tpls/cards/news.html',{img: "2.jpg", descr: "Video: Lamborghini Urus Performante puts on its rally pants"})
-              @@include('tpls/cards/news.html',{img: "3.jpg", descr: "$155k buys you a tuned Cadillac Escalade or a stock Escalade-V"})
-              @@include('tpls/cards/news.html',{img: "4.jpg", descr: "Rare carbon-bodied Porsche traded for €0.9M+ right now"})
-              @@include('tpls/cards/news.html',{img: "5.jpg", descr: "Jaguar Land Rover becomes profitable again after a few bad years"})
-              @@include('tpls/cards/news.html',{img: "6.jpg", descr: "Toyota GR 86 gets a complete visual makeover courtesy of ADRO"})
-              @@include('tpls/cards/news.html',{img: "7.jpg", descr: "Stellantis sells 48 long-discontinued cars in the U.S. in 2022"})
-              @@include('tpls/cards/news.html',{img: "8.jpg", descr: "Japan gets a semicentennial edition of the BMW 5 Series"})
-
+            <div class="news__gallery news__swiper swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  @@include('tpls/cards/news.html',{img: "1.jpg", descr: "Study finds the best autopilot solution, spoiler alert: it’s not Tesla FSD"})
+                </div>
+                <div class="swiper-slide">
+                  @@include('tpls/cards/news.html',{img: "2.jpg", descr: "Video: Lamborghini Urus Performante puts on its rally pants"})
+                </div>
+                <div class="swiper-slide">
+                  @@include('tpls/cards/news.html',{img: "3.jpg", descr: "$155k buys you a tuned Cadillac Escalade or a stock Escalade-V"})
+                </div>
+                <div class="swiper-slide">
+                  @@include('tpls/cards/news.html',{img: "4.jpg", descr: "Rare carbon-bodied Porsche traded for €0.9M+ right now"})
+                </div>
+                <div class="swiper-slide">
+                  @@include('tpls/cards/news.html',{img: "5.jpg", descr: "Jaguar Land Rover becomes profitable again after a few bad years"})
+                </div>
+                <div class="swiper-slide">
+                  @@include('tpls/cards/news.html',{img: "6.jpg", descr: "Toyota GR 86 gets a complete visual makeover courtesy of ADRO"})
+                </div>
+                <div class="swiper-slide">
+                  @@include('tpls/cards/news.html',{img: "7.jpg", descr: "Stellantis sells 48 long-discontinued cars in the U.S. in 2022"})
+                </div>
+                <div class="swiper-slide">
+                  @@include('tpls/cards/news.html',{img: "8.jpg", descr: "Japan gets a semicentennial edition of the BMW 5 Series"})
+                </div>
+              </div>
             </div>
-          </div>
         </section>
 
       </main>

@@ -1,11 +1,11 @@
 .tuning{
- margin-bottom: 6.25rem;
+ margin-bottom: 10rem;
 }
 
 .tuning__gallery{
  display: grid;
- grid-template-columns: 18.88rem repeat(4, 1fr);
- gap: 1.25rem;
+ grid-template-columns: 34rem repeat(4, 1fr);
+ gap: 2rem;
  width: 100%;
 }
 
@@ -39,12 +39,12 @@
 
 .tuning-card__name{
  position: absolute;
- bottom: 0.94rem;
- left: 1rem;
+ bottom: 1.5rem;
+ left: 1.5rem;
  text-transform: uppercase;
  color: #fff;
  font-weight: 700;
- font-size: 1.25rem;
+ font-size: 2rem;
 }
 
 .tuning-card:hover .tuning-card__pic{
