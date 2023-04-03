@@ -188,7 +188,7 @@
 
 .events-card__arrow img,
 .events-card__arrow svg {
-  width: .7rem;
+  width: .8rem;
 }
 
 .events-card__pic {
@@ -204,6 +204,16 @@
 
 .events-card__video {
   position: relative;
+}
+
+.events-card__arrow-prev img {
+  position: relative;
+  left: -2px;
+}
+
+.events-card__arrow-next img {
+  position: relative;
+  right: -2px;
 }
 
 .events-card__video-time {

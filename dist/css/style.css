@@ -405,6 +405,8 @@
 
 .search__button {
   position: absolute;
+  width: 1.8rem;
+  height: 1.8rem;
   top: 50%;
   left: 2rem;
   transform: translateY(-50%);
@@ -850,7 +852,7 @@
 .catalog-card__pic {
   width: 100%;
   height: 17rem;
-  border-radius: 0.38rem;
+  border-radius: 6px;
   display: block;
   overflow: hidden;
 }
@@ -858,8 +860,9 @@
 .catalog-card__img {
   width: 100%;
   height: 100%;
-  border-radius: 0.38rem;
+  border-radius: 6px;
   display: block;
+  object-fit: cover;
   transition: all 0.3s ease-in-out;
 }
 
@@ -870,10 +873,13 @@
   background: #9578FA;
   font-weight: 700;
   color: #fff;
+  width: 7.2rem;
+  height: 3.2rem;
+  gap: 0 0.5rem;
   text-transform: uppercase;
   display: flex;
+  justify-content: center;
   align-items: center;
-  padding: 0.38rem 0.63rem;
   border-radius: 6px;
   filter: drop-shadow(2px 2px 5px rgba(210, 217, 220, 0.2));
 }
@@ -1222,7 +1228,7 @@
 
 .events-card__arrow img,
 .events-card__arrow svg {
-  width: 0.7rem;
+  width: 0.8rem;
 }
 
 .events-card__pic {
@@ -1238,6 +1244,16 @@
 
 .events-card__video {
   position: relative;
+}
+
+.events-card__arrow-prev img {
+  position: relative;
+  left: -2px;
+}
+
+.events-card__arrow-next img {
+  position: relative;
+  right: -2px;
 }
 
 .events-card__video-time {
@@ -1926,6 +1942,11 @@
   transition: 0.3s ease-in-out;
 }
 
+.news-menu__item .news-menu__link:hover {
+  opacity: 0.7;
+  transition: 0.3s ease-in-out;
+}
+
 .news-menu__item svg {
   width: 2.4rem;
   height: 2.4rem;
@@ -1978,6 +1999,7 @@
 
 .news-menu__child-item {
   margin-bottom: 3rem;
+  transition: 0.3s ease-in-out;
 }
 
 .news-menu__child-item:nth-last-child(1) {
@@ -1989,6 +2011,11 @@
   font-weight: 700;
   color: var(--c-text-regular);
   text-transform: uppercase;
+}
+
+.news-menu__child-item:hover {
+  opacity: 0.7;
+  transition: 0.3s ease-in-out;
 }
 
 .editors {
@@ -2025,6 +2052,10 @@
   padding-bottom: 2rem;
 }
 
+.edit-news p:nth-last-child(1) {
+  padding-bottom: 0;
+}
+
 .edit-news h4 {
   font-size: 2rem;
   line-height: 3rem;
@@ -2037,10 +2068,6 @@
 
 .edit-news address {
   font-style: inherit;
-}
-
-.social {
-  margin-bottom: 2rem;
 }
 
 .social__text {
@@ -2120,6 +2147,7 @@
   border-radius: 10px;
   background: #fff;
   margin-bottom: 2rem;
+  user-select: none;
 }
 
 .faq-item__title {
@@ -2172,6 +2200,10 @@
 
 .faq-item-active .faq-item__body {
   display: block;
+}
+
+.faq-item-active svg {
+  transform: rotate(90deg);
 }
 
 .faq-item__items {
@@ -3021,7 +3053,7 @@ body._lock {
   height: 4.2rem;
   border-radius: 100%;
   background-color: #fff;
-  box-shadow: 0px 10px 14px 6px rgba(216, 216, 216, 0.51);
+  box-shadow: 0px 10px 13px 0px rgba(0, 0, 0, 0.05);
   position: absolute;
   z-index: 2;
   top: 50%;
@@ -3499,7 +3531,7 @@ header {
 
 .footer__download {
   border: 1px solid #B4B4BF;
-  filter: drop-shadow(0px 15px 25px rgba(204, 214, 240, 0.5));
+  box-shadow: 0px 15px 25px rgba(204, 214, 240, 0.5);
   border-radius: var(--brad-regular);
   overflow: hidden;
   width: 41.8rem;
@@ -3624,11 +3656,11 @@ header {
 
 .news-navigation__link_last img,
 .news-navigation__link_last svg {
-  --size: 1.50rem;
+  --size: 2.4rem;
   width: var(--size);
   min-width: var(--size);
   height: var(--size);
-  margin-left: 0.63rem;
+  margin-left: 1rem;
 }
 
 .main__container-news {
@@ -3640,7 +3672,7 @@ header {
 }
 
 .news-single__artcile {
-  padding: 3rem 5rem;
+  padding: 5rem 5rem;
   background: #fff;
   border-radius: var(--brad-regular);
 }
@@ -3686,11 +3718,13 @@ header {
   position: absolute;
   right: 1rem;
   bottom: 1rem;
+  height: 2.8rem;
   color: #FFFFFF;
   background: #383838;
   border-radius: 5px;
   padding: 0.4rem 0.8rem;
   font-weight: 600;
+  line-height: 1.8rem;
   margin: 0;
 }
 
@@ -3820,7 +3854,7 @@ header {
 .rek-sidebar {
   display: block !important;
   width: 100%;
-  padding: 0.63rem;
+  padding: 1rem;
   height: auto;
   background: #fff;
   border-radius: var(--brad-regular);
@@ -3911,6 +3945,7 @@ header {
   display: block;
   width: 100%;
   height: 100%;
+  overflow: hidden;
   border-radius: var(--brad-regular);
   transition: 0.4s;
 }
@@ -4021,6 +4056,12 @@ header {
   cursor: pointer;
   color: #AFAFAF;
   font-weight: 500;
+  transition: 0.3s ease-in-out;
+}
+
+.filters-block__reset:hover {
+  opacity: 0.7;
+  transition: 0.3s ease-in-out;
 }
 
 .filters-block__main {
@@ -4201,6 +4242,10 @@ header {
 .about-project p {
   padding-bottom: 2rem;
   line-height: 2.4rem;
+}
+
+.about-project p:nth-last-child(1) {
+  padding-bottom: 0;
 }
 
 .about-project .sub-title {

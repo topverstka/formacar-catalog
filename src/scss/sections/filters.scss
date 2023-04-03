@@ -48,6 +48,12 @@
   cursor: pointer;
   color: #AFAFAF;
   font-weight: 500;
+  transition: .3s ease-in-out;
+}
+
+.filters-block__reset:hover {
+  opacity: .7;
+  transition: .3s ease-in-out;
 }
 
 .filters-block__main {

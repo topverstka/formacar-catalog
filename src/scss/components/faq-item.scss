@@ -3,7 +3,7 @@
   border-radius: 10px;
   background: #fff;
   margin-bottom: 2rem;
-  
+  user-select: none;  
 }
 
 .faq-item__title {
@@ -56,6 +56,10 @@
 
 .faq-item-active .faq-item__body {
   display: block;
+}
+
+.faq-item-active svg {
+  transform: rotate(90deg);
 }
 
 .faq-item__items {

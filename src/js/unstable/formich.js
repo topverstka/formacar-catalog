@@ -103,51 +103,51 @@ function enableButton(button) {
   button.disabled = false;
 }
 // Обработчик форм
-const formsList = document.querySelectorAll("form");
-formsList.forEach((form) => {
-  form.addEventListener("submit", async (event) => {
-    event.preventDefault();
+// const formsList = document.querySelectorAll("form");
+// formsList.forEach((form) => {
+//   form.addEventListener("submit", async (event) => {
+//     event.preventDefault();
 
-    console.log("submit");
-    form.querySelectorAll(".input").forEach((input) => {
-      validateInput(input);
-    });
+//     console.log("submit");
+//     form.querySelectorAll(".input").forEach((input) => {
+//       validateInput(input);
+//     });
 
-    const formBody = new URLSearchParams(new FormData(form));
-    let response = await fetch(form.action, {
-      method: "POST",
-      body: formBody,
-      headers: {
-        "Content-Type": "application/x-www-form-urlencoded",
-      },
-    });
-    // try {
-    // let result = await response.json();
-    // console.log(result);
-    console.log(form);
-    console.log("thanks");
-    const submitButton = form.querySelector('button[type="submit"]');
-    if (submitButton) {
-      submitButton.dataset.buttonText = submitButton.innerHTML;
-      // submitButton.innerText = "Message envoyé"
-      submitButton.innerHTML = "✓";
-      disableButton(submitButton);
+//     const formBody = new URLSearchParams(new FormData(form));
+//     let response = await fetch(form.action, {
+//       method: "POST",
+//       body: formBody,
+//       headers: {
+//         "Content-Type": "application/x-www-form-urlencoded",
+//       },
+//     });
+//     // try {
+//     // let result = await response.json();
+//     // console.log(result);
+//     console.log(form);
+//     console.log("thanks");
+//     const submitButton = form.querySelector('button[type="submit"]');
+//     if (submitButton) {
+//       submitButton.dataset.buttonText = submitButton.innerHTML;
+//       // submitButton.innerText = "Message envoyé"
+//       submitButton.innerHTML = "✓";
+//       disableButton(submitButton);
 
-      setTimeout(() => {
-        submitButton.innerHTML = submitButton.dataset.buttonText;
-        enableButton(submitButton);
-      }, 10000);
-    }
-    const sentEvent = new Event("form_sent", {
-      bubbles: true,
-      cancelable: false,
-    });
-    form.dispatchEvent(sentEvent);
-    // } catch {
-    // console.log("error");
-    // }
-  });
-});
+//       setTimeout(() => {
+//         submitButton.innerHTML = submitButton.dataset.buttonText;
+//         enableButton(submitButton);
+//       }, 10000);
+//     }
+//     const sentEvent = new Event("form_sent", {
+//       bubbles: true,
+//       cancelable: false,
+//     });
+//     form.dispatchEvent(sentEvent);
+//     // } catch {
+//     // console.log("error");
+//     // }
+//   });
+// });
 
 // #region input-labels
 const inputs = document.querySelectorAll(".input");

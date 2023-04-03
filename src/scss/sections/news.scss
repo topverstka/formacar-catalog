@@ -80,11 +80,11 @@
 
 .news-navigation__link_last img,
 .news-navigation__link_last svg {
-  --size: 1.50rem;
+  --size: 2.4rem;
   width: var(--size);
   min-width: var(--size);
   height: var(--size);
-  margin-left: 0.63rem;
+  margin-left: 1rem;
 }
 
 .main__container-news {
@@ -96,7 +96,7 @@
 }
 
 .news-single__artcile {
-  padding: 3rem 5rem;
+  padding: 5rem 5rem;
   background: #fff;
   border-radius: var(--brad-regular);
 }
@@ -142,11 +142,13 @@
   position: absolute;
   right: 1rem;
   bottom: 1rem;
+  height: 2.8rem;
   color: #FFFFFF;
   background: #383838;
   border-radius: 5px;
   padding: 0.4rem 0.8rem;
   font-weight: 600;
+  line-height: 1.8rem;
   margin: 0;
 }
 

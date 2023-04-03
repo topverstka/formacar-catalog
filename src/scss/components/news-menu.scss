@@ -12,6 +12,11 @@
   transition: .3s ease-in-out;
 }
 
+.news-menu__item .news-menu__link:hover {
+  opacity: .7;
+  transition: .3s ease-in-out;
+}
+
 .news-menu__item svg {
   width: 2.4rem;
   height: 2.4rem;
@@ -64,6 +69,7 @@
 
 .news-menu__child-item {
   margin-bottom: 3rem;
+  transition: .3s ease-in-out;
 }
 
 .news-menu__child-item:nth-last-child(1) {
@@ -75,4 +81,9 @@
   font-weight: 700;
   color: var(--c-text-regular);
   text-transform: uppercase;
+}
+
+.news-menu__child-item:hover {
+  opacity: .7;
+  transition: .3s ease-in-out;
 }

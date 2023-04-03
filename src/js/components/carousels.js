@@ -109,6 +109,12 @@ if (document.querySelector('.modal-events__carousel')) {
 
 }
 /////////////////////
+const swiper4 = new Swiper(".news-carousel--tuning", {
+  modules: [Navigation],
+  speed: 500,
+  spaceBetween: 5,
+  slidesPerView: 1.2,
+});
 
 
 const swiper3 = new Swiper(".news-carousel--small", {
@@ -135,7 +141,7 @@ const cardVideo = new Swiper(".card-video", {
 
 const swiper = new Swiper('.news__swiper', {
   modules: [Navigation],
-  speed: 400,
+  speed: 500,
   spaceBetween: 40,
   slidesPerView: 'auto',
 });
@@ -145,7 +151,7 @@ const swiperGallery = document.querySelectorAll('.swiper-gallery');
 for (let i = 1; i < swiperGallery.length + 1; i++) {
   const swiper = new Swiper('.swiper-gallery-' + i, {
     modules: [Navigation],
-    speed: 400,
+    speed: 500,
     spaceBetween: 40,
     slidesPerView: 'auto',
     navigation: {
