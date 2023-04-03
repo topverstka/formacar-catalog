@@ -1,0 +1,35 @@
+.store {
+  display: flex;
+  gap: 1rem;
+}
+
+.store-item {
+  width: 15rem;
+  height: 4.2rem;
+  border: 1px solid #ECECEC;
+  border-radius: 5px;
+  display: flex;
+  padding: 0.5rem;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: .3s ease-in-out;
+}
+
+.store-item:hover {
+  opacity: .7;
+  transition: .3s ease-in-out;
+}
+
+.store-item__img {
+  height: 2.4rem;
+}
+
+.store-item__text {
+  font-size: 1.4rem;
+}
+
+.store-item__text span {
+  font-size: 1.2rem;
+  font-weight: 500;
+  display: block;
+}

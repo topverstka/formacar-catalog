@@ -109,3 +109,11 @@ if (document.querySelector('.card-expand')) {
     }
   });
 }
+
+const faqItems = document.querySelectorAll('.faq-item__title');
+
+for (let faqItem of faqItems) {
+  faqItem.onclick = function() {
+    this.closest('.faq-item').classList.toggle('faq-item-active');
+  }
+}

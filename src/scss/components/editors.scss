@@ -1,0 +1,33 @@
+.editors {
+  padding-bottom: 1.5rem;
+  display: flex;
+  gap: 3rem;
+
+  &__item {
+    border-radius: 10px;
+    border: 1px solid #ECECEC;
+    padding: 2rem;
+  }
+
+  &__pic {
+    border-radius: 10px;
+    overflow: hidden;
+    width: 20rem;
+    height: 20rem;
+    display: block;
+    margin-bottom: 2rem;
+  }
+
+  &__img {
+    object-fit: cover;
+  }
+
+  &__name {
+    font-weight: 700;
+    margin-bottom: .5rem;
+  }
+
+  &__role {
+    font-size: 1.4rem;
+  }
+}

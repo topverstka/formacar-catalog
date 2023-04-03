@@ -1,0 +1,39 @@
+.social {
+ margin-bottom: 2rem;    
+}
+
+.social__text {
+	font-weight: 700;
+	margin-bottom: 2rem;
+}
+
+.social__wr {
+	display: flex;
+	gap: 1rem;
+	margin-right: 4rem;
+}
+
+.social-card__item {
+	border-radius: 5px;
+	border: 1px solid #ECECEC;
+	transition: .3s ease-in-out;
+}
+
+.social-card__link {
+	display: flex;
+	position: relative;
+	width: 4rem;
+	height: 4rem;
+	justify-content: center;
+	align-items: center;
+}
+
+.social-card__img {
+	width: auto;
+	height: 2.4rem;
+}
+
+.social-card__item:hover {
+	opacity: .7;
+	transition: .3s ease-in-out;
+}

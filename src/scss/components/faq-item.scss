@@ -1,0 +1,82 @@
+.faq-item {
+  width: 100%;
+  border-radius: 10px;
+  background: #fff;
+  margin-bottom: 2rem;
+  
+}
+
+.faq-item__title {
+  cursor: pointer;
+  padding: 3rem 5rem 2rem 5rem;
+  transition: .3s ease-in-out;
+}
+
+.faq-item__title:hover {
+  opacity: .7;
+  transition: .3s ease-in-out;
+}
+
+.faq-item span {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.faq-item svg {
+  display: inline-block;
+  width: 3.6rem;
+  height: 3.6rem;
+  transform: rotate(270deg);
+  margin-right: 1rem;
+  position: relative;
+  bottom: .3rem;
+  vertical-align: middle;
+}
+
+.faq-item__body {
+  padding: 2.5rem 5rem 5rem 5rem;
+  display: none;
+}
+
+.faq-item__body p {
+  padding-bottom: 1rem;
+}
+
+.faq-item__imgs {
+  gap: 3rem;
+  display: flex;
+}
+
+.faq-item__img-wr {
+  display: block;
+  width: 36rem;
+  height: fit-content;
+}
+
+.faq-item-active .faq-item__body {
+  display: block;
+}
+
+.faq-item__items {
+  display: flex;
+  gap: 0 10rem;
+}
+
+.faq-item__item {
+  width: 36rem;
+}
+
+.faq-item__item img{
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.faq-item__item-2-wr {
+  display: flex;
+  gap: 0 3rem;
+}
+
+.faq-item__item-wr {
+  margin-bottom: 4rem;
+}

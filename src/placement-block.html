@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/style.css" />
+
+  <!-- Отключить автодетект телефонов -->
+  <meta name="format-detection" content="telephone=no" />
+
+  <!-- Отключить кэширование. Нужен только при разработке, чтобы все было свежим -->
+  <meta http-equiv="Cache-Control" content="no-cache" />
+  <meta http-equiv="Cache-Control" content="max-age=3600, must-revalidate" />
+</head>
+
+<body>
+  <div class="wrapper">
+    @@include('tpls/header.html',{})
+
+
+    <main class="main">
+
+      <div class="main__container-news placement-block">
+        <aside class="main-sidebar">
+          <section class="news-menu">
+            <nav class="news-menu__nav">
+              <ul class="news-menu__list">
+                <li class="news-menu__item">
+                  <a class="news-menu__link" href="">
+                    О проекте formacar
+                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <mask id="mask0_412_11986" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="12" y="7"
+                        width="12" height="22">
+                        <path
+                          d="M23.588 28.0887C23.0406 28.6371 22.158 28.6371 21.6106 28.0887L12.3268 18.789C11.8911 18.3525 11.8911 17.6475 12.3268 17.211L21.6106 7.91127C22.158 7.36291 23.0406 7.36291 23.588 7.91127C24.1354 8.45963 24.1354 9.34373 23.588 9.89209L15.4996 18.0056L23.5992 26.1191C24.1354 26.6563 24.1354 27.5516 23.588 28.0887Z"
+                          fill="black" />
+                      </mask>
+                      <g mask="url(#mask0_412_11986)">
+                        <rect width="36" height="36" transform="matrix(-1 0 0 1 36 0)" fill="#383838" />
+                      </g>
+                    </svg>
+                  </a>
+                  <ul class="news-menu__child">
+                    <li class="news-menu__child-item"><a class="news-menu__child-link" href="#block-1">FC Group</a></li>
+                    <li class="news-menu__child-item"><a class="news-menu__child-link" href="#block-2">FC Ecosystem</a>
+                    </li>
+                    <li class="news-menu__child-item"><a class="news-menu__child-link" href="#block-3">FC Design</a>
+                    </li>
+                    <li class="news-menu__child-item"><a class="news-menu__child-link" href="#block-4">FC Crypto</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="news-menu__item"><a class="news-menu__link" href="">Редакция
+                    новостей</a>
+                </li>
+                <li class="news-menu__item news-menu__active"><a class="news-menu__link" href="">Размещение
+                    рекламы</a></li>
+              </ul>
+            </nav>
+            <div class="news-menu__separator"></div>
+            <div class="news-menu__buttons">
+              <button class="button button--primary button--light news-menu__button">Форма обратной
+                связи</button>
+            </div>
+          </section>
+        </aside>
+
+        <div class="main__items news-single">
+          <div class="news-single__artcile about-project__item">
+            <div class="page-heading ">
+
+              <div class="breadcrumbs">
+                <ul class="breadcrumbs__list">
+                  <li class="breadcrumbs__item">
+                    <a href="#" class="breadcrumbs__link">Главная</a>
+                  </li>
+                  <li class="breadcrumbs__item">
+                    <a href="#" class="breadcrumbs__link">Новости</a>
+                  </li>
+                  <li class="breadcrumbs__item">Все новости</li>
+                </ul>
+              </div>
+
+              <h1 class="section-title page__title">Размещение рекламы</h1>
+
+              <p>Выберите страницу для размещения рекламы.</p>
+
+
+            </div>
+
+
+
+
+
+          </div>
+
+
+          <div class="faq-item">
+            <div class="faq-item__title">
+              <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M23.588 28.0887C23.0406 28.6371 22.158 28.6371 21.6106 28.0887L12.3268 18.789C11.8911 18.3525 11.8911 17.6475 12.3268 17.211L21.6106 7.91127C22.158 7.36291 23.0406 7.36291 23.588 7.91127C24.1354 8.45963 24.1354 9.34373 23.588 9.89209L15.4996 18.0056L23.5992 26.1191C24.1354 26.6563 24.1354 27.5516 23.588 28.0887Z"
+                  fill="#383838" />
+              </svg>
+              <span>Главная страница</span>
+            </div>
+            <div class="faq-item__body">
+              <div class="faq-item__imgs">
+                <picture class="faq-item__img-wr">
+                  <img class="faq-item__img" src="img/placement-block/placement-block-1.png" alt="">
+                </picture>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-item__title">
+              <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M23.588 28.0887C23.0406 28.6371 22.158 28.6371 21.6106 28.0887L12.3268 18.789C11.8911 18.3525 11.8911 17.6475 12.3268 17.211L21.6106 7.91127C22.158 7.36291 23.0406 7.36291 23.588 7.91127C24.1354 8.45963 24.1354 9.34373 23.588 9.89209L15.4996 18.0056L23.5992 26.1191C24.1354 26.6563 24.1354 27.5516 23.588 28.0887Z"
+                  fill="#383838" />
+              </svg>
+              <span>Новости</span>
+            </div>
+            <div class="faq-item__body">
+              <div class="faq-item__imgs">
+                <picture class="faq-item__img-wr">
+                  <img class="faq-item__img" src="img/placement-block/placement-block-2.png" alt="">
+                </picture>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-item__title">
+              <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M23.588 28.0887C23.0406 28.6371 22.158 28.6371 21.6106 28.0887L12.3268 18.789C11.8911 18.3525 11.8911 17.6475 12.3268 17.211L21.6106 7.91127C22.158 7.36291 23.0406 7.36291 23.588 7.91127C24.1354 8.45963 24.1354 9.34373 23.588 9.89209L15.4996 18.0056L23.5992 26.1191C24.1354 26.6563 24.1354 27.5516 23.588 28.0887Z"
+                  fill="#383838" />
+              </svg>
+              <span>Каталог тюнинга</span>
+            </div>
+            <div class="faq-item__body">
+              <div class="faq-item__imgs">
+                <picture class="faq-item__img-wr">
+                  <img class="faq-item__img" src="img/placement-block/placement-block-3.png" alt="">
+                </picture>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-item__title">
+              <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M23.588 28.0887C23.0406 28.6371 22.158 28.6371 21.6106 28.0887L12.3268 18.789C11.8911 18.3525 11.8911 17.6475 12.3268 17.211L21.6106 7.91127C22.158 7.36291 23.0406 7.36291 23.588 7.91127C24.1354 8.45963 24.1354 9.34373 23.588 9.89209L15.4996 18.0056L23.5992 26.1191C24.1354 26.6563 24.1354 27.5516 23.588 28.0887Z"
+                  fill="#383838" />
+              </svg>
+              <span>Каталог тюнинга</span>
+            </div>
+            <div class="faq-item__body">
+              <p>
+                Выберите категорию тюнинга для размещения рекламы:
+              </p>
+              <div class="tags">
+                <div class="tag tag-active">Диски</div>
+                <div class="tag">Аэродинамика</div>
+                <div class="tag">Выхлопные системы</div>
+                <div class="tag">Подвеска</div>
+                <div class="tag">Тормозные системы</div>
+                <div class="tag">Тюнинг двигателя</div>
+                <div class="tag">Аксессуары</div>
+                <div class="tag">Интерьер</div>
+                <div class="tag">Винил</div>
+              </div>
+              <div class="faq-item__imgs">
+                <picture class="faq-item__img-wr">
+                  <img class="faq-item__img" src="img/placement-block/placement-block-4.png" alt="">
+                </picture>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-item__title">
+              <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M23.588 28.0887C23.0406 28.6371 22.158 28.6371 21.6106 28.0887L12.3268 18.789C11.8911 18.3525 11.8911 17.6475 12.3268 17.211L21.6106 7.91127C22.158 7.36291 23.0406 7.36291 23.588 7.91127C24.1354 8.45963 24.1354 9.34373 23.588 9.89209L15.4996 18.0056L23.5992 26.1191C24.1354 26.6563 24.1354 27.5516 23.588 28.0887Z"
+                  fill="#383838" />
+              </svg>
+              <span>События</span>
+            </div>
+            <div class="faq-item__body">
+              <div class="faq-item__imgs">
+                <picture class="faq-item__img-wr">
+                  <img class="faq-item__img" src="img/placement-block/placement-block-5.png" alt="">
+                </picture>
+                <picture class="faq-item__img-wr">
+                  <img class="faq-item__img" src="img/placement-block/placement-block-6.png" alt="">
+                </picture>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-item__title">
+              <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M23.588 28.0887C23.0406 28.6371 22.158 28.6371 21.6106 28.0887L12.3268 18.789C11.8911 18.3525 11.8911 17.6475 12.3268 17.211L21.6106 7.91127C22.158 7.36291 23.0406 7.36291 23.588 7.91127C24.1354 8.45963 24.1354 9.34373 23.588 9.89209L15.4996 18.0056L23.5992 26.1191C24.1354 26.6563 24.1354 27.5516 23.588 28.0887Z"
+                  fill="#383838" />
+              </svg>
+              <span>3D-конфигуратор и приложение</span>
+            </div>
+            <div class="faq-item__body">
+              <div class="faq-item__items">
+                <div class="faq-item__item">
+                  <div class="faq-item__item-wr">
+                    <p>В 3D-конфигураторе между сменой автомобилей.</p>
+                    <img src="img/placement-block/placement-block-7.png" alt="">
+                  </div>
+                  <div class="faq-item__item-wr">
+                    <p>В 3D-конфигураторе между сменой автомобилей.</p>
+                    <img src="img/placement-block/placement-block-9.png" alt="">
+                    <img src="img/placement-block/placement-block-10.png" alt="">
+                  </div>
+                  <div class="faq-item__item-2">
+                    <p>В новостной или социальной ленте.</p>
+                    <div class="faq-item__item-2-wr">
+                      <img src="img/placement-block/placement-block-13.png" alt="">
+                      <img src="img/placement-block/placement-block-14.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="faq-item__item">
+                  <div class="faq-item__item-wr">
+                    <p>В 3D-конфигураторе между сменой автомобилей.</p>
+                    <img src="img/placement-block/placement-block-8.png" alt="">
+                  </div>
+                  <div class="faq-item__item-wr">
+                    <p>Интеграция тюнинг-проектов и размещение компании в каталоге брендов в
+                      3D-конфигураторе.</p>
+                    <img src="img/placement-block/placement-block-11.png" alt="">
+                    <img src="img/placement-block/placement-block-12.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </main>
+
+
+    @@include('tpls/footer.html',{})
+  </div>
+
+  @@include('tpls/modals.html', {})
+  <script src="./js/bundle.min.js"></script>
+</body>
+
+</html>

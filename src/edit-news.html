@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/style.css" />
+
+  <!-- Отключить автодетект телефонов -->
+  <meta name="format-detection" content="telephone=no" />
+
+  <!-- Отключить кэширование. Нужен только при разработке, чтобы все было свежим -->
+  <meta http-equiv="Cache-Control" content="no-cache" />
+  <meta http-equiv="Cache-Control" content="max-age=3600, must-revalidate" />
+</head>
+
+<body>
+  <div class="wrapper">
+    @@include('tpls/header.html',{})
+
+
+    <main class="main">
+
+      <div class="main__container-news">
+        <aside class="main-sidebar">
+          <section class="news-menu">
+            <nav class="news-menu__nav">
+              <ul class="news-menu__list">
+                <li class="news-menu__item">
+                  <a class="news-menu__link" href="">
+                    О проекте formacar
+                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <mask id="mask0_412_11986" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="12" y="7"
+                        width="12" height="22">
+                        <path
+                          d="M23.588 28.0887C23.0406 28.6371 22.158 28.6371 21.6106 28.0887L12.3268 18.789C11.8911 18.3525 11.8911 17.6475 12.3268 17.211L21.6106 7.91127C22.158 7.36291 23.0406 7.36291 23.588 7.91127C24.1354 8.45963 24.1354 9.34373 23.588 9.89209L15.4996 18.0056L23.5992 26.1191C24.1354 26.6563 24.1354 27.5516 23.588 28.0887Z"
+                          fill="black" />
+                      </mask>
+                      <g mask="url(#mask0_412_11986)">
+                        <rect width="36" height="36" transform="matrix(-1 0 0 1 36 0)" fill="#383838" />
+                      </g>
+                    </svg>
+                  </a>
+                  <ul class="news-menu__child">
+                    <li class="news-menu__child-item"><a class="news-menu__child-link" href="">FC Group</a></li>
+                    <li class="news-menu__child-item"><a class="news-menu__child-link" href="">FC Ecosystem</a></li>
+                    <li class="news-menu__child-item"><a class="news-menu__child-link" href="">FC Design</a></li>
+                    <li class="news-menu__child-item"><a class="news-menu__child-link" href="">FC Crypto</a></li>
+                  </ul>
+                </li>
+                <li class="news-menu__item news-menu__active"><a class="news-menu__link" href="">Редакция новостей</a>
+                </li>
+                <li class="news-menu__item"><a class="news-menu__link" href="">Размещение рекламы</a></li>
+              </ul>
+            </nav>
+            <div class="news-menu__separator"></div>
+            <div class="news-menu__buttons">
+              <button class="button button--primary button--light news-menu__button">Форма обратной связи</button>
+            </div>
+          </section>
+        </aside>
+
+        <div class="main__items news-single edit-news">
+          <div class="news-single__artcile">
+            <div class="page-heading ">
+
+              <div class="breadcrumbs">
+                <ul class="breadcrumbs__list">
+                  <li class="breadcrumbs__item">
+                    <a href="#" class="breadcrumbs__link">Главная</a>
+                  </li>
+                  <li class="breadcrumbs__item">
+                    <a href="#" class="breadcrumbs__link">Новости</a>
+                  </li>
+                  <li class="breadcrumbs__item">Все новости</li>
+                </ul>
+              </div>
+
+              <h1 class="section-title page__title">Редакция новостей</h1>
+
+              <p>
+                FormaCar is an extensive informational website dedicated to the latest car
+                news and events in the auto tuning. Car enthusiasts will appreciate our rich
+                photo and video coverage of the hottest and most important events in the car
+                industry all over the world.
+              </p>
+
+              <h4>Terms of Use</h4>
+
+              <p>
+                Unless explicitly stated otherwise, all copyrights on all materials published on the FormaCar website
+                are
+                reserved by FORMACAR - FZCO.
+              </p>
+              <p>
+                All materials that are copyrighted by FORMACAR - FZCO can be reproduced in any mass media, on the
+                Internet,
+                or any other media with no limitations imposed on the volume and timing of their publication. An active
+                hyperlink to the source is a mandatory condition for the for reposting and using any kind of content,
+                whether textual or graphical. No special repost permission on behalf of the website editorial staff is
+                required.
+              </p>
+              <p>
+                Using any materials copyrighted by FORMACAR - FZCO in any illegal or wrongful way is strictly prohibited
+                and
+                shall be prosecuted in accordance with the applicable international law.
+              </p>
+
+              <div class="editors">
+                <div class="editors__item">
+                  <picture class="editors__pic">
+                    <img class="editors__img" src="img/editors/editor-1.jpg" alt="">
+                  </picture>
+                  <div class="editors__name">Распопов Андрей</div>
+                  <div class="editors__role">Главный редактор</div>
+                </div>
+                <div class="editors__item">
+                  <picture class="editors__pic">
+                    <img class="editors__img" src="img/editors/editor-2.jpg" alt="">
+                  </picture>
+                  <div class="editors__name">Суханов Артем</div>
+                  <div class="editors__role">Редактор</div>
+                </div>
+                <div class="editors__item">
+                  <picture class="editors__pic">
+                    <img class="editors__img" src="img/editors/editor-3.jpg" alt="">
+                  </picture>
+                  <div class="editors__name">Муса Сергей</div>
+                  <div class="editors__role">Редактор</div>
+                </div>
+              </div>
+
+              <h4>News editors</h4>
+
+              <p>
+              <address> Editor’s office location: FZA Dubai - Building A2Dubai, DubaiUnited Arab Emirates</address>
+              </p>
+              <p>
+                Phone: <a href="tel:+971 58 551 3099">a +971 58 551 3099</a>
+              </p>
+              <p>
+                E-Mail: <a href="mailto: support@formacar.com">support@formacar.com</a>
+              </p>
+
+              <h4>
+                Working Together
+              </h4>
+
+              <p>
+                We will consider any ad placement/exchange proposals you may have, as well as other cooperation
+                opportunities. If you have any questions, you can contact us by e-mail: support@formacar.com
+              </p>
+
+            </div>
+
+
+
+
+
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+
+    @@include('tpls/footer.html',{})
+  </div>
+
+  @@include('tpls/modals.html', {})
+  <script src="./js/bundle.min.js"></script>
+</body>
+
+</html>

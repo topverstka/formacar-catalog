@@ -366,7 +366,7 @@
 }
 
 .nav__item:hover {
-  color: var(--c-accent);
+  opacity: 0.7;
 }
 
 .nav__item:active {
@@ -429,6 +429,7 @@
   align-items: center;
   justify-content: center;
   padding: 1.2rem 2.6rem;
+  height: 4.2rem;
   font-size: 1.4rem;
   font-weight: 700;
   line-height: 1.4rem;
@@ -1911,6 +1912,311 @@
   padding-left: 5.125rem;
 }
 
+.news-menu {
+  background: #FFFFFF;
+  border-radius: var(--brad-regular);
+  padding: 3rem;
+  width: 100%;
+  margin-bottom: 8rem;
+}
+
+.news-menu__item {
+  margin-bottom: 3.5rem;
+  position: relative;
+  transition: 0.3s ease-in-out;
+}
+
+.news-menu__item svg {
+  width: 2.4rem;
+  height: 2.4rem;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 1rem;
+  position: relative;
+  bottom: 2px;
+  transform: rotate(90deg);
+}
+
+.news-menu__item:nth-last-child(1) {
+  margin-bottom: 0;
+}
+
+.news-menu__link {
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.news-menu__separator {
+  width: 100%;
+  height: 0.1rem;
+  background-color: #ECECEC;
+  margin: 3rem auto;
+}
+
+.news-menu__list > .news-menu__active {
+  color: var(--c-accent);
+}
+
+.news-menu__active svg {
+  transform: rotate(270deg);
+}
+.news-menu__active svg rect {
+  fill: var(--c-accent);
+}
+
+.news-menu__active .news-menu__child {
+  display: block;
+}
+
+.news-menu__child {
+  margin-top: 3rem;
+  margin-left: 3rem;
+  display: none;
+}
+
+.news-menu__child-item {
+  margin-bottom: 3rem;
+}
+
+.news-menu__child-item:nth-last-child(1) {
+  margin-bottom: 0;
+}
+
+.news-menu__child-link {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--c-text-regular);
+  text-transform: uppercase;
+}
+
+.editors {
+  padding-bottom: 1.5rem;
+  display: flex;
+  gap: 3rem;
+}
+.editors__item {
+  border-radius: 10px;
+  border: 1px solid #ECECEC;
+  padding: 2rem;
+}
+.editors__pic {
+  border-radius: 10px;
+  overflow: hidden;
+  width: 20rem;
+  height: 20rem;
+  display: block;
+  margin-bottom: 2rem;
+}
+.editors__img {
+  object-fit: cover;
+}
+.editors__name {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.editors__role {
+  font-size: 1.4rem;
+}
+
+.edit-news p {
+  line-height: 2.4rem;
+  padding-bottom: 2rem;
+}
+
+.edit-news h4 {
+  font-size: 2rem;
+  line-height: 3rem;
+  text-transform: uppercase;
+  font-family: "Oswald";
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  letter-spacing: 0.1em;
+}
+
+.edit-news address {
+  font-style: inherit;
+}
+
+.social {
+  margin-bottom: 2rem;
+}
+
+.social__text {
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.social__wr {
+  display: flex;
+  gap: 1rem;
+  margin-right: 4rem;
+}
+
+.social-card__item {
+  border-radius: 5px;
+  border: 1px solid #ECECEC;
+  transition: 0.3s ease-in-out;
+}
+
+.social-card__link {
+  display: flex;
+  position: relative;
+  width: 4rem;
+  height: 4rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-card__img {
+  width: auto;
+  height: 2.4rem;
+}
+
+.social-card__item:hover {
+  opacity: 0.7;
+  transition: 0.3s ease-in-out;
+}
+
+.store {
+  display: flex;
+  gap: 1rem;
+}
+
+.store-item {
+  width: 15rem;
+  height: 4.2rem;
+  border: 1px solid #ECECEC;
+  border-radius: 5px;
+  display: flex;
+  padding: 0.5rem;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: 0.3s ease-in-out;
+}
+
+.store-item:hover {
+  opacity: 0.7;
+  transition: 0.3s ease-in-out;
+}
+
+.store-item__img {
+  height: 2.4rem;
+}
+
+.store-item__text {
+  font-size: 1.4rem;
+}
+
+.store-item__text span {
+  font-size: 1.2rem;
+  font-weight: 500;
+  display: block;
+}
+
+.faq-item {
+  width: 100%;
+  border-radius: 10px;
+  background: #fff;
+  margin-bottom: 2rem;
+}
+
+.faq-item__title {
+  cursor: pointer;
+  padding: 3rem 5rem 2rem 5rem;
+  transition: 0.3s ease-in-out;
+}
+
+.faq-item__title:hover {
+  opacity: 0.7;
+  transition: 0.3s ease-in-out;
+}
+
+.faq-item span {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.faq-item svg {
+  display: inline-block;
+  width: 3.6rem;
+  height: 3.6rem;
+  transform: rotate(270deg);
+  margin-right: 1rem;
+  position: relative;
+  bottom: 0.3rem;
+  vertical-align: middle;
+}
+
+.faq-item__body {
+  padding: 2.5rem 5rem 5rem 5rem;
+  display: none;
+}
+
+.faq-item__body p {
+  padding-bottom: 1rem;
+}
+
+.faq-item__imgs {
+  gap: 3rem;
+  display: flex;
+}
+
+.faq-item__img-wr {
+  display: block;
+  width: 36rem;
+  height: fit-content;
+}
+
+.faq-item-active .faq-item__body {
+  display: block;
+}
+
+.faq-item__items {
+  display: flex;
+  gap: 0 10rem;
+}
+
+.faq-item__item {
+  width: 36rem;
+}
+
+.faq-item__item img {
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.faq-item__item-2-wr {
+  display: flex;
+  gap: 0 3rem;
+}
+
+.faq-item__item-wr {
+  margin-bottom: 4rem;
+}
+
+.tags {
+  padding-bottom: 2rem;
+}
+
+.tag {
+  cursor: pointer;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  background: #F6F6F6;
+  border-radius: 150px;
+  padding: 0.75rem 2rem;
+  display: inline-block;
+  font-weight: 600;
+}
+
+.tag-active {
+  background-color: var(--c-accent);
+  color: #fff;
+}
+
 @font-face {
   font-family: "Oswald";
   font-style: normal;
@@ -2921,7 +3227,7 @@ header {
 }
 
 .header__nav-link:hover {
-  color: var(--c-accent);
+  opacity: 0.7;
 }
 
 .header__nav-link:focus {
@@ -2997,6 +3303,7 @@ header {
 .main {
   margin-top: 6rem;
   margin-bottom: 8rem;
+  min-height: 40vh;
 }
 
 .main__container {
@@ -3780,6 +4087,7 @@ header {
 .brand {
   background: #FFFFFF;
   border-radius: var(--brad-regular);
+  margin-bottom: 14rem;
 }
 
 .brand-top {
@@ -3807,7 +4115,7 @@ header {
 }
 
 .brand-block {
-  margin-bottom: 4.5rem;
+  padding-bottom: 2rem;
 }
 
 .brand-block__top {
@@ -3880,5 +4188,62 @@ header {
 .brand .catalog-card__model {
   top: 0;
   left: 0;
+}
+
+.main__container-configurator {
+  max-width: 130rem;
+}
+
+.about-project .section-title {
+  margin-bottom: 2rem;
+}
+
+.about-project p {
+  padding-bottom: 2rem;
+  line-height: 2.4rem;
+}
+
+.about-project .sub-title {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  font-family: "Oswald";
+  letter-spacing: 0.1em;
+  margin-bottom: 2rem;
+}
+
+.about-project__item {
+  margin-bottom: 3rem;
+}
+
+.about-project-logo {
+  width: 22rem;
+  display: block;
+  margin-bottom: 4rem;
+}
+
+.about-project__title {
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 4rem;
+  display: inline-block;
+}
+
+.about-project .news-content__video {
+  width: 66rem;
+  height: 33rem;
+  margin-bottom: 4rem;
+}
+
+.about-project__social-wr {
+  display: flex;
+}
+
+.placement-block .section-title {
+  margin-bottom: 1rem;
+}
+
+.placement-block .news-single__artcile {
+  padding: 3rem 5rem 5rem 5rem;
 }
 /*# sourceMappingURL=../maps/style.css.map */

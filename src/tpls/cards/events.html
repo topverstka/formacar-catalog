@@ -1,30 +1,33 @@
-<article class="events-card" >
+<article class="events-card">
 
- <div class="events-card__top">
-  <div class="events-card__wrap">
-   <div class="events-card__info">
-    <picture class="events-card__profile">
-     <img src="img/events/profile-@@profile" alt="">
-    </picture>
-    <div class="events-card__text">
-     <p class="events-card__name">@@name</p>
-     <p class="events-card__date">15 Сентября 2022, 17:45 </p>
-    </div>
-   </div>
-   @@include('../sections/events-menu.html')
-  </div>
-  <p class="events-card__descr">
-   @@descr
-  </p>
- </div>
- <picture class="events-card__pic" data-b_modal-open="events-pop">
-  <img src="img/events/events-@@img" alt="" class="events-card__img">
- </picture>
- <div class="events-card__bottom">
-  @@include('../sections/bottom-button.html',{type: 'like', number: '5'})
-  @@include('../sections/bottom-button.html',{type: 'comments', number: '10'})
-  @@include('../sections/bottom-button.html',{type: 'view', number: '10'})
+     <div class="events-card__top">
+          <div class="events-card__wrap">
+               <div class="events-card__info">
+                    <picture class="events-card__profile">
+                         <img src="img/events/profile-@@profile" alt="">
+                    </picture>
+                    <div class="events-card__text">
+                         <p class="events-card__name">@@name</p>
+                         <p class="events-card__date">15 Сентября 2022, 17:45 </p>
+                    </div>
+               </div>
+               @@include('../sections/events-menu.html')
+          </div>
+          <p class="events-card__descr">
+               @@descr
+          </p>
+     </div>
+     <picture class="events-card__pic" data-b_modal-open="events-pop">
+          <img src="img/events/events-@@img" alt="" class="events-card__img">
+     </picture>
+     <div class="events-card__bottom">
+          @@include('../sections/bottom-button.html',{type: 'like', number: '5'})
+          @@include('../sections/bottom-button.html',{type: 'comments', number: '10'})
+          <div class="bottom-button">
+               <img src="img/common/view.png" alt="">
+               <span>11</span>
+          </div>
 
- </div>
+     </div>
 
 </article>

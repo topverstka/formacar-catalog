@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/style.css" />
+
+  <!-- Отключить автодетект телефонов -->
+  <meta name="format-detection" content="telephone=no" />
+
+  <!-- Отключить кэширование. Нужен только при разработке, чтобы все было свежим -->
+  <meta http-equiv="Cache-Control" content="no-cache" />
+  <meta http-equiv="Cache-Control" content="max-age=3600, must-revalidate" />
+</head>
+
+<body>
+  <div class="wrapper">
+    @@include('tpls/header.html',{})
+
+
+    <main class="main">
+
+      <div class="main__container-news about-project">
+        <aside class="main-sidebar">
+          <section class="news-menu">
+            <nav class="news-menu__nav">
+              <ul class="news-menu__list">
+                <li class="news-menu__item news-menu__active">
+                  <a class="news-menu__link" href="">
+                    О проекте formacar
+                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <mask id="mask0_412_11986" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="12" y="7"
+                        width="12" height="22">
+                        <path
+                          d="M23.588 28.0887C23.0406 28.6371 22.158 28.6371 21.6106 28.0887L12.3268 18.789C11.8911 18.3525 11.8911 17.6475 12.3268 17.211L21.6106 7.91127C22.158 7.36291 23.0406 7.36291 23.588 7.91127C24.1354 8.45963 24.1354 9.34373 23.588 9.89209L15.4996 18.0056L23.5992 26.1191C24.1354 26.6563 24.1354 27.5516 23.588 28.0887Z"
+                          fill="black" />
+                      </mask>
+                      <g mask="url(#mask0_412_11986)">
+                        <rect width="36" height="36" transform="matrix(-1 0 0 1 36 0)" fill="#383838" />
+                      </g>
+                    </svg>
+                  </a>
+                  <ul class="news-menu__child">
+                    <li class="news-menu__child-item"><a class="news-menu__child-link" href="#block-1">FC Group</a></li>
+                    <li class="news-menu__child-item"><a class="news-menu__child-link" href="#block-2">FC Ecosystem</a>
+                    </li>
+                    <li class="news-menu__child-item"><a class="news-menu__child-link" href="#block-3">FC Design</a>
+                    </li>
+                    <li class="news-menu__child-item"><a class="news-menu__child-link" href="#block-4">FC Crypto</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="news-menu__item"><a class="news-menu__link" href="">Редакция
+                    новостей</a>
+                </li>
+                <li class="news-menu__item"><a class="news-menu__link" href="">Размещение
+                    рекламы</a></li>
+              </ul>
+            </nav>
+            <div class="news-menu__separator"></div>
+            <div class="news-menu__buttons">
+              <button class="button button--primary button--light news-menu__button">Форма обратной
+                связи</button>
+            </div>
+          </section>
+        </aside>
+
+        <div class="main__items news-single">
+          <div class="news-single__artcile about-project__item">
+            <div class="page-heading ">
+
+              <div class="breadcrumbs">
+                <ul class="breadcrumbs__list">
+                  <li class="breadcrumbs__item">
+                    <a href="#" class="breadcrumbs__link">Главная</a>
+                  </li>
+                  <li class="breadcrumbs__item">
+                    <a href="#" class="breadcrumbs__link">Новости</a>
+                  </li>
+                  <li class="breadcrumbs__item">Все новости</li>
+                </ul>
+              </div>
+
+              <h1 class="section-title page__title">О проекте Formacar</h1>
+
+              <h2 class="sub-title">О проекте Formacar</h2>
+
+
+            </div>
+
+
+
+
+
+          </div>
+
+          <div class="news-single__artcile about-project__item" id="block-1">
+            <div class="page-heading ">
+
+              <picture class="about-project-logo">
+                <img class="about-project-logo__img" src="img/about-project/about-logo.png" alt="">
+              </picture>
+
+              <h2 class="about-project__title">
+                Formacar Group
+              </h2>
+
+              <p>
+                Formacar Group объединяет в себе различные сервисы и продукты, предоставляя
+                своим
+                пользователям новый и удивительный опыт взаимодействия с автомобильным миром.
+              </p>
+
+              <p>
+                Formacar сегодня - это собственная экосистема, Web3-подразделение и студия
+                дизайна и
+                стайлинга автомобилей.
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="news-single__artcile about-project__item" id="block-2">
+            <div class="page-heading ">
+
+              <picture class="about-project-logo">
+                <img class="about-project-logo__img" src="img/about-project/about-logo.png" alt="">
+              </picture>
+
+              <h2 class="about-project__title">
+                Formacar Ecosystem
+              </h2>
+
+              <p>
+                Formacar Ecosystem - это автомобильный информационный портал и мобильное
+                приложение с
+                разделом объявлений, новостным блоком, каталогом тюнинга собственной социальной
+                сетью.
+              </p>
+
+              <p>
+                Приложение включает в себя 3D-конфигуратор, не имеющий аналогов в мире. В
+                конфигураторе вы
+                можете менять настройки интерьера и экстерьера на более чем 1000 моделей
+                автомобилей.
+                Список моделей постоянно пополняется.
+              </p>
+
+              <p>
+                Также в 3D-конфигураторе реализована функция дополненной реальности, с помощью
+                которой вы
+                можете визуализовать полученный результат. Автомобиль можно вывести на любую
+                ровную
+                поверхность и даже ездить на нем по улицам города. Кроме того, в режиме
+                AR-доступна
+                уникальная функция примерки 3D-моделей дисков на реальном автомобиле.
+              </p>
+
+
+              <div class="news-content__video">
+                <picture class="news-content__video-pic">
+                  <img src="img/events/events-4.jpg" alt="" class="news-content__video-img">
+                </picture>
+                <div class="play-button">
+                  <img src="img/common/play-button.svg" alt="" class="play-button__img">
+                </div>
+                <p class="news-content__video-time">1:03</p>
+              </div>
+
+              <div class="social">
+
+                <div class="social__text">
+                  Социальные сети
+                </div>
+
+                <div class="about-project__social-wr">
+                  <ul class="social__wr">
+                    <li class="social-card__item">
+                      <a class="social-card__link" target="_blank" href="https://www.facebook.com/Formacarofficial"><img
+                          class="social-card__img" src="img/social/facebook.svg" alt=""></a>
+                    </li>
+                    <li class="social-card__item">
+                      <a class="social-card__link" target="_blank" href="https://twitter.com/formacar"><img
+                          class="social-card__img" src="img/social/twitter.svg" alt=""></a>
+                    </li>
+                    <li class="social-card__item">
+                      <a class="social-card__link" target="_blank" href="https://instagram.com/formacar_official"><img
+                          class="social-card__img" src="img/social/instagram.svg" alt=""></a>
+                    </li>
+                    <li class="social-card__item">
+                      <a class="social-card__link" target="_blank" href="https://t.me/FormacarOffical"><img
+                          class="social-card__img" src="img/social/telegram.svg" alt=""></a>
+                    </li>
+                    <li class="social-card__item">
+                      <a class="social-card__link" target="_blank" href="https://medium.formacar.io"><img
+                          class="social-card__img" src="img/social/medium.svg" alt=""></a>
+                    </li>
+                  </ul>
+
+                  <div class="store">
+
+                    <a class="store-item" target="_blank" href="https://apps.apple.com/us/app/formacar/id1180117334">
+                      <div class="store-item__img-wr">
+                        <img class="store-item__img" src="img/social/apple-store.svg" alt="">
+                      </div>
+                      <div class="store-item__text">
+                        <span>Доступно в</span>
+                        <b>App Store</b>
+                      </div>
+                    </a>
+
+                    <a class="store-item" target="_blank"
+                      href="https://play.google.com/store/apps/details?id=com.formacar.android&pli=1">
+                      <div class="store-item__img-wr">
+                        <img class="store-item__img" src="img/social/google-play.svg" alt="">
+                      </div>
+                      <div class="store-item__text">
+                        <span>Доступно в</span>
+                        <b>Google Play</b>
+                      </div>
+                    </a>
+
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="news-single__artcile about-project__item" id="block-3">
+            <div class="page-heading ">
+
+              <picture class="about-project-logo">
+                <img class="about-project-logo__img" src="img/about-project/about-logo.png" alt="">
+              </picture>
+
+              <h2 class="about-project__title">
+                Formacar Design
+              </h2>
+
+              <p>
+                Formacar Design — это студия дизайна и стайлинга автомобилей премиумкласса, совместный проект Formacar и
+                SCL Global Concept. Высокие стандарты бренда Formacar и авторский подход SCL Global Concept
+                предоставляют вам возможность взглянуть по-новому на привычное и открыть новые грани совершенства
+                автомобильного дизайна.
+              </p>
+
+              <div class="news-carousel">
+                <div thumbsSlider="" class="swiper news-carousel--big">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide news-carousel__slide">
+                      <picture class="news-carousel__pic">
+                        <img src="img/about-project/about-project-1.png" alt="" class="news-carousel__img">
+                      </picture>
+                    </div>
+                    <div class="swiper-slide news-carousel__slide">
+                      <picture class="news-carousel__pic">
+                        <img src="img/about-project/about-project-2.jpg" alt="" class="news-carousel__img">
+                      </picture>
+                    </div>
+                    <div class="swiper-slide news-carousel__slide">
+                      <picture class="news-carousel__pic">
+                        <img src="img/about-project/about-project-3.png" alt="" class="news-carousel__img">
+                      </picture>
+                    </div>
+                    <div class="swiper-slide news-carousel__slide">
+                      <picture class="news-carousel__pic">
+                        <img src="img/about-project/about-project-4.png" alt="" class="news-carousel__img">
+                      </picture>
+                    </div>
+                    <div class="swiper-slide news-carousel__slide">
+                      <picture class="news-carousel__pic">
+                        <img src="img/news-carousel/5.jpg" alt="" class="news-carousel__img">
+                      </picture>
+                    </div>
+                    <div class="swiper-slide news-carousel__slide">
+                      <picture class="news-carousel__pic">
+                        <img src="img/news-carousel/6.jpg" alt="" class="news-carousel__img">
+                      </picture>
+                    </div>
+                    <div class="swiper-slide news-carousel__slide">
+                      <picture class="news-carousel__pic">
+                        <img src="img/news-carousel/7.jpg" alt="" class="news-carousel__img">
+                      </picture>
+                    </div>
+                    <div class="swiper-slide news-carousel__slide">
+                      <picture class="news-carousel__pic">
+                        <img src="img/news-carousel/8.jpg" alt="" class="news-carousel__img">
+                      </picture>
+                    </div>
+                    <div class="swiper-slide news-carousel__slide">
+                      <picture class="news-carousel__pic">
+                        <img src="img/news-carousel/9.jpg" alt="" class="news-carousel__img">
+                      </picture>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="swiper news-carousel--small">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide news-carousel__slide">
+                      <picture class="news-carousel__pic">
+                        <img src="img/about-project/about-project-1.png" alt="" class="news-carousel__img">
+                      </picture>
+                    </div>
+                    <div class="swiper-slide news-carousel__slide">
+                      <picture class="news-carousel__pic">
+                        <img src="img/about-project/about-project-2.jpg" alt="" class="news-carousel__img">
+                      </picture>
+                    </div>
+                    <div class="swiper-slide news-carousel__slide">
+                      <picture class="news-carousel__pic">
+                        <img src="img/about-project/about-project-3.png" alt="" class="news-carousel__img">
+                      </picture>
+                    </div>
+                    <div class="swiper-slide news-carousel__slide">
+                      <picture class="news-carousel__pic">
+                        <img src="img/about-project/about-project-4.png" alt="" class="news-carousel__img">
+                      </picture>
+                    </div>
+                    <div class="swiper-slide news-carousel__slide">
+                      <picture class="news-carousel__pic">
+                        <img src="img/news-carousel/5.jpg" alt="" class="news-carousel__img">
+                      </picture>
+                    </div>
+                    <div class="swiper-slide news-carousel__slide">
+                      <picture class="news-carousel__pic">
+                        <img src="img/news-carousel/6.jpg" alt="" class="news-carousel__img">
+                      </picture>
+                    </div>
+                    <div class="swiper-slide news-carousel__slide">
+                      <picture class="news-carousel__pic">
+                        <img src="img/news-carousel/7.jpg" alt="" class="news-carousel__img">
+                      </picture>
+                    </div>
+                    <div class="swiper-slide news-carousel__slide">
+                      <picture class="news-carousel__pic">
+                        <img src="img/news-carousel/8.jpg" alt="" class="news-carousel__img">
+                      </picture>
+                    </div>
+                    <div class="swiper-slide news-carousel__slide">
+                      <picture class="news-carousel__pic">
+                        <img src="img/news-carousel/9.jpg" alt="" class="news-carousel__img">
+                      </picture>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="social">
+
+                <div class="social__text">
+                  Социальные сети
+                </div>
+
+                <div class="about-project__social-wr">
+                  <ul class="social__wr">
+                    <li class="social-card__item">
+                      <a class="social-card__link" target="_blank" href="https://www.instagram.com/formacar.design"><img
+                          class="social-card__img" src="img/social/instagram.svg" alt=""></a>
+                    </li>
+                  </ul>
+
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="news-single__artcile about-project__item" id="block-4">
+            <div class="page-heading ">
+
+              <picture class="about-project-logo">
+                <img class="about-project-logo__img" src="img/about-project/about-logo.png" alt="">
+              </picture>
+
+              <h2 class="about-project__title">
+                Formacar Crypto
+              </h2>
+
+              <p>
+                Formacar Crypto - это web3-подразделение Formacar. Наш основной проект в криптоиндустрии - первая GameFi
+                гоночная мобильная игра Formacar Action, в которой каждый игрок может выполянть онлайн и офлайн задания,
+                выигрывать токен FCG и приобретать NFT. Релиз альфа-версии Formacar Action состоялся в декабре 2022
+                года.
+              </p>
+
+              <p>
+                Play2earn — это основа игровой механики Formacar Action, а режим Drive2Earn — это наше будущее. Игроки
+                смогут получать награды за драйвактивности в реальном мире. Все что нужно — это смартфон, реальный
+                автомобиль, NFT, город и Formacar Action.
+              </p>
+
+              <div class="news-content__video">
+                <picture class="news-content__video-pic">
+                  <img src="img/about-project/about-project-1.png" alt="" class="news-content__video-img">
+                </picture>
+                <div class="play-button">
+                  <img src="img/common/play-button.svg" alt="" class="play-button__img">
+                </div>
+                <p class="news-content__video-time">1:03</p>
+              </div>
+
+              <div class="social">
+
+                <div class="social__text">
+                  Социальные сети
+                </div>
+
+                <div class="about-project__social-wr">
+                  <ul class="social__wr">
+                    <li class="social-card__item">
+                      <a class="social-card__link" target="_blank" href="https://www.facebook.com/Formacarcrypto"><img
+                          class="social-card__img" src="img/social/facebook.svg" alt=""></a>
+                    </li>
+                    <li class="social-card__item">
+                      <a class="social-card__link" target="_blank" href="https://twitter.com/Formacar_Crypto"><img
+                          class="social-card__img" src="img/social/twitter.svg" alt=""></a>
+                    </li>
+                    <li class="social-card__item">
+                      <a class="social-card__link" target="_blank" href="https://www.instagram.com/formacar_crypto"><img
+                          class="social-card__img" src="img/social/instagram.svg" alt=""></a>
+                    </li>
+                    <li class="social-card__item">
+                      <a class="social-card__link" target="_blank" href="https://t.me/Formacarcrypto"><img
+                          class="social-card__img" src="img/social/telegram.svg" alt=""></a>
+                    </li>
+                    <li class="social-card__item">
+                      <a class="social-card__link" target="_blank" href="https://discord.com/invite/Formacarcrypto"><img
+                          class="social-card__img" src="img/social/discord.svg" alt=""></a>
+                    </li>
+                  </ul>
+
+                  <div class="store">
+
+                    <a class="store-item" target="_blank" href="https://www.formacar.io">
+                      <div class="store-item__img-wr">
+                        <img class="store-item__img" src="img/social/test-flight.svg" alt="">
+                      </div>
+                      <div class="store-item__text">
+                        <span>Доступно в</span>
+                        <b>TestFlight</b>
+                      </div>
+                    </a>
+
+                    <a class="store-item" target="_blank"
+                      href="https://play.google.com/store/apps/details?id=com.formacar.android.action">
+                      <div class="store-item__img-wr">
+                        <img class="store-item__img" src="img/social/google-play.svg" alt="">
+                      </div>
+                      <div class="store-item__text">
+                        <span>Доступно в</span>
+                        <b>Google Play</b>
+                      </div>
+                    </a>
+
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </main>
+
+
+    @@include('tpls/footer.html',{})
+  </div>
+
+  @@include('tpls/modals.html', {})
+  <script src="./js/bundle.min.js"></script>
+</body>
+
+</html>
