@@ -196,7 +196,6 @@
   left: 0;
   width: 100%;
   height: 100vh;
-  max-height: 1000px;
   pointer-events: none;
   background-color: var(--bg-b_modal-overlay);
   opacity: 0;
@@ -404,6 +403,7 @@
 }
 
 .search__button {
+  border-right-color: initial;
   position: absolute;
   width: 1.8rem;
   height: 1.8rem;
@@ -785,6 +785,7 @@
 .news-card__top {
   width: 100%;
   height: 24rem;
+  overflow: hidden;
   position: relative;
 }
 
@@ -833,6 +834,11 @@
 
 .news-card:hover .news-card__descr, .news-card:hover .news-card__bottom {
   opacity: 0.7;
+  transition: 0.3s ease-in-out;
+}
+
+.news-card:hover .news-card__img {
+  transform: scale(1.1);
   transition: 0.3s ease-in-out;
 }
 
@@ -1034,8 +1040,9 @@
   content: none;
 }
 
-.breadcrumbs__item:hover {
+.breadcrumbs__item .breadcrumbs__link:hover {
   color: var(--c-accent);
+  transition: 0.3s ease-in-out;
 }
 
 .events-card {
@@ -1362,6 +1369,7 @@
   display: flex;
   height: 80rem;
   width: 130rem;
+  border-radius: 10px;
 }
 
 .modal-events__left {
@@ -1689,6 +1697,10 @@
   margin-bottom: 8.75rem;
 }
 
+.card {
+  position: relative;
+}
+
 .card-block {
   background: #FFFFFF;
   box-shadow: 0px 41px 30px -30px rgba(0, 0, 0, 0.2);
@@ -1837,6 +1849,7 @@
   position: absolute;
   right: 0rem;
   top: 0;
+  height: 102%;
 }
 
 .card-info {
@@ -3968,7 +3981,7 @@ header {
 }
 
 .tuning-card:hover .tuning-card__pic {
-  transform: scale(1.0265);
+  transform: scale(1.1);
 }
 
 .brands {
@@ -4066,11 +4079,12 @@ header {
 
 .filters-block__main {
   max-height: 25.5rem;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .filters-block__main::-webkit-scrollbar {
-  width: 0.31rem;
+  width: 0.5rem;
+  border-radius: 10px;
 }
 
 .filters-block__main::-webkit-scrollbar-track {
@@ -4079,6 +4093,7 @@ header {
 
 .filters-block__main::-webkit-scrollbar-thumb {
   background: #ECECEC;
+  border-radius: 100px;
 }
 
 .filters-block__main::-webkit-scrollbar-thumb:hover {

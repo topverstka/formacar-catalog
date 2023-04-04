@@ -32,6 +32,7 @@ if (document.querySelector('.offers-carousel')) {
     modules: [Pagination, Autoplay, EffectFade],
     spaceBetween: 10,
     loop: true,
+    speed: 600,
     autoplay: {
       delay: 3000,
     },
@@ -47,9 +48,9 @@ if (document.querySelector('.advertisement-carousel')) {
 
   let advertisementCarousel = new Swiper(".advertisement-carousel", {
     modules: [Pagination, Autoplay],
-
     spaceBetween: 10,
     loop: true,
+    speed: 600,
     slidesPerView: 1.33683,
     centeredSlides: true,
     autoplay: {
@@ -70,6 +71,7 @@ if (document.querySelector('.events-card__carousel')) {
 
     spaceBetween: 1,
     loop: true,
+    speed: 600,
     slidesPerView: 1,
     autoplay: {
       delay: 3000,
@@ -93,6 +95,7 @@ if (document.querySelector('.modal-events__carousel')) {
 
     spaceBetween: 1,
     loop: true,
+    speed: 600,
     slidesPerView: 1,
     autoplay: {
       delay: 3000,
@@ -111,7 +114,7 @@ if (document.querySelector('.modal-events__carousel')) {
 /////////////////////
 const swiper4 = new Swiper(".news-carousel--tuning", {
   modules: [Navigation],
-  speed: 500,
+  speed: 600,
   spaceBetween: 5,
   slidesPerView: 1.2,
 });
@@ -136,12 +139,13 @@ const swiper2 = new Swiper(".news-carousel--big", {
 
 const cardVideo = new Swiper(".card-video", {
   spaceBetween: 20,
+  speed: 600,
   slidesPerView: 2.3024,
 });
 
 const swiper = new Swiper('.news__swiper', {
   modules: [Navigation],
-  speed: 500,
+  speed: 600,
   spaceBetween: 40,
   slidesPerView: 'auto',
 });
@@ -151,7 +155,7 @@ const swiperGallery = document.querySelectorAll('.swiper-gallery');
 for (let i = 1; i < swiperGallery.length + 1; i++) {
   const swiper = new Swiper('.swiper-gallery-' + i, {
     modules: [Navigation],
-    speed: 500,
+    speed: 600,
     spaceBetween: 40,
     slidesPerView: 'auto',
     navigation: {

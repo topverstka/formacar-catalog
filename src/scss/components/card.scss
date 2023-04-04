@@ -4,6 +4,10 @@
   margin-bottom: 8.75rem;
 }
 
+.card {
+  position: relative;
+}
+
 .card-block {
   background: #FFFFFF;
   box-shadow: 0px 41px 30px -30px rgba(0, 0, 0, 0.2);
@@ -153,6 +157,7 @@
   position: absolute;
   right: 0rem;
   top: 0;
+  height: 102%;
 }
 
 .card-info {

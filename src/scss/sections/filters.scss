@@ -58,11 +58,12 @@
 
 .filters-block__main {
   max-height: 25.5rem;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .filters-block__main::-webkit-scrollbar {
-  width: 0.31rem;
+  width: 0.5rem;
+  border-radius: 10px;
 }
 
 .filters-block__main::-webkit-scrollbar-track {
@@ -71,11 +72,15 @@
 
 .filters-block__main::-webkit-scrollbar-thumb {
   background: #ECECEC;
+  border-radius: 100px;
 }
 
 .filters-block__main::-webkit-scrollbar-thumb:hover {
   background: #B4B4BF;
+
 }
+  
+
 
 .filters__search {
   position: relative;
