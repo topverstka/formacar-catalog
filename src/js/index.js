@@ -24,6 +24,7 @@ import "./libs/lazyload.min.js";
 let lazyLoadInstance = new LazyLoad();
 window.lazyload = lazyLoadInstance;
 
+// import "./libs/fancybox.umd.js"
 
 /**
  * Dropdown Select
@@ -40,6 +41,7 @@ import "./unstable/tabs.js";
 import "./utils/smooth-anchors.js";
 
 import "./components/carousels.js";
+import "./components/fancybox.js"
 import { doc } from "prettier";
 
 // Аккордеон

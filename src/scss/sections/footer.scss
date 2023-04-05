@@ -9,7 +9,7 @@
 .footer__separator {
   margin: 3rem 0;
   height: 1px;
-  background: #ECECEC;
+  background: #ececec;
 }
 
 .footer__nav {
@@ -26,12 +26,18 @@
 .footer__nav-link {
   font-size: 1.4rem;
   font-weight: 500;
+  transition: .3s ease-in-out;
+}
+
+.footer__nav-link:hover {
+  opacity: .7;
+  transition: .3s ease-in-out;
 }
 
 .footer__lang {
   display: flex;
   align-items: center;
-  padding: .6rem 1rem .6rem 1.4rem;
+  padding: 0.6rem 1rem 0.6rem 1.4rem;
   border: 1px solid #383838;
   border-radius: var(--brad-regular);
   margin-left: auto;
@@ -116,19 +122,19 @@
 }
 
 .footer__credits-link_twitter {
-  background: #40ABE2;
+  background: #40abe2;
 }
 
 .footer__credits-link_vk {
-  background: #0077FF;
+  background: #0077ff;
 }
 
 .footer__credits-link_youtube {
-  background: #FF0000;
+  background: #ff0000;
 }
 
 .footer__credits-link_instagram {
-  background: #B93088;
+  background: #b93088;
 }
 
 .footer__credits-link img,
@@ -149,8 +155,8 @@
 }
 
 .footer__download {
-  border: 1px solid #B4B4BF;
-  box-shadow:  0px 15px 25px rgba(204, 214, 240, 0.5);
+  border: 1px solid #b4b4bf;
+  box-shadow: 0px 15px 25px rgba(204, 214, 240, 0.5);
   border-radius: var(--brad-regular);
   overflow: hidden;
   width: 41.8rem;
@@ -161,13 +167,13 @@
 .footer__download-text {
   font-weight: 700;
   font-size: 2rem;
-  background: #EEF1F9;
+  background: #eef1f9;
   padding: 2.8rem;
   text-transform: uppercase;
 }
 
 .footer__download-shops {
-  background: #FFFFFF;
+  background: #ffffff;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -177,6 +183,12 @@
 .footer__download-block {
   display: flex;
   align-items: center;
+  transition: .3s ease-in-out;
+}
+
+.footer__download-block:hover {
+  opacity: .7;
+  transition: .3s ease-in-out;
 }
 
 .footer__download-img {

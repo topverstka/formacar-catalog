@@ -208,12 +208,12 @@
 
 .events-card__arrow-prev img {
   position: relative;
-  left: -2px;
+  left: -1px;
 }
 
 .events-card__arrow-next img {
   position: relative;
-  right: -2px;
+  right: 0;
 }
 
 .events-card__video-time {
@@ -246,6 +246,7 @@
 }
 
 .events-card__follow {
+  height: 6.4rem;
   padding: 2.2rem;
   width: 100%;
   background: #467EF3;
