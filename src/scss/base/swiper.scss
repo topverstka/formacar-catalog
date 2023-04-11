@@ -26,6 +26,11 @@
 
 .swiper-gallery .swiper-slide {
   width: 30rem;
+
+  @media screen and (max-width: $tablet) {
+    width: 22rem;
+    margin-bottom: 6rem;
+  }
 }
 
 .swiper-gallery-prev,
@@ -41,7 +46,11 @@
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
-  user-select: none;  
+  user-select: none;
+
+  @media screen and (max-width: 1450px) {
+    top: 38%;
+  }
 }
 
 .swiper-gallery-img {
@@ -58,4 +67,8 @@
 
 .swiper-gallery-next {
   right: -2rem;
+}
+
+.events-card__carousel .swiper-slide {
+  width: 100%;
 }

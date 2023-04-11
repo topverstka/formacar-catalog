@@ -1,22 +1,26 @@
-.brands{
- margin-bottom: 10rem;
+.brands {
+   margin-bottom: 10rem;
+
+   @media (max-width: $tablet) {
+      margin-bottom: 6rem;
+   }
 }
 
-.brands__gallery{
- display: grid;
- grid-template-columns: repeat(6, 1fr);
- gap: 2rem;
- width: 100%;
+.brands__gallery {
+   display: grid;
+   grid-template-columns: repeat(6, 1fr);
+   gap: 2rem;
+   width: 100%;
 }
 
-.brands-card{
- background: #FFFFFF;
- border-radius: var(--brad-regular);
- padding: 1rem 0rem;
- height: 8rem;
- transition: 0.4s;
+.brands-card {
+   background: #FFFFFF;
+   border-radius: var(--brad-regular);
+   padding: 1rem 0rem;
+   height: 8rem;
+   transition: 0.4s;
 }
 
-.brands-card:hover{
- opacity: 0.7; 
+.brands-card:hover {
+   opacity: 0.7;
 }

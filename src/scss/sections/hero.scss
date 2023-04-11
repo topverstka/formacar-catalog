@@ -1,7 +1,11 @@
-.hero{
- margin-bottom: 16rem;
+.hero {
+   margin-bottom: 16rem;
+
+   @media screen and (max-width: $tablet) {
+      margin-bottom: 10rem;
+   }
 }
 
-.hero__container{
- position: relative;
+.hero__container {
+   position: relative;
 }

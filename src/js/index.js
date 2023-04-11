@@ -112,10 +112,32 @@ if (document.querySelector('.card-expand')) {
   });
 }
 
+// FAQ event
+
 const faqItems = document.querySelectorAll('.faq-item__title');
 
 for (let faqItem of faqItems) {
-  faqItem.onclick = function() {
+  faqItem.onclick = function () {
     this.closest('.faq-item').classList.toggle('faq-item-active');
   }
+}
+
+// Button menu
+
+const btnMenu = document.querySelector('.btn-burger');
+const bodyFix = document.querySelector('body');
+const mobileMenu = document.querySelector('.mobile-menu');
+
+btnMenu.onclick = function () {
+  this.classList.toggle('btn-burger-active');
+  bodyFix.classList.toggle('body-fix');
+  mobileMenu.classList.toggle('mobile-menu-active');
+}
+
+// DropDown Mobile menu
+
+const mobileMenuDropdown = document.querySelector('.mobile-menu__nav-dropdown svg');
+
+mobileMenuDropdown.onclick = function() {
+  this.closest('.mobile-menu__nav-dropdown').classList.toggle('mobile-menu__nav-dropdown-active');
 }

@@ -5,10 +5,22 @@
 .news-carousel--big{
  margin-bottom: 0.5rem;
  height: 45rem;
+
+ @media screen and (max-width: $tablet) {
+     height: 35rem;
+   }
 }
 
 .news-carousel--small{
  height: 12.6rem;
+
+ @media (max-width: $tablet) {
+     height: 10rem;
+  }
+
+  @media (max-width: 950px) {
+     height: 8rem;
+  }
 }
 
 .news-carousel--small .news-carousel__img{
@@ -21,6 +33,10 @@
 
 .news-carousel__slide {
      cursor: pointer;
+}
+
+.news-carousel__slide img {
+     object-fit: cover;
 }
 
 .news-carousel--small .news-carousel__slide::after{

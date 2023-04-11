@@ -1,21 +1,48 @@
-.offers{
- width: 100%;
- height: 34.6rem;
- position: relative;
- margin-bottom: 3.75rem;
+.offers {
+   width: 100%;
+   height: 34.6rem;
+   position: relative;
+   margin-bottom: 6rem;
+
+   @media screen and (max-width: 1200px) {
+      height: 30rem;
+   }
+
+   @media screen and (max-width: $tablet) {
+      height: 25rem;
+   }
+
+   @media screen and (max-width: 900px) {
+      height: 20rem;
+   }
 }
 
-.offers-carousel{
- width: 100%;
- height: 100%;
+.offers .swiper-slide {
+   width: 100% !important;
 }
 
-.offers-carousel__pic{
- border-radius: var(--brad-regular);
+.offers-carousel {
+   width: 100%;
+   height: 100%;
 }
 
-.offers-carousel__img{
- border-radius: var(--brad-regular);
- object-fit: cover;
+.offers-carousel__pic {
+   border-radius: var(--brad-regular);
 }
 
+.offers-carousel__img {
+   border-radius: var(--brad-regular);
+   object-fit: cover;
+}
+
+.offers-mobile {
+   display: none;
+
+   @media screen and (max-width: 1450px) {
+      display: block;
+   }
+}
+
+.offers-carousel__slide {
+   cursor: pointer;
+}

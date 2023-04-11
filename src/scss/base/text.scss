@@ -1,17 +1,22 @@
 .section-title {
- margin-bottom: 4rem;
- font-size: 4.2rem;
- font-style: normal;
- font-weight: 700;
- text-transform: uppercase;
+   margin-bottom: 4rem;
+   font-size: 4.2rem;
+   font-style: normal;
+   font-weight: 700;
+   text-transform: uppercase;
+
+   @media screen and (max-width: $tablet) {
+      font-size: 3.2rem;
+   }
 }
 
+
 .section-desc {
- font-family: 'Oswald';
- font-size: 2rem;//20px
- font-weight: 400;
- letter-spacing: 0.1em;
- text-transform: uppercase;
- margin-bottom: 2rem;
+   font-family: 'Oswald';
+   font-size: 2rem; //20px
+   font-weight: 400;
+   letter-spacing: 0.1em;
+   text-transform: uppercase;
+   margin-bottom: 2rem;
 
 }

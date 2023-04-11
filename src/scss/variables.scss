@@ -7,7 +7,7 @@ $container-width: $max-width-container + $container-padding;
 
 $laptop-l: 1500px;
 $laptop: 1100px;
-$tablet: 800px;
+$tablet: 1024px;
 $mobile-l: 450px;
 $mobile-m: 390px;
 $mobile-s: 330px;
@@ -74,10 +74,10 @@ $error: var(--c-error);
   --brad-regular: 10px;
 
   // --container-padding: #{math.div($container-padding, 2) + "px"};
-  --container-padding: 15px;
+  --container-padding: 30px;
 
   @media (max-width: 1100px) {
-    --container-padding: 10px;
+    --container-padding: 30px;
   }
 
   --ff-regular: "Montserrat",

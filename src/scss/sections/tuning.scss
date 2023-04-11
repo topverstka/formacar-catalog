@@ -1,53 +1,74 @@
-.tuning{
- margin-bottom: 10rem;
+.tuning {
+   margin-bottom: 10rem;
+
+   @media (max-width: $tablet) {
+      margin-bottom: 6rem;
+   }
 }
 
-.tuning__gallery{
- display: grid;
- grid-template-columns: 34rem repeat(4, 1fr);
- gap: 2rem;
- width: 100%;
+.tuning__gallery {
+   display: grid;
+   grid-template-columns: 34rem repeat(4, 1fr);
+   gap: 2rem;
+   width: 100%;
+
+   @media (max-width: $tablet) {
+      grid-template-columns: 22rem repeat(4, 1fr);
+   }
 }
 
-.tuning-card{
- min-height: 10rem;
- border-radius: var(--brad-regular);
- overflow: hidden;
- position: relative;
+.tuning-card {
+   min-height: 10rem;
+   border-radius: var(--brad-regular);
+   overflow: hidden;
+   position: relative;
 }
 
-.tuning-card--tall{
- grid-row-start: 1;
- grid-row-end: 3;
- grid-column-start: 1;
+.tuning-card--tall {
+   grid-row-start: 1;
+   grid-row-end: 3;
+   grid-column-start: 1;
 }
 
-.tuning-card__pic{
- display: block;
- width: 100%;
- height: 100%;
- overflow: hidden;
- border-radius: var(--brad-regular);
- transition: 0.4s;
+.tuning-card__pic {
+   display: block;
+   width: 100%;
+   height: 100%;
+   overflow: hidden;
+   border-radius: var(--brad-regular);
+   transition: 0.4s;
 }
 
-.tuning-card__img{
- object-fit: cover;
- width: 100%;
- height: 100%;
- border-radius: var(--brad-regular);
+.tuning-card__img {
+   object-fit: cover;
+   width: 100%;
+   height: 100%;
+   border-radius: var(--brad-regular);
 }
 
-.tuning-card__name{
- position: absolute;
- bottom: 1.5rem;
- left: 1.5rem;
- text-transform: uppercase;
- color: #fff;
- font-weight: 700;
- font-size: 2rem;
+.tuning-card__name {
+   position: absolute;
+   bottom: 1.5rem;
+   left: 1.5rem;
+   right: 1.5rem;
+   text-transform: uppercase;
+   color: #fff;
+   font-weight: 700;
+   font-size: 2rem;
+
+   @media (max-width: 1500px) {
+      font-size: 1.6rem;
+   }
+
+   @media (max-width: 1200px) {
+      font-size: 1.4rem;
+   }
+
+   @media (max-width: 1100px) {
+      font-size: 1.2rem;
+   }
 }
 
-.tuning-card:hover .tuning-card__pic{
- transform: scale(1.1);
+.tuning-card:hover .tuning-card__pic {
+   transform: scale(1.1);
 }

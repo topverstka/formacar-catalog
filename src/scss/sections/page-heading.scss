@@ -1,13 +1,17 @@
-.page-heading_center{
- margin: 0 auto;
- width: fit-content;
+.page-heading_center {
+   margin: 0 auto;
+   width: fit-content;
 }
 
-.page__title{
- text-transform: uppercase;
- font-size: 2.8rem;
+.page__title {
+   text-transform: uppercase;
+   font-size: 2.8rem;
 }
 
-.page__desc{
- font-size: 3rem;
+.page__desc {
+   font-size: 3rem;
+
+   @media screen and (max-width: $tablet) {
+      font-size: 2rem;
+   }
 }

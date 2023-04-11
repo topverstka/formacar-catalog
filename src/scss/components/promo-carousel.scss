@@ -1,5 +1,17 @@
 .promo-carousel {
   height: 64rem;
+
+  @media screen and (max-width: 1450px) {
+    height: 55rem;
+  }
+
+  @media screen and (max-width: 1250px) {
+    height: 46rem;
+  }
+
+  @media screen and (max-width: $tablet) {
+    height: 37rem;
+  }
 }
 
 .promo-carousel__slide {
@@ -16,6 +28,19 @@
   box-shadow: 0px 41px 30px -30px rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(25px);
   border-radius: var(--brad-regular);
+
+  @media screen and (max-width: 1450px) {
+    width: 60rem;
+  }
+
+  @media screen and (max-width: 1250px) {
+    width: 50rem;
+  }
+
+  @media screen and (max-width: $tablet) {
+    width: 40rem;
+    padding: 3rem;
+  }
 }
 
 .promo-carousel__category {
@@ -24,6 +49,11 @@
   text-transform: uppercase;
   letter-spacing: 0.1em;
   margin-bottom: 8.7rem;
+
+  @media screen and (max-width: 1450px) {
+    margin-bottom: 3rem;
+    font-size: 1.6rem;
+  }
 }
 
 .promo-carousel__title {
@@ -33,6 +63,15 @@
   line-height: 5.2rem;
   text-transform: uppercase;
   transition: 0.4s;
+
+  @media screen and (max-width: 1450px) {
+    font-size: 2rem;
+    line-height: 2.4rem;
+  }
+
+  @media screen and (max-width: $tablet) {
+    margin-bottom: 3rem;
+  }
 }
 
 .promo-carousel__title:hover {
@@ -80,6 +119,25 @@
   width: 110rem;
   height: 64rem;
   border-radius: var(--brad-regular);
+
+  @media screen and (max-width: 1450px) {
+    width: 100rem;
+    height: 55rem;
+  }
+
+  @media screen and (max-width: 1250px) {
+    width: 80rem;
+    height: 45rem;
+  }
+
+  @media screen and (max-width: $tablet) {
+    width: 65rem;
+    height: 37rem;
+  }
+
+  @media screen and (max-width: 950px) {
+    width: 50rem;
+  }
 }
 
 .promo-carousel__hero img {

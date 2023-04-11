@@ -62,11 +62,19 @@ body {
   line-height: 1.2;
   color: $text-primary;
   background-color: var(--bg-app);
+
+  @media screen and (max-width: $tablet) {
+    font-size: 1.4rem;
+  }
 }
 
 body._lock {
   overflow: hidden;
   touch-action: none;
+}
+
+.body-fix {
+  overflow: hidden;
 }
 
 .wrapper {
@@ -105,11 +113,11 @@ body._lock {
   }
 
   @media (max-width: $mobile-l) {
-    --container-padding: 20px;
+    --container-padding: 30px;
   }
 
   @media (max-width: $mobile-m) {
-    --container-padding: 16px;
+    --container-padding: 30px;
   }
 }
  

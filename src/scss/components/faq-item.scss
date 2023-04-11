@@ -3,13 +3,17 @@
   border-radius: 10px;
   background: #fff;
   margin-bottom: 2rem;
-  user-select: none;  
+  user-select: none;
 }
 
 .faq-item__title {
   cursor: pointer;
   padding: 3rem 5rem 2rem 5rem;
   transition: .3s ease-in-out;
+
+  @media screen and (max-width: $tablet) {
+    padding: 3rem 5rem 2rem 3rem;
+  }
 }
 
 .faq-item__title:hover {
@@ -46,12 +50,25 @@
 .faq-item__imgs {
   gap: 3rem;
   display: flex;
+
+  @media screen and (max-width: $tablet) {
+    display: block;
+  }
 }
 
 .faq-item__img-wr {
   display: block;
   width: 36rem;
   height: fit-content;
+
+  @media screen and (max-width: 1300px) {
+    width: 50%;
+  }
+
+  @media screen and (max-width: $tablet) {
+    margin-bottom: 3rem;
+    width: 36rem;
+  }
 }
 
 .faq-item-active .faq-item__body {
@@ -65,13 +82,29 @@
 .faq-item__items {
   display: flex;
   gap: 0 10rem;
+
+  @media screen and (max-width: 1300px) {
+    gap: 0 3rem;
+  }
+
+  @media screen and (max-width: $tablet) {
+    display: block;
+  }
 }
 
 .faq-item__item {
   width: 36rem;
+
+  @media screen and (max-width: 1300px) {
+    width: 50%;
+  }
+
+  @media screen and (max-width: $tablet) {
+    display: block;
+  }
 }
 
-.faq-item__item img{
+.faq-item__item img {
   height: auto;
   margin-bottom: 1rem;
 }
@@ -79,6 +112,10 @@
 .faq-item__item-2-wr {
   display: flex;
   gap: 0 3rem;
+
+  @media screen and (max-width: $tablet) {
+    margin-bottom: 4rem;
+  }
 }
 
 .faq-item__item-wr {

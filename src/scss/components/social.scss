@@ -7,6 +7,10 @@
 	display: flex;
 	gap: 1rem;
 	margin-right: 4rem;
+
+	@media (max-width: $tablet) {
+		margin-bottom: 2rem;
+	 }
 }
 
 .social-card__item {

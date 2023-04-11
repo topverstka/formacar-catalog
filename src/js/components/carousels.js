@@ -26,24 +26,6 @@ if (document.querySelector('.promo-carousel')) {
 
 }
 
-if (document.querySelector('.offers-carousel')) {
-
-  let offersSlider = new Swiper(".offers-carousel", {
-    modules: [Pagination, Autoplay, EffectFade],
-    spaceBetween: 10,
-    loop: true,
-    speed: 600,
-    autoplay: {
-      delay: 3000,
-    },
-    pagination: {
-      el: ".offers-carousel__pagination",
-      clickable: true,
-    },
-  });
-
-}
-
 if (document.querySelector('.advertisement-carousel')) {
 
   let advertisementCarousel = new Swiper(".advertisement-carousel", {
@@ -60,6 +42,15 @@ if (document.querySelector('.advertisement-carousel')) {
       el: ".advertisement-carousel__pagination",
       clickable: true,
     },
+
+    breakpoints: {
+      300: {
+        slidesPerView: 1,
+      },
+      1024: {
+        slidesPerView: 1.33683,
+      }
+    }
   });
 
 }
@@ -111,7 +102,23 @@ if (document.querySelector('.modal-events__carousel')) {
   });
 
 }
-/////////////////////
+/////////////////////a
+
+const offersSlider = new Swiper(".offers-carousel", {
+  modules: [Pagination, Autoplay, EffectFade],
+  spaceBetween: 10,
+  loop: true,
+  speed: 600,
+  autoplay: {
+    delay: 3000,
+  },
+  pagination: {
+    el: ".offers-carousel__pagination",
+    clickable: true,
+  },
+});
+
+
 const swiper4 = new Swiper(".news-carousel--tuning", {
   modules: [Navigation],
   speed: 600,
@@ -148,6 +155,14 @@ const swiper = new Swiper('.news__swiper', {
   speed: 600,
   spaceBetween: 40,
   slidesPerView: 'auto',
+  breakpoints: {
+    300: {
+      spaceBetween: 25
+    },
+    1024: {
+      spaceBetween: 40
+    }
+  }
 });
 
 const swiperGallery = document.querySelectorAll('.swiper-gallery');
@@ -162,6 +177,15 @@ for (let i = 1; i < swiperGallery.length + 1; i++) {
       nextEl: '.swiper-gallery-next-' + i,
       prevEl: '.swiper-gallery-prev-' + i,
     },
+    breakpoints: {
+      300: {
+        spaceBetween: 25
+      },
+      1024: {
+        spaceBetween: 40
+      }
+    }
+
   });
 
 }

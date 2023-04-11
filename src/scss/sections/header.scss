@@ -1,23 +1,53 @@
 header {
   background: #fff;
   position: relative;
+  z-index: 6;
+
+  @media screen and (max-width: 1450px) {
+    border-bottom: 1px solid #ECECEC;
+  }
 }
 
 .header__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-right: 1rem;
 }
 
 .header__menu {
   display: flex;
   align-items: center;
+
+  @media screen and (max-width: 1450px) {
+    padding: 1rem 0;
+    width: 100%;
+  }
+
+}
+
+.header__menu .btn-burger {
+  margin-right: 2rem;
+  display: none;
+  margin-top: 8px;
+
+  @media screen and (max-width: 1450px) {
+    display: block;
+  }
 }
 
 .header__search {
   width: 46rem;
   margin-right: 4rem;
+
+  @media screen and (max-width: 1450px) {
+    width: 100%;
+  }
+}
+
+.header__nav {
+  @media screen and (max-width: 1450px) {
+    display: none;
+  }
 }
 
 .header__nav-links {
@@ -29,22 +59,24 @@ header {
 }
 
 .header__nav-item {
-  font-size: var(--fz-menu-items);
   font-weight: 700;
-  line-height: var(--lh-menu-items);
   transition: 0.4s;
   margin-right: 4rem;
   padding: 2rem 0;
-}
 
-.header__nav-item:nth-last-child(1) {
-  margin-right: 0;
+  @media screen and (max-width: 1600px) {
+    margin-right: 2rem;
+  }
 }
 
 .header__nav-link {
   display: block;
   font-size: 1.4rem;
   transition: 0.4s;
+
+  @media screen and (max-width: 1600px) {
+    font-size: 1.2rem;
+  }
 }
 
 .header__nav-link:hover {
@@ -66,6 +98,10 @@ header {
   display: flex;
   align-items: center;
   margin-right: 2rem;
+
+  @media screen and (max-width: 1450px) {
+    margin-right: 0;
+  }
 }
 
 .header__geo-icon {
@@ -91,6 +127,10 @@ header {
 .header-button {
   font-weight: 700;
   text-transform: uppercase;
+
+  @media screen and (max-width: 1450px) {
+    display: none;
+  }
 }
 
 
