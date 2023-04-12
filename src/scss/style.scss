@@ -56,7 +56,7 @@ html {
 }
 
 body {
-  min-width: 800px;
+  min-width: 850px;
   font-family: $ff-main;
   font-size: 1.6rem;
   font-weight: 400;
@@ -94,7 +94,21 @@ body._lock {
 }
 
 .fancybox__footer {
-  display: none;
+  display: none !important;
+}
+
+.fancybox__container {
+  max-width: 100% !important;
+}
+
+.fancybox__toolbar .is-right {
+    button {
+      display: none !important;
+    }
+
+    button:nth-last-child(1) {
+      display: block !important;
+    }
 }
 
 /*

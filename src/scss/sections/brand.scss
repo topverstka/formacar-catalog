@@ -72,6 +72,10 @@
      width: var(--size);
      height: var(--size);
      padding: 0;
+
+     @media screen and (max-width: 900px) {
+          --size: 13.00rem;
+     }
 }
 
 .brand .catalog-card__pic {
@@ -90,6 +94,10 @@
 
 .brand .catalog-card__name {
      display: block;
+
+     @media screen and (max-width: 900px) {
+          font-size: 1.6rem;
+     }
 }
 
 .brand .catalog-card__bottom {
@@ -132,6 +140,6 @@
      display: none;
 
      @media (max-width: 1500px) {
-         display: block;
+          display: block;
      }
 }

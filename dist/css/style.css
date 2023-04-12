@@ -2814,7 +2814,7 @@ html {
 }
 
 body {
-  min-width: 800px;
+  min-width: 850px;
   font-family: var(--ff-regular);
   font-size: 1.6rem;
   font-weight: 400;
@@ -2853,7 +2853,18 @@ body._lock {
 }
 
 .fancybox__footer {
-  display: none;
+  display: none !important;
+}
+
+.fancybox__container {
+  max-width: 100% !important;
+}
+
+.fancybox__toolbar .is-right button {
+  display: none !important;
+}
+.fancybox__toolbar .is-right button:nth-last-child(1) {
+  display: block !important;
 }
 
 /*
@@ -6358,6 +6369,11 @@ header {
   height: var(--size);
   padding: 0;
 }
+@media screen and (max-width: 900px) {
+  .brand .catalog-card__top {
+    --size: 13.00rem;
+  }
+}
 
 .brand .catalog-card__pic {
   height: auto;
@@ -6375,6 +6391,11 @@ header {
 
 .brand .catalog-card__name {
   display: block;
+}
+@media screen and (max-width: 900px) {
+  .brand .catalog-card__name {
+    font-size: 1.6rem;
+  }
 }
 
 .brand .catalog-card__bottom {
