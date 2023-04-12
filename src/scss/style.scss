@@ -56,6 +56,7 @@ html {
 }
 
 body {
+  min-width: 800px;
   font-family: $ff-main;
   font-size: 1.6rem;
   font-weight: 400;
@@ -73,7 +74,7 @@ body._lock {
   touch-action: none;
 }
 
-.body-fix {
+.body-fix, .filter-fix {
   overflow: hidden;
 }
 
@@ -90,6 +91,10 @@ body._lock {
   position: relative;
   z-index: 1;
   flex: 1 0 auto;
+}
+
+.fancybox__footer {
+  display: none;
 }
 
 /*

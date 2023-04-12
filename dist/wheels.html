@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css?_v=20230411222616" />
+    <link rel="stylesheet" href="./css/style.css?_v=20230412110639" />
 
     <!-- Отключить автодетект телефонов -->
     <meta name="format-detection" content="telephone=no" />
@@ -16,9 +16,7 @@
   </head>
   <body>
     <div class="wrapper">
-      <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js?_v=20230411222616"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css?_v=20230411222616" />
-<header class="header">
+      <header class="header">
   <div class="container header__container">
     <div class="header__menu">
       <div class="btn-burger">
@@ -186,8 +184,13 @@
         <aside class="main-sidebar">
          <section class="filters">
            <div class="filters-title">
-            <img src="img/common/filter-title.svg" alt="">
-            <p>Фильтр</p>
+              <div class="filters-title__wr">
+                <img src="img/common/filter-title.svg" alt="">
+                <p>Фильтр</p>
+              </div>
+              <div class="filters-close">
+                <img class="filters-close__img" src="img/common/close.svg" alt="">
+              </div>
            </div>
            
            <div class="filters-block">
@@ -429,14 +432,18 @@
              <li class="breadcrumbs__item">Диски</li>
            </ul>
           </div>
-          <h1 class="section-title">Диски</h1>
-
+          <div class="section-title-wr">
+            <h1 class="section-title">Диски</h1>
+            <div class="filters-title filters-btn">
+                <img src="img/common/filter-title.svg" alt="">
+                <p>Фильтр</p>
+            </div>
+          </div>
 
           <section class="catalog">
 
            <div class="catalog__gallery">
-
-             <article class="catalog-card @@class">
+              <article class="catalog-card @@class">
 
  <a href="#">
    <div class="catalog-card__top">
@@ -474,7 +481,7 @@
  </a>
  
 </article>
-             <article class="catalog-card @@class">
+              <article class="catalog-card @@class">
 
  <a href="#">
    <div class="catalog-card__top">
@@ -512,7 +519,7 @@
  </a>
  
 </article>
-             <article class="catalog-card @@class">
+              <article class="catalog-card @@class">
 
  <a href="#">
    <div class="catalog-card__top">
@@ -550,7 +557,7 @@
  </a>
  
 </article>
-             <article class="catalog-card @@class">
+              <article class="catalog-card @@class">
 
  <a href="#">
    <div class="catalog-card__top">
@@ -588,12 +595,7 @@
  </a>
  
 </article>
-           
-           </div>
-
-           <div class="catalog__gallery">
-
-            <article class="catalog-card @@class">
+              <article class="catalog-card @@class">
 
  <a href="#">
    <div class="catalog-card__top">
@@ -631,7 +633,7 @@
  </a>
  
 </article>
-            <article class="catalog-card @@class">
+              <article class="catalog-card @@class">
 
  <a href="#">
    <div class="catalog-card__top">
@@ -669,7 +671,7 @@
  </a>
  
 </article>
-            <article class="catalog-card @@class">
+              <article class="catalog-card @@class">
 
  <a href="#">
    <div class="catalog-card__top">
@@ -707,7 +709,7 @@
  </a>
  
 </article>
-            <article class="catalog-card @@class">
+              <article class="catalog-card @@class">
 
  <a href="#">
    <div class="catalog-card__top">
@@ -745,11 +747,9 @@
  </a>
  
 </article>
-          
-          </div>
-           
-          </section>
+           </div>
 
+          </section>
 
           <section class="offers">
            <div class="swiper offers-carousel">
@@ -1656,6 +1656,6 @@
 
 
 
-    <script src="./js/bundle.min.js?_v=20230411222616"></script>
+    <script src="./js/bundle.min.js?_v=20230412110639"></script>
   </body>
 </html>

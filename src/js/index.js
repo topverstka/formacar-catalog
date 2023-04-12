@@ -24,7 +24,12 @@ import "./libs/lazyload.min.js";
 let lazyLoadInstance = new LazyLoad();
 window.lazyload = lazyLoadInstance;
 
-// import "./libs/fancybox.umd.js"
+import { Fancybox } from "@fancyapps/ui";
+
+Fancybox.bind("[data-fancybox]", {
+  thumbs: true,
+});
+
 
 /**
  * Dropdown Select
@@ -41,7 +46,6 @@ import "./unstable/tabs.js";
 import "./utils/smooth-anchors.js";
 
 import "./components/carousels.js";
-import "./components/fancybox.js"
 import { doc } from "prettier";
 
 // Аккордеон
@@ -138,6 +142,22 @@ btnMenu.onclick = function () {
 
 const mobileMenuDropdown = document.querySelector('.mobile-menu__nav-dropdown svg');
 
-mobileMenuDropdown.onclick = function() {
+mobileMenuDropdown.onclick = function () {
   this.closest('.mobile-menu__nav-dropdown').classList.toggle('mobile-menu__nav-dropdown-active');
+}
+
+// Filter
+
+const filterBtn = document.querySelector('.filters-btn');
+const filterSideBar = document.querySelector('.filters');
+const filterClose = document.querySelector('.filters-close');
+
+filterBtn.onclick = function () {
+  filterSideBar.classList.add('filters-active');
+  bodyFix.classList.add('filter-fix');
+}
+
+filterClose.onclick = function () {
+  filterSideBar.classList.remove('filters-active');
+  bodyFix.classList.remove('filter-fix');
 }

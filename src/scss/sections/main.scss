@@ -5,8 +5,10 @@
 }
 
 .main-sidebar {
-   @media screen and (max-width: 1450px) {
-      display: none;
+   @media screen and (max-width: 1500px) {
+      .articles, .rek-sidebar, .brand {
+         display: none;
+      }
    }
 }
 

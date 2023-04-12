@@ -247,6 +247,12 @@
   transition: all 0.3s ease;
   --closer-color: #fff;
 }
+@media (max-width: 1400px) {
+  .b_modal__closer {
+    top: -3rem;
+    right: 0rem;
+  }
+}
 
 .b_modal__closer::before,
 .b_modal__closer::after {
@@ -1515,12 +1521,22 @@
 .modal-events {
   width: 130rem;
 }
+@media (max-width: 1400px) {
+  .modal-events {
+    width: 100%;
+  }
+}
 
 .modal-events__inner {
   display: flex;
   height: 80rem;
   width: 130rem;
   border-radius: 10px;
+}
+@media (max-width: 1400px) {
+  .modal-events__inner {
+    width: 100%;
+  }
 }
 
 .modal-events__left {
@@ -1847,6 +1863,11 @@
   position: relative;
   margin-bottom: 8.75rem;
 }
+@media (max-width: 1450px) {
+  .card__items {
+    width: 100%;
+  }
+}
 
 .card {
   position: relative;
@@ -1860,6 +1881,21 @@
   padding: 2.5rem;
   width: 66.4rem;
   margin-bottom: 8rem;
+}
+@media (max-width: 1450px) {
+  .card-block {
+    width: 100rem;
+  }
+}
+@media (max-width: 1200px) {
+  .card-block {
+    width: 80rem;
+  }
+}
+@media (max-width: 1100px) {
+  .card-block {
+    width: 66.4rem;
+  }
 }
 
 .card-block--full {
@@ -2002,12 +2038,28 @@
   top: 0;
   height: 102%;
 }
+@media (max-width: 1000px) {
+  .card__pic {
+    right: -2rem;
+    width: 35rem;
+  }
+}
+@media (max-width: 900px) {
+  .card__pic {
+    width: 30rem;
+  }
+}
 
 .card-info {
   width: 100%;
   background: #FFFFFF;
   border-radius: var(--brad-regular);
   padding: 3rem 5rem 4rem 5rem;
+}
+@media (max-width: 1500px) {
+  .card-info {
+    margin-bottom: 6rem;
+  }
 }
 
 .card-carousel {
@@ -2046,6 +2098,11 @@
 .card-video {
   height: 22rem;
   margin-bottom: 2.5rem;
+}
+@media (max-width: 1000px) {
+  .card-video {
+    height: 18rem;
+  }
 }
 
 .card-video__block {
@@ -2757,6 +2814,7 @@ html {
 }
 
 body {
+  min-width: 800px;
   font-family: var(--ff-regular);
   font-size: 1.6rem;
   font-weight: 400;
@@ -2775,7 +2833,7 @@ body._lock {
   touch-action: none;
 }
 
-.body-fix {
+.body-fix, .filter-fix {
   overflow: hidden;
 }
 
@@ -2792,6 +2850,10 @@ body._lock {
   position: relative;
   z-index: 1;
   flex: 1 0 auto;
+}
+
+.fancybox__footer {
+  display: none;
 }
 
 /*
@@ -4624,6 +4686,14 @@ html.with-fancybox body.hide-scrollbar {
   margin-bottom: 2rem;
 }
 
+@media (max-width: 1500px) {
+  .section-title-wr {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+}
+
 .btn {
   display: flex;
   align-items: center;
@@ -5067,8 +5137,8 @@ header {
   min-height: 40vh;
 }
 
-@media screen and (max-width: 1450px) {
-  .main-sidebar {
+@media screen and (max-width: 1500px) {
+  .main-sidebar .articles, .main-sidebar .rek-sidebar, .main-sidebar .brand {
     display: none;
   }
 }
@@ -5806,7 +5876,7 @@ header {
 }
 
 .rek-sidebar {
-  display: block !important;
+  display: block;
   width: 100%;
   padding: 1rem;
   height: auto;
@@ -6049,11 +6119,60 @@ header {
   border-radius: var(--brad-regular);
   padding: 3rem;
 }
+@media (max-width: 1500px) {
+  .filters {
+    z-index: 10;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(100px);
+    position: fixed;
+    right: 0;
+    border-radius: 0;
+    top: 0;
+    width: 450px;
+    transition: 0.3s ease-in-out;
+    overflow-y: scroll;
+    height: 100%;
+  }
+}
+
+.filters-active {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(0);
+  transition: 0.3s ease-in-out;
+}
+.filters-active .filters-title {
+  margin-bottom: 3rem;
+}
+
+.filters-close {
+  display: none;
+}
+@media (max-width: 1500px) {
+  .filters-close {
+    display: block;
+  }
+}
 
 .filters-title {
   display: flex;
+  justify-content: space-between;
+}
+
+.filters-title__wr {
+  display: flex;
   align-items: center;
   margin-bottom: 1.88rem;
+}
+
+.filters-btn {
+  display: none;
+}
+@media (max-width: 1500px) {
+  .filters-btn {
+    display: flex;
+  }
 }
 
 .filters-title img {
@@ -6269,6 +6388,37 @@ header {
 .brand .catalog-card__model {
   top: 0;
   left: 0;
+}
+
+@media (max-width: 1500px) {
+  .brand-block-mobile-wr {
+    display: flex;
+    gap: 2rem;
+  }
+  .brand-block-mobile-wr .catalog-card {
+    border: 1px solid #ECECEC;
+    padding: 1.5rem 3rem;
+    margin-bottom: 2rem;
+  }
+  .brand-block-mobile-wr .brand-block {
+    padding: 2rem;
+    width: 50%;
+  }
+}
+@media (max-width: 1000px) {
+  .brand-block-mobile-wr {
+    display: flex;
+    gap: 0;
+  }
+}
+
+.brand-mobile {
+  display: none;
+}
+@media (max-width: 1500px) {
+  .brand-mobile {
+    display: block;
+  }
 }
 
 .main__container-configurator {

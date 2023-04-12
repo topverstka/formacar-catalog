@@ -2,6 +2,10 @@
   width: 102.4rem;
   position: relative;
   margin-bottom: 8.75rem;
+
+  @media (max-width: 1450px) {
+		width: 100%;
+	}
 }
 
 .card {
@@ -16,6 +20,18 @@
   padding: 2.5rem;
   width: 66.4rem;
   margin-bottom: 8rem;
+
+  @media (max-width: 1450px) {
+		width: 100rem
+	}
+
+  @media (max-width: 1200px) {
+		width: 80rem
+	}
+
+  @media (max-width: 1100px) {
+		width: 66.4rem;
+	}
 }
 
 .card-block--full {
@@ -158,6 +174,15 @@
   right: 0rem;
   top: 0;
   height: 102%;
+
+  @media (max-width: 1000px) {
+		right: -2rem;
+    width: 35rem;
+	}
+
+  @media (max-width: 900px) {
+    width: 30rem;
+	}
 }
 
 .card-info {
@@ -165,6 +190,10 @@
   background: #FFFFFF;
   border-radius: var(--brad-regular);
   padding: 3rem 5rem 4rem 5rem;
+
+  @media (max-width: 1500px) {
+		margin-bottom: 6rem;
+	}
 }
 
 .card-carousel {
@@ -203,6 +232,10 @@
 .card-video {
   height: 22rem;
   margin-bottom: 2.50rem;
+
+  @media (max-width: 1000px) {
+    height: 18rem;
+	}
 }
 
 .card-video__block {

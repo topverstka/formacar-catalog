@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css?_v=20230411222616" />
+    <link rel="stylesheet" href="./css/style.css?_v=20230412110639" />
 
     <!-- Отключить автодетект телефонов -->
     <meta name="format-detection" content="telephone=no" />
@@ -16,9 +16,7 @@
   </head>
   <body>
     <div class="wrapper">
-      <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js?_v=20230411222616"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css?_v=20230411222616" />
-<header class="header">
+      <header class="header">
   <div class="container header__container">
     <div class="header__menu">
       <div class="btn-burger">
@@ -185,10 +183,15 @@
 
         <aside class="main-sidebar">
          <section class="filters">
-           <div class="filters-title">
-            <img src="img/common/filter-title.svg" alt="">
-            <p>Фильтр</p>
-           </div>
+            <div class="filters-title">
+              <div class="filters-title__wr">
+                <img src="img/common/filter-title.svg" alt="">
+                <p>Фильтр</p>
+              </div>
+              <div class="filters-close">
+                <img class="filters-close__img" src="img/common/close.svg" alt="">
+              </div>
+          </div>
            
            <div class="filters-block">
              <div class="filters-block__top">
@@ -425,7 +428,14 @@
              <li class="breadcrumbs__item"><Категория тюнинга></li>
            </ul>
           </div>
-          <h2 class="section-title page__title"><Категория тюнинга></h2>
+          <div class="section-title-wr">
+            <h2 class="section-title page__title"><Категория тюнинга></h2>
+            <div class="filters-title filters-btn">
+                <img src="img/common/filter-title.svg" alt="">
+                <p>Фильтр</p>
+            </div>
+          </div>
+          
 
 
           <section class="catalog">
@@ -544,13 +554,7 @@
  </a>
  
 </article> 
-             
-           
-           </div>
-
-           <div class="catalog__gallery">
-
-            <article class="catalog-card catalog-card__no-list">
+             <article class="catalog-card catalog-card__no-list">
 
  <a href="#">
    <div class="catalog-card__top">
@@ -578,7 +582,7 @@
  </a>
  
 </article>
-            <article class="catalog-card catalog-card__no-list">
+             <article class="catalog-card catalog-card__no-list">
 
  <a href="#">
    <div class="catalog-card__top">
@@ -606,7 +610,7 @@
  </a>
  
 </article>
-            <article class="catalog-card catalog-card__no-list">
+             <article class="catalog-card catalog-card__no-list">
 
  <a href="#">
    <div class="catalog-card__top">
@@ -634,7 +638,7 @@
  </a>
  
 </article>
-            <article class="catalog-card catalog-card__no-list">
+             <article class="catalog-card catalog-card__no-list">
 
  <a href="#">
    <div class="catalog-card__top">
@@ -662,8 +666,9 @@
  </a>
  
 </article>
-          
-          </div>
+           
+           </div>
+
            
           </section>
 
@@ -825,11 +830,6 @@
  </a>
  
 </article>
-            
-            </div>
-
-            <div class="catalog__gallery">
- 
              <article class="catalog-card catalog-card__no-list">
 
  <a href="#">
@@ -943,15 +943,13 @@
  
 </article>
             
+
             </div>
-            
+
            </section>
 
            <button class="button button--primary button--light news__button-load">Загрузить ещё</button>
            
-
-
-
          </div>
         </div>
        </div>
@@ -1650,6 +1648,6 @@
 
 
 
-    <script src="./js/bundle.min.js?_v=20230411222616"></script>
+    <script src="./js/bundle.min.js?_v=20230412110639"></script>
   </body>
 </html>

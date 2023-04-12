@@ -25,10 +25,15 @@
 
         <aside class="main-sidebar">
          <section class="filters">
-           <div class="filters-title">
-            <img src="img/common/filter-title.svg" alt="">
-            <p>Фильтр</p>
-           </div>
+            <div class="filters-title">
+              <div class="filters-title__wr">
+                <img src="img/common/filter-title.svg" alt="">
+                <p>Фильтр</p>
+              </div>
+              <div class="filters-close">
+                <img class="filters-close__img" src="img/common/close.svg" alt="">
+              </div>
+          </div>
            
            <div class="filters-block">
              <div class="filters-block__top">
@@ -115,7 +120,14 @@
              <li class="breadcrumbs__item"><Категория тюнинга></li>
            </ul>
           </div>
-          <h2 class="section-title page__title"><Категория тюнинга></h2>
+          <div class="section-title-wr">
+            <h2 class="section-title page__title"><Категория тюнинга></h2>
+            <div class="filters-title filters-btn">
+                <img src="img/common/filter-title.svg" alt="">
+                <p>Фильтр</p>
+            </div>
+          </div>
+          
 
 
           <section class="catalog">
@@ -126,18 +138,13 @@
              @@include('tpls/cards/catalog-no-list.html',{img: "interior/7.jpg", category: "BRABUS", name: "BRABUS VALVE-CONTRILLED EXHAUST SYSTEM FOR A CLASS"})
              @@include('tpls/cards/catalog-no-list.html',{img: "exhaust-systems/2.jpg", category: "AKRAPOVIC EXHAUST SYSTEM", name: "Audi RS 5 Coupé (B8) 2015"})
              @@include('tpls/cards/catalog-no-list.html',{img: "exhaust-systems/3.jpg", category: "DINAN ENGINEERING", name: "BMW F10 M5"}) 
-             
+             @@include('tpls/cards/catalog-no-list.html',{img: "suspension/1.jpg", category: "H&R", name: "STREET PERFORMANCE"})
+             @@include('tpls/cards/catalog-no-list.html',{img: "suspension/2.jpg", category: "KW SUSPENSIONS", name: "HEIHGT ADJUSTABLE SPRING KIT"})
+             @@include('tpls/cards/catalog-no-list.html',{img: "suspension/3.jpg", category: "DINAN ENGINEERING", name: "BMW F80 M3 F82 F83 M4 (EDC Only)"})
+             @@include('tpls/cards/catalog-no-list.html',{img: "suspension/4.jpg", category: "JRZ SUSPENSION", name: "11 SERIES"})
            
            </div>
 
-           <div class="catalog__gallery">
-
-            @@include('tpls/cards/catalog-no-list.html',{img: "suspension/1.jpg", category: "H&R", name: "STREET PERFORMANCE"})
-            @@include('tpls/cards/catalog-no-list.html',{img: "suspension/2.jpg", category: "KW SUSPENSIONS", name: "HEIHGT ADJUSTABLE SPRING KIT"})
-            @@include('tpls/cards/catalog-no-list.html',{img: "suspension/3.jpg", category: "DINAN ENGINEERING", name: "BMW F80 M3 F82 F83 M4 (EDC Only)"})
-            @@include('tpls/cards/catalog-no-list.html',{img: "suspension/4.jpg", category: "JRZ SUSPENSION", name: "11 SERIES"})
-          
-          </div>
            
           </section>
 
@@ -191,25 +198,18 @@
              @@include('tpls/cards/catalog-no-list.html',{img: "brake-systems/2.jpg", category: "AUTOTECKNIC", name: "SCION FRS | SUBARU BRZ"})
              @@include('tpls/cards/catalog-no-list.html',{img: "brake-systems/3.jpg", category: "BREMBO", name: "CADILLAC CTS"})
              @@include('tpls/cards/catalog-no-list.html',{img: "brake-systems/4.jpg", category: "COBB", name: "SUBARU STI 2005-2014"})
-            
-            </div>
-
-            <div class="catalog__gallery">
- 
              @@include('tpls/cards/catalog-no-list.html',{img: "vinyls/1.jpg", category: "Formacar SCL", name: "Metallic 000000"})
              @@include('tpls/cards/catalog-no-list.html',{img: "vinyls/2.jpg", category: "Formacar SCL", name: "Metallic 000001"})
              @@include('tpls/cards/catalog-no-list.html',{img: "vinyls/3.jpg", category: "Formacar SCL", name: "Metallic 000002"})
              @@include('tpls/cards/catalog-no-list.html',{img: "vinyls/4.jpg", category: "Formacar SCL", name: "Metallic 000003"})
             
+
             </div>
-            
+
            </section>
 
            <button class="button button--primary button--light news__button-load">Загрузить ещё</button>
            
-
-
-
          </div>
         </div>
        </div>

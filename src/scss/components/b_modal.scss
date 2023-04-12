@@ -68,6 +68,11 @@
   background-color: transparent;
   transition: all 0.3s ease;
   --closer-color: #fff;
+
+  @media (max-width: 1400px) {
+		top: -3rem;
+    right: 0rem;
+	}
 }
 .b_modal__closer::before,
 .b_modal__closer::after {

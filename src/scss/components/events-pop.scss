@@ -1,5 +1,9 @@
 .modal-events {
   width: 130rem;
+
+  @media (max-width: 1400px) {
+		width: 100%;
+	}
 }
 
 .modal-events__inner {
@@ -7,6 +11,10 @@
   height: 80rem;
   width: 130rem;
   border-radius: 10px;
+
+  @media (max-width: 1400px) {
+    width: 100%;
+  }
 }
 
 .modal-events__left {

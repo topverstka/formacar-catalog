@@ -55,7 +55,7 @@
   "type": "module",
   "private": true,
   "dependencies": {
-    "@fancyapps/ui": "^5.0.14",
+    "@fancyapps/ui": "^5.0.15",
     "swiper": "^8.4.7"
   }
 }

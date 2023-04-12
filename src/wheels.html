@@ -26,8 +26,13 @@
         <aside class="main-sidebar">
          <section class="filters">
            <div class="filters-title">
-            <img src="img/common/filter-title.svg" alt="">
-            <p>Фильтр</p>
+              <div class="filters-title__wr">
+                <img src="img/common/filter-title.svg" alt="">
+                <p>Фильтр</p>
+              </div>
+              <div class="filters-close">
+                <img class="filters-close__img" src="img/common/close.svg" alt="">
+              </div>
            </div>
            
            <div class="filters-block">
@@ -125,31 +130,28 @@
              <li class="breadcrumbs__item">Диски</li>
            </ul>
           </div>
-          <h1 class="section-title">Диски</h1>
-
+          <div class="section-title-wr">
+            <h1 class="section-title">Диски</h1>
+            <div class="filters-title filters-btn">
+                <img src="img/common/filter-title.svg" alt="">
+                <p>Фильтр</p>
+            </div>
+          </div>
 
           <section class="catalog">
 
            <div class="catalog__gallery">
-
-             @@include('tpls/cards/catalog.html',{img: "wheels/wheels-1.jpg", category: "AIRTEKK", name: "TANKEN"})
-             @@include('tpls/cards/catalog.html',{img: "wheels/wheels-2.jpg", category: "CORSE WERKS", name: "Toro"})
-             @@include('tpls/cards/catalog.html',{img: "wheels/wheels-3.jpg", category: "YIDO PERFORMANCE", name: "YP SERIES YP3"})
-             @@include('tpls/cards/catalog.html',{img: "wheels/wheels-4.jpg", category: "3SDM", name: "CT216"})
-           
+              @@include('tpls/cards/catalog.html',{img: "wheels/wheels-1.jpg", category: "AIRTEKK", name: "TANKEN"})
+              @@include('tpls/cards/catalog.html',{img: "wheels/wheels-2.jpg", category: "CORSE WERKS", name: "Toro"})
+              @@include('tpls/cards/catalog.html',{img: "wheels/wheels-3.jpg", category: "YIDO PERFORMANCE", name: "YP SERIES YP3"})
+              @@include('tpls/cards/catalog.html',{img: "wheels/wheels-4.jpg", category: "3SDM", name: "CT216"})
+              @@include('tpls/cards/catalog.html',{img: "wheels/wheels-5.jpg", category: "AL13", name: "AL13 R-Series R20"})
+              @@include('tpls/cards/catalog.html',{img: "wheels/wheels-6.jpg", category: "AL13", name: "R-SERIES R30-R"})
+              @@include('tpls/cards/catalog.html',{img: "wheels/wheels-7.jpg", category: "AL13", name: "R-SERIES R110"})
+              @@include('tpls/cards/catalog.html',{img: "wheels/wheels-8.jpg", category: "AL13", name: "LUX-SERIES LUX 02"})
            </div>
 
-           <div class="catalog__gallery">
-
-            @@include('tpls/cards/catalog.html',{img: "wheels/wheels-5.jpg", category: "AL13", name: "AL13 R-Series R20"})
-            @@include('tpls/cards/catalog.html',{img: "wheels/wheels-6.jpg", category: "AL13", name: "R-SERIES R30-R"})
-            @@include('tpls/cards/catalog.html',{img: "wheels/wheels-7.jpg", category: "AL13", name: "R-SERIES R110"})
-            @@include('tpls/cards/catalog.html',{img: "wheels/wheels-8.jpg", category: "AL13", name: "LUX-SERIES LUX 02"})
-          
-          </div>
-           
           </section>
-
 
           <section class="offers">
            <div class="swiper offers-carousel">
