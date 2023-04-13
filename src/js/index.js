@@ -146,6 +146,17 @@ mobileMenuDropdown.onclick = function () {
   this.closest('.mobile-menu__nav-dropdown').classList.toggle('mobile-menu__nav-dropdown-active');
 }
 
+// Maine menu active
+
+const newsMenuBtn = document.querySelector('.news-menu__item svg');
+const newsMenuItem = document.querySelector('.news-menu__child');
+
+
+newsMenuBtn.onclick = function () {
+  this.classList.toggle('news-menu__item-arrow');
+  newsMenuItem.classList.toggle('news-menu__child-active');
+}
+
 // Filter
 
 const filterBtn = document.querySelector('.filters-btn');
@@ -161,3 +172,6 @@ filterClose.onclick = function () {
   filterSideBar.classList.remove('filters-active');
   bodyFix.classList.remove('filter-fix');
 }
+
+
+

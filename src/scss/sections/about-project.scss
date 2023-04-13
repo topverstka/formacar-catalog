@@ -50,7 +50,7 @@
 .about-project__social-wr {
    display: flex;
 
-   @media (max-width: $tablet) {
+   @media (max-width: 970px) {
       display: block;
    }
 }

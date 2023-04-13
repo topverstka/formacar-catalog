@@ -11,6 +11,10 @@
 	@media (max-width: $tablet) {
 		margin-bottom: 2rem;
 	}
+
+	@media (max-width: 1000px) {
+		margin-right: 1rem;
+	}
 }
 
 .social-card__item {

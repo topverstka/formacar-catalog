@@ -45,13 +45,10 @@
    }
 
    @media (max-width: $tablet) {
+      grid-template-columns: 25rem auto;
       column-gap: 3rem;
    }
 
-   @media (max-width: 1100px) {
-      grid-template-columns: 25rem auto;
-      column-gap: 2rem;
-   }
 }
 
 .main__container-news {
