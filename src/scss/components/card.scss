@@ -34,6 +34,14 @@
    width: 100%;
 }
 
+.card-block-car {
+   
+   @media (max-width: $tablet) {
+      width: 61%;
+   }
+
+}
+
 .card-category {
    font-weight: 600;
    font-size: 2rem;

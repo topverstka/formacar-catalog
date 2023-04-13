@@ -51,8 +51,8 @@ import { doc } from "prettier";
 // Аккордеон
 // const accordions = new DismalModules.Accordions()
 
-// Модальные окна
-// const modals = new DismalModules.Modals()
+//Модальные окна
+const modals = new DismalModules.Modals()
 
 // Табы
 // DismalModules.tabs()
@@ -145,16 +145,3 @@ const mobileMenuDropdown = document.querySelector('.mobile-menu__nav-dropdown sv
 mobileMenuDropdown.onclick = function () {
   this.closest('.mobile-menu__nav-dropdown').classList.toggle('mobile-menu__nav-dropdown-active');
 }
-
-// Maine menu active
-
-const newsMenuBtn = document.querySelector('.news-menu__item svg');
-const newsMenuItem = document.querySelector('.news-menu__child');
-
-
-newsMenuBtn.onclick = function () {
-  this.classList.toggle('news-menu__item-arrow');
-  newsMenuItem.classList.toggle('news-menu__child-active');
-}
-
-

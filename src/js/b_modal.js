@@ -154,6 +154,7 @@ class b_modal {
     openButtons.forEach((button) => {
       button.addEventListener("click", () => {
         this.handleOpen(button);
+        document.body.classList.add('_lock');
       });
     });
 
@@ -161,6 +162,7 @@ class b_modal {
     closeButtons.forEach((button) => {
       button.addEventListener("click", () => {
         this.handleClose(button);
+        document.body.classList.remove('_lock');
       });
     });
   }
@@ -180,6 +182,7 @@ class b_modal {
     setTimeout(() => {
       pop.classList.add("_show");
     });
+    document.body.classList.add('_lock');
     window.location.hash = id;
     const event = new Event("b_modal-open");
     pop.dispatchEvent(event);
@@ -191,7 +194,9 @@ class b_modal {
     const b_modal = document.querySelector(`#${id}`);
     if (b_modal) {
       this.closePop(id);
+      document.body.classList.remove('_lock');
     } else {
+      document.body.classList.remove('_lock');
       this.makeInfoPop(`Попапа "#${id}" нет. Проверь айди`);
     }
   }
@@ -201,6 +206,7 @@ class b_modal {
     if (pop.classList.contains("_show")) {
       pop.classList.remove("_show");
     }
+    document.body.classList.remove('_lock');
     this.resetHash();
     const event = new Event("b_modal-close");
     pop.dispatchEvent(event);
