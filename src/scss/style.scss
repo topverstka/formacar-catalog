@@ -7,108 +7,109 @@
 
 // Шрифты
 @include font("Oswald",
-  normal,
-  400,
-  "../resources/fonts/Oswald-regular"
+   normal,
+   400,
+   "../resources/fonts/Oswald-regular"
 );
 
 @include font("Montserrat",
-  normal,
-  400,
-  "../resources/fonts/Montserrat-Regular"
+   normal,
+   400,
+   "../resources/fonts/Montserrat-Regular"
 );
 
 @include font("Montserrat",
-  normal,
-  500,
-  "../resources/fonts/Montserrat-Medium"
+   normal,
+   500,
+   "../resources/fonts/Montserrat-Medium"
 );
 
 @include font("Montserrat",
-  normal,
-  600,
-  "../resources/fonts/Montserrat-SemiBold"
+   normal,
+   600,
+   "../resources/fonts/Montserrat-SemiBold"
 );
 
 @include font("Montserrat",
-  normal,
-  700,
-  "../resources/fonts/Montserrat-Bold"
+   normal,
+   700,
+   "../resources/fonts/Montserrat-Bold"
 );
 
 @include font("Montserrat",
-  normal,
-  800,
-  "../resources/fonts/Montserrat-ExtraBold"
+   normal,
+   800,
+   "../resources/fonts/Montserrat-ExtraBold"
 );
 
 @include font("Montserrat",
-  normal,
-  900,
-  "../resources/fonts/Montserrat-Black"
+   normal,
+   900,
+   "../resources/fonts/Montserrat-Black"
 );
 
 // Сброс CSS
 @import "./reset";
 
 html {
-  font-size: 10px;
+   font-size: 10px;
 }
 
 body {
-  min-width: 850px;
-  font-family: $ff-main;
-  font-size: 1.6rem;
-  font-weight: 400;
-  line-height: 1.2;
-  color: $text-primary;
-  background-color: var(--bg-app);
+   min-width: 850px;
+   font-family: $ff-main;
+   font-size: 1.6rem;
+   font-weight: 400;
+   line-height: 1.2;
+   color: $text-primary;
+   background-color: var(--bg-app);
 
-  @media screen and (max-width: $tablet) {
-    font-size: 1.4rem;
-  }
+   @media screen and (max-width: $tablet) {
+      font-size: 1.4rem;
+   }
 }
 
 body._lock {
-  overflow: hidden;
-  touch-action: none;
+   overflow: hidden;
+   touch-action: none;
 }
 
-.body-fix, .filter-fix {
-  overflow: hidden;
+.body-fix,
+.filter-fix {
+   overflow: hidden;
 }
 
 .wrapper {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  min-height: 100%;
-  overflow: hidden;
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   min-height: 100%;
+   overflow: hidden;
 }
 
 .wrapper>.content {
-  position: relative;
-  z-index: 1;
-  flex: 1 0 auto;
+   position: relative;
+   z-index: 1;
+   flex: 1 0 auto;
 }
 
 .fancybox__footer {
-  display: none !important;
+   display: none !important;
 }
 
 .fancybox__container {
-  max-width: 100% !important;
+   max-width: 100% !important;
 }
 
 .fancybox__toolbar .is-right {
-    button {
+   button {
       display: none !important;
-    }
+   }
 
-    button:nth-last-child(1) {
+   button:nth-last-child(1) {
       display: block !important;
-    }
+   }
 }
 
 /*
@@ -117,29 +118,29 @@ body._lock {
 Например header__container, main__container и т.д.
 */
 [class*="__container"] {
-  @if ($max-width-container > 0) {
-    box-sizing: content-box;
-    max-width: $max-width-container;
-    margin: 0 auto;
-  }
+   @if ($max-width-container > 0) {
+      box-sizing: content-box;
+      max-width: $max-width-container;
+      margin: 0 auto;
+   }
 
-  @if ($container-padding > 0) {
-    padding: 0 var(--container-padding);
-  }
+   @if ($container-padding > 0) {
+      padding: 0 var(--container-padding);
+   }
 
-  @media (max-width: $tablet) {
-    --container-padding: 30px;
-  }
+   @media (max-width: $tablet) {
+      --container-padding: 30px;
+   }
 
-  @media (max-width: $mobile-l) {
-    --container-padding: 30px;
-  }
+   @media (max-width: $mobile-l) {
+      --container-padding: 30px;
+   }
 
-  @media (max-width: $mobile-m) {
-    --container-padding: 30px;
-  }
+   @media (max-width: $mobile-m) {
+      --container-padding: 30px;
+   }
 }
- 
+
 // Библиотеки
 @import "./libs/swiper";
 // @import "./libs/lightgallery";

@@ -1,69 +1,68 @@
-// Основной шаблон кнопки
 .btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 54px;
-  padding: 0 50px;
-  font-size: 0.875rem;
-  font-weight: 700;
-  white-space: nowrap;
-  user-select: none;
-  border-radius: 50px;
-  transition: $tr;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 54px;
+   padding: 0 50px;
+   font-size: 0.875rem;
+   font-weight: 700;
+   white-space: nowrap;
+   user-select: none;
+   border-radius: 50px;
+   transition: $tr;
 
-  @media (any-hover: hover) {
-    &:hover {
-      background: #000;
-    }
-  }
+   @media (any-hover: hover) {
+      &:hover {
+         background: #000;
+      }
+   }
 }
 
 .link {
-  transition: $tr;
+   transition: $tr;
 
-  @media (any-hover: hover) {
-    &:hover {
-      color: $accent;
-    }
-  }
+   @media (any-hover: hover) {
+      &:hover {
+         color: $accent;
+      }
+   }
 
-  &:active {
-    color: brig-color($accent, active);
-  }
+   &:active {
+      color: brig-color($accent, active);
+   }
 }
 
 .btn-burger {
-  cursor: pointer;
-  z-index: 10;
+   cursor: pointer;
+   z-index: 10;
 
-  &__bar-1,
-  &__bar-2,
-  &__bar-3 {
-    width: 2.8rem;
-    border-radius: 10px;
-    height: .32rem;
-    background-color: var(--c-text-regular);
-    margin: .6rem 0;
-    transition: 0.2s;
-  }
+   &__bar-1,
+   &__bar-2,
+   &__bar-3 {
+      width: 3rem;
+      border-radius: 10px;
+      height: 3.3px;
+      background-color: var(--c-text-regular);
+      margin: .6rem 0;
+      transition: 0.2s;
+   }
 
-  &__bar-1 {
-    margin: 0;
-    margin-bottom: .6rem;
-  }
+   &__bar-1 {
+      margin: 0;
+      margin-bottom: .6rem;
+   }
 }
 
 .btn-burger-active {
-  .btn-burger__bar-1 {
-    transform: translate(0, 10px) rotate(-45deg);
-  }
+   .btn-burger__bar-1 {
+      transform: translate(0, 10px) rotate(-45deg);
+   }
 
-  .btn-burger__bar-2 {
-    opacity: 0
-  }
+   .btn-burger__bar-2 {
+      opacity: 0
+   }
 
-  .btn-burger__bar-3 {
-    transform: translate(0, -8px) rotate(45deg);
-  }
+   .btn-burger__bar-3 {
+      transform: translate(0, -8px) rotate(45deg);
+   }
 }

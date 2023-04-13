@@ -2,11 +2,18 @@
    margin-top: 6rem;
    margin-bottom: 8rem;
    min-height: 40vh;
+
+   @media screen and (max-width: 1450px) {
+      margin-bottom: 4rem;
+   }
 }
 
 .main-sidebar {
    @media screen and (max-width: 1500px) {
-      .articles, .rek-sidebar, .brand {
+
+      .articles,
+      .rek-sidebar,
+      .brand {
          display: none;
       }
    }
@@ -67,4 +74,8 @@
       display: block;
    }
 
+}
+
+.page-heading {
+   margin-bottom: 4rem;
 }

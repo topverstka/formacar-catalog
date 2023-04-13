@@ -1,23 +1,23 @@
 .bottom-button {
-  display: flex;
-  align-items: center;
-  transition: 0.4s;
-  cursor: pointer;
-  transition: 0.4s;
+   display: flex;
+   align-items: center;
+   transition: 0.4s;
+   cursor: pointer;
+   transition: 0.4s;
 }
 
 .bottom-button:hover {
-  opacity: .7;
-  transition: .3s ease-in-out;
+   opacity: .7;
+   transition: .3s ease-in-out;
 }
 
 .bottom-button img,
 .bottom-button svg {
-  width: 2.2rem;
-  margin-right: 1rem;
+   width: 2.2rem;
+   margin-right: 1rem;
 }
 
 .bottom-button span {
-  font-weight: 400;
-  font-size: 1.4rem;
+   font-weight: 500;
+   font-size: 1.4rem;
 }

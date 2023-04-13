@@ -6,16 +6,16 @@
    width: 100%;
 
    @media (max-width: 1400px) {
-      gap: 2.5rem;
+      gap: 2.4rem;
    }
 
-   @media (max-width: $tablet) {
+   @media (max-width: 1300px) {
       grid-template-columns: repeat(3, 1fr);
    }
 }
 
 .events__gallery .events__gallery-row:nth-last-child(1) {
-   @media (max-width: $tablet) {
+   @media (max-width: 1300px) {
       display: none;
    }
 }

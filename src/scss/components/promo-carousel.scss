@@ -1,173 +1,177 @@
 .promo-carousel {
-  height: 64rem;
+   height: 64rem;
 
-  @media screen and (max-width: 1450px) {
-    height: 55rem;
-  }
+   @media screen and (max-width: 1450px) {
+      height: 55rem;
+   }
 
-  @media screen and (max-width: 1250px) {
-    height: 46rem;
-  }
+   @media screen and (max-width: 1250px) {
+      height: 46rem;
+   }
 
-  @media screen and (max-width: $tablet) {
-    height: 37rem;
-  }
+   @media screen and (max-width: $tablet) {
+      height: 37rem;
+   }
 }
 
 .promo-carousel__slide {
-  position: relative;
+   position: relative;
 }
 
 .promo-carousel__info {
-  position: relative;
-  z-index: 2;
-  top: 1rem;
-  width: 74rem;
-  padding: 4rem;
-  background: #FFFFFF;
-  box-shadow: 0px 41px 30px -30px rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(25px);
-  border-radius: var(--brad-regular);
+   position: relative;
+   z-index: 2;
+   top: 1rem;
+   width: 74rem;
+   padding: 4rem;
+   background: #FFFFFF;
+   box-shadow: 0px 41px 30px -30px rgba(0, 0, 0, 0.2);
+   backdrop-filter: blur(25px);
+   border-radius: var(--brad-regular);
 
-  @media screen and (max-width: 1450px) {
-    width: 60rem;
-  }
+   @media screen and (max-width: 1450px) {
+      width: 60rem;
+   }
 
-  @media screen and (max-width: 1250px) {
-    width: 50rem;
-  }
+   @media screen and (max-width: 1250px) {
+      width: 50rem;
+   }
 
-  @media screen and (max-width: $tablet) {
-    width: 40rem;
-    padding: 3rem;
-  }
+   @media screen and (max-width: $tablet) {
+      width: 40rem;
+      padding: 3rem;
+   }
 }
 
 .promo-carousel__category {
-  font-family: 'Oswald';
-  font-size: 2rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  margin-bottom: 8.7rem;
+   font-family: 'Oswald';
+   font-size: 2rem;
+   text-transform: uppercase;
+   letter-spacing: 0.1em;
+   margin-bottom: 8.7rem;
 
-  @media screen and (max-width: 1450px) {
-    margin-bottom: 3rem;
-    font-size: 1.6rem;
-  }
+   @media screen and (max-width: 1450px) {
+      margin-bottom: 3rem;
+      font-size: 1.6rem;
+   }
 }
 
 .promo-carousel__title {
-  font-size: 3.6rem;
-  font-weight: 700;
-  margin-bottom: 9rem;
-  line-height: 5.2rem;
-  text-transform: uppercase;
-  transition: 0.4s;
+   font-size: 3.6rem;
+   font-weight: 700;
+   margin-bottom: 9rem;
+   line-height: 5.2rem;
+   text-transform: uppercase;
+   transition: 0.4s;
 
-  @media screen and (max-width: 1450px) {
-    font-size: 2rem;
-    line-height: 2.4rem;
-  }
+   @media screen and (max-width: 1450px) {
+      font-size: 2rem;
+      line-height: 2.4rem;
+   }
 
-  @media screen and (max-width: $tablet) {
-    margin-bottom: 3rem;
-  }
+   @media screen and (max-width: $tablet) {
+      margin-bottom: 3rem;
+   }
 }
 
 .promo-carousel__title:hover {
-  opacity: 0.7;
+   opacity: 0.7;
 }
 
 .promo-carousel__bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-end;
 }
 
 .promo-carousel__link {
-  display: flex;
-  align-items: center;
-  margin-bottom: 1rem;
-  transition: 0.4s;
+   display: flex;
+   align-items: center;
+   margin-bottom: 1rem;
+   transition: 0.4s;
 }
 
 .promo-carousel__link:hover {
-  opacity: 0.7;
+   opacity: 0.7;
 }
 
 .promo-carousel__link span {
-  font-size: 1.6rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-right: 1rem;
+   font-size: 1.6rem;
+   font-weight: 700;
+   text-transform: uppercase;
+   margin-right: 1rem;
+
+   @media screen and (max-width: $tablet) {
+      font-size: 1.4rem;
+   }
 }
 
 .promo-carousel__link img,
 .promo-carousel__link svg {
-  width: 2.4rem;
+   width: 2.4rem;
 }
 
 .promo-carousel__date {
-  font-size: 1.4rem;
-  color: var(--c-text-secondary);
+   font-size: 1.4rem;
+   color: var(--c-text-secondary);
 }
 
 .promo-carousel__hero {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 110rem;
-  height: 64rem;
-  border-radius: var(--brad-regular);
+   position: absolute;
+   right: 0;
+   top: 0;
+   width: 110rem;
+   height: 64rem;
+   border-radius: var(--brad-regular);
 
-  @media screen and (max-width: 1450px) {
-    width: 100rem;
-    height: 55rem;
-  }
+   @media screen and (max-width: 1450px) {
+      width: 100rem;
+      height: 55rem;
+   }
 
-  @media screen and (max-width: 1250px) {
-    width: 80rem;
-    height: 45rem;
-  }
+   @media screen and (max-width: 1250px) {
+      width: 80rem;
+      height: 45rem;
+   }
 
-  @media screen and (max-width: $tablet) {
-    width: 65rem;
-    height: 37rem;
-  }
+   @media screen and (max-width: $tablet) {
+      width: 65rem;
+      height: 37rem;
+   }
 
-  @media screen and (max-width: 950px) {
-    width: 50rem;
-  }
+   @media screen and (max-width: 950px) {
+      width: 50rem;
+   }
 }
 
 .promo-carousel__hero img {
-  border-radius: var(--brad-regular);
-  height: 100%;
-  object-fit: cover;
+   border-radius: var(--brad-regular);
+   height: 100%;
+   object-fit: cover;
 }
 
 .promo-carousel__arrows {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  padding: 0px 1.88rem;
-  gap: 2.50rem;
-  z-index: 2;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   position: absolute;
+   bottom: 0;
+   left: 4rem;
+   padding: 0px 1.88rem;
+   gap: 2.50rem;
+   z-index: 2;
 }
 
 .promo-carousel__arrows img,
 .promo-carousel__arrows svg {
-  --size: 3.6rem;
-  width: var(--size);
-  height: var(--size);
-  cursor: pointer;
-  transition: 0.4s;
+   --size: 3.6rem;
+   width: var(--size);
+   height: var(--size);
+   cursor: pointer;
+   transition: 0.4s;
 }
 
 .promo-carousel__arrows img:hover,
 .promo-carousel__arrows svg:hover {
-  opacity: 0.7;
+   opacity: 0.7;
 }

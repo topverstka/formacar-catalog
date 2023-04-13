@@ -1,123 +1,123 @@
 .faq-item {
-  width: 100%;
-  border-radius: 10px;
-  background: #fff;
-  margin-bottom: 2rem;
-  user-select: none;
+   width: 100%;
+   border-radius: 10px;
+   background: #fff;
+   margin-bottom: 2rem;
+   user-select: none;
 }
 
 .faq-item__title {
-  cursor: pointer;
-  padding: 3rem 5rem 2rem 5rem;
-  transition: .3s ease-in-out;
+   cursor: pointer;
+   padding: 3rem 5rem 2rem 5rem;
+   transition: .3s ease-in-out;
 
-  @media screen and (max-width: $tablet) {
-    padding: 3rem 5rem 2rem 3rem;
-  }
+   @media screen and (max-width: $tablet) {
+      padding: 3rem 5rem 2rem 3rem;
+   }
 }
 
 .faq-item__title:hover {
-  opacity: .7;
-  transition: .3s ease-in-out;
+   opacity: .7;
+   transition: .3s ease-in-out;
 }
 
 .faq-item span {
-  font-size: 2rem;
-  text-transform: uppercase;
-  font-weight: 700;
+   font-size: 2rem;
+   text-transform: uppercase;
+   font-weight: 700;
 }
 
 .faq-item svg {
-  display: inline-block;
-  width: 3.6rem;
-  height: 3.6rem;
-  transform: rotate(270deg);
-  margin-right: 1rem;
-  position: relative;
-  bottom: .3rem;
-  vertical-align: middle;
+   display: inline-block;
+   width: 3.6rem;
+   height: 3.6rem;
+   transform: rotate(270deg);
+   margin-right: 1rem;
+   position: relative;
+   bottom: .3rem;
+   vertical-align: middle;
 }
 
 .faq-item__body {
-  padding: 2.5rem 5rem 5rem 5rem;
-  display: none;
+   padding: 2.5rem 5rem 5rem 5rem;
+   display: none;
 }
 
 .faq-item__body p {
-  padding-bottom: 1rem;
+   padding-bottom: 1rem;
 }
 
 .faq-item__imgs {
-  gap: 3rem;
-  display: flex;
+   gap: 3rem;
+   display: flex;
 
-  @media screen and (max-width: $tablet) {
-    display: block;
-  }
+   @media screen and (max-width: $tablet) {
+      display: block;
+   }
 }
 
 .faq-item__img-wr {
-  display: block;
-  width: 36rem;
-  height: fit-content;
+   display: block;
+   width: 36rem;
+   height: fit-content;
 
-  @media screen and (max-width: 1300px) {
-    width: 50%;
-  }
+   @media screen and (max-width: 1300px) {
+      width: 50%;
+   }
 
-  @media screen and (max-width: $tablet) {
-    margin-bottom: 3rem;
-    width: 36rem;
-  }
+   @media screen and (max-width: $tablet) {
+      margin-bottom: 3rem;
+      width: 36rem;
+   }
 }
 
 .faq-item-active .faq-item__body {
-  display: block;
+   display: block;
 }
 
 .faq-item-active svg {
-  transform: rotate(90deg);
+   transform: rotate(90deg);
 }
 
 .faq-item__items {
-  display: flex;
-  gap: 0 10rem;
+   display: flex;
+   gap: 0 10rem;
 
-  @media screen and (max-width: 1300px) {
-    gap: 0 3rem;
-  }
+   @media screen and (max-width: 1300px) {
+      gap: 0 3rem;
+   }
 
-  @media screen and (max-width: $tablet) {
-    display: block;
-  }
+   @media screen and (max-width: $tablet) {
+      display: block;
+   }
 }
 
 .faq-item__item {
-  width: 36rem;
+   width: 36rem;
 
-  @media screen and (max-width: 1300px) {
-    width: 50%;
-  }
+   @media screen and (max-width: 1300px) {
+      width: 50%;
+   }
 
-  @media screen and (max-width: $tablet) {
-    display: block;
-  }
+   @media screen and (max-width: $tablet) {
+      display: block;
+   }
 }
 
 .faq-item__item img {
-  height: auto;
-  margin-bottom: 1rem;
+   height: auto;
+   margin-bottom: 1rem;
 }
 
 .faq-item__item-2-wr {
-  display: flex;
-  gap: 0 3rem;
+   display: flex;
+   gap: 0 3rem;
 
-  @media screen and (max-width: $tablet) {
-    margin-bottom: 4rem;
-  }
+   @media screen and (max-width: $tablet) {
+      margin-bottom: 4rem;
+   }
 }
 
 .faq-item__item-wr {
-  margin-bottom: 4rem;
+   margin-bottom: 4rem;
 }

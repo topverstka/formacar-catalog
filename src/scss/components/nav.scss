@@ -1,29 +1,29 @@
 .nav {
-  display: flex;
-  align-items: center;
+   display: flex;
+   align-items: center;
 }
 
 .nav__list {
-  display: flex;
-  align-items: center;
+   display: flex;
+   align-items: center;
 }
 
 .nav__item {
-  margin-right: 4rem;
-  font-size: 1.4rem;
-  font-weight: 700;
-  transition: 0.4s;
+   margin-right: 4rem;
+   font-size: 1.4rem;
+   font-weight: 700;
+   transition: 0.4s;
 }
 
 .nav__item:nth-last-child(1) {
-  margin-right: 0;
+   margin-right: 0;
 }
 
 .nav__item:hover {
-  opacity: .7;
+   opacity: .7;
 }
 
 .nav__item:active {
-  opacity: 1;
-  color: var(--c-accent);
+   opacity: 1;
+   color: var(--c-accent);
 }

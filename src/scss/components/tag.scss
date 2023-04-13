@@ -1,19 +1,19 @@
 .tags {
-  padding-bottom: 2rem;
+   padding-bottom: 2rem;
 }
 
 .tag {
-  cursor: pointer;
-  font-size: 1.4rem;
-  margin-bottom: 1rem;
-  background: #F6F6F6;
-  border-radius: 150px;
-  padding: .75rem 2rem;
-  display: inline-block;
-  font-weight: 600;
+   cursor: pointer;
+   font-size: 1.4rem;
+   margin-bottom: 1rem;
+   background: #F6F6F6;
+   border-radius: 150px;
+   padding: .75rem 2rem;
+   display: inline-block;
+   font-weight: 600;
 }
 
 .tag-active {
-  background-color: var(--c-accent);
-  color: #fff;
+   background-color: var(--c-accent);
+   color: #fff;
 }

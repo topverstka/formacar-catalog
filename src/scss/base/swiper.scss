@@ -1,74 +1,97 @@
 .swiper-pagination {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0 0.63rem;
-  z-index: 2;
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+   bottom: 1rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 0 0.63rem;
+   z-index: 2;
 }
 
 .swiper-pagination .swiper-pagination-bullet {
-  --size: 0.8rem;
-  width: var(--size);
-  height: var(--size);
-  background: #FFFFFF;
-  border-radius: 50%;
-  transition: .4s;
-  cursor: pointer;
+   --size: 0.8rem;
+   width: var(--size);
+   height: var(--size);
+   background: #FFFFFF;
+   border-radius: 50%;
+   transition: .4s;
+   cursor: pointer;
 }
 
 .swiper-pagination .swiper-pagination-bullet-active {
-  background: #467EF3;
+   background: #467EF3;
 }
 
 .swiper-gallery .swiper-slide {
-  width: 30rem;
+   width: 30rem;
 
-  @media screen and (max-width: $tablet) {
-    width: 22rem;
-    margin-bottom: 6rem;
-  }
+   @media screen and (max-width: $tablet) {
+      width: 22rem;
+      margin-bottom: 6rem;
+   }
 }
 
 .swiper-gallery-prev,
 .swiper-gallery-next {
-  --size: 0.8rem;
-  width: 4.2rem;
-  height: 4.2rem;
-  border-radius: 100%;
-  background-color: #fff;
-  box-shadow: 0px 10px 13px 0px rgba(0, 0, 0, 0.05);
-  position: absolute;
-  z-index: 2;
-  top: 50%;
-  transform: translateY(-50%);
-  cursor: pointer;
-  user-select: none;
+   --size: 0.8rem;
+   width: 4.2rem;
+   height: 4.2rem;
+   border-radius: 100%;
+   background-color: #fff;
+   box-shadow: 0px 10px 13px 0px rgba(0, 0, 0, 0.05);
+   position: absolute;
+   z-index: 2;
+   top: 50%;
+   transform: translateY(-50%);
+   cursor: pointer;
+   user-select: none;
+   transition: .3s ease-in-out;
 
-  @media screen and (max-width: 1450px) {
-    top: 38%;
-  }
+   @media screen and (max-width: 1450px) {
+      top: 38%;
+   }
+}
+
+.swiper-gallery-prev:hover,
+.swiper-gallery-next:hover {
+   background-color: #ededed;
+   transition: .3s ease-in-out;
 }
 
 .swiper-gallery-img {
-  height: 1.6rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+   height: 1.6rem;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
 }
 
 .swiper-gallery-prev {
-  left: -2rem;
+   left: -2rem;
 }
 
 .swiper-gallery-next {
-  right: -2rem;
+   right: -2rem;
 }
 
 .events-card__carousel .swiper-slide {
-  width: 100%;
+   width: 100%;
+}
+
+.advertisement-carousel {
+   height: 35rem;
+
+   @media screen and (max-width: 1300px) {
+      height: 30rem;
+   }
+
+   @media screen and (max-width: $tablet) {
+      height: 25rem;
+   }
+}
+
+.advertisement-carousel img {
+   object-fit: cover;
 }

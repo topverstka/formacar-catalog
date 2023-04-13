@@ -5,58 +5,58 @@
 * <button class="button button--primary button--icon btn--icon-arrow btn--icon-left">Кнопка с иконкой с левой стороны акцентного цвета</button>
 */
 .button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1.2rem 2.6rem;
-  height: 4.2rem;
-  font-size: 1.4rem;
-  font-weight: 700;
-  line-height: 1.4rem;
-  text-align: center;
-  text-transform: uppercase;
-  cursor: pointer;
-  border-radius: 10px;
-  transition: all 0.3s ease;
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   padding: 1.2rem 2.6rem;
+   height: 4.2rem;
+   font-size: 1.4rem;
+   font-weight: 700;
+   line-height: 1.4rem;
+   text-align: center;
+   text-transform: uppercase;
+   cursor: pointer;
+   border-radius: 10px;
+   transition: all 0.3s ease;
 
-  @media (max-width: 1300px) {
-    font-size: 1.2rem;
- }
+   @media (max-width: 1300px) {
+      font-size: 1.2rem;
+   }
 
 }
 
 .button[disabled] {
-  pointer-events: none;
-  cursor: default;
-  opacity: 0.6;
+   pointer-events: none;
+   cursor: default;
+   opacity: 0.6;
 }
 
 .button--primary {
-  --button-bg: var(--c-accent);
-  color: var(--c-text-on);
-  background-color: var(--button-bg);
-  transition: 0.4s;
+   --button-bg: var(--c-accent);
+   color: var(--c-text-on);
+   background-color: var(--button-bg);
+   transition: 0.4s;
 }
 
 .button--primary:hover {
-  opacity: 0.8;
+   opacity: 0.8;
 }
 
 .button--primary:active {
-  opacity: 1;
-  --button-bg: var(--c-accent-dark);
+   opacity: 1;
+   --button-bg: var(--c-accent-dark);
 }
 
 
 .button--on.button--primary {
-  --button-color: var(--c-text-on);
-  color: var(--c-accent);
+   --button-color: var(--c-text-on);
+   color: var(--c-accent);
 }
 
 .button--on.button--primary:hover {
-  @media (min-width: $minHover) {
-    --button-color: var(--c-accent--light);
-  }
+   @media (min-width: $minHover) {
+      --button-color: var(--c-accent--light);
+   }
 }
 
 // .button--on.button--primary[disabled],
@@ -71,15 +71,15 @@
 // }
 
 .button--secondary {
-  --button-color: var(--c-button-secondary);
-  color: var(--button-color);
+   --button-color: var(--c-button-secondary);
+   color: var(--button-color);
 }
 
 .button--secondary:hover {
-  @media (min-width: $minHover) {
-    color: var(--c-text-on);
-    background-color: var(--button-color);
-  }
+   @media (min-width: $minHover) {
+      color: var(--c-text-on);
+      background-color: var(--button-color);
+   }
 }
 
 // .button--secondary[disabled],
@@ -89,13 +89,13 @@
 // }
 
 .button--on.button--secondary {
-  --button-color: var(--c-text-on);
+   --button-color: var(--c-text-on);
 }
 
 .button--on.button--secondary:hover {
-  @media (min-width: $minHover) {
-    color: var(--c-accent);
-  }
+   @media (min-width: $minHover) {
+      color: var(--c-accent);
+   }
 }
 
 // .button--on.button--secondary[disabled],
@@ -111,32 +111,32 @@
 // }
 
 .button--thirdly {
-  --button-color: var(--c-accent);
-  --icon-color: var(--button-color);
-  padding: 0;
-  color: var(--button-color);
+   --button-color: var(--c-accent);
+   --icon-color: var(--button-color);
+   padding: 0;
+   color: var(--button-color);
 }
 
 .button--thirdly:hover {
-  @media (min-width: $minHover) {
-    --button-color: var(--c-accent--dark);
-    --icon-color: var(--button-color);
-  }
+   @media (min-width: $minHover) {
+      --button-color: var(--c-accent--dark);
+      --icon-color: var(--button-color);
+   }
 }
 
 .button--on.button--thirdly {
-  --button-color: var(--c-text-on);
+   --button-color: var(--c-text-on);
 
-  // --icon-color: var(--c-text-on);
-  @media (prefers-color-scheme: dark) {
-    --button-color: var(--bg-element);
-  }
+   // --icon-color: var(--c-text-on);
+   @media (prefers-color-scheme: dark) {
+      --button-color: var(--bg-element);
+   }
 }
 
 .button--on.button--thirdly:hover {
-  @media (min-width: $minHover) {
-    --button-color: var(--c-accent--light);
-  }
+   @media (min-width: $minHover) {
+      --button-color: var(--c-accent--light);
+   }
 }
 
 // .button--on.button--thirdly[disabled],
@@ -148,79 +148,79 @@
 // }
 
 .button__text {
-  width: 100%;
-  font-size: inherit;
+   width: 100%;
+   font-size: inherit;
 }
 
 .button__icon {
-  display: block;
-  width: var(--button-icon-size);
-  min-width: var(--button-icon-size);
-  max-width: var(--button-icon-size);
-  height: var(--button-icon-size);
-  background-color: var(--icon-color);
-  fill: transparent;
-  stroke: var(--icon-color);
-  transition: all var(--tr) ease;
+   display: block;
+   width: var(--button-icon-size);
+   min-width: var(--button-icon-size);
+   max-width: var(--button-icon-size);
+   height: var(--button-icon-size);
+   background-color: var(--icon-color);
+   fill: transparent;
+   stroke: var(--icon-color);
+   transition: all var(--tr) ease;
 }
 
 .button--icon-fill .button__icon {
-  fill: var(--icon-color);
-  stroke: none;
+   fill: var(--icon-color);
+   stroke: none;
 }
 
 .button--icon-left .button__icon {
-  order: -1;
-  margin-right: 0.57em;
+   order: -1;
+   margin-right: 0.57em;
 }
 
 .button--icon-right .button__icon {
-  order: 5;
-  margin-left: 0.57em;
+   order: 5;
+   margin-left: 0.57em;
 }
 
 .button__icon path {
-  stroke: var(--button-color);
+   stroke: var(--button-color);
 }
 
 .button--icon-plus .button__icon {
-  @include getmask("../img/icons/plus.svg");
+   @include getmask("../img/icons/plus.svg");
 }
 
 .button--icon-plus:hover .button__icon {
-  @media (min-width: $minHover) {
-    transform: rotate(180deg);
-  }
+   @media (min-width: $minHover) {
+      transform: rotate(180deg);
+   }
 }
 
 .button--icon-plus:hover {
-  @media (min-width: $minHover) {
-    --icon-color: var(--c-accent);
-    --button-color: var(--c-accent);
-  }
+   @media (min-width: $minHover) {
+      --icon-color: var(--c-accent);
+      --button-color: var(--c-accent);
+   }
 }
 
 .button--light {
-  background: #E3ECFF;
-  color: #467EF3;
+   background: #E3ECFF;
+   color: #467EF3;
 }
 
 .button--light:active {
-  opacity: 1;
-  background: var(--c-accent-dark);
-  color: #fff;
+   opacity: 1;
+   background: var(--c-accent-dark);
+   color: #fff;
 }
 
 .button--purple {
-  background: #9578FA;
-  color: #fff;
+   background: #9578FA;
+   color: #fff;
 }
 
 .button--purple:hover {
-  opacity: 0.8;
+   opacity: 0.8;
 }
 
 .button--purple:active {
-  opacity: 1;
-  background: var(--c-accent-dark);
+   opacity: 1;
+   background: var(--c-accent-dark);
 }

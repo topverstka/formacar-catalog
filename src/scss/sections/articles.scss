@@ -4,6 +4,10 @@
    padding: 3rem;
    width: 100%;
    margin-bottom: 8rem;
+
+   @media screen and (max-width: 1500px) {
+      padding-bottom: 3.7rem;
+   }
 }
 
 .articles .section-desc {
@@ -26,7 +30,7 @@
 .articles-mobile__wrapper {
    display: grid;
    grid-template-columns: repeat(4, 1fr);
-   gap: 5.5rem;
+   gap: 5.7rem;
 
    @media screen and (max-width: 900px) {
       gap: 4.5rem;

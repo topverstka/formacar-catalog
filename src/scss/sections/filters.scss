@@ -1,170 +1,176 @@
 .filters {
-  background: #FFFFFF;
-  border-radius: var(--brad-regular);
-  padding: 3rem;
+   background: #FFFFFF;
+   border-radius: var(--brad-regular);
+   padding: 3rem;
 
-  @media (max-width: 1500px) {
-    z-index: 10;
-    visibility: hidden;
-    opacity: 0;
-    transform: translateX(100px);
-    position: fixed;
-    right: 0;
-    border-radius: 0;
-    top: 0;
-    width: 450px;
-    transition: .3s ease-in-out;
-    overflow-y: scroll;
-    height: 100%;
-  }
+   @media (max-width: 1500px) {
+      z-index: 10;
+      visibility: hidden;
+      opacity: 0;
+      transform: translateX(100px);
+      position: fixed;
+      right: 0;
+      border-radius: 0;
+      top: 0;
+      width: 450px;
+      transition: .3s ease-in-out;
+      overflow-y: scroll;
+      height: 100%;
+   }
 }
 
 .filters-active {
-  visibility: visible;
-  opacity: 1;
-  transform: translateX(0);
-  transition: .3s ease-in-out;
+   visibility: visible;
+   opacity: 1;
+   transform: translateX(0);
+   transition: .3s ease-in-out;
 
-  .filters-title {
-    margin-bottom: 3rem;
-  }
+   .filters-title {
+      margin-bottom: 3rem;
+   }
 }
 
 .filters-close {
-  display: none;
+   display: none;
 
-  @media (max-width: 1500px) {
-    display: block;
-  }
+   @media (max-width: 1500px) {
+      display: block;
+   }
 }
 
 .filters-title {
-  display: flex;
-  justify-content: space-between;
+   display: flex;
+   justify-content: space-between;
 }
 
 .filters-title__wr {
-  display: flex;
-  align-items: center;
-  margin-bottom: 1.88rem;
+   display: flex;
+   align-items: center;
+   margin-bottom: 1.88rem;
 }
 
 .filters-btn {
-  display: none;
+   display: none;
+   transition: .3s ease-in-out;
 
-  @media (max-width: 1500px) {
-    display: flex;
-  }
+   @media (max-width: 1500px) {
+      display: flex;
+   }
+}
+
+.filters-btn:hover {
+   opacity: .7;
+   transition: .3s ease-in-out;
 }
 
 .filters-title img {
-  --size: 2.4rem;
-  width: var(--size);
-  height: var(--size);
-  margin-right: 1rem;
+   --size: 2.4rem;
+   width: var(--size);
+   height: var(--size);
+   margin-right: 1rem;
 }
 
 .filters-title p {
-  font-size: 2rem;
-  font-weight: 700;
+   font-size: 2rem;
+   font-weight: 700;
 }
 
 .filters-block {
-  margin-bottom: 3.5rem;
+   margin-bottom: 3.5rem;
 }
 
 .filters-block:last-child {
-  margin-bottom: 0;
+   margin-bottom: 0;
 }
 
 .filters-block__top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 1.4rem;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-bottom: 1.4rem;
 }
 
 .filters-block__title {
-  font-size: 1.4rem;
-  font-weight: 700;
-  text-transform: uppercase;
+   font-size: 1.4rem;
+   font-weight: 700;
+   text-transform: uppercase;
 }
 
 .filters-block__reset {
-  font-size: 1.4rem;
-  cursor: pointer;
-  color: #AFAFAF;
-  font-weight: 500;
-  transition: .3s ease-in-out;
+   font-size: 1.4rem;
+   cursor: pointer;
+   color: #AFAFAF;
+   font-weight: 500;
+   transition: .3s ease-in-out;
 }
 
 .filters-block__reset:hover {
-  opacity: .7;
-  transition: .3s ease-in-out;
+   opacity: .7;
+   transition: .3s ease-in-out;
 }
 
 .filters-block__main {
-  max-height: 25.5rem;
-  overflow-y: auto;
+   max-height: 25.5rem;
+   overflow-y: auto;
 }
 
 .filters-block__main::-webkit-scrollbar {
-  width: 0.5rem;
-  border-radius: 10px;
+   width: 0.5rem;
+   border-radius: 10px;
 }
 
 .filters-block__main::-webkit-scrollbar-track {
-  background: transparent;
+   background: transparent;
 }
 
 .filters-block__main::-webkit-scrollbar-thumb {
-  background: #ECECEC;
-  border-radius: 100px;
+   background: #ECECEC;
+   border-radius: 100px;
 }
 
 .filters-block__main::-webkit-scrollbar-thumb:hover {
-  background: #B4B4BF;
+   background: #B4B4BF;
 
 }
 
 
 
 .filters__search {
-  position: relative;
-  margin-bottom: 2.5rem;
+   position: relative;
+   margin-bottom: 2.5rem;
 }
 
 .filters__search .search__input {
-  padding: 1.5rem 2rem;
+   padding: 1.5rem 2rem;
 }
 
 .filters__search .search__button {
-  --size: 2.2rem;
-  width: var(--size);
-  height: var(--size);
-  left: inherit;
-  right: 2rem;
+   --size: 2.2rem;
+   width: var(--size);
+   height: var(--size);
+   left: inherit;
+   right: 2rem;
 }
 
 .filters-result {
-  font-weight: 500;
-  text-align: center;
-  font-size: 1.4rem;
-  margin-bottom: 2rem;
+   font-weight: 500;
+   text-align: center;
+   font-size: 1.4rem;
+   margin-bottom: 2rem;
 }
 
 .filters__buttons {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-  justify-content: space-between;
+   display: flex;
+   align-items: center;
+   gap: 2rem;
+   justify-content: space-between;
 }
 
 .filters__button {
-  padding: 0;
-  width: 50%;
-  height: 4.2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+   padding: 0;
+   width: 50%;
+   height: 4.2rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }

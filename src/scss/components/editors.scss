@@ -1,56 +1,56 @@
 .editors {
-  padding-bottom: 1.5rem;
-  display: flex;
-  gap: 3rem;
+   padding-bottom: 1.5rem;
+   display: flex;
+   gap: 3rem;
 
-  @media (max-width: 1250px) {
-    gap: 2.5rem;
-  }
+   @media (max-width: 1250px) {
+      gap: 2.5rem;
+   }
 
-  @media (max-width: $tablet) {
-    gap: 1.5rem;
-  }
+   @media (max-width: $tablet) {
+      gap: 1.5rem;
+   }
 
-  &__item {
-    border-radius: 10px;
-    border: 1px solid #ECECEC;
-    padding: 2rem;
+   &__item {
+      border-radius: 10px;
+      border: 1px solid #ECECEC;
+      padding: 2rem;
 
-    @media (max-width: 980px) {
-      padding: 1rem;
-    }
-  }
+      @media (max-width: 980px) {
+         padding: 1rem;
+      }
+   }
 
-  &__pic {
-    border-radius: 10px;
-    overflow: hidden;
-    width: 20rem;
-    height: 20rem;
-    display: block;
-    margin-bottom: 2rem;
+   &__pic {
+      border-radius: 10px;
+      overflow: hidden;
+      width: 20rem;
+      height: 20rem;
+      display: block;
+      margin-bottom: 2rem;
 
-    @media (max-width: 1250px) {
-      width: 15rem;
-      height: 15rem;
-    }
+      @media (max-width: 1250px) {
+         width: 15rem;
+         height: 15rem;
+      }
 
-    @media (max-width: 980px) {
-      width: 12rem;
-      height: 12rem;
-    }
+      @media (max-width: 980px) {
+         width: 12rem;
+         height: 12rem;
+      }
 
-  }
+   }
 
-  &__img {
-    object-fit: cover;
-  }
+   &__img {
+      object-fit: cover;
+   }
 
-  &__name {
-    font-weight: 700;
-    margin-bottom: .5rem;
-  }
+   &__name {
+      font-weight: 700;
+      margin-bottom: .5rem;
+   }
 
-  &__role {
-    font-size: 1.4rem;
-  }
+   &__role {
+      font-size: 1.4rem;
+   }
 }

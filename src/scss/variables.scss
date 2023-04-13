@@ -42,56 +42,56 @@ $error: var(--c-error);
 
 // ================ Colors End ================
 :root {
-  --c-text-regular: #383838;
-  --c-text-secondary: #888888;
-  --c-button-secondary: #5b5b5b;
-  --c-text-label: #bdbdbd;
-  --c-text-on: #fff;
-  --c-input-placeholder: brig-color(#000, 0.3);
+   --c-text-regular: #383838;
+   --c-text-secondary: #888888;
+   --c-button-secondary: #5b5b5b;
+   --c-text-label: #bdbdbd;
+   --c-text-on: #fff;
+   --c-input-placeholder: brig-color(#000, 0.3);
 
-  --c-accent: #467EF3;
-  --c-accent-dark: #3865C2;
-  --c-error: #ff3b30;
+   --c-accent: #467EF3;
+   --c-accent-dark: #3865C2;
+   --c-error: #ff3b30;
 
-  --bg-element: #fff;
-  --bg-app: #F6F6F6;
-  --bg-app-light: #212425;
+   --bg-element: #fff;
+   --bg-app: #F6F6F6;
+   --bg-app-light: #212425;
 
-  --bg-dropdown: #384043;
-  --bg-dropdown-list: #4e5557;
+   --bg-dropdown: #384043;
+   --bg-dropdown-list: #4e5557;
 
-  --bg-b_modal: #171b1f;
-  --radius-b_modal: 10px;
-  --overlay-b_modal: rgba(0, 0, 0, 0.8);
+   --bg-b_modal: #171b1f;
+   --radius-b_modal: 10px;
+   --overlay-b_modal: rgba(0, 0, 0, 0.8);
 
-  --c-border: #cecece;
-  --radius-s: 4px;
-  --radius-l: 30px;
+   --c-border: #cecece;
+   --radius-s: 4px;
+   --radius-l: 30px;
 
-  --tr: 0.3s;
-  --tr-regular: all var(--tr) ease;
+   --tr: 0.3s;
+   --tr-regular: all var(--tr) ease;
 
-  --brad-regular: 10px;
+   --brad-regular: 10px;
 
-  // --container-padding: #{math.div($container-padding, 2) + "px"};
-  --container-padding: 30px;
+   // --container-padding: #{math.div($container-padding, 2) + "px"};
+   --container-padding: 30px;
 
-  @media (max-width: 1100px) {
-    --container-padding: 30px;
-  }
+   @media (max-width: 1100px) {
+      --container-padding: 30px;
+   }
 
-  --ff-regular: "Montserrat",
-  sans-serif;
-  --ff-title: "Montserrat",
-  sans-serif;
+   --ff-regular: "Montserrat",
+   sans-serif;
+   --ff-title: "Montserrat",
+   sans-serif;
 
-  --fz-button: 0.875rem;
-  --lh-button: 126.5%;
+   --fz-button: 0.875rem;
+   --lh-button: 126.5%;
 
-  @media (max-width: 768px) {
-    --fz-button: 15px;
-    --lh-button: 126%;
-  }
+   @media (max-width: 768px) {
+      --fz-button: 15px;
+      --lh-button: 126%;
+   }
 }
 
 // ================ Other Start ================
