@@ -2,6 +2,7 @@
    overflow: hidden;
    border-radius: var(--brad-regular);
    background: #ffffff;
+   -webkit-mask-image: -webkit-radial-gradient(white, black);
 }
 
 .news-card--wide {
@@ -14,6 +15,7 @@
    height: 24rem;
    overflow: hidden;
    position: relative;
+   -webkit-mask-image: -webkit-radial-gradient(white, black);
 
    @media screen and (max-width: $tablet) {
       height: 15rem;
@@ -26,6 +28,7 @@
    height: 100%;
    border-radius: 5px 5px 0 0;
    overflow: hidden;
+   -webkit-mask-image: -webkit-radial-gradient(white, black);
 }
 
 .news-card__img {

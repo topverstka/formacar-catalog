@@ -3,7 +3,7 @@
 }
 
 .catalog-slide {
-   margin-bottom: 6rem;
+   margin-bottom: 10rem;
    position: relative;
 
    @media screen and (max-width: $tablet) {
@@ -16,7 +16,7 @@
    grid-template-columns: repeat(4, 1fr);
    gap: 3rem 4rem;
    width: 100%;
-   margin-bottom: 4rem;
+   margin-bottom: 6rem;
 
    @media screen and (max-width: 1450px) {
       gap: 3rem 2.5rem;
@@ -29,10 +29,6 @@
 
 .catalog__gallery .swiper-slide {
    width: 30rem;
-}
-
-.catalog__gallery:last-child {
-   margin-bottom: 0;
 }
 
 .catalog-slide-no-mb {

@@ -70,10 +70,18 @@
 
 .swiper-gallery-prev {
    left: -2rem;
+
+   img {
+      left: 48%;
+   }
 }
 
 .swiper-gallery-next {
    right: -2rem;
+
+   img {
+      left: 52%;
+   }
 }
 
 .events-card__carousel .swiper-slide {
@@ -81,11 +89,6 @@
 }
 
 .advertisement-carousel {
-   height: 35rem;
-
-   @media screen and (max-width: 1300px) {
-      height: 30rem;
-   }
 
    @media screen and (max-width: $tablet) {
       height: 25rem;

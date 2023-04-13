@@ -40,6 +40,7 @@
    @media screen and (max-width: $tablet) {
       width: 40rem;
       padding: 3rem;
+      top: 0;
    }
 }
 
@@ -136,7 +137,8 @@
 
    @media screen and (max-width: $tablet) {
       width: 65rem;
-      height: 37rem;
+      height: 36rem;
+      top: 1rem;
    }
 
    @media screen and (max-width: 950px) {

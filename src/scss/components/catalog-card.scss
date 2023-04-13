@@ -17,6 +17,7 @@
    border-radius: 6px;
    display: block;
    overflow: hidden;
+   -webkit-mask-image: -webkit-radial-gradient(white, black);
 
    @media screen and (max-width: $tablet) {
       height: 12rem;

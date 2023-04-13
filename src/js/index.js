@@ -157,21 +157,4 @@ newsMenuBtn.onclick = function () {
   newsMenuItem.classList.toggle('news-menu__child-active');
 }
 
-// Filter
-
-const filterBtn = document.querySelector('.filters-btn');
-const filterSideBar = document.querySelector('.filters');
-const filterClose = document.querySelector('.filters-close');
-
-filterBtn.onclick = function () {
-  filterSideBar.classList.add('filters-active');
-  bodyFix.classList.add('filter-fix');
-}
-
-filterClose.onclick = function () {
-  filterSideBar.classList.remove('filters-active');
-  bodyFix.classList.remove('filter-fix');
-}
-
-
 

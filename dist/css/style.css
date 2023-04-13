@@ -627,6 +627,10 @@
   background: var(--c-accent-dark);
 }
 
+.bottom-button--view span {
+  font-weight: 400 !important;
+}
+
 .filters-block__label {
   display: flex;
   align-items: flex-end;
@@ -720,6 +724,7 @@
   .promo-carousel__info {
     width: 40rem;
     padding: 3rem;
+    top: 0;
   }
 }
 
@@ -823,7 +828,8 @@
 @media screen and (max-width: 1024px) {
   .promo-carousel__hero {
     width: 65rem;
-    height: 37rem;
+    height: 36rem;
+    top: 1rem;
   }
 }
 @media screen and (max-width: 950px) {
@@ -868,6 +874,7 @@
   overflow: hidden;
   border-radius: var(--brad-regular);
   background: #ffffff;
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
 }
 
 .news-card--wide {
@@ -880,6 +887,7 @@
   height: 24rem;
   overflow: hidden;
   position: relative;
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
 }
 @media screen and (max-width: 1024px) {
   .news-card__top {
@@ -893,6 +901,7 @@
   height: 100%;
   border-radius: 5px 5px 0 0;
   overflow: hidden;
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
 }
 
 .news-card__img {
@@ -982,6 +991,7 @@
   border-radius: 6px;
   display: block;
   overflow: hidden;
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
 }
 @media screen and (max-width: 1024px) {
   .catalog-card__pic {
@@ -2042,7 +2052,6 @@
   position: absolute;
   right: 0rem;
   top: 0;
-  height: 102%;
 }
 @media (max-width: 1000px) {
   .card__pic {
@@ -2202,6 +2211,7 @@
   font-weight: 700;
   text-transform: uppercase;
   position: relative;
+  transition: 0.3s ease-in-out;
 }
 @media (max-width: 1100px) {
   .news-menu__link {
@@ -2874,6 +2884,10 @@ body._lock {
   position: relative;
   z-index: 1;
   flex: 1 0 auto;
+}
+
+.mb-60 {
+  margin-bottom: 6rem;
 }
 
 .fancybox__footer {
@@ -4856,23 +4870,21 @@ html.with-fancybox body.hide-scrollbar {
 .swiper-gallery-prev {
   left: -2rem;
 }
+.swiper-gallery-prev img {
+  left: 48%;
+}
 
 .swiper-gallery-next {
   right: -2rem;
+}
+.swiper-gallery-next img {
+  left: 52%;
 }
 
 .events-card__carousel .swiper-slide {
   width: 100%;
 }
 
-.advertisement-carousel {
-  height: 35rem;
-}
-@media screen and (max-width: 1300px) {
-  .advertisement-carousel {
-    height: 30rem;
-  }
-}
 @media screen and (max-width: 1024px) {
   .advertisement-carousel {
     height: 25rem;
@@ -5575,7 +5587,7 @@ header {
 }
 
 .news {
-  margin-bottom: 12rem;
+  margin-bottom: 6rem;
 }
 @media screen and (max-width: 1450px) {
   .news {
@@ -5860,7 +5872,7 @@ header {
 }
 
 .catalog-slide {
-  margin-bottom: 6rem;
+  margin-bottom: 10rem;
   position: relative;
 }
 @media screen and (max-width: 1024px) {
@@ -5874,7 +5886,7 @@ header {
   grid-template-columns: repeat(4, 1fr);
   gap: 3rem 4rem;
   width: 100%;
-  margin-bottom: 4rem;
+  margin-bottom: 6rem;
 }
 @media screen and (max-width: 1450px) {
   .catalog__gallery {
@@ -5889,10 +5901,6 @@ header {
 
 .catalog__gallery .swiper-slide {
   width: 30rem;
-}
-
-.catalog__gallery:last-child {
-  margin-bottom: 0;
 }
 
 .catalog-slide-no-mb {
@@ -6100,6 +6108,7 @@ header {
   min-height: 10rem;
   border-radius: var(--brad-regular);
   overflow: hidden;
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
   position: relative;
 }
 
@@ -6107,6 +6116,16 @@ header {
   grid-row-start: 1;
   grid-row-end: 3;
   grid-column-start: 1;
+}
+@media (max-width: 1024px) {
+  .tuning-card--tall {
+    height: 34rem;
+  }
+}
+@media (max-width: 900px) {
+  .tuning-card--tall {
+    height: auto;
+  }
 }
 
 .tuning-card__pic {
@@ -6229,11 +6248,18 @@ header {
 
 .filters-close {
   display: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
 }
 @media (max-width: 1500px) {
   .filters-close {
     display: block;
   }
+}
+
+.filters-close:hover {
+  opacity: 0.7;
+  transition: 0.3s ease-in-out;
 }
 
 .filters-title {
@@ -6248,7 +6274,9 @@ header {
 }
 
 .filters-btn {
+  cursor: pointer;
   display: none;
+  user-select: none;
   transition: 0.3s ease-in-out;
 }
 @media (max-width: 1500px) {

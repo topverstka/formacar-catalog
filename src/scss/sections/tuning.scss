@@ -21,6 +21,7 @@
    min-height: 10rem;
    border-radius: var(--brad-regular);
    overflow: hidden;
+   -webkit-mask-image: -webkit-radial-gradient(white, black);
    position: relative;
 }
 
@@ -28,6 +29,14 @@
    grid-row-start: 1;
    grid-row-end: 3;
    grid-column-start: 1;
+   
+   @media (max-width: $tablet) {
+      height: 34rem;
+   }
+
+   @media (max-width: 900px) {
+      height: auto;
+   }
 }
 
 .tuning-card__pic {

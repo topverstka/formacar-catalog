@@ -32,10 +32,17 @@
 
 .filters-close {
    display: none;
+   cursor: pointer;
+   transition: .3s ease-in-out;
 
    @media (max-width: 1500px) {
       display: block;
    }
+}
+
+.filters-close:hover {
+   opacity: .7;
+   transition: .3s ease-in-out;
 }
 
 .filters-title {
@@ -50,7 +57,9 @@
 }
 
 .filters-btn {
+   cursor: pointer;
    display: none;
+   user-select: none;
    transition: .3s ease-in-out;
 
    @media (max-width: 1500px) {
