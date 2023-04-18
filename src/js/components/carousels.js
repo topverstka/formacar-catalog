@@ -47,7 +47,7 @@ if (document.querySelector('.advertisement-carousel')) {
       300: {
         slidesPerView: 1,
       },
-      1024: {
+      1100: {
         slidesPerView: 1.33683,
       }
     }
@@ -153,16 +153,7 @@ const cardVideo = new Swiper(".card-video", {
 const swiper = new Swiper('.news__swiper', {
   modules: [Navigation],
   speed: 600,
-  spaceBetween: 40,
   slidesPerView: 'auto',
-  breakpoints: {
-    300: {
-      spaceBetween: 25
-    },
-    1024: {
-      spaceBetween: 40
-    }
-  }
 });
 
 const swiperGallery = document.querySelectorAll('.swiper-gallery');
@@ -171,21 +162,11 @@ for (let i = 1; i < swiperGallery.length + 1; i++) {
   const swiper = new Swiper('.swiper-gallery-' + i, {
     modules: [Navigation],
     speed: 600,
-    spaceBetween: 40,
     slidesPerView: 'auto',
     navigation: {
       nextEl: '.swiper-gallery-next-' + i,
       prevEl: '.swiper-gallery-prev-' + i,
     },
-    breakpoints: {
-      300: {
-        spaceBetween: 25
-      },
-      1024: {
-        spaceBetween: 40
-      }
-    }
-
   });
 
 }

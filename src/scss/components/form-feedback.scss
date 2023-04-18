@@ -1,0 +1,64 @@
+.modal-form-feedback {
+   width: 54rem;
+   padding: 4rem;
+}
+
+.form-feedback__wr a {
+   color: var(--c-accent);
+}
+
+.form-feedback__title {
+   text-align: center;
+   font-size: 2.8rem;
+   font-weight: 700;
+   padding-bottom: 3rem;
+   text-transform: uppercase;
+}
+
+.form-feedback__sub-title {
+   line-height: 2.4rem;
+   margin-bottom: 3rem;
+   text-align: center;
+}
+
+.form-feedback__wr-input {
+   margin-bottom: 1rem;
+}
+
+.form-feedback__input {
+   border-radius: 10px;
+   font-size: 1.4rem;
+   width: 100%;
+   padding: 1.1rem 2rem;
+   border: 1px solid #B4B4BF;
+}
+
+.form-feedback__input::placeholder {
+   color: #888888;
+}
+
+.form-feedback__inf {
+   color: #888888;
+   font-size: 1.4rem;
+   text-align: center;
+}
+
+.form-feedback__inf a {
+   color: var(--c-accent);
+}
+
+.form-feedback__buttons {
+   margin-bottom: 3rem;
+   gap: 1rem;
+   display: flex;
+   margin-top: 2rem;
+   justify-content: space-between;
+}
+
+.form-feedback__buttons button:nth-child(1) {
+   width: 13.1rem;
+}
+
+.form-feedback__buttons button:nth-child(2) {
+   width: 100%;
+}

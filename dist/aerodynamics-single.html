@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css?_v=20230413232626" />
+    <link rel="stylesheet" href="./css/style.css?_v=20230418160145" />
 
     <!-- Отключить автодетект телефонов -->
     <meta name="format-detection" content="telephone=no" />
@@ -865,9 +865,10 @@
        <section class="news-recently news-recently__container ">
         <h2 class="section-desc catalog__title">Вы недавно смотрели</h2>
         <div class="catalog-slide catalog-slide-no-mb">
-          <div class="catalog__gallery catalog__gallery_slide">
-            
-           <article class="catalog-card catalog-card__no-list">
+          <div class="news__gallery news__swiper swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <article class="catalog-card catalog-card__no-list">
 
  <a href="#">
    <div class="catalog-card__top">
@@ -895,7 +896,9 @@
  </a>
  
 </article>
-           <article class="catalog-card catalog-card__no-list">
+              </div>
+              <div class="swiper-slide">
+                <article class="catalog-card catalog-card__no-list">
 
  <a href="#">
    <div class="catalog-card__top">
@@ -923,7 +926,9 @@
  </a>
  
 </article>
-           <article class="catalog-card catalog-card__no-list">
+              </div>
+              <div class="swiper-slide">
+                <article class="catalog-card catalog-card__no-list">
 
  <a href="#">
    <div class="catalog-card__top">
@@ -951,6 +956,98 @@
  </a>
  
 </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="catalog-card catalog-card__no-list">
+
+ <a href="#">
+   <div class="catalog-card__top">
+    <picture class="catalog-card__pic">
+     <img class="catalog-card__img lazy" src="./placeholder.png" data-src="./img/aerodynamics/aerodynamics-1.jpg">
+    </picture>
+    <div class="catalog-card__model">
+     <img src="./img/common/3d.svg" alt="">
+     <span>3D</span>
+    </div>
+   </div>
+   <div class="catalog-card__info">
+    <p class="catalog-card__category">Formacar SCL</p>
+    <h3 class="catalog-card__name">PORSCHE 911 TURBO S VENOM</h3>
+    <div class="catalog-card__bottom">
+      <div class="bottom-button">
+ <img src="img/common/comments.svg" alt="">
+ <span>79</span>
+</div>
+     <div class="catalog-card__bookmark">
+      <img src="img/common/bookmark.svg" alt="">
+     </div>
+    </div>
+   </div>
+ </a>
+ 
+</article>
+              </div>
+              <div class="swiper-slide">
+                <article class="catalog-card catalog-card__no-list">
+
+ <a href="#">
+   <div class="catalog-card__top">
+    <picture class="catalog-card__pic">
+     <img class="catalog-card__img lazy" src="./placeholder.png" data-src="./img/aerodynamics/aerodynamics-1.jpg">
+    </picture>
+    <div class="catalog-card__model">
+     <img src="./img/common/3d.svg" alt="">
+     <span>3D</span>
+    </div>
+   </div>
+   <div class="catalog-card__info">
+    <p class="catalog-card__category">Formacar SCL</p>
+    <h3 class="catalog-card__name">PORSCHE 911 TURBO S VENOM</h3>
+    <div class="catalog-card__bottom">
+      <div class="bottom-button">
+ <img src="img/common/comments.svg" alt="">
+ <span>79</span>
+</div>
+     <div class="catalog-card__bookmark">
+      <img src="img/common/bookmark.svg" alt="">
+     </div>
+    </div>
+   </div>
+ </a>
+ 
+</article>
+              </div>
+              <div class="swiper-slide">
+                <article class="catalog-card catalog-card__no-list">
+
+ <a href="#">
+   <div class="catalog-card__top">
+    <picture class="catalog-card__pic">
+     <img class="catalog-card__img lazy" src="./placeholder.png" data-src="./img/aerodynamics/aerodynamics-1.jpg">
+    </picture>
+    <div class="catalog-card__model">
+     <img src="./img/common/3d.svg" alt="">
+     <span>3D</span>
+    </div>
+   </div>
+   <div class="catalog-card__info">
+    <p class="catalog-card__category">Formacar SCL</p>
+    <h3 class="catalog-card__name">PORSCHE 911 TURBO S VENOM</h3>
+    <div class="catalog-card__bottom">
+      <div class="bottom-button">
+ <img src="img/common/comments.svg" alt="">
+ <span>79</span>
+</div>
+     <div class="catalog-card__bookmark">
+      <img src="img/common/bookmark.svg" alt="">
+     </div>
+    </div>
+   </div>
+ </a>
+ 
+</article>
+              </div>
+            </div>
 
           </div>
         </div>
@@ -1540,7 +1637,7 @@
           </table>
           
         </div>
-        <div class="modal-maps__item">
+        <div class="modal-maps__item modal-maps__item-diler">
           <div class="modal-maps__item-title">
             Автомагазин Финик
           </div>
@@ -1575,7 +1672,7 @@
           </table>
           
         </div>
-        <div class="modal-maps__item">
+        <div class="modal-maps__item modal-maps__item-diler">
           <div class="modal-maps__item-title">
             Fenix PRO Service
           </div>
@@ -1631,6 +1728,35 @@
 
   </div>
 </section>
+
+<section class="b_modal modal modal-form-feedback" id="modal-form-feedback">
+  <div class="modal__inner">
+    <div class="form-feedback__wr">
+      <div class="form-feedback__title">Обратная связь</div>
+      <div class="form-feedback__sub-title">
+        Заполните форму ниже или отправьте электронное письмо на адрес <a href="mailto:support@formacar.co">support@formacar.com</a>
+      </div>
+      <div class="form-feedback__wr-input">
+        <input class="form-feedback__input" type="text" placeholder="Ваш адрес электронной почты">
+      </div>
+      <div class="form-feedback__wr-input">
+        <input class="form-feedback__input" type="text" placeholder="Тема обращения">
+      </div>
+      <div class="form-feedback__wr-input">
+        <textarea class="form-feedback__input" name="" id="" cols="30" rows="10" placeholder="Введите сообщение"></textarea>
+      </div>
+    </div>
+    <div class="form-feedback__buttons">
+      <button class="button button--primary button--light modal-alert__button" data-b_modal-close="modal-alert-complaint">Отмена</button>
+      <button class="button button--primary button--dark modal-alert__button" data-b_modal-close="modal-alert-complaint" data-b_modal-open="modal-alert-complaint-send">Отправить жалобу</button>
+    </div>
+    <div class="form-feedback__inf">
+      Нажимая на кнопку «ОТПРАВИТЬ» или используя адрес обратной связи support@formacar.com, 
+      я даю <a href="">согласие на обработку персональных данных.</a>
+    </div>
+  </div>
+</section>
+
 
 <section class="b_modal modal modal-share" id="modal-share">
   <div class="modal__inner">
@@ -1774,6 +1900,6 @@
 
 
 
-    <script src="./js/bundle.min.js?_v=20230413232626"></script>
+    <script src="./js/bundle.min.js?_v=20230418160145"></script>
   </body>
 </html>

@@ -11,6 +11,7 @@
    grid-template-columns: repeat(4, 1fr);
    gap: 3rem 4rem;
    width: 100%;
+   padding-bottom: 2rem;
 
    @media screen and (max-width: 1450px) {
       gap: 3rem 2.5rem;
@@ -24,8 +25,10 @@
 .news__gallery .swiper-slide {
    width: 30rem;
    display: inline-block;
+   margin-right: 4rem;
 
    @media (max-width: $tablet) {
+      margin-right: 2.5rem;
       width: 22rem;
    }
 

@@ -10,16 +10,16 @@
 
 .card {
    position: relative;
+   padding-bottom: 8rem;
+   overflow: hidden;
 }
 
 .card-block {
    background: #FFFFFF;
-   box-shadow: 0px 41px 30px -30px rgba(0, 0, 0, 0.2);
-   backdrop-filter: blur(25px);
+   box-shadow: 0px 41px 30px -30px #0003;
    border-radius: var(--brad-regular);
    padding: 2.5rem;
    width: 66.4rem;
-   margin-bottom: 8rem;
 
    @media (max-width: 1450px) {
       width: 70%;
@@ -57,8 +57,8 @@
 .card-list {
    margin-bottom: 2.3rem;
    overflow: hidden;
-   max-height: 1000px;
-   transition: 0.4s;
+   height: auto;
+   transition: 0.4s linear;;
 }
 
 .card-list {
@@ -66,7 +66,8 @@
 }
 
 .card-list.hidden {
-   max-height: 9rem;
+   height: 85px;
+   transition: 0.4s linear;
 }
 
 .card-list__item {

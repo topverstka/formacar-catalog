@@ -2,7 +2,12 @@
    overflow: hidden;
    border-radius: var(--brad-regular);
    background: #ffffff;
-   -webkit-mask-image: -webkit-radial-gradient(white, black);
+   transition: all .3s ease-in-out;
+}
+
+.news-card:hover {
+   box-shadow:  0px 4px 8px 4px rgb(0 0 0 / 5%);
+   transition: all .3s ease-in-out;
 }
 
 .news-card--wide {

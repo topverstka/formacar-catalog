@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css?_v=20230413232626" />
+    <link rel="stylesheet" href="./css/style.css?_v=20230418160145" />
 
     <!-- Отключить автодетект телефонов -->
     <meta name="format-detection" content="telephone=no" />
@@ -794,7 +794,7 @@
           </table>
           
         </div>
-        <div class="modal-maps__item">
+        <div class="modal-maps__item modal-maps__item-diler">
           <div class="modal-maps__item-title">
             Автомагазин Финик
           </div>
@@ -829,7 +829,7 @@
           </table>
           
         </div>
-        <div class="modal-maps__item">
+        <div class="modal-maps__item modal-maps__item-diler">
           <div class="modal-maps__item-title">
             Fenix PRO Service
           </div>
@@ -885,6 +885,35 @@
 
   </div>
 </section>
+
+<section class="b_modal modal modal-form-feedback" id="modal-form-feedback">
+  <div class="modal__inner">
+    <div class="form-feedback__wr">
+      <div class="form-feedback__title">Обратная связь</div>
+      <div class="form-feedback__sub-title">
+        Заполните форму ниже или отправьте электронное письмо на адрес <a href="mailto:support@formacar.co">support@formacar.com</a>
+      </div>
+      <div class="form-feedback__wr-input">
+        <input class="form-feedback__input" type="text" placeholder="Ваш адрес электронной почты">
+      </div>
+      <div class="form-feedback__wr-input">
+        <input class="form-feedback__input" type="text" placeholder="Тема обращения">
+      </div>
+      <div class="form-feedback__wr-input">
+        <textarea class="form-feedback__input" name="" id="" cols="30" rows="10" placeholder="Введите сообщение"></textarea>
+      </div>
+    </div>
+    <div class="form-feedback__buttons">
+      <button class="button button--primary button--light modal-alert__button" data-b_modal-close="modal-alert-complaint">Отмена</button>
+      <button class="button button--primary button--dark modal-alert__button" data-b_modal-close="modal-alert-complaint" data-b_modal-open="modal-alert-complaint-send">Отправить жалобу</button>
+    </div>
+    <div class="form-feedback__inf">
+      Нажимая на кнопку «ОТПРАВИТЬ» или используя адрес обратной связи support@formacar.com, 
+      я даю <a href="">согласие на обработку персональных данных.</a>
+    </div>
+  </div>
+</section>
+
 
 <section class="b_modal modal modal-share" id="modal-share">
   <div class="modal__inner">
@@ -1028,6 +1057,6 @@
 
 
 
-    <script src="./js/bundle.min.js?_v=20230413232626"></script>
+    <script src="./js/bundle.min.js?_v=20230418160145"></script>
   </body>
 </html>

@@ -24,11 +24,17 @@
    background: #467EF3;
 }
 
+.swiper-gallery {
+   padding-bottom: 2rem;
+}
+
 .swiper-gallery .swiper-slide {
    width: 30rem;
+   margin-right: 4rem;
 
    @media screen and (max-width: $tablet) {
       width: 22rem;
+      margin-right: 2.5rem;
       margin-bottom: 6rem;
    }
 }
@@ -97,4 +103,8 @@
 
 .advertisement-carousel img {
    object-fit: cover;
+}
+
+.swiper-button-disabled {
+   display: none;
 }

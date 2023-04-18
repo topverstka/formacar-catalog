@@ -15,6 +15,10 @@
    transition: 0.4s;
 }
 
+.nav__item-active {
+   color: var(--c-accent);
+}
+
 .nav__item:nth-last-child(1) {
    margin-right: 0;
 }

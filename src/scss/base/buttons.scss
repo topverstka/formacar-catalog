@@ -35,27 +35,24 @@
 .btn-burger {
    cursor: pointer;
    z-index: 10;
+   margin-top: -0.5rem;
 
    &__bar-1,
    &__bar-2,
    &__bar-3 {
       width: 3rem;
       border-radius: 10px;
-      height: 3.3px;
+      height: 3px;
       background-color: var(--c-text-regular);
-      margin: .6rem 0;
+      margin: .7rem 0;
       transition: 0.2s;
-   }
-
-   &__bar-1 {
-      margin: 0;
-      margin-bottom: .6rem;
+      
    }
 }
 
 .btn-burger-active {
    .btn-burger__bar-1 {
-      transform: translate(0, 10px) rotate(-45deg);
+      transform: translate(0, 11px) rotate(-45deg);
    }
 
    .btn-burger__bar-2 {
@@ -63,6 +60,13 @@
    }
 
    .btn-burger__bar-3 {
-      transform: translate(0, -8px) rotate(45deg);
+      transform: translate(0, -9px) rotate(45deg);
+   }
+}
+
+.news-menu__button{
+   @media (max-width: 1350px) {
+     line-height: 2rem;
+     height: 6rem;
    }
 }

@@ -6,6 +6,14 @@
    flex: 0 1 auto;
 }
 
+.breadcrumbs__list {
+   display: -webkit-box;
+   -webkit-line-clamp: 1;
+   position: relative;
+   -webkit-box-orient: vertical;
+   overflow: hidden;
+}
+
 .breadcrumbs__item {
    display: inline-block;
    transition: 0.4s;

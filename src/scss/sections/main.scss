@@ -60,6 +60,14 @@
       display: block;
    }
 
+   @media (max-width: 1350px) {
+      margin-bottom: 8rem;
+   }
+
+   @media (max-width: $tablet) {
+      margin-bottom: 0;
+   }
+
 }
 
 .main__container-catalog {
@@ -75,4 +83,8 @@
 
 .page-heading {
    margin-bottom: 4rem;
+}
+
+.main-sub-menu-top {
+   margin-top: 12rem;
 }

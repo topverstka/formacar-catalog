@@ -26,9 +26,9 @@ header {
 }
 
 .header__menu .btn-burger {
-   margin-right: 2rem;
+   padding-right: 2rem;
    display: none;
-   margin-top: 8px;
+   padding-top: 8px;
 
    @media screen and (max-width: 1450px) {
       display: block;
@@ -67,6 +67,11 @@ header {
    @media screen and (max-width: 1600px) {
       margin-right: 2rem;
    }
+}
+
+.header__nav-item-active .header__nav-item-dropdown {
+   opacity: 1;
+   pointer-events: painted;
 }
 
 .header__nav-link {

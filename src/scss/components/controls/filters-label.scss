@@ -1,4 +1,4 @@
-.filters-block__label {
+.checkbox {
    display: flex;
    align-items: flex-end;
    transition: 0.4s;
@@ -6,11 +6,11 @@
    cursor: pointer;
 }
 
-.filters-block__label input {
+.checkbox input {
    display: none;
 }
 
-.filters-block__input {
+.checkbox__input {
    --size: 2.2rem;
    width: var(--size);
    height: var(--size);
@@ -22,23 +22,79 @@
    justify-content: center;
 }
 
-.filters-block__input img,
-.filters-block__input svg {
+.checkbox__input img,
+.checkbox__input svg {
    width: 1.2rem;
    opacity: 0;
    transition: 0.4s;
 }
 
-.filters-block__label:hover {
+.checkbox:hover {
    opacity: 0.7;
 }
 
-.filters-block__label input:checked~.filters-block__input {
+.checkbox input:checked~.checkbox__input {
    background: #383838;
    border: 2px solid #383838;
 }
 
-.filters-block__label input:checked~.filters-block__input img,
-.filters-block__label input:checked~.filters-block__input svg {
+.checkbox input:checked~.checkbox__input img,
+.checkbox input:checked~.checkbox__input svg {
    opacity: 1;
+}
+
+.radio {
+   display: flex;
+   position: relative;
+   align-items: flex-end;
+   transition: 0.4s;
+   margin-bottom: 1.7rem;
+   cursor: pointer;
+}
+
+.radio input {
+   display: none;
+}
+
+.radio__input {
+   --size: 2.2rem;
+   width: var(--size);
+   height: var(--size);
+   border: 1.4px solid #B4B4BF;
+   border-radius: 100%;
+   margin-right: 1rem;
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.radio__input img,
+.radio__input svg {
+   width: 1.2rem;
+   opacity: 0;
+   transition: 0.4s;
+}
+
+.radio:hover {
+   opacity: 0.7;
+}
+
+.radio input:checked + .radio__input{
+   border: 1.4px solid #383838;
+}
+
+.radio input:checked~.radio__input::after {
+   content: '';
+   background-image: url(../img/common/black-circle.svg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 15px;
+   display: inline-block;
+   height: 15px;
+   border-radius: 100%;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
 }
