@@ -29,7 +29,7 @@ if (document.querySelector('.promo-carousel')) {
 if (document.querySelector('.advertisement-carousel')) {
 
   let advertisementCarousel = new Swiper(".advertisement-carousel", {
-    modules: [Pagination, Autoplay],
+    modules: [Pagination, Autoplay, Navigation],
     spaceBetween: 10,
     loop: true,
     speed: 600,
@@ -50,6 +50,10 @@ if (document.querySelector('.advertisement-carousel')) {
       1100: {
         slidesPerView: 1.33683,
       }
+    },
+    navigation: {
+      nextEl: ".swiper-gallery-next-adv",
+      prevEl: ".swiper-gallery-prev-adv",
     }
   });
 
@@ -105,7 +109,7 @@ if (document.querySelector('.modal-events__carousel')) {
 /////////////////////a
 
 const offersSlider = new Swiper(".offers-carousel", {
-  modules: [Pagination, Autoplay, EffectFade],
+  modules: [Pagination, Autoplay, EffectFade, Navigation],
   spaceBetween: 10,
   loop: true,
   speed: 600,
@@ -116,6 +120,10 @@ const offersSlider = new Swiper(".offers-carousel", {
     el: ".offers-carousel__pagination",
     clickable: true,
   },
+  navigation: {
+    nextEl: ".swiper-gallery-next-offers",
+    prevEl: ".swiper-gallery-prev-offers",
+  }
 });
 
 
@@ -124,10 +132,15 @@ const swiper4 = new Swiper(".news-carousel--tuning", {
   speed: 600,
   spaceBetween: 5,
   slidesPerView: 1.2,
+  navigation: {
+    nextEl: ".swiper-gallery-next-tuning",
+    prevEl: ".swiper-gallery-prev-tuning",
+  }
 });
 
 
 const swiper3 = new Swiper(".news-carousel--small", {
+  modules: [Navigation],
   spaceBetween: 5,
   slidesPerView: 7.2,
   freeMode: true,
@@ -141,19 +154,32 @@ const swiper2 = new Swiper(".news-carousel--big", {
   thumbs: {
     swiper: swiper3,
   },
+  navigation: {
+    nextEl: ".swiper-gallery-next-big",
+    prevEl: ".swiper-gallery-prev-big",
+  }
 });
 
 
 const cardVideo = new Swiper(".card-video", {
+  modules: [Navigation],
   spaceBetween: 20,
   speed: 600,
   slidesPerView: 2.3024,
+  navigation: {
+    nextEl: ".swiper-gallery-next-video",
+    prevEl: ".swiper-gallery-prev-video",
+  }
 });
 
 const swiper = new Swiper('.news__swiper', {
   modules: [Navigation],
   speed: 600,
   slidesPerView: 'auto',
+  navigation: {
+    nextEl: ".swiper-gallery-next-news",
+    prevEl: ".swiper-gallery-prev-news",
+  }
 });
 
 const swiperGallery = document.querySelectorAll('.swiper-gallery');

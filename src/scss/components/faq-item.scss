@@ -38,18 +38,24 @@
    vertical-align: middle;
 }
 
+.faq-item__content {
+   padding: 2.5rem 5rem 0 5rem;
+   display: none;
+}
+
 .faq-item__body {
    padding: 2.5rem 5rem 5rem 5rem;
    display: none;
 }
 
-.faq-item__body p {
+.faq-item__body p, .faq-item__content p {
    padding-bottom: 1rem;
 }
 
 .faq-item__imgs {
    gap: 3rem;
    display: flex;
+   cursor: pointer;
 
    @media screen and (max-width: $tablet) {
       display: block;
@@ -71,7 +77,7 @@
    }
 }
 
-.faq-item-active .faq-item__body {
+.faq-item-active .faq-item__body, .faq-item-active .faq-item__content {
    display: block;
 }
 
@@ -120,4 +126,8 @@
 
 .faq-item__item-wr {
    margin-bottom: 4rem;
+}
+
+.faq-item__event {
+   cursor: pointer;
 }

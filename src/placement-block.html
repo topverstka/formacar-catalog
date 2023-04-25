@@ -57,7 +57,8 @@
             </nav>
             <div class="news-menu__separator"></div>
             <div class="news-menu__buttons">
-              <button class="button button--primary button--light news-menu__button" data-b_modal-open="modal-form-feedback">Форма обратной
+              <button class="button button--primary button--light news-menu__button"
+                data-b_modal-open="modal-form-feedback">Форма обратной
                 связи</button>
             </div>
           </section>
@@ -83,15 +84,8 @@
 
               <p>Выберите страницу для размещения рекламы.</p>
 
-
             </div>
-
-
-
-
-
           </div>
-
 
           <div class="faq-item">
             <div class="faq-item__title">
@@ -103,10 +97,12 @@
               <span>Главная страница</span>
             </div>
             <div class="faq-item__body">
-              <div class="faq-item__imgs">
-                <picture class="faq-item__img-wr">
-                  <img class="faq-item__img" src="img/placement-block/placement-block-1.png" alt="">
-                </picture>
+              <div class="faq-item__event" data-faq-name="Главная страница" data-b_modal-open="modal-form-placement">
+                <div class="faq-item__imgs">
+                  <picture class="faq-item__img-wr">
+                    <img class="faq-item__img" src="img/placement-block/placement-block-1.png" alt="">
+                  </picture>
+                </div>
               </div>
             </div>
           </div>
@@ -121,10 +117,12 @@
               <span>Новости</span>
             </div>
             <div class="faq-item__body">
-              <div class="faq-item__imgs">
-                <picture class="faq-item__img-wr">
-                  <img class="faq-item__img" src="img/placement-block/placement-block-2.png" alt="">
-                </picture>
+              <div class="faq-item__event" data-faq-name="Новости" data-b_modal-open="modal-form-placement">
+                <div class="faq-item__imgs">
+                  <picture class="faq-item__img-wr">
+                    <img class="faq-item__img" src="img/placement-block/placement-block-2.png" alt="">
+                  </picture>
+                </div>
               </div>
             </div>
           </div>
@@ -139,10 +137,12 @@
               <span>Каталог тюнинга</span>
             </div>
             <div class="faq-item__body">
-              <div class="faq-item__imgs">
-                <picture class="faq-item__img-wr">
-                  <img class="faq-item__img" src="img/placement-block/placement-block-3.png" alt="">
-                </picture>
+              <div class="faq-item__event" data-faq-name="Каталог тюнинга" data-b_modal-open="modal-form-placement">
+                <div class="faq-item__imgs">
+                  <picture class="faq-item__img-wr">
+                    <img class="faq-item__img" src="img/placement-block/placement-block-3.png" alt="">
+                  </picture>
+                </div>
               </div>
             </div>
           </div>
@@ -154,9 +154,9 @@
                   d="M23.588 28.0887C23.0406 28.6371 22.158 28.6371 21.6106 28.0887L12.3268 18.789C11.8911 18.3525 11.8911 17.6475 12.3268 17.211L21.6106 7.91127C22.158 7.36291 23.0406 7.36291 23.588 7.91127C24.1354 8.45963 24.1354 9.34373 23.588 9.89209L15.4996 18.0056L23.5992 26.1191C24.1354 26.6563 24.1354 27.5516 23.588 28.0887Z"
                   fill="#383838" />
               </svg>
-              <span>Каталог тюнинга</span>
+              <span>Категория тюнинга</span>
             </div>
-            <div class="faq-item__body">
+            <div class="faq-item__content">
               <p>
                 Выберите категорию тюнинга для размещения рекламы:
               </p>
@@ -171,10 +171,15 @@
                 <div class="tag">Интерьер</div>
                 <div class="tag">Винил</div>
               </div>
-              <div class="faq-item__imgs">
-                <picture class="faq-item__img-wr">
-                  <img class="faq-item__img" src="img/placement-block/placement-block-4.png" alt="">
-                </picture>
+            </div>
+
+            <div class="faq-item__body">
+              <div class="faq-item__event" data-faq-name="Категория тюнинга" data-b_modal-open="modal-form-placement">
+                <div class="faq-item__imgs">
+                  <picture class="faq-item__img-wr">
+                    <img class="faq-item__img" src="img/placement-block/placement-block-4.png" alt="">
+                  </picture>
+                </div>
               </div>
             </div>
           </div>
@@ -189,13 +194,15 @@
               <span>События</span>
             </div>
             <div class="faq-item__body">
-              <div class="faq-item__imgs">
-                <picture class="faq-item__img-wr">
-                  <img class="faq-item__img" src="img/placement-block/placement-block-5.png" alt="">
-                </picture>
-                <picture class="faq-item__img-wr">
-                  <img class="faq-item__img" src="img/placement-block/placement-block-6.png" alt="">
-                </picture>
+              <div class="faq-item__event" data-faq-name="События" data-b_modal-open="modal-form-placement">
+                <div class="faq-item__imgs">
+                  <picture class="faq-item__img-wr">
+                    <img class="faq-item__img" src="img/placement-block/placement-block-5.png" alt="">
+                  </picture>
+                  <picture class="faq-item__img-wr">
+                    <img class="faq-item__img" src="img/placement-block/placement-block-6.png" alt="">
+                  </picture>
+                </div>
               </div>
             </div>
           </div>
@@ -213,32 +220,47 @@
               <div class="faq-item__items">
                 <div class="faq-item__item">
                   <div class="faq-item__item-wr">
-                    <p>В 3D-конфигураторе между сменой автомобилей.</p>
-                    <img src="img/placement-block/placement-block-7.png" alt="">
+                    <div class="faq-item__event" data-faq-name="3D-конфигуратор и приложение"
+                      data-b_modal-open="modal-form-placement">
+                      <p>В 3D-конфигураторе между сменой автомобилей.</p>
+                      <img src="img/placement-block/placement-block-7.png" alt="">
+                    </div>
                   </div>
                   <div class="faq-item__item-wr">
-                    <p>В 3D-конфигураторе между сменой автомобилей.</p>
-                    <img src="img/placement-block/placement-block-9.png" alt="">
-                    <img src="img/placement-block/placement-block-10.png" alt="">
+                    <div class="faq-item__event" data-faq-name="3D-конфигуратор и приложение"
+                      data-b_modal-open="modal-form-placement">
+                      <p>В 3D-конфигураторе между сменой автомобилей.</p>
+                      <img src="img/placement-block/placement-block-9.png" alt="">
+                      <img src="img/placement-block/placement-block-10.png" alt="">
+                    </div>
                   </div>
                   <div class="faq-item__item-2">
-                    <p>В новостной или социальной ленте.</p>
-                    <div class="faq-item__item-2-wr">
-                      <img src="img/placement-block/placement-block-13.png" alt="">
-                      <img src="img/placement-block/placement-block-14.png" alt="">
+                    <div class="faq-item__event" data-faq-name="3D-конфигуратор и приложение"
+                      data-b_modal-open="modal-form-placement">
+                      <p>В новостной или социальной ленте.</p>
+                      <div class="faq-item__item-2-wr">
+                        <img src="img/placement-block/placement-block-13.png" alt="">
+                        <img src="img/placement-block/placement-block-14.png" alt="">
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div class="faq-item__item">
                   <div class="faq-item__item-wr">
-                    <p>В 3D-конфигураторе между сменой автомобилей.</p>
-                    <img src="img/placement-block/placement-block-8.png" alt="">
+                    <div class="faq-item__event" data-faq-name="3D-конфигуратор и приложение"
+                      data-b_modal-open="modal-form-placement">
+                      <p>В 3D-конфигураторе между сменой автомобилей.</p>
+                      <img src="img/placement-block/placement-block-8.png" alt="">
+                    </div>
                   </div>
                   <div class="faq-item__item-wr">
-                    <p>Интеграция тюнинг-проектов и размещение компании в каталоге брендов в
-                      3D-конфигураторе.</p>
-                    <img src="img/placement-block/placement-block-11.png" alt="">
-                    <img src="img/placement-block/placement-block-12.png" alt="">
+                    <div class="faq-item__event" data-faq-name="3D-конфигуратор и приложение"
+                      data-b_modal-open="modal-form-placement">
+                      <p>Интеграция тюнинг-проектов и размещение компании в каталоге брендов в
+                        3D-конфигураторе.</p>
+                      <img src="img/placement-block/placement-block-11.png" alt="">
+                      <img src="img/placement-block/placement-block-12.png" alt="">
+                    </div>
                   </div>
                 </div>
               </div>

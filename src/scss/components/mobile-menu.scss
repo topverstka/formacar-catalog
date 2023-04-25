@@ -3,13 +3,32 @@
    position: fixed;
    z-index: 5;
    height: 100%;
-   top: 6rem;
-   padding-top: 2rem;
+   padding-top: 8rem;
+   padding-bottom: 3rem;
    padding-left: 1rem;
    visibility: hidden;
    opacity: 0;
+   overflow-y: scroll;
    transform: translateX(-100px);
    transition: .3s ease-in-out;
+}
+
+.mobile-menu::-webkit-scrollbar {
+   width: 0.5rem;
+   border-radius: 10px;
+}
+
+.mobile-menu::-webkit-scrollbar-track {
+   background: transparent;
+}
+
+.mobile-menu::-webkit-scrollbar-thumb {
+   background: #ECECEC;
+   border-radius: 100px;
+}
+
+.mobile-menu::-webkit-scrollbar-thumb:hover {
+   background: #B4B4BF;
 }
 
 .mobile-menu-active {

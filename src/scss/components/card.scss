@@ -198,6 +198,12 @@
 
 .card-carousel {
    margin-bottom: 4rem;
+   position: relative;
+
+   .swiper-gallery-prev,
+   .swiper-gallery-next {
+      top: 40%;
+   }
 }
 
 .card-carousel__img {
@@ -280,4 +286,8 @@
 .card-comments .comments-empty {
    text-align: left;
    padding-left: 5.125rem;
+}
+
+.card-video-slider {
+   position: relative;
 }

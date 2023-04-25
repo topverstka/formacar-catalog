@@ -120,6 +120,26 @@ body._lock {
    }
 }
 
+.bgc-fix {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: #000000bd;
+   z-index: 20;
+   opacity: 0;
+   visibility: hidden;
+   transition: .3s ease-in-out;
+}
+
+.bgc-fix-active {
+   opacity: 1;
+   visibility: visible;
+   z-index: 98;
+   transition: .3s ease-in-out;
+}
+
 /*
 (i) Стили будут применяться ко
 всем классам содержащим *__container

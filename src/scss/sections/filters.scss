@@ -89,6 +89,10 @@
    margin-bottom: 3.5rem;
 }
 
+.filters-block {
+   
+}
+
 .filters-block:last-child {
    margin-bottom: 0;
 }
@@ -183,4 +187,22 @@
    display: flex;
    align-items: center;
    justify-content: center;
+}
+
+.filter-block-child:nth-last-child(1) {
+   border-bottom: 1px solid #ECECEC;
+}
+
+.filter-block-child {
+   padding: 2rem;
+   margin: 0;
+   border-top: 1px solid #ECECEC;
+
+   .filters-block__main, .filters__search, .filters-block__reset{
+      display: none;
+   }
+
+   .filters-block__top {
+      margin-bottom: 0;
+   }
 }

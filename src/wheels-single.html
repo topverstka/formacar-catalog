@@ -115,7 +115,7 @@
                 <img src="img/common/pin.svg" alt="">
                 <p>Где купить</p>
               </button>
-              <button class="button button--purple card-bottom__button">
+              <button class="button button--purple card-bottom__button" data-b_modal-open="modal-app">
                 <img src="img/common/3d.svg" alt="">
                 <p>Открыть 3D</p>
               </button>
@@ -154,6 +154,12 @@
 
              </div>
             </div>
+            <div class="swiper-gallery-prev-big swiper-gallery-prev">
+              <img class="swiper-gallery-img" src="/img/common/swiper-arrow-left.svg" alt="">
+            </div>
+            <div class="swiper-gallery-next-big swiper-gallery-next">
+              <img class="swiper-gallery-img" src="/img/common/swiper-arrow-right.svg" alt="">
+            </div>
             <div class="swiper news-carousel--small">
              <div class="swiper-wrapper">
 
@@ -182,6 +188,7 @@
             </div>
           </div>
           <h2 class="section-desc catalog__title">Видео</h2>
+          <div class="card-video-slider">
           <div class="swiper card-video">
             <div class="swiper-wrapper">
 
@@ -209,8 +216,14 @@
 
 
             </div>
-            
           </div>
+          <div class="swiper-gallery-prev-video swiper-gallery-prev">
+            <img class="swiper-gallery-img" src="/img/common/swiper-arrow-left.svg" alt="">
+          </div>
+          <div class="swiper-gallery-next-video swiper-gallery-next">
+            <img class="swiper-gallery-img" src="/img/common/swiper-arrow-right.svg" alt="">
+          </div>
+        </div>
           <div class="news-bottom">
             <div class="news-bottom__left">
               @@include('tpls/sections/bottom-button.html',{type: 'comments', number: '234'})
@@ -295,6 +308,12 @@
             
             </div>
           </div>
+           <div class="swiper-gallery-prev-news swiper-gallery-prev">
+              <img class="swiper-gallery-img" src="/img/common/swiper-arrow-left.svg" alt="">
+            </div>
+            <div class="swiper-gallery-next-news swiper-gallery-next">
+              <img class="swiper-gallery-img" src="/img/common/swiper-arrow-right.svg" alt="">
+            </div>
         </div>
       </section>
         
