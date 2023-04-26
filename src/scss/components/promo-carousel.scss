@@ -64,6 +64,10 @@
    line-height: 5.2rem;
    text-transform: uppercase;
    transition: 0.4s;
+   overflow: hidden;
+   display: -webkit-box;
+   -webkit-line-clamp: 4;
+   -webkit-box-orient: vertical;
 
    @media screen and (max-width: 1450px) {
       font-size: 2rem;
