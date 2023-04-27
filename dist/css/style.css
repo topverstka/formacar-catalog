@@ -1879,6 +1879,8 @@
   height: 80rem;
   width: 130rem;
   border-radius: 10px;
+  position: relative;
+  left: -2px;
 }
 @media (max-width: 1400px) {
   .modal-events__inner {

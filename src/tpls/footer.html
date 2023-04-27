@@ -152,7 +152,10 @@
     <div class="events-card__bottom modal-events__bottom">
       @@include('sections/bottom-button.html',{type: 'like', number: '87'})
       @@include('sections/bottom-button.html',{type: 'comments', number: '130'})
-      @@include('sections/bottom-button.html',{type: 'view', number: '265'})
+      <div class="bottom-button" data-b_modal-open="modal-app-comment">
+        <img src="img/common/view.png" alt="">
+        <span>213</span>
+       </div>
     </div>
   </div>
 
