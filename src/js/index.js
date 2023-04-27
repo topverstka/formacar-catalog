@@ -140,7 +140,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
   // DropDown Mobile menu
 
-  const mobileMenuDropdown = document.querySelector('.mobile-menu__nav-dropdown svg');
+  const mobileMenuDropdown = document.querySelector('.mobile-menu__nav-dropdown');
 
   mobileMenuDropdown.onclick = function () {
     this.closest('.mobile-menu__nav-dropdown').classList.toggle('mobile-menu__nav-dropdown-active');

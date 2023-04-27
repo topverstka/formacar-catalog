@@ -1919,6 +1919,7 @@
   position: absolute;
   top: 0.5rem;
   left: 0.5rem;
+  z-index: 10;
 }
 
 .modal-events__pic {
@@ -2991,7 +2992,7 @@
   transition: 0.3s ease-in-out;
 }
 
-@media screen and (max-width: 1450px) {
+@media screen and (max-width: 1500px) {
   .mobile-menu .header__nav {
     display: block;
     padding-left: 0 !important;
