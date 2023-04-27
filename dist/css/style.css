@@ -3592,6 +3592,7 @@ body._lock {
 
 .fancybox__container {
   max-width: 100% !important;
+  z-index: 99999999999999 !important;
 }
 
 .fancybox__toolbar .is-right button {
@@ -5435,6 +5436,20 @@ html.with-fancybox body.hide-scrollbar {
   }
 }
 
+.section-title a {
+  transition: 0.3s ease-in-out;
+}
+
+.section-title a:hover {
+  opacity: 0.7;
+  transition: 0.3s ease-in-out;
+}
+
+.section-title a:active {
+  color: var(--c-accent);
+  opacity: 1;
+}
+
 .section-desc {
   font-family: "Oswald";
   font-size: 2rem;
@@ -5442,6 +5457,21 @@ html.with-fancybox body.hide-scrollbar {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   margin-bottom: 2rem;
+}
+
+.section-desc a {
+  transition: 0.3s ease-in-out;
+}
+
+.section-desc a:hover {
+  opacity: 0.7;
+  transition: 0.3s ease-in-out;
+}
+
+.section-desc a:active {
+  opacity: 1;
+  color: var(--c-accent);
+  transition: 0.3s ease-in-out;
 }
 
 @media (max-width: 1500px) {
