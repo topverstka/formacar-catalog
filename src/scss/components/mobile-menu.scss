@@ -8,9 +8,9 @@
    padding-left: 1rem;
    visibility: hidden;
    opacity: 0;
+   width: 300px;
    overflow-y: scroll;
    transform: translateX(-100px);
-   transition: .3s ease-in-out;
 }
 
 .mobile-menu::-webkit-scrollbar {
@@ -35,7 +35,6 @@
    visibility: visible;
    opacity: 1;
    transform: translateX(0);
-   transition: .3s ease-in-out;
 }
 
 .mobile-menu .header__nav {
@@ -49,7 +48,6 @@
    padding: 1rem 2rem;
    display: inline-block;
    font-size: 1.4rem;
-   transition: .2s ease-in-out;
 }
 
 .mobile-menu .header__nav-item,

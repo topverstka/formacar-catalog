@@ -2962,9 +2962,9 @@
   padding-left: 1rem;
   visibility: hidden;
   opacity: 0;
+  width: 300px;
   overflow-y: scroll;
   transform: translateX(-100px);
-  transition: 0.3s ease-in-out;
 }
 
 .mobile-menu::-webkit-scrollbar {
@@ -2989,7 +2989,6 @@
   visibility: visible;
   opacity: 1;
   transform: translateX(0);
-  transition: 0.3s ease-in-out;
 }
 
 @media screen and (max-width: 1500px) {
@@ -3003,7 +3002,6 @@
   padding: 1rem 2rem;
   display: inline-block;
   font-size: 1.4rem;
-  transition: 0.2s ease-in-out;
 }
 
 .mobile-menu .header__nav-item,
@@ -5860,6 +5858,7 @@ header {
   transition: 0.4s;
   margin-right: 4rem;
   padding: 2rem 0;
+  cursor: pointer;
 }
 @media screen and (max-width: 1600px) {
   .header__nav-item {
@@ -5875,7 +5874,6 @@ header {
 .header__nav-link {
   display: block;
   font-size: 1.4rem;
-  transition: 0.4s;
 }
 @media screen and (max-width: 1600px) {
   .header__nav-link {
