@@ -6,7 +6,7 @@ import sourcemaps from "gulp-sourcemaps";
 import autoPrefixer from "gulp-autoprefixer";
 import cleanCSS from "gulp-clean-css";
 import rename from "gulp-rename";
-import dartSass from "sass";
+import * as dartSass from 'sass';
 import gulpSass from "gulp-sass";
 import groupCssMediaQueries from "gulp-group-css-media-queries";
 import replace from "gulp-replace";
