@@ -1,6 +1,6 @@
 "use strict";
 
-import { removeAllClasses, bodyLock } from "./utils/functions.js";
+import { removeAllClasses, bodyLock, bodyUnlock } from "./utils/functions.js";
 import DismalModules, { acc, select } from "./utils/modules.js";
 
 import "./unstable/formich.js";
@@ -11,11 +11,6 @@ import "./unstable/burger.js";
  * b_modal
  */
 import "./b_modal.js";
-
-/**
- * Timer
- */
-// import "./b_timer.js";
 
 /**
  * Lazy Load
@@ -62,6 +57,8 @@ import { doc } from "prettier";
 //Модальные окна
 const modals = new DismalModules.Modals()
 
+import "./components.fmc/_mobile-menu.js";
+  
 // Табы
 // DismalModules.tabs()
 
@@ -132,18 +129,6 @@ window.addEventListener("DOMContentLoaded", (event) => {
     faqItem.onclick = function () {
       this.closest('.faq-item').classList.toggle('faq-item-active');
     }
-  }
-
-  // Button menu
-
-  const btnMenu = document.querySelector('.btn-burger');
-  const bodyFix = document.querySelector('body');
-  const mobileMenu = document.querySelector('.mobile-menu');
-
-  btnMenu.onclick = function () {
-    this.classList.toggle('btn-burger-active');
-    bodyFix.classList.toggle('body-fix');
-    mobileMenu.classList.toggle('mobile-menu-active');
   }
 
   // DropDown Mobile menu

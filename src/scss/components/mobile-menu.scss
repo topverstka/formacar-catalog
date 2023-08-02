@@ -6,11 +6,13 @@
    padding-top: 8rem;
    padding-bottom: 3rem;
    padding-left: 1rem;
-   visibility: hidden;
-   opacity: 0;
+   // visibility: hidden;
+   pointer-events: none;
+   // opacity: 0;
    width: 300px;
    overflow-y: scroll;
-   transform: translateX(-100px);
+   transform: translateX(-100%);
+   transition: all 0.4s ease-in-out;
 }
 
 .mobile-menu::-webkit-scrollbar {
@@ -32,8 +34,9 @@
 }
 
 .mobile-menu-active {
-   visibility: visible;
-   opacity: 1;
+   // visibility: visible;
+   pointer-events: initial;
+   // opacity: 1;
    transform: translateX(0);
 }
 

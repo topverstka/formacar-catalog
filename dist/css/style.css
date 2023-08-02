@@ -2960,11 +2960,11 @@
   padding-top: 8rem;
   padding-bottom: 3rem;
   padding-left: 1rem;
-  visibility: hidden;
-  opacity: 0;
+  pointer-events: none;
   width: 300px;
   overflow-y: scroll;
-  transform: translateX(-100px);
+  transform: translateX(-100%);
+  transition: all 0.4s ease-in-out;
 }
 
 .mobile-menu::-webkit-scrollbar {
@@ -2986,8 +2986,7 @@
 }
 
 .mobile-menu-active {
-  visibility: visible;
-  opacity: 1;
+  pointer-events: initial;
   transform: translateX(0);
 }
 
@@ -3554,6 +3553,7 @@ body {
   }
 }
 
+html._lock,
 body._lock {
   overflow: hidden;
   touch-action: none;
@@ -5514,7 +5514,7 @@ html.with-fancybox body.hide-scrollbar {
   height: 3px;
   background-color: var(--c-text-regular);
   margin: 0.7rem 0;
-  transition: 0.2s;
+  transition: 0.3s ease-in-out;
 }
 
 .btn-burger-active .btn-burger__bar-1 {
