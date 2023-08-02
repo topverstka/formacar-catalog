@@ -3392,7 +3392,7 @@
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url("../resources/fonts/Oswald-regular.woff2") format("woff2"), url("../resources/fonts/Oswald-regular.woff") format("woff");
+  src: url("../resources/fonts/Oswald-Regular.woff2") format("woff2"), url("../resources/fonts/Oswald-Regular.woff") format("woff");
   font-display: swap;
 }
 @font-face {
