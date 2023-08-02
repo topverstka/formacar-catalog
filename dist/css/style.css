@@ -3386,6 +3386,31 @@
   justify-content: center;
 }
 
+.search-dropdown__message {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.search-dropdown__message-icon {
+  display: block;
+  --size: 2.4rem;
+  max-width: var(--size);
+  min-width: var(--size);
+  width: var(--size);
+  height: var(--size);
+  margin-right: 2rem;
+}
+
+.search-dropdown__message-result {
+  color: var(--light-text-black, #383838);
+  text-align: justify;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
 @font-face {
   font-family: "Oswald";
   font-style: normal;
