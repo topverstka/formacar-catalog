@@ -24,10 +24,18 @@ import "./libs/lazyload.min.js";
 let lazyLoadInstance = new LazyLoad();
 window.lazyload = lazyLoadInstance;
 
-import { Fancybox } from "@fancyapps/ui";
-
+import { Fancybox, Thumbs, Toolbar} from "@fancyapps/ui";
 Fancybox.bind("[data-fancybox]", {
-  thumbs: true,
+  Thumbs: false,
+  Toolbar: {
+    display: {
+      left: [],
+      middle: [],
+      right: ["close"],
+    },
+  },
+  wheel: false,
+  contentClick: false,
 });
 
 

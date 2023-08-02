@@ -3587,20 +3587,9 @@ body._lock {
   margin-bottom: 6rem;
 }
 
-.fancybox__footer {
-  display: none !important;
-}
-
 .fancybox__container {
   max-width: 100% !important;
   z-index: 99999999999999 !important;
-}
-
-.fancybox__toolbar .is-right button {
-  display: none !important;
-}
-.fancybox__toolbar .is-right button:nth-last-child(1) {
-  display: block !important;
 }
 
 .bgc-fix {
