@@ -7,7 +7,9 @@ window.addEventListener('DOMContentLoaded', (event) => {
     function notificationOfCookie(showTime, removeTime) {
         const acceptCookie = Cookies.get('cookies_allow');
 
-        const modalCookies = document.querySelector('#modal-cookies').closest('.b_modal__overlay')
+        let modalCookies = document.querySelector('#modal-cookies')
+        modalCookies = modalCookies.closest('.b_modal__overlay')
+        
         if (acceptCookie != undefined || acceptCookie == false) {
             if (modalCookies) modalCookies.remove();
             return;

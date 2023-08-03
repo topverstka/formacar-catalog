@@ -3210,8 +3210,7 @@
   height: 2.4rem;
   position: absolute;
   right: 2rem;
-  top: 54%;
-  transform: translateY(-50%);
+  top: 0.95rem;
   z-index: -1;
 }
 .form-feedback__select svg path {
