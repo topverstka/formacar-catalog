@@ -16,6 +16,10 @@
    transition: .3s ease-in-out;
 }
 
+.news-carousel__slide .play-button {
+   --size: 4.6rem;
+}
+
 .play-button:hover {
    opacity: .7;
    transition: .3s ease-in-out;

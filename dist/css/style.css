@@ -5776,6 +5776,10 @@ html.with-fancybox body.hide-scrollbar {
   transition: 0.3s ease-in-out;
 }
 
+.news-carousel__slide .play-button {
+  --size: 4.6rem;
+}
+
 .play-button:hover {
   opacity: 0.7;
   transition: 0.3s ease-in-out;
