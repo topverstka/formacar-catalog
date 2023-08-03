@@ -1331,6 +1331,12 @@
   transition: 0.4s;
 }
 
+.catalog-card__no-list .catalog-card__top {
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .catalog-card__pic {
   width: 100%;
   height: 17rem;
