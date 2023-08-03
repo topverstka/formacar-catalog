@@ -128,3 +128,17 @@
 .modal-share__button {
    padding: 1.3rem 3rem;
 }
+
+
+.modal-cookies {
+   max-width: 80rem;
+   width: 100%;
+}
+.modal-cookies .modal__inner {
+   display: grid;
+   justify-items: center;
+}
+// .modal-cookies__button-allow {
+//    margin-left: auto;
+//    margin-right: auto;
+// }

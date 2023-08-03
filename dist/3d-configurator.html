@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css?_v=20230803111255" />
+    <link rel="stylesheet" href="./css/style.css?_v=20230803120235" />
 
     <!-- Отключить автодетект телефонов -->
     <meta name="format-detection" content="telephone=no" />
@@ -1139,7 +1139,10 @@
   </div>
 </section>
 
-<section class="b_modal modal modal-alert" id="modal-alert-complaint-send">
+
+    </div>
+
+    <section class="b_modal modal modal-alert" id="modal-alert-complaint-send">
   <div class="modal__inner">
     <picture class="modal-alert__pic modal-alert__pic-send">
       <img src="img/modal-alert/complaint-send.svg" alt="" class="modal-alert__img">
@@ -1186,6 +1189,7 @@
     </div>
   </div>
 </section>
+
 
 <section class="b_modal modal modal-share" id="modal-share">
   <div class="modal__inner">
@@ -1265,6 +1269,7 @@
     </div>
   </div>
 </section>
+
 
 <section class="b_modal modal modal-app" id="modal-app-comment">
   <div class="modal__inner">
@@ -1392,105 +1397,24 @@
     </div>
   </div>
 </section>
-    </div>
 
-    <div id="callback-table" class="b_modal">
-  <h3 class="b_modal__title">
-    Laissez vos coordonnées <br />
-    ou appeler au numéro <br />
-    <a class="link b_modal__title-link" href="tel:0558709154">05 58 70 91 54</a>
-  </h3>
-  <form action="table" id="form-table" class="form form--table">
-    <div class="form__hidden">
-      <input type="text" name="page" hidden />
-      <input type="text" name="formname" hidden />
-      <input type="text" name="additional" hidden />
-    </div>
-    <div class="form__inner">
-      <label class="input input--name">
-  <input
-    class="input__field"
-    name="user_name"
-    type="text"
-    placeholder="Nom"
-    data-value-missing="Заполните имя"
-    data-value-invalid="Что-то не так с введенным именем"
-    autocomplete="name"
-  />
-  <span class="input__message">Ошибка</span>
-</label>
- <label class="input input--tel">
-  <input
-    class="input__field"
-    required
-    name="user_tel"
-    type="tel"
-    placeholder="Objet"
-    maxlength="25"
-    minlength="10"
-    data-value-missing="Напишите телефон"
-    data-value-invalid="Проверьте корректность телефона"
-    autocomplete="tel"
-  />
-  <span class="input__message">Ошибка</span>
-</label>
 
-      <button type="submit" class="button button--primary b_modal__button" data-success="Message envoyé">
-        <span class="button__text">Envoyer le message</span>
+<section class="b_modal modal modal-cookies" id="modal-cookies">
+  <div class="modal__inner">
+    <h3 class="modal__title">Этот веб-сайт использует файлы cookie</h3>
+    <p class="modal__text">
+      Нажав на кнопку “Разрешить все файлы “cookie”, вы соглашаетесь на использование <br>
+      файлов cookie нашим сервисом. Узнать больше и изменить настройки можно <br>
+      в <a class="link" href="#">Политике использования файлов cookie</a>
+    </p>
+      <button class="button button--primary button--dark modal-cookies__button-allow" data-b_modal-close="modal-share">
+        Разрешить все файлы “cookie”
       </button>
-    </div>
-  </form>
-</div>
- <div id="callback-ball" class="b_modal">
-  <h3 class="b_modal__title">
-    Laissez vos coordonnées <br />
-    ou appeler au numéro <br />
-    <a class="link b_modal__title-link" href="tel:0558709154">05 58 70 91 54</a>
-  </h3>
-  <form action="table" id="form-ball" class="form form--ball">
-    <div class="form__hidden">
-      <input type="text" name="page" hidden />
-      <input type="text" name="formname" hidden />
-      <input type="text" name="additional" hidden />
-    </div>
-    <div class="form__inner">
-      <label class="input input--name">
-  <input
-    class="input__field"
-    name="user_name"
-    type="text"
-    placeholder="Nom"
-    data-value-missing="Заполните имя"
-    data-value-invalid="Что-то не так с введенным именем"
-    autocomplete="name"
-  />
-  <span class="input__message">Ошибка</span>
-</label>
- <label class="input input--tel">
-  <input
-    class="input__field"
-    required
-    name="user_tel"
-    type="tel"
-    placeholder="Objet"
-    maxlength="25"
-    minlength="10"
-    data-value-missing="Напишите телефон"
-    data-value-invalid="Проверьте корректность телефона"
-    autocomplete="tel"
-  />
-  <span class="input__message">Ошибка</span>
-</label>
-
-      <button type="submit" class="button button--primary b_modal__button" data-success="Message envoyé">
-        <span class="button__text">Envoyer le message</span>
-      </button>
-    </div>
-  </form>
-</div>
+  </div>
+</section>
 
 
 
-    <script src="./js/bundle.min.js?_v=20230803111255"></script>
+    <script src="./js/bundle.min.js?_v=20230803120235"></script>
   </body>
 </html>

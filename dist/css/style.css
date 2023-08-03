@@ -674,6 +674,38 @@
 }
 
 /*
+
+    @link
+
+*/
+/* stylelint-disable */
+.link {
+  --link-color: var(--c-accent);
+  color: var(--link-color);
+  transition: all var(--tr) ease-in-out;
+  padding: 0;
+  justify-content: flex-start;
+  border-bottom: 1px solid;
+}
+
+.link--inline {
+  --link-color: var(--c-text-on);
+  border-bottom: 1px solid var(--link-color);
+  font-weight: 600;
+}
+
+@media (any-hover: hover) {
+  .link:hover {
+    --link-color: var(--c-accent);
+  }
+}
+
+.link:active {
+  opacity: 0.6;
+}
+
+/* stylelint-enable */
+/*
 * Пример использования компонента кнопки
 * <button class="button button--primary">Акцентная кнопка</button>
 * <button class="button button--secondary btn--icon">Кнопка с иконкой вторичного цвета</button>
@@ -2228,6 +2260,16 @@
 
 .modal-share__button {
   padding: 1.3rem 3rem;
+}
+
+.modal-cookies {
+  max-width: 80rem;
+  width: 100%;
+}
+
+.modal-cookies .modal__inner {
+  display: grid;
+  justify-items: center;
 }
 
 .card__items {
