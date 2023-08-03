@@ -159,6 +159,10 @@
    display: none;
 }
 
+.events-card__slide.swiper-slide {
+   height: initial;
+}
+
 .events-card__carousel {
    max-width: 100%;
 }
@@ -169,6 +173,15 @@
 
 .events-card__carousel .events-card__pic {
    cursor: pointer;
+}
+
+.events-card__pic {
+   height: 100%;
+}
+
+.events-card__img {
+   height: 100%;
+   object-fit: cover ;
 }
 
 .events-card__arrows {
