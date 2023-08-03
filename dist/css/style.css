@@ -1523,10 +1523,19 @@
   border-radius: var(--brad-regular);
   margin-bottom: 4rem;
   transition: 0.4s;
+  max-width: 41.4rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 @media (max-width: 1400px) {
   .events-card {
+    max-width: 39.4rem;
     margin-bottom: 2rem;
+  }
+}
+@media (max-width: 610px) {
+  .events-card {
+    max-width: 100%;
   }
 }
 
@@ -6919,6 +6928,15 @@ header {
 
 .offers-carousel__slide {
   cursor: pointer;
+}
+
+.events__masonry {
+  margin-left: -2rem;
+  margin-right: -2rem;
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .events__gallery {

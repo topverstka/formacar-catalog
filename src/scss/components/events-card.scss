@@ -3,9 +3,17 @@
    border-radius: var(--brad-regular);
    margin-bottom: 4rem;
    transition: 0.4s;
+   max-width: 41.4rem;
+   margin-left: 2rem;
+   margin-right: 2rem;
 
    @media (max-width: 1400px) {
+      max-width: 39.4rem;
       margin-bottom: 2rem;
+   }
+
+   @media (max-width: $mobile-xl) {
+      max-width: 100%;
    }
 }
 

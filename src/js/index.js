@@ -58,6 +58,8 @@ import { doc } from "prettier";
 const modals = new DismalModules.Modals()
 
 import "./components.fmc/_mobile-menu.js";
+
+import "./sections.fmc/_events.js";
   
 // Табы
 // DismalModules.tabs()
