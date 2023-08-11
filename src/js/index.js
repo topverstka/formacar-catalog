@@ -83,25 +83,6 @@ import "./sections.fmc/_events.js";
 
 
 
-
-// (function() {
-//   function scrollHorizontally(e) {
-//       e = window.event || e;
-//       var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
-//       console.log(delta)
-//       document.querySelector('.catalog__gallery_slide').scrollLeft -= (delta * 40); // Multiplied by 40
-//       e.preventDefault();
-//   }
-//   if (document.querySelector('.catalog__gallery_slide').addEventListener) {
-//       // IE9, Chrome, Safari, Opera
-//       document.querySelector('.catalog__gallery_slide').addEventListener('mousewheel', scrollHorizontally, false);
-//       // Firefox
-//       document.querySelector('.catalog__gallery_slide').addEventListener('DOMMouseScroll', scrollHorizontally, false);
-//   } else {
-//       // IE 6/7/8
-//       document.querySelector('.catalog__gallery_slide').attachEvent('onmousewheel', scrollHorizontally);
-//   }
-// })();
 window.addEventListener("DOMContentLoaded", (event) => {
 
   let modalShareButton = document.querySelector('.modal-share__button')

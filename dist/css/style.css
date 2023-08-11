@@ -224,6 +224,7 @@
 }
 
 .b_modal {
+  display: none;
   margin-right: auto;
   margin-left: auto;
   background-color: #fff;
@@ -231,6 +232,10 @@
   transition: all 0.3s ease;
   transform: scale(0.86);
   position: relative;
+}
+
+.b_modal__overlay .b_modal {
+  display: initial;
 }
 
 .b_modal__closer {
