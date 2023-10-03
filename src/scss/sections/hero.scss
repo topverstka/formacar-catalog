@@ -1,8 +1,20 @@
 .hero {
+   --slide-pic-min-height: 64rem;
    margin-bottom: 16rem;
 
    @media screen and (max-width: $tablet) {
       margin-bottom: 10rem;
+   }
+   @media screen and (max-width: 1450px) {
+      --slide-pic-min-height: 55rem;
+   }
+
+   @media screen and (max-width: 1250px) {
+      --slide-pic-min-height: 46rem;
+   }
+
+   @media screen and (max-width: $tablet) {
+      --slide-pic-min-height: 37rem;
    }
 }
 

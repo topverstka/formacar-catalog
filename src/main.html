@@ -24,16 +24,30 @@
           <div class="container hero__container">
             <div class="swiper hero__carousel promo-carousel">
               <div class="swiper-wrapper">
+                @@for (var i = 0; i < 2; i++) {
                 <div class="swiper-slide promo-carousel__slide">
+                  <div class="promo-carousel__hero">
+                    <picture class="promo-carousel__pic">
+                      <!-- <source data-srcset="./img/hero/promo.webp," type="image/webp"> -->
+                      <img
+                        class="promo-carousel__img"
+                        src="./img/hero/promo.jpg"
+                        alt=""
+                      >
+                    </picture>
+                  </div>
                   <div class="promo-carousel__info">
                     <div class="promo-carousel__category">
-                      Главные новости недели
+                      Главные новости недели `+i+`
                     </div>
                     <a href="#">
                       <h2 class="promo-carousel__title">
-                        Lamborghini Urus примеряет dsfsdfsdf еще один экстремально выглядящий аэродинамический обвес
+                        Lamborghini Urus примеряет еще один экстремально выглядящий аэродинамический обвес
                       </h2>
                     </a>
+                    <p class="promo-carousel__desc">
+                      California-based Pierre’s Z Service Center has produced what it claims to be the only open-top Datsun 240Z based on a 1971MY car. Aside from a complete restoration, it received a powerful eight-cylinder engine. Mecum Auctions hopes to sell it for U.S. $50,000–70,000 this weekend.
+                    </p>
                     <div class="promo-carousel__bottom">
                       <div class="promo-carousel__more">
                         <a href="#" class="promo-carousel__link">
@@ -44,62 +58,21 @@
                           30 ноября 2022, 11:45
                         </div>
                       </div>
-                      @@include('tpls/sections/bottom-button.html',{type: 'comments', number: '1952'})
+                      @@include('tpls/sections/bottom-button.html',{type: 'comments', number: '1952', className: 'promo-carousel__button'})
                     </div>
-                  </div>
-                  <div class="promo-carousel__hero">
-                    <picture class="promo-carousel__pic">
-                      <!-- <source data-srcset="./img/hero/promo.webp," type="image/webp"> -->
-                      <img
-                        class="promo-carousel__img"
-                        src="./img/hero/promo.jpg"
-                        alt=""
-                      >
-                    </picture>
                   </div>
                 </div>
-
-                <div class="swiper-slide promo-carousel__slide">
-                  <div class="promo-carousel__info">
-                    <div class="promo-carousel__category">
-                      Главные новости недели 2
-                    </div>
-                    <a href="#">
-                      <h2 class="promo-carousel__title">
-                        Lamborghini Urus примеряет dsfsdfsdf еще один экстремально выглядящий аэродинамический обвес
-                      </h2>
-                    </a>
-                    <div class="promo-carousel__bottom">
-                      <div class="promo-carousel__more">
-                        <a href="#" class="promo-carousel__link">
-                          <span>читать Подробнее</span>
-                          <img src="./img/common/arrow-right.svg" alt="">
-                        </a>
-                        <p class="promo-carousel__date">
-                          30 ноября 2022, 11:45
-                        </p>
-                      </div>
-                      @@include('tpls/sections/bottom-button.html',{type: 'comments', number: '1952'})
-                    </div>
-                  </div>
-                  <div class="promo-carousel__hero">
-                    <picture class="promo-carousel__pic">
-                      <!-- <source data-srcset="./img/hero/promo.webp," type="image/webp"> -->
-                      <img
-                        class="promo-carousel__img"
-                        src="./img/hero/promo.jpg"
-                        alt=""
-                      >
-                    </picture>
-                  </div>
-                </div>
-                
+                }
               </div>
             </div>
 
             <div class="promo-carousel__arrows">
-              <img src="./img/common/arrow-left.svg" alt="" class="promo-carousel__arrows-next">
-              <img src="./img/common/arrow-right.svg" alt="" class="promo-carousel__arrows-prev">
+              <div class="promo-carousel__arrows-prev">
+                <img src="./img/common/arrow-left.svg" alt="">
+              </div>
+              <div class="promo-carousel__arrows-next">
+                <img src="./img/common/arrow-right.svg" alt="">
+              </div>
             </div>
           </div>
         </section>
