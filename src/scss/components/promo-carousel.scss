@@ -121,7 +121,7 @@
    height: var(--slide-pic-min-height);
 
    @media (max-width: $mobile-xl) {
-   border-radius: var(--brad) var(--brad) 0 0;
+      border-radius: var(--brad) var(--brad) 0 0;
    }
 }
 
@@ -160,6 +160,7 @@
    @media (max-width: $mobile-xl) {
       top: #{'calc(var(--slide-pic-min-height) - var(--arrows-height) + 0.2rem)'};
       bottom: unset;
+      border-radius: 0 1rem 0 0;
    }
 }
 

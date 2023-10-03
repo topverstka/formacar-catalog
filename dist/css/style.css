@@ -1182,6 +1182,7 @@
   .promo-carousel__arrows {
     top: calc(var(--slide-pic-min-height) - var(--arrows-height) + 0.2rem);
     bottom: unset;
+    border-radius: 0 1rem 0 0;
   }
 }
 
