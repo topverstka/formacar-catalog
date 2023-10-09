@@ -21,6 +21,18 @@ window.lazyload = lazyLoadInstance;
 
 import { Fancybox, Thumbs, Toolbar} from "@fancyapps/ui";
 Fancybox.bind("[data-fancybox]", {
+  on: {
+     reveal: function(instance, current) {
+      if (current.type === "html5video" && current.src.includes(".mov")) {
+        const video = current.el.querySelector('.fancybox__html5video');
+        const source = video.querySelector('source');
+        const src=  source.src;
+        video.innerHTML = '';
+        video.src = src;
+        video.src = src
+      }
+    },
+  },
   Thumbs: false,
   Toolbar: {
     display: {
